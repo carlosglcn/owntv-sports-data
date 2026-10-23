@@ -8,17 +8,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          rm -rf explore; mkdir -p explore; i=0
-          for u in \
-            "https://www.thesportsdb.com/api/v1/json/123/eventsseason.php?id=4408&s=2026-2027" \
-            "https://www.thesportsdb.com/api/v1/json/123/lookuptable.php?l=4408&s=2026-2027" \
-            "https://www.thesportsdb.com/api/v1/json/123/eventsnextleague.php?id=4408" \
-            "https://www.acb.com/calendario" \
-            "https://www.acb.com/clasificacion" \
-            "https://www.acb.com/resultados-clasificacion" \
-            "https://www.acb.com/" \
-            "https://api-live.euroleague.net/v1/standings?seasonCode=E2026&gameNumber=7" ; do
-            i=$((i+1)); { echo "URL $u"; curl -sL -m 30 -A "Mozilla/5.0" -w "\nHTTP %{http_code} %{size_download}\n" "$u" | head -c 3000; } > explore/$i.txt
-          done
+          rm -rf explore; mkdir -p explore
+          curl -sL -m 60 "https://www.thesportsdb.com/api/v1/json/123/eventsseason.php?id=4408&s=2026-2027" -o explore/acb.json
+          curl -sL -m 60 "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/games" -o explore/el2.json
+          curl -sL -m 60 "https://api-live.euroleague.net/v1/schedules?seasonCode=E2026" -o explore/el1.xml
+          curl -sL -m 60 "https://api-live.euroleague.net/v1/standings?seasonCode=E2026&gameNumber=99" -o explore/elst.xml
+          python3 - <<'P' > explore/summary.txt
+          import json,re
+          a=json.load(open('explore/acb.json'))['events']
+          print('ACB events',len(a), 'with score',sum(1 for e in a if e['intHomeScore'] not in (None,'')))
+          print('ACB sample',{k:a[0][k] for k in ('strHomeTeam','strAwayTeam','intHomeScore','intAwayScore','strTimestamp','intRound','strStatus','strPostponed') if k in a[0]})
+          print('ACB rounds',sorted({e['intRound'] for e in a},key=lambda x:int(x or 0))[-3:])
+          d=json.load(open('explore/el2.json'))
+          g=d['data']; print('EL v2 keys',list(d.keys()),'games',len(g))
+          played=[x for x in g if x.get('played')]
+          print('EL played',len(played)); print(json.dumps(played[0] if played else g[0])[:1800])
+          x=open('explore/el1.xml').read()
+          print('EL v1 items',x.count('<item>')); i=x.find('<item>'); 
+          print([m for m in re.findall(r'<(\w+)>',x[i:i+3000])][:40])
+          s=open('explore/elst.xml').read(); print('EL standings teams',s.count('<team>'), s[:300])
+          P
           git config user.name "github-actions"; git config user.email "actions@github.com"
-          git add explore; git commit -qm "explore results"; git push
+          rm -f explore/*.json explore/*.xml
+          git add -A; git commit -qm "explore results"; git push
