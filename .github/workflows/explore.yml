@@ -1,0 +1,18 @@
+name: explore
+on: workflow_dispatch
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for u in \
+            "https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/games?limit=3" \
+            "https://api-live.euroleague.net/v1/schedules?seasonCode=E2026" \
+            "https://api-live.euroleague.net/v1/standings?seasonCode=E2026&gameNumber=5" \
+            "https://api-live.euroleague.net/v3/competitions/E/seasons/E2026/standings/rounds/5" \
+            "https://www.acb.com/calendario/index/temporada_id/2026" \
+            "https://www.acb.com/resultados-clasificacion/ver/temporada_id/2026/competicion_id/1" \
+            "https://www.thesportsdb.com/api/v1/json/3/eventsseason.php?id=4408&s=2026-2027" \
+            "https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4408&s=2026-2027" ; do
+            echo "=== $u"; curl -sL -m 30 -A "Mozilla/5.0" -w "\nHTTP %{http_code} %{size_download}\n" "$u" | head -c 1500; echo
+          done
