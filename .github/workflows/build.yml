@@ -1,0 +1,22 @@
+name: build-data
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: build-data
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/build.py
+      - name: Commit when the data changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add acb.json euroleague.json
+          git diff --cached --quiet || { git commit -qm "Update data"; git pull -q --rebase; git push; }
