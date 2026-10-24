@@ -152,9 +152,11 @@ def clean(t):
 
 def asobal_round(html, n):
     """The matches of one round page: [{id,code home/away,club ids,start,status,score,tv,period}]."""
-    out = []
+    out, undated = [], 0
     block = html[html.find('class="info-results"'):]
     for li in re.findall(r"<li>(.*?)</li>", block, flags=re.S):
+        if "estadisticas/" in li and not re.search(r"\d\d/\d\d/\d{4} - \d\d:\d\d", li):
+            undated += 1   # postponed, or its date and TV slot are not set yet
         d = re.search(r"(\d\d)/(\d\d)/(\d{4}) - (\d\d):(\d\d)", li)
         codes = re.findall(r'href="equipos/([A-Za-z0-9]+)/"', li)
         clubs = re.findall(r"imagenes/jornada/club(\d+)\.svg", li)
@@ -180,7 +182,7 @@ def asobal_round(html, n):
                         hs=int(sc.group(1)) if sc and st != "scheduled" else None,
                         **{"as": int(sc.group(2)) if sc and st != "scheduled" else None},
                         period=label if st == "live" else None, tv=tv))
-    return out
+    return out, undated
 
 
 def asobal_table(html):
@@ -208,14 +210,18 @@ def asobal(previous=None):
     for m in (previous or {}).get("matches", []):
         kept.setdefault(m["round"], []).append(m)
     matches, clubs = [], {}
+    open_rounds = set((previous or {}).get("open", []))
+    still_open = set()
     for n in range(1, 31):
         old = kept.get(n)
         recent = old and any(abs(m["start"] - now) < 3 * 86400 * 1000 for m in old)
-        if old and not recent and all(m["status"] == "final" for m in old):
+        if old and not recent and n not in open_rounds and all(m["status"] == "final" for m in old):
             matches += old
             continue
         try:
-            rnd = asobal_round(get_latin(ASOBAL + "liga/calendario/%d/" % n), n)
+            rnd, undated = asobal_round(get_latin(ASOBAL + "liga/calendario/%d/" % n), n)
+            if undated:
+                still_open.add(n)
         except Exception as e:
             print("asobal round", n, "failed:", e, file=sys.stderr)
             matches += old or []
@@ -234,7 +240,7 @@ def asobal(previous=None):
         teams.append(dict(id=code, name=name, short=name, abbr=code,
                           logo=ASOBAL + "imagenes/jornada/club%s.svg" % club if club else None))
     matches.sort(key=lambda m: (m["start"], m["id"]))
-    return dict(league="asobal", season="2026-27", teams=teams, matches=matches, standings=standings)
+    return dict(league="asobal", season="2026-27", teams=teams, matches=matches, standings=standings, open=sorted(still_open))
 
 
 def write(name, doc):
