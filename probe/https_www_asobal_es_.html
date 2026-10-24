@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<!-- Basic -->
+	<meta charset="iso-8859-1">
+	<meta charset="utf-8">
+<title>ASOBAL, Liga profesional de Balonmano</title>
+<meta name="description" content="P�gina web oficial de ASOBAL, Liga Profesional de Balonmano. Vive el mejor balonmano en directo con LaLiga+" />
+<meta http-equiv="Content-Language" content="spanish" />
+<meta http-equiv="audiencie" content="general" />
+<meta name="language" content="es" />
+<meta name="rating" content="General" />
+<meta name="distribution" content="Global" />
+<meta name="robots" content="Index, Follow" />
+<meta name="author" content="Plan b Comunicaci�n - @comunicacionpb">
+<meta http-equiv="Cache-control" content="public">
+<link href="assets/css/all.min.css" rel="stylesheet">
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ASOBAL, Liga profesional de Balonmano">
+<meta name="twitter:description" content="">
+<meta name="twitter:creator" content="@ASOBAL">
+
+<meta name="twitter:image" content="https://asobal.es/imagenes/metas/1-asobal.jpg">
+
+
+<meta property="og:title" content="ASOBAL, Liga profesional de Balonmano" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:site_name" content="Liga ASOBAL" />
+<meta property="og:url" content="https://asobal.es/ " />
+
+<meta property="og:image:width" content="" />
+<meta property="og:image" content="https://asobal.es/imagenes/metas/1-asobal.jpg" />
+<meta property="og:image:height" content="" />
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KSZC77RL');</script>
+<!-- End Google Tag Manager --><meta property="og:description" content="" />
+	<base href="https://asobal.es/" />
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/eb33fd8fadbe700ce232c154209a29e8.js"></script>	<link href="assets/css/all.min.css" rel="stylesheet">
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Theme CSS -->
+	<link href="assets/css/main2425.css?v=16072025" rel="stylesheet" media="screen">
+
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/icons/favicon.png">
+	<link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">
+
+
+</head>
+
+<body>
+	<section class="modalpartidos d-block d-sm-block d-md-none ">
+    <button id="prevJornadamodal" class="btn-float left">&#5130;</button>
+    <button id="nextJornadamodal" class="btn-float right">&#5125;</button>
+	<span class="icono-partidos">PARTIDOS</span>
+    <span class="icono-jornada"></span>
+	<div id="partidosscrollmodal"></div>
+</section>
+	<!-- layout-->
+	<div id="layout">
+	  <div class="enlaceapp text-center">
+        <div id="app-banner" style="display: none; position: relative; text-align: center; padding: 15px; background-color: #002c58; color: #ffffff;">
+            <button onclick="cerrarAppBanner()" style="position: absolute; top: 10px; right: 15px; background: none; border: none; color: #ffffff; font-size: 20px; cursor: pointer; padding: 0; width: 25px; height: 25px; display: flex; align-items: center; justify-content: center;">&times;</button>
+            <p style="margin: 10px 0; font-size: 14px; color: #ffffff; line-height: 1.4;">Descarga la app oficial de ASOBAL y vive una experiencia m�s r�pida, adaptada 100% a tu m�vil.</p>
+            <a id="app-download-link" href="#" target="_blank" class="btn-app-download" style="display: inline-block; margin-top: 10px;">
+                <img id="app-download-img" src="" alt="" style="height: 40px;">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Funciones para detectar dispositivos m�viles con JavaScript
+        function esMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+        
+        function esIOS() {
+            return /iPad|iPhone|iPod/.test(navigator.userAgent);
+        }
+        
+        function esAndroid() {
+            return /Android/.test(navigator.userAgent);
+        }
+        
+        function cerrarAppBanner() {
+            document.getElementById("app-banner").style.display = "none";
+            localStorage.setItem("asobal_app_banner_closed", "true");
+        }
+        
+        function mostrarBannerApp() {
+            // Verificar si el banner ya fue cerrado
+            if (localStorage.getItem("asobal_app_banner_closed") === "true") {
+                return;
+            }
+            
+            // Solo mostrar en dispositivos m�viles
+            if (!esMobile()) {
+                return;
+            }
+            
+            var banner = document.getElementById("app-banner");
+            var downloadLink = document.getElementById("app-download-link");
+            var downloadImg = document.getElementById("app-download-img");
+            
+            if (esIOS()) {
+                downloadLink.href = "https://apps.apple.com/app/asobal/id1618309017";
+                downloadImg.src = "img/appleapp.png";
+                downloadImg.alt = "Descargar en App Store";
+            } else if (esAndroid()) {
+                downloadLink.href = "https://play.google.com/store/apps/details?id=com.tuplanb.ligaasobal";
+                downloadImg.src = "img/googleplay.png";
+                downloadImg.alt = "Descargar en Google Play";
+            }
+            
+            // Mostrar el banner
+            banner.style.display = "block";
+        }
+        
+        // Ejecutar cuando el DOM est� listo
+        document.addEventListener("DOMContentLoaded", function() {
+            mostrarBannerApp();
+        });
+    </script>		<div class="container">
+			<!--c-->
+    
+    <div class="clubs text-center"><a href="/equipos/BID/"><img src="imagenes/jornada/club8.svg" class="imgclubmenu" alt="1 - IRUDEK Bidasoa Irun" title="1 - IRUDEK Bidasoa Irun" ></a><a href="/equipos/BAR/"><img src="imagenes/jornada/club1.svg" class="imgclubmenu" alt="2 - Bar�a" title="2 - Bar�a" ></a><a href="/equipos/ATV/"><img src="imagenes/jornada/club113.svg" class="imgclubmenu" alt="3 - Recoletas Salud At. Valladolid" title="3 - Recoletas Salud At. Valladolid" ></a><a href="/equipos/GRA/"><img src="imagenes/jornada/club7.svg" class="imgclubmenu" alt="4 - Fraikin BM. Granollers" title="4 - Fraikin BM. Granollers" ></a><a href="/equipos/LOG/"><img src="imagenes/jornada/club22.svg" class="imgclubmenu" alt="5 - Dicorpebal Logro�o La Rioja" title="5 - Dicorpebal Logro�o La Rioja" ></a><a href="/equipos/TLV/"><img src="imagenes/jornada/club141.svg" class="imgclubmenu" alt="6 - Bathco BM. Torrelavega" title="6 - Bathco BM. Torrelavega" ></a><a href="/equipos/CAS/"><img src="imagenes/jornada/club157.svg" class="imgclubmenu" alt="7 - BM Caser�o Ciudad Real" title="7 - BM Caser�o Ciudad Real" ></a><a href="/equipos/ADE/"><img src="imagenes/jornada/club3.svg" class="imgclubmenu" alt="8 - ABANCA Ademar Le�n" title="8 - ABANCA Ademar Le�n" ></a><a href="/equipos/PSG/"><img src="imagenes/jornada/club28.svg" class="imgclubmenu" alt="9 - Fertiberia Puerto Sagunto" title="9 - Fertiberia Puerto Sagunto" ></a><a href="/equipos/SEV/"><img src="imagenes/jornada/club158.svg" class="imgclubmenu" alt="10 - Cajasol Sevilla Bm. Proin" title="10 - Cajasol Sevilla Bm. Proin" ></a><a href="/equipos/CQN/"><img src="imagenes/jornada/club25.svg" class="imgclubmenu" alt="11 - REBI Balonmano Cuenca" title="11 - REBI Balonmano Cuenca" ></a><a href="/equipos/EON/"><img src="imagenes/jornada/club156.svg" class="imgclubmenu" alt="12 - HORNEO BM. Alicante" title="12 - HORNEO BM. Alicante" ></a><a href="/equipos/PGE/"><img src="imagenes/jornada/club35.svg" class="imgclubmenu" alt="13 - Cajasol �ngel Xim�nez P. Genil" title="13 - Cajasol �ngel Xim�nez P. Genil" ></a><a href="/equipos/CNG/"><img src="imagenes/jornada/club15.svg" class="imgclubmenu" alt="14 - Frigor�ficos del Morrazo" title="14 - Frigor�ficos del Morrazo" ></a><a href="/equipos/NAV/"><img src="imagenes/jornada/club135.svg" class="imgclubmenu" alt="15 - Viveros Herol BM. Nava" title="15 - Viveros Herol BM. Nava" ></a><a href="/equipos/VDA/"><img src="imagenes/jornada/club33.svg" class="imgclubmenu" alt="16 - Tubos Aranda Villa de Aranda" title="16 - Tubos Aranda Villa de Aranda" ></a>
+        <a href="/"><img src="img/clubs-logos/esp.png" alt="ESP" class="bandera"   width="20px"></a><a href="/eng/"><img src="img/clubs-logos/bri.png" alt="BRI"  class="align-middle bandera" style="opacity: 0.3;  margin-left:5px;" width="17px"></a> <a href="/" title="Liga NEXUS ENERGIA ASOBAL">
+                                       
+                                    </a><a href="/" title=" Liga NEXUS ENERGIA ASOBAL">                                        <img src="img/logonexus.png" class=" logo_img2" alt="Logo Liga NEXUS ENERGIA ASOBAL">
+</a>
+    </div>		</div>
+		<!-- Header-->
+
+            <header>
+                <!-- End headerbox-->
+                <div class="headerbox ">
+                    <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <!-- Logo-->
+                            <div class="col-7">
+                               <div class="logo">
+                                   <a href="/"  class="asinhov" title="Liga ASOBAL">
+                                        <img src="img/logoasobal.png" alt="Logo ASOBAL" class="logo_img">
+                                    </a>
+                               </div>
+                                
+                            </div>
+                            <div class="col-3 text-right">
+                            
+                            <!-- End Logo-->
+                            </div>
+
+                            <!-- Adds Header-->
+                            <div class="col-1">
+
+
+                                <!-- Call Nav Menu-->
+                                <a class="mobile-nav" href="#mobile-nav"><i class="fa fa-bars"></i></a>
+                                <!-- End Call Nav Menu-->
+                            </div>
+                            <!-- End Adds Header-->
+                        </div>
+                    </div>
+                </div>
+                <!-- End headerbox-->
+            </header>
+            <!-- End Header-->		<!-- mainmenu-->
+		<nav class="mainmenu">
+			<div class="container">
+				<!-- Menu-->
+<a href="/" class="asinhov" title="Liga ASOBAL">
+    <img src="img/logoasobal.png" alt="Logo ASOBAL" class="logo_img">
+</a>
+<ul class="sf-menu" id="menu">
+
+    <li class="current">
+        <a href="asobal/">ASOBAL</a>
+        <ul class="sub-current">
+            <li>
+                <a href="asobal/">Sobre nosotros</a>
+            </li>
+            <li>
+                <a href="transparencia/">Transparencia</a>
+            </li>
+            <li>
+                <a href="asobal/kit-de-marca/">Kit de Marca</a>
+            </li>
+            <li>
+                <a href="comunidad-asobal/">Comunidad ASOBAL</a>
+            </li>
+            <li>
+                <a href="newsletter/">Newsletter</a>
+            </li>
+        </ul>
+    </li>
+
+    <li class="current">
+        <a href="liga/clasificacion/">Liga NEXUS ENERGIA ASOBAL</a>
+        <ul class="sub-current">
+            <li>
+                <a href="liga/clasificacion/">Clasificaci�n</a>
+            </li>
+            <li>
+                <a href="liga/resultados/">Resultados</a>
+            </li>
+            <li>
+                <a href="liga/calendario/">Calendario</a>
+            </li>
+            <li>
+                <a href="equipos/">Equipos</a>
+            </li>
+            <li>
+                <a href="liga/estadisticas/">Estad�sticas</a>
+            </li>
+            <li>
+                <a href="liga/palmares/">Palmar�s</a>
+            </li>
+            <li>
+                <a href="liga/plantilla-arbitral/">Plantilla arbitral</a>
+            </li>
+            <li>
+                <a href="liga/7-ideal/">El 7 Ideal de la Jornada</a>
+            </li>
+            <li>
+                <a href="liga/mvp-asobal/">MVP ASOBAL</a>
+            </li>
+            <li>
+                <a href="liga/all-star-team/">All Star Team</a>
+            </li>
+        </ul>
+    </li>
+
+    <li class="current">
+        <a href="noticias/">Noticias</a>
+    </li>
+
+    <li class="current">
+        <a tabindex="0">ASOBAL.tv</a>
+        <ul class="sub-current">
+            
+            <li>
+                <a href="https://streamwayplus.com/asobal-tv" target="_blank">ASOBAL.tv</a>
+            </li>
+
+        <!--
+        
+            <li>
+                <a href="videos/resumenes/">Res�menes</a>
+            </li>
+            <li>
+                <a href="videos/completos/">Partidos completos</a>
+            </li> -->
+        </ul>
+    </li>
+
+    <li>
+        <a href="https://fantasy.asobal.es/" target="_blank">Fantasy</a>
+    </li>
+
+    <li>
+        <a href="https://afiliacion.decathlon.es/tracking/clk?act=25086&gel=0&pub=36282&org=2615&url=https://www.decathlon.es/es/ASOBAL_lp-U5BOZQ&ei1=Tienda ASOBAL"
+            target="_blank">Tienda <img src="img/sponsors/18blancomenu.png" style="height:25px"
+                alt="Tienda Decathlon" /></a>
+    </li>
+    <li>
+        <a href="hall-of-fame/"><img src="img/halloffame.png" style="height:40px;margin-top:-8px" alt="Hall of Fame"
+                title="Hall of Fame" /></a>
+    </li>
+    <li>
+        <a href="asobal/legacy-league/"><img src="img/all/logo-ALL-blanco.png" style="height:43px;margin-top:-9px"
+                alt="ASOBAL Legacy League" title="ASOBAL Legacy League" /></a>
+    </li>
+    <li>
+        <a href="comunidad-asobal/" title="Comunidad ASOBAL" aria-label="Comunidad ASOBAL" class=" outline"
+            style="font-size:24px; margin-top:-7px" tabindex="0"><i class="fa fa-user-circle"></i></a>
+    </li>
+
+</ul>
+<!-- End Menu-->
+			</div>
+		</nav>
+		<!-- End mainmenu-->
+		<!-- Mobile Nav-->
+		<div id="mobile-nav">
+
+			<!-- Menu-->
+<ul>
+    <li>
+        <a href="/">Inicio</a>
+    </li>
+    <li>
+        <a href="asobal/">ASOBAL</a>
+        <ul>
+            <li>
+                <a href="asobal/">Sobre nosotros</a>
+            </li>
+            <li>
+                <a href="transparencia/">Transparencia</a>
+            </li>
+            <li>
+                <a href="asobal/kit-de-marca/">Kit de Marca</a>
+            </li>
+            <li>
+                <a href="comunidad-asobal/">Comunidad ASOBAL</a>
+            </li>
+            <li>
+                <a href="newsletter/">Newsletter</a>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="liga/clasificacion/">Liga NEXUS ENERGIA ASOBAL</a>
+        <ul>
+            <li>
+                <a href="liga/clasificacion/">Clasificaci�n</a>
+            </li>
+            <li>
+                <a href="liga/resultados/">Resultados</a>
+            </li>
+            <li>
+                <a href="liga/calendario/">Calendario</a>
+            </li>
+            <li>
+                <a href="equipos/">Equipos</a>
+            </li>
+            <li>
+                <a href="liga/estadisticas/">Estad�sticas</a>
+            </li>
+            <li>
+                <a href="liga/palmares/">Palmar�s</a>
+            </li>
+            <li>
+                <a href="liga/plantilla-arbitral/">Plantilla arbitral</a>
+            </li>
+            <li>
+                <a href="liga/7-ideal/">El 7 Ideal de la Jornada</a>
+            </li>
+            <li>
+                <a href="liga/mvp-asobal/">MVP ASOBAL</a>
+            </li>
+            <li>
+                <a href="liga/all-star-team/">All Star Team</a>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="noticias/">Noticias</a>
+    </li>
+
+    <li>
+        <a tabindex="0">ASOBAL.tv</a>
+        <ul>
+            
+            <li>
+                <a href="https://streamwayplus.com/asobal-tv" target="_blank">ASOBAL.tv</a>
+            </li>
+
+             <!--
+            
+            <li>
+                <a href="videos/resumenes/">Res�menes</a>
+            </li>
+            <li>
+                <a href="videos/completos/">Partidos completos</a>
+            </li>
+
+-->
+        </ul>
+    </li>
+
+    <li>
+        <a href="https://fantasy.asobal.es/" target="_blank">Fantasy</a>
+    </li>
+    <li>
+        <a href="hall-of-fame/">Hall of Fame</a>
+    </li>
+    <li>
+        <a href="asobal/legacy-league/">ASOBAL Legacy League</a>
+    </li>
+    <li>
+        <a href="https://afiliacion.decathlon.es/tracking/clk?act=25086&gel=0&pub=36282&org=2615&url=https://www.decathlon.es/es/ASOBAL_lp-U5BOZQ&ei1=Tienda ASOBAL"
+            target="_blank">Tienda <img src="img/sponsors/18grismenu.png" style="height:25px"
+                alt="Tienda Decathlon" /></a>
+    </li>
+    <li>
+        <a href="eng/">English <img src="img/clubs-logos/bri.png" alt="BRI" width="20px"></a>
+    </li>
+</ul>
+<!-- End Menu-->
+		</div>
+		<!-- End Mobile Nav-->
+
+
+
+
+
+
+
+		<!-- Section Area - Content Central -->
+		<section class="content-info">
+						<!-- Dark Home -->
+			<div class="dark-home">
+				<div class="container">
+					<div class="row">
+
+												<div class="col-xl-3 col-md-6 clasificacionprincipal">
+
+
+
+
+
+
+
+							<div class="row">
+   <div class="col-lg-12" >
+       <div class="club-ranking text-center">
+            
+            <div class="info-ranking text-left paddingranking">
+            <h4 class="text-center pt-2"><a href="liga/clasificacion/">37� Liga NEXUS ENERGIA ASOBAL</a></h4>
+                <ul><li>
+                      <span class="position">
+                          1
+                      </span>
+                       <a href="equipos/BID/">
+                            <img src="imagenes/jornada/club8.svg" alt="IRUDEK Bidasoa Irun">
+                            <span>IRUDEK Bidasoa Irun</span>
+                        </a>
+        <span class="points">14</span>
+    </li><li>
+                      <span class="position">
+                          2
+                      </span>
+                       <a href="equipos/BAR/">
+                            <img src="imagenes/jornada/club1.svg" alt="Bar�a">
+                            <span>Bar�a</span>
+                        </a>
+        <span class="points">12</span>
+    </li><li>
+                      <span class="position">
+                          3
+                      </span>
+                       <a href="equipos/ATV/">
+                            <img src="imagenes/jornada/club113.svg" alt="Recoletas Salud At. Valladolid">
+                            <span>Recoletas Salud At. Valladolid</span>
+                        </a>
+        <span class="points">12</span>
+    </li><li>
+                      <span class="position">
+                          4
+                      </span>
+                       <a href="equipos/GRA/">
+                            <img src="imagenes/jornada/club7.svg" alt="Fraikin BM. Granollers">
+                            <span>Fraikin BM. Granollers</span>
+                        </a>
+        <span class="points">9</span>
+    </li><li>
+                      <span class="position">
+                          5
+                      </span>
+                       <a href="equipos/LOG/">
+                            <img src="imagenes/jornada/club22.svg" alt="Dicorpebal Logro�o La Rioja">
+                            <span>Dicorpebal Logro�o La Rioja</span>
+                        </a>
+        <span class="points">9</span>
+    </li><li>
+                      <span class="position">
+                          6
+                      </span>
+                       <a href="equipos/TLV/">
+                            <img src="imagenes/jornada/club141.svg" alt="Bathco BM. Torrelavega">
+                            <span>Bathco BM. Torrelavega</span>
+                        </a>
+        <span class="points">7</span>
+    </li><li>
+                      <span class="position">
+                          7
+                      </span>
+                       <a href="equipos/CAS/">
+                            <img src="imagenes/jornada/club157.svg" alt="BM Caser�o Ciudad Real">
+                            <span>BM Caser�o Ciudad Real</span>
+                        </a>
+        <span class="points">7</span>
+    </li><li>
+                      <span class="position">
+                          8
+                      </span>
+                       <a href="equipos/ADE/">
+                            <img src="imagenes/jornada/club3.svg" alt="ABANCA Ademar Le�n">
+                            <span>ABANCA Ademar Le�n</span>
+                        </a>
+        <span class="points">4</span>
+    </li><li>
+                      <span class="position">
+                          9
+                      </span>
+                       <a href="equipos/PSG/">
+                            <img src="imagenes/jornada/club28.svg" alt="Fertiberia Puerto Sagunto">
+                            <span>Fertiberia Puerto Sagunto</span>
+                        </a>
+        <span class="points">4</span>
+    </li><li>
+                      <span class="position">
+                          10
+                      </span>
+                       <a href="equipos/SEV/">
+                            <img src="imagenes/jornada/club158.svg" alt="Cajasol Sevilla Bm. Proin">
+                            <span>Cajasol Sevilla Bm. Proin</span>
+                        </a>
+        <span class="points">4</span>
+    </li><li>
+                      <span class="position">
+                          11
+                      </span>
+                       <a href="equipos/CQN/">
+                            <img src="imagenes/jornada/club25.svg" alt="REBI Balonmano Cuenca">
+                            <span>REBI Balonmano Cuenca</span>
+                        </a>
+        <span class="points">4</span>
+    </li><li>
+                      <span class="position">
+                          12
+                      </span>
+                       <a href="equipos/EON/">
+                            <img src="imagenes/jornada/club156.svg" alt="HORNEO BM. Alicante">
+                            <span>HORNEO BM. Alicante</span>
+                        </a>
+        <span class="points">4</span>
+    </li><li>
+                      <span class="position">
+                          13
+                      </span>
+                       <a href="equipos/PGE/">
+                            <img src="imagenes/jornada/club35.svg" alt="Cajasol �ngel Xim�nez P. Genil">
+                            <span>Cajasol �ngel Xim�nez P. Genil</span>
+                        </a>
+        <span class="points">3</span>
+    </li><li>
+                      <span class="position">
+                          14
+                      </span>
+                       <a href="equipos/CNG/">
+                            <img src="imagenes/jornada/club15.svg" alt="Frigor�ficos del Morrazo">
+                            <span>Frigor�ficos del Morrazo</span>
+                        </a>
+        <span class="points">2</span>
+    </li><li>
+                      <span class="position">
+                          15
+                      </span>
+                       <a href="equipos/NAV/">
+                            <img src="imagenes/jornada/club135.svg" alt="Viveros Herol BM. Nava">
+                            <span>Viveros Herol BM. Nava</span>
+                        </a>
+        <span class="points">2</span>
+    </li><li>
+                      <span class="position">
+                          16
+                      </span>
+                       <a href="equipos/VDA/">
+                            <img src="imagenes/jornada/club33.svg" alt="Tubos Aranda Villa de Aranda">
+                            <span>Tubos Aranda Villa de Aranda</span>
+                        </a>
+        <span class="points">1</span>
+    </li></ul>
+            </div>
+       </div>
+    </div></div>
+
+
+
+
+						</div>
+						
+						<div class="col-xl-6 col-md-6">
+
+
+
+
+
+
+
+														<!-- Post Item -->
+
+							<div class="panel-box  col-lg-12 col-xl-12">
+								<a
+									href="noticias/irudek-bidasoa-irun-duerme-l-der-y-bar-a-supera-a-rebi-balonmano-cuenca-en-el-primer-tramo-de-j7/8776/"><img
+										width="100%"
+										src="https://asobal.es/image.php?image=/imagenes/fotos/8776-hallcuenca.jpg&width=1250"
+										alt="IRUDEK Bidasoa Irun duerme l�der y Bar�a supera a REBI Balonmano Cuenca en el primer tramo de J7"
+										title="IRUDEK Bidasoa Irun duerme l�der y Bar�a supera a REBI Balonmano Cuenca en el primer tramo de J7"
+										class="imagen-1011"></a>
+								<a
+									href="noticias/irudek-bidasoa-irun-duerme-l-der-y-bar-a-supera-a-rebi-balonmano-cuenca-en-el-primer-tramo-de-j7/8776/">
+									<div
+										class="card-img-overlay  textoblanco d-flex align-items-end justify-content-center">
+										<h4 class="card-title2 textoblanco text-center">
+											IRUDEK Bidasoa Irun duerme l�der y Bar�a supera a REBI Balonmano Cuenca en el primer tramo de J7										</h4>
+									</div>
+								</a>
+
+
+							</div>
+
+
+							<!-- End Post Item -->
+
+														<!-- Post Item -->
+
+							<div class="panel-box  d-block d-md-none  col-lg-12 col-xl-12">
+								<a
+									href="noticias/nagy--guardi-n-del-liderato-de-recoletas-salud-at--valladolid/8775/"><img
+										width="100%"
+										src="https://asobal.es/image.php?image=/imagenes/fotos/8775-nagyrepor.jpg&width=1250"
+										alt="Nagy, guardi�n del liderato de Recoletas Salud At. Valladolid"
+										title="Nagy, guardi�n del liderato de Recoletas Salud At. Valladolid"
+										class="imagen-1011"></a>
+								<a
+									href="noticias/nagy--guardi-n-del-liderato-de-recoletas-salud-at--valladolid/8775/">
+									<div
+										class="card-img-overlay  textoblanco d-flex align-items-end justify-content-center">
+										<h4 class="card-title2 textoblanco text-center">
+											Nagy, guardi�n del liderato de Recoletas Salud At. Valladolid										</h4>
+									</div>
+								</a>
+
+
+							</div>
+
+
+							<!-- End Post Item -->
+
+														<!-- Post Item -->
+
+							<div class="panel-box  d-block d-md-none  col-lg-12 col-xl-12">
+								<a
+									href="noticias/rebi-balonmano-cuenca-consigue-un-empate--in-extremis--en-el-palau-d-esports-de-fraikin-bm--granollers/8774/"><img
+										width="100%"
+										src="https://asobal.es/image.php?image=/imagenes/fotos/8774-fiscqn.jpg&width=1250"
+										alt="REBI Balonmano Cuenca consigue un empate 'in extremis' en el Palau d'Esports de Fraikin BM. Granollers"
+										title="REBI Balonmano Cuenca consigue un empate 'in extremis' en el Palau d'Esports de Fraikin BM. Granollers"
+										class="imagen-1011"></a>
+								<a
+									href="noticias/rebi-balonmano-cuenca-consigue-un-empate--in-extremis--en-el-palau-d-esports-de-fraikin-bm--granollers/8774/">
+									<div
+										class="card-img-overlay  textoblanco d-flex align-items-end justify-content-center">
+										<h4 class="card-title2 textoblanco text-center">
+											REBI Balonmano Cuenca consigue un empate 'in extremis' en el Palau d'Esports de Fraikin BM. Granollers										</h4>
+									</div>
+								</a>
+
+
+							</div>
+
+
+							<!-- End Post Item -->
+
+														
+							<a href="noticias/" class="d-none d-md-block d-lg-block d-xl-none">
+								<div class="item-boxed-img small"
+									style="background: url('imagenes/noticiascap/30.webp');">
+									<h4>M�s Noticias</h4>
+								</div>
+							</a>
+
+
+
+						</div>
+
+
+
+						<div class="col-xl-3 d-none d-xl-block col-md-3">
+														<!-- Post Item -->
+
+
+
+							<div class="mb-2">
+								<div class="card bg-dark text-white">
+									<a
+										href="noticias/nagy--guardi-n-del-liderato-de-recoletas-salud-at--valladolid/8775/"><img
+											width="100%"
+											src="https://asobal.es/image.php?image=/imagenes/fotos/8775-nagyrepor.jpg&width=850"
+											class="card-img imagen-78"
+											alt="Nagy, guardi�n del liderato de Recoletas Salud At. Valladolid"
+											title="Nagy, guardi�n del liderato de Recoletas Salud At. Valladolid"></a>
+									<a
+										href="noticias/nagy--guardi-n-del-liderato-de-recoletas-salud-at--valladolid/8775/">
+										<div class="card-img-overlay d-flex align-items-center justify-content-center">
+											<h4 class="card-title textoblanco">
+												Nagy, guardi�n del liderato de Recoletas Salud At. Valladolid											</h4>
+										</div>
+									</a>
+								</div>
+							</div>
+
+
+							<!-- End Post Item -->
+
+														<!-- Post Item -->
+
+
+
+							<div class="mb-2">
+								<div class="card bg-dark text-white">
+									<a
+										href="noticias/rebi-balonmano-cuenca-consigue-un-empate--in-extremis--en-el-palau-d-esports-de-fraikin-bm--granollers/8774/"><img
+											width="100%"
+											src="https://asobal.es/image.php?image=/imagenes/fotos/8774-fiscqn.jpg&width=850"
+											class="card-img imagen-78"
+											alt="REBI Balonmano Cuenca consigue un empate 'in extremis' en el Palau d'Esports de Fraikin BM. Granollers"
+											title="REBI Balonmano Cuenca consigue un empate 'in extremis' en el Palau d'Esports de Fraikin BM. Granollers"></a>
+									<a
+										href="noticias/rebi-balonmano-cuenca-consigue-un-empate--in-extremis--en-el-palau-d-esports-de-fraikin-bm--granollers/8774/">
+										<div class="card-img-overlay d-flex align-items-center justify-content-center">
+											<h4 class="card-title textoblanco">
+												REBI Balonmano Cuenca consigue un empate 'in extremis' en el Palau d'Esports de Fraikin BM. Granollers											</h4>
+										</div>
+									</a>
+								</div>
+							</div>
+
+
+							<!-- End Post Item -->
+
+														
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+			<!-- Dark Home -->
+									<!-- Content Central -->
+			<div class="slideresultados d-block d-sm-none d-xs-none d-md-block">
+				<button id="prevJornada" class="btn-float left">&#5130;</button>
+				<button id="nextJornada" class="btn-float right">&#5125;</button>
+
+
+				<div class="jornada-header">
+					<h2>Jornada						<span
+							id="jornadanumero">7</span>
+					</h2>
+
+				</div>
+
+				<div class="container">
+					<div class="row">
+
+						<div class="col-lg-12 col-xl-12" id="proximos">
+							<div class="carousel-wrapper">
+								<div class="carousel" id="partidosscroll">
+									<a href="estadisticas/35405652/"><div class="carousel-item2">
+                        <img src="imagenes/jornada/club1.svg" alt="BAR" class="escudo1"><img src="imagenes/jornada/club25.svg" alt="CQN" class="escudo2">
+                        <div class="resultado ">45 - 27<br><small>Finalizado</small></div></div></a><a href="estadisticas/35405655/"><div class="carousel-item2">
+                        <img src="imagenes/jornada/club8.svg" alt="BID" class="escudo1"><img src="imagenes/jornada/club157.svg" alt="CAS" class="escudo2">
+                        <div class="resultado ">36 - 32<br><small>Finalizado</small></div></div></a><a href="estadisticas/35405658/"><div class="carousel-item2">
+                        <img src="imagenes/jornada/club33.svg" alt="VDA" class="escudo1"><img src="imagenes/jornada/club28.svg" alt="PSG" class="escudo2">
+                        <div class="resultado ">24 OCT<small>19:00</small></div></div></a><a href="estadisticas/35405659/"><div class="carousel-item2">
+                        <img src="imagenes/jornada/club135.svg" alt="NAV" class="escudo1"><img src="imagenes/jornada/club113.svg" alt="ATV" class="escudo2">
+                        <div class="resultado ">24 OCT<small>19:00</small></div></div></a><a href="estadisticas/35405653/"><div class="carousel-item2">
+                        <img src="imagenes/jornada/club22.svg" alt="LOG" class="escudo1"><img src="imagenes/jornada/club15.svg" alt="CNG" class="escudo2">
+                        <div class="resultado ">24 OCT<small>19:30</small></div></div></a><a href="estadisticas/35405657/"><div class="carousel-item2">
+                        <img src="imagenes/jornada/club156.svg" alt="EON" class="escudo1"><img src="imagenes/jornada/club3.svg" alt="ADE" class="escudo2">
+                        <div class="resultado ">25 OCT<small>12:00</small></div></div></a><a href="estadisticas/35405654/"><div class="carousel-item2">
+                        <img src="imagenes/jornada/club7.svg" alt="GRA" class="escudo1"><img src="imagenes/jornada/club35.svg" alt="PGE" class="escudo2">
+                        <div class="resultado ">25 OCT<small>12:30</small></div></div></a><a href="estadisticas/35405656/"><div class="carousel-item2">
+                        <img src="imagenes/jornada/club141.svg" alt="TLV" class="escudo1"><img src="imagenes/jornada/club158.svg" alt="SEV" class="escudo2">
+                        <div class="resultado ">25 OCT<small>18:00</small></div></div></a>								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+						<div class="topindex">
+				<div class="container">
+
+					<div class="row mt-4">
+						<div class="col-lg-12 mt-3  text-center col-xl-12 ">
+							<a href="https://streamwayplus.com/es/asobal-tv/subscribe" target="_blank"><img src="img/gif/asobaltv.gif"
+									alt="Asobal TV"
+									></a>
+					</div>
+					</div>
+
+
+					<div class="row mt-4">
+						<div class="col-lg-3 mt-3 d-none text-center d-xl-block col-xl-4 btnsocial">
+							<ul class="social">
+
+								<li>
+									<div>
+										<a href="https://www.instagram.com/asobal/" target="_blank" class="youtube">
+											<i class="fa fa-instagram"></i>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="https://x.com/ASOBAL" target="_blank" class="twitter-icon">
+											<i class="fa-brands fa-x-twitter"></i>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="https://www.facebook.com/ASOBAL" target="_blank" class="facebook">
+											<i class="fa fa-facebook"></i>
+										</a>
+									</div>
+								</li>
+
+								<li>
+									<div>
+										<a href="https://www.youtube.com/user/LigaASOBAL?gl=ES&amp;hl=es"
+											target="_blank" class="youtube">
+											<i class="fa fa-youtube"></i>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="https://www.linkedin.com/company/asobal" target="_blank"
+											class="linledin">
+											<i class="fa-brands fa-linkedin"></i>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="https://www.tiktok.com/@asobal_" target="_blank" class="tiktok">
+											<i class="fa-brands fa-tiktok"></i>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="https://whatsapp.com/channel/0029Vb0N9UmEQIaiQpK1Ff0l" target="_blank"
+											class="whatsapp">
+											<i class="fa-brands fa-whatsapp"></i>
+										</a>
+									</div>
+								</li>
+
+							</ul>
+						</div>
+						<div class="col-xl-8  mt-3  col-xs-12">
+							
+<div class="row">
+	<div class="col-lg-12 mb-2">
+		<div class="text-center">
+			<a href="https://www.nexusenergia.com/"
+				target="_blank"><img
+					src="img/gif/nexus.png?ver=nov2025"
+					alt="Nexus Energia" /></a>
+		</div>
+	</div>
+</div>						</div>
+					</div>
+
+					
+
+
+
+				</div>
+
+
+				<div class="container padding-top">
+
+					<div class="row">
+
+						
+
+
+
+						<div class="col-lg-4 col-xl-4 col-md-4 ">
+							<div class="player-ranking">
+
+								<img src="image.php?image=/imagenes/licencias/91260426-19_Gonzalo_Perez_Arce.png&width=850"
+									alt="Gonzalo P�rez Arce"
+									class="topindeximg">
+								<h3><a
+										href="liga/estadisticas/">M�S GOLES</a>
+								</h3>
+
+
+								<div class="info-player mtinfoinfo-player">
+									<ul>
+										
+										<li>
+											<span
+												class="position">1<img
+													src="imagenes/jornada/club3.svg"
+													alt="ABANCA Ademar Le�n"
+													width="27px" style="margin-left:4px"></span>
+											<a title="Gonzalo P�rez Arce"
+												href="jugadores/gonzalo-p-rez-arce/91260426/">Gonzalo P�rez Arce</a>
+											<span class="points">
+												53											</span>
+										</li>
+										
+										<li>
+											<span
+												class="position">2<img
+													src="imagenes/jornada/club28.svg"
+													alt="Fertiberia Puerto Sagunto"
+													width="27px" style="margin-left:4px"></span>
+											<a title="Antonio Capit�n Barjola"
+												href="jugadores/antonio-capit-n-barjola/91261396/">Antonio Capit�n Barjola</a>
+											<span class="points">
+												50											</span>
+										</li>
+										
+										<li>
+											<span
+												class="position">3<img
+													src="imagenes/jornada/club25.svg"
+													alt="REBI Balonmano Cuenca"
+													width="27px" style="margin-left:4px"></span>
+											<a title="Rajmond Toth"
+												href="jugadores/rajmond-toth/91261050/">Rajmond Toth</a>
+											<span class="points">
+												48											</span>
+										</li>
+										
+										<li>
+											<span
+												class="position">4<img
+													src="imagenes/jornada/club8.svg"
+													alt="IRUDEK Bidasoa Irun"
+													width="27px" style="margin-left:4px"></span>
+											<a title="Mario Nevado"
+												href="jugadores/mario-nevado-gil/91260619/">Mario Nevado</a>
+											<span class="points">
+												46											</span>
+										</li>
+										
+										<li>
+											<span
+												class="position">5<img
+													src="imagenes/jornada/club7.svg"
+													alt="Fraikin BM. Granollers"
+													width="27px" style="margin-left:4px"></span>
+											<a title="Marcos Fis"
+												href="jugadores/marcos-fis-ballester/91261258/">Marcos Fis</a>
+											<span class="points">
+												39											</span>
+										</li>
+										
+									</ul>
+
+								</div>
+
+							</div>
+						</div>
+
+						
+
+						<!--porteros -->
+
+						
+
+
+
+						<div class="col-lg-4 col-xl-4 col-md-4">
+							<div class="player-ranking">
+
+								<img src="image.php?image=/imagenes/licencias/91261156-32.png&width=550"
+									alt="Benedek Lazslo Nagy"
+									class="topindeximg">
+								<h3><a
+										href="liga/estadisticas/">M�S PARADAS</a>
+								</h3>
+
+
+								<div class="info-player mtinfoinfo-player">
+									<ul>
+										
+										<li>
+											<span
+												class="position">1<img
+													src="imagenes/jornada/club113.svg"
+													alt="Recoletas Salud At. Valladolid"
+													width="27px" style="margin-left:4px"></span>
+											<a title="Benedek Lazslo Nagy"
+												href="jugadores/benedek-lazslo-nagy/91261156/">Benedek Lazslo Nagy</a>
+											<span class="points">
+												84											</span>
+										</li>
+										
+										<li>
+											<span
+												class="position">2<img
+													src="imagenes/jornada/club157.svg"
+													alt="BM Caser�o Ciudad Real"
+													width="27px" style="margin-left:4px"></span>
+											<a title="Juan Manuel Bar"
+												href="jugadores/juan-manuel-bar-schoenfeld/91260901/">Juan Manuel Bar</a>
+											<span class="points">
+												61											</span>
+										</li>
+										
+										<li>
+											<span
+												class="position">3<img
+													src="imagenes/jornada/club8.svg"
+													alt="IRUDEK Bidasoa Irun"
+													width="27px" style="margin-left:4px"></span>
+											<a title="Leo Maciel"
+												href="jugadores/leonel-carlos-sergio-maciel/9182/">Leo Maciel</a>
+											<span class="points">
+												61											</span>
+										</li>
+										
+										<li>
+											<span
+												class="position">4<img
+													src="imagenes/jornada/club1.svg"
+													alt="Bar�a"
+													width="27px" style="margin-left:4px"></span>
+											<a title="Viktor Hallgrimsson"
+												href="jugadores/viktor-gisli-hallgrimsson/91261256/">Viktor Hallgrimsson</a>
+											<span class="points">
+												57											</span>
+										</li>
+										
+										<li>
+											<span
+												class="position">5<img
+													src="imagenes/jornada/club156.svg"
+													alt="HORNEO BM. Alicante"
+													width="27px" style="margin-left:4px"></span>
+											<a title="Pau Guitart"
+												href="jugadores/pau-guitart-i-alguacil/91260752/">Pau Guitart</a>
+											<span class="points">
+												56											</span>
+										</li>
+										
+									</ul>
+
+								</div>
+
+							</div>
+						</div>
+
+						
+						<!--porteros-->
+
+
+						<!--pases-->
+						
+
+
+
+						<div class="col-lg-4 col-xl-4 col-md-4">
+							<div class="player-ranking">
+
+																<h3 class="topjugadorestitulo"><a
+										href="liga/estadisticas/">M�S ASISTENCIAS</a>
+								</h3>
+
+
+								<div class="info-player mtinfoinfo-player">
+									<ul>
+										
+										<li>
+											<span
+												class="position">1<img
+													src="imagenes/jornada/club157.svg"
+													alt="BM Caser�o Ciudad Real"
+													width="27px" style="margin-left:4px"></span>
+											<a title="Sergi Mach"
+												href="jugadores/sergi-mach-eijo/91260919/">Sergi Mach</a>
+											<span class="points">
+												22											</span>
+										</li>
+										
+										<li>
+											<span
+												class="position">2<img
+													src="imagenes/jornada/club3.svg"
+													alt="ABANCA Ademar Le�n"
+													width="27px" style="margin-left:4px"></span>
+											<a title="Javier Mi�ambres"
+												href="jugadores/javier-mi-ambres-calvo/91261021/">Javier Mi�ambres</a>
+											<span class="points">
+												19											</span>
+										</li>
+										
+										<li>
+											<span
+												class="position">3<img
+													src="imagenes/jornada/club3.svg"
+													alt="ABANCA Ademar Le�n"
+													width="27px" style="margin-left:4px"></span>
+											<a title="Patryk Wasiak"
+												href="jugadores/patryk-radoslaw-wasiak/91261061/">Patryk Wasiak</a>
+											<span class="points">
+												19											</span>
+										</li>
+										
+										<li>
+											<span
+												class="position">4<img
+													src="imagenes/jornada/club25.svg"
+													alt="REBI Balonmano Cuenca"
+													width="27px" style="margin-left:4px"></span>
+											<a title="Rajmond Toth"
+												href="jugadores/rajmond-toth/91261050/">Rajmond Toth</a>
+											<span class="points">
+												17											</span>
+										</li>
+										
+										<li>
+											<span
+												class="position">5<img
+													src="imagenes/jornada/club35.svg"
+													alt="Cajasol �ngel Xim�nez P. Genil"
+													width="27px" style="margin-left:4px"></span>
+											<a title="Daniel Serrano"
+												href="jugadores/daniel-serrano-rodr-guez/91260884/">Daniel Serrano</a>
+											<span class="points">
+												17											</span>
+										</li>
+										
+									</ul>
+
+								</div>
+
+							</div>
+						</div>
+
+												<!--pases-->
+
+					</div>
+
+
+
+
+
+
+
+
+					<div class="row mb-3">
+						<div class="col-md-12 mt-2 player-ranking">
+							<h3>Lo mejor de la jornada							</h3>
+						</div>
+
+
+
+
+						
+						
+
+									
+						<div class="col-12 col-md-4 col-lg-4 p-2">
+							<div class="insta-image2">
+								<a
+									href="liga/7-ideal/"><img
+										src="/imagenes/7idealsemanal/57-7jornada6.jpg"
+										alt="7 Ideal" class="img-fluid"></a>
+							</div>
+						</div>
+
+								
+						<div class="col-12 col-md-4 col-lg-4 p-2">
+							<div class="insta-image2">
+								<a href="https://x.com/ASOBAL/status/2112576706594632140"
+									target="_blank"><img
+										src="image.php?image=/imagenes/fotosjornada/39-FotoJornada6_2.jpg&width=550"
+										alt="Foto de la Jornada 6"
+										class="img-fluid"></a>
+							</div>
+						</div>
+
+						
+		
+						<div class="col-12 col-md-4 col-lg-4 p-2">
+							<div class="insta-image45">
+								<a href="https://x.com/ASOBAL/status/2112199415192514981/photo/1"
+									target="_blank"><img
+										src="image.php?image=/imagenes/mvpsemana/40-mvpj06.jpg&width=550"
+										alt="MVP J06"
+										class="img-fluid"></a>
+							</div>
+						</div>
+
+						
+
+					</div>
+
+					
+
+
+
+					<div class="row mb-3">
+						<div class="col-md-12 mt-2 player-ranking">
+							<h3>ASOBAL Fantasy</h3>
+						</div>
+
+												<div class=" col-12 col-md-4 col-lg-3 p-2">
+							<div class="card bg-dark text-white">
+								<a href="https://fantasy.asobal.es/" target="_blank"><img width="100%"
+										src="img/index/fantasy.jpg" class="card-img imagen-cuadro" alt="Fantasy"
+										title="Fantasy"></a>
+
+							</div>
+						</div>
+												<!-- Post Item -->
+
+
+
+						<div class=" col-12 col-md-4 col-lg-3 p-2 ">
+							<div class="card bg-dark text-white">
+								<a
+									href="noticias/asobal-pone-en-marcha-una-nueva-edici-n-del-juego--asobal-fantasy-/8709/"><img
+										width="100%"
+										src="image.php?image=/imagenes/fotos/8709-web_fantasy.jpg&width=850"
+										class="card-img imagen-cuadro"
+										alt="ASOBAL pone en marcha una nueva edici�n del juego 'ASOBAL Fantasy'"
+										title="ASOBAL pone en marcha una nueva edici�n del juego 'ASOBAL Fantasy'"></a>
+								<a
+									href="noticias/asobal-pone-en-marcha-una-nueva-edici-n-del-juego--asobal-fantasy-/8709/">
+									<div class="card-img-overlay d-flex align-items-center justify-content-center">
+										<h4 class="card-title textoblanco">
+											ASOBAL pone en marcha una nueva edici�n del juego 'ASOBAL Fantasy'										</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+
+
+						<!-- End Post Item -->
+
+												<!-- Post Item -->
+
+
+
+						<div class=" col-12 col-md-4 col-lg-3 p-2 ">
+							<div class="card bg-dark text-white">
+								<a
+									href="noticias/asobal-completa-la-tercera-edici-n-de-asobal-fantasy-con--new-team--campe-n-de-la-temporada-2025-26/8629/"><img
+										width="100%"
+										src="image.php?image=/imagenes/fotos/8629-ASOBALFantasycierre2526.png&width=850"
+										class="card-img imagen-cuadro"
+										alt="ASOBAL completa la tercera edici�n de ASOBAL Fantasy con �New Team� campe�n de la temporada 2025/26"
+										title="ASOBAL completa la tercera edici�n de ASOBAL Fantasy con �New Team� campe�n de la temporada 2025/26"></a>
+								<a
+									href="noticias/asobal-completa-la-tercera-edici-n-de-asobal-fantasy-con--new-team--campe-n-de-la-temporada-2025-26/8629/">
+									<div class="card-img-overlay d-flex align-items-center justify-content-center">
+										<h4 class="card-title textoblanco">
+											ASOBAL completa la tercera edici�n de ASOBAL Fantasy con �New Team� campe�n de la temporada 2025/26										</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+
+
+						<!-- End Post Item -->
+
+												<!-- Post Item -->
+
+
+
+						<div class=" col-12 col-md-4 col-lg-3 p-2  d-md-none d-lg-block">
+							<div class="card bg-dark text-white">
+								<a
+									href="noticias/la-competitividad-del-tramo-final-de-la-competici-n-se-traslada-a-asobal-fantasy/8563/"><img
+										width="100%"
+										src="image.php?image=/imagenes/fotos/8563-ASOBALFantasy_29042026.png&width=850"
+										class="card-img imagen-cuadro"
+										alt="La competitividad del tramo final de la competici�n se traslada a ASOBAL Fantasy"
+										title="La competitividad del tramo final de la competici�n se traslada a ASOBAL Fantasy"></a>
+								<a
+									href="noticias/la-competitividad-del-tramo-final-de-la-competici-n-se-traslada-a-asobal-fantasy/8563/">
+									<div class="card-img-overlay d-flex align-items-center justify-content-center">
+										<h4 class="card-title textoblanco">
+											La competitividad del tramo final de la competici�n se traslada a ASOBAL Fantasy										</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+
+
+						<!-- End Post Item -->
+
+						
+
+					</div>
+
+					
+
+					<div class="row mb-3">
+						<div class="col-md-12 mt-2 player-ranking">
+							<h3>M�s all� de las pistas</h3>
+						</div>
+
+												<!-- Post Item -->
+
+
+
+						<div class=" col-12 col-md-4 col-lg-3 p-2 ">
+							<div class="card bg-dark text-white">
+								<a
+									href="noticias/asobal-se-ti-e-de-rosa-en-la-jornada-7-contra-el-c-ncer-de-mama/8770/"><img
+										width="100%"
+										src="image.php?image=/imagenes/fotos/8770-DiaMundialCancerMama_2627.png&width=850"
+										class="card-img imagen-cuadro"
+										alt="ASOBAL se ti�e de rosa en la Jornada 7 contra el c�ncer de mama"
+										title="ASOBAL se ti�e de rosa en la Jornada 7 contra el c�ncer de mama"></a>
+								<a
+									href="noticias/asobal-se-ti-e-de-rosa-en-la-jornada-7-contra-el-c-ncer-de-mama/8770/">
+									<div class="card-img-overlay d-flex align-items-end justify-content-center">
+										<h4 class="card-title textoblanco">
+											ASOBAL se ti�e de rosa en la Jornada 7 contra el c�ncer de mama										</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+
+
+						<!-- End Post Item -->
+
+												<!-- Post Item -->
+
+
+
+						<div class=" col-12 col-md-4 col-lg-3 p-2 ">
+							<div class="card bg-dark text-white">
+								<a
+									href="noticias/ignacio-garc-a-serradilla-y-andreu-mar-n-reciben-el-premio-a-la--mejor-labor-arbitral--de-la-liga-nexus-energ-a-asobal-25-26/8765/"><img
+										width="100%"
+										src="image.php?image=/imagenes/fotos/8765-premioarbi.jpg&width=850"
+										class="card-img imagen-cuadro"
+										alt="Ignacio Garc�a Serradilla y Andreu Mar�n reciben el premio a la 'Mejor Labor Arbitral' de la Liga NEXUS ENERG�A ASOBAL 25/26"
+										title="Ignacio Garc�a Serradilla y Andreu Mar�n reciben el premio a la 'Mejor Labor Arbitral' de la Liga NEXUS ENERG�A ASOBAL 25/26"></a>
+								<a
+									href="noticias/ignacio-garc-a-serradilla-y-andreu-mar-n-reciben-el-premio-a-la--mejor-labor-arbitral--de-la-liga-nexus-energ-a-asobal-25-26/8765/">
+									<div class="card-img-overlay d-flex align-items-end justify-content-center">
+										<h4 class="card-title textoblanco">
+											Ignacio Garc�a Serradilla y Andreu Mar�n reciben el premio a la 'Mejor Labor Arbitral' de la Liga NEXUS ENERG�A ASOBAL 25/26										</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+
+
+						<!-- End Post Item -->
+
+												<!-- Post Item -->
+
+
+
+						<div class=" col-12 col-md-4 col-lg-3 p-2 ">
+							<div class="card bg-dark text-white">
+								<a
+									href="noticias/asobal-impulsa-su-proyecto-de-balonmano-inclusivo-con-nueve-clubes-participantes-y-tres-jornadas/8761/"><img
+										width="100%"
+										src="image.php?image=/imagenes/fotos/8761-Inclusivo-ASOBAL-CQN-CAS.png&width=850"
+										class="card-img imagen-cuadro"
+										alt="ASOBAL impulsa su proyecto de balonmano inclusivo con nueve clubes participantes y tres jornadas"
+										title="ASOBAL impulsa su proyecto de balonmano inclusivo con nueve clubes participantes y tres jornadas"></a>
+								<a
+									href="noticias/asobal-impulsa-su-proyecto-de-balonmano-inclusivo-con-nueve-clubes-participantes-y-tres-jornadas/8761/">
+									<div class="card-img-overlay d-flex align-items-end justify-content-center">
+										<h4 class="card-title textoblanco">
+											ASOBAL impulsa su proyecto de balonmano inclusivo con nueve clubes participantes y tres jornadas										</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+
+
+						<!-- End Post Item -->
+
+												<!-- Post Item -->
+
+
+
+						<div class=" col-12 col-md-4 col-lg-3 p-2  d-md-none d-lg-block">
+							<div class="card bg-dark text-white">
+								<a
+									href="noticias/4-156-espectadores-en-el-bm--caser-o-ciudad-real-fraikin-bm--granollers-para-establecer-el-r-cord-de-asistencia-de-la-temporada/8758/"><img
+										width="100%"
+										src="image.php?image=/imagenes/fotos/8758-casweeb.jpg&width=850"
+										class="card-img imagen-cuadro"
+										alt="4.156 espectadores en el BM. Caser�o Ciudad Real-Fraikin BM. Granollers para establecer el r�cord de asistencia de la temporada"
+										title="4.156 espectadores en el BM. Caser�o Ciudad Real-Fraikin BM. Granollers para establecer el r�cord de asistencia de la temporada"></a>
+								<a
+									href="noticias/4-156-espectadores-en-el-bm--caser-o-ciudad-real-fraikin-bm--granollers-para-establecer-el-r-cord-de-asistencia-de-la-temporada/8758/">
+									<div class="card-img-overlay d-flex align-items-end justify-content-center">
+										<h4 class="card-title textoblanco">
+											4.156 espectadores en el BM. Caser�o Ciudad Real-Fraikin BM. Granollers para establecer el r�cord de asistencia de la temporada										</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+
+
+						<!-- End Post Item -->
+
+						
+
+
+						
+
+					</div>
+
+
+
+
+				</div>
+
+				<div class="container ">
+
+
+
+
+
+
+					<div class="row mt-5">
+
+
+
+						<!-- content Sidebar Center -->
+						<aside class="col-sm-12 col-lg-12 col-xl-12">
+							<!-- Experts -->
+
+							<!-- End Experts -->
+
+
+
+							
+
+
+						</aside>
+						<!-- End content Sidebar Center -->
+
+						<!-- content Sidebar Right -->
+						
+
+					</div>
+
+
+						<div class="row">                                        
+    <div class="col-xl-2  mt-3  col-xs-12 text-center align-middle ">
+         
+    </div>
+    <div class="mt-3  text-center col-xl-4 align-middle">                        
+        <a href="https://vr.celad.gob.es/" target="_blank"><img src="img/realidadvirtual.jpg" alt="Realidad Virtual" style="height:69px;" class="mb-2"></a> 
+    
+    </div>
+    <div class="mt-3  text-center col-xl-4 align-middle">                        
+        <a href="https://www.loteriasyapuestas.es?utm_source=web&utm_medium=banner&utm_campaign=512025_ASOBAL/" target="_blank"><img src="img/gif/loterias.jpg" alt="Loterias y Apuestas" style="height:69px;" class="mb-2"></a> 
+    
+    </div>
+    <div class="col-xl-2  mt-3  col-xs-12 text-center align-middle ">
+         
+    </div>
+</div>                  										
+
+
+				</div>
+				<div class="paddings-mini sponsors ">
+    <div class="container">
+        <div class="row">
+                        <div class="col-lg-12 pt-5">
+                <ul class="sponsors-carousel">
+                                        <li>
+                        <a href="https://www.nexusenergia.com/" target="_blank">
+                            <picture>
+                                                                <source srcset="img/sponsors/19blanco.webp" type="image/webp">
+                                                                                                <source srcset="img/sponsors/19blanco.png" type="image/png">
+                                                                <img src="img/sponsors/19blanco.png"
+                                     alt="">
+                            </picture>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="https://www.loteriasyapuestas.es/" target="_blank">
+                            <picture>
+                                                                <source srcset="img/sponsors/3blanco.webp" type="image/webp">
+                                                                                                <source srcset="img/sponsors/3blanco.png" type="image/png">
+                                                                <img src="img/sponsors/3blanco.png"
+                                     alt="">
+                            </picture>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="https://afiliacion.decathlon.es/tracking/clk?act=25086&amp;gel=0&amp;pub=36282&amp;org=2615&amp;url=https://www.decathlon.es/es/ASOBAL_lp-U5BOZQ&amp;ei1=Tienda ASOBAL" target="_blank">
+                            <picture>
+                                                                <source srcset="img/sponsors/18blanco.webp" type="image/webp">
+                                                                                                <source srcset="img/sponsors/18blanco.png" type="image/png">
+                                                                <img src="img/sponsors/18blanco.png"
+                                     alt="Decathlon">
+                            </picture>
+                        </a>
+                    </li>
+                                    </ul>
+            </div>
+                        <div class="col-lg-12">
+                <ul class="sponsors-carousel">
+                                        <li>
+                        <a href="https://www.artipubli.com" target="_blank">
+                            <picture>
+                                                                <source srcset="img/sponsors/17blanco.webp" type="image/webp">
+                                                                                                <source srcset="img/sponsors/17blanco.png" type="image/png">
+                                                                <img src="img/sponsors/17blanco.png"
+                                     alt="Artipubli.com">
+                            </picture>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="https://sportradar.com" target="_blank">
+                            <picture>
+                                                                                                <source srcset="img/sponsors/sp_sportradar_20260819185149_b.png" type="image/png">
+                                                                <img src="img/sponsors/sp_sportradar_20260819185149_b.png"
+                                     alt="Sport Radar">
+                            </picture>
+                        </a>
+                    </li>
+                                    </ul>
+            </div>
+                    </div>
+    </div>
+</div>
+
+			</div>
+
+
+
+			<!-- Content Central -->
+
+			<!-- End Content Central -->
+
+
+		</section>
+		<!-- End Section Area -  Content Central -->
+
+
+
+
+		<div class="content-instagram">
+			<div id="instafeed"></div>
+		</div>
+
+		<!-- footer-->
+<footer id="footer" class="footer-2 pb-5">
+
+    <!-- Links Footer-->
+    <div class="links-footer pt-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- Col 1: ASOBAL -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="info-links">
+                        <h5>ASOBAL</h5>
+                        <ul>
+                            <li><a href="/noticias/">Noticias</a></li>
+                            <li><a href="/newsletter/">Newsletter</a></li>
+                            <li><a href="/asobal/">Sobre nosotros</a></li>
+                            <li><a href="/transparencia/">Transparencia</a></li>
+                            <li><a href="/asobal/kit-de-marca/">Kit de Marca</a></li>
+                            <li><a href="/comunidad-asobal/">Comunidad ASOBAL</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Col 2: Liga ASOBAL -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="info-links">
+                        <h5>Liga ASOBAL</h5>
+                        <ul class="columns">
+                            <li><a href="/liga/clasificacion/">Clasificaci&oacute;n</a></li>
+                            <li><a href="/liga/resultados/7/">Resultados</a></li>
+                            <li><a href="/liga/calendario/">Calendario</a></li>
+                            <li><a href="/equipos/">Equipos</a></li>
+                            <li><a href="/liga/estadisticas/">Estad&iacute;sticas</a></li>
+                            <li><a href="/liga/palmares/">Palmar&eacute;s</a></li>
+                            <li><a href="/liga/7-ideal/">El 7 Ideal de la Jornada</a></li>
+                            <li><a href="/liga/mvp-asobal/">MVP ASOBAL</a></li>
+                            <li><a href="/liga/plantilla-arbitral/">Plantilla arbitral</a></li>
+                            <li><a href="/liga/all-star-team/">All Star Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Col 3: ASOBAL.tv -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="info-links">
+                        <h5>ASOBAL.tv</h5>
+                        <ul>
+                             <li><a href="https://streamwayplus.com/asobal-tv" target="_blank">ASOBAL.tv</a></li> 
+                            <!-- <li><a href="/videos/resumenes/">Res&uacute;menes</a></li>
+                            <li><a href="/videos/completos/">Partidos completos</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Col 5: Especiales -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="info-links">
+                        <h5>Especiales</h5>
+                        <ul>
+                            <li><a href="https://fantasy.asobal.es/" target="_blank">Fantasy</a></li>
+                            <li><a href="/hall-of-fame/">Hall of Fame</a></li>
+                            <li><a href="/asobal/legacy-league/">ASOBAL Legacy League</a></li>
+                            <li><a href="https://afiliacion.decathlon.es/tracking/clk?act=25086&gel=0&pub=36282&org=2615&url=https://www.decathlon.es/es/ASOBAL_lp-U5BOZQ&ei1=Tienda ASOBAL" target="_blank">Tienda Decathlon</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Col 6: Redes Sociales + App -->
+                <div class="col-lg-3 col-md-12 col-sm-12 text-center">
+                    <ul class="social">
+                        <li>
+                            <div>
+                                <a href="https://www.instagram.com/asobal/" target="_blank" class="youtube">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="https://x.com/ASOBAL" target="_blank" class="twitter-icon">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="https://www.facebook.com/ASOBAL" target="_blank" class="facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="https://www.youtube.com/user/LigaASOBAL?gl=ES&hl=es" target="_blank" class="youtube">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="https://www.linkedin.com/company/asobal" target="_blank" class="linledin">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="https://www.tiktok.com/@asobal_" target="_blank" class="tiktok">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="https://whatsapp.com/channel/0029Vb0N9UmEQIaiQpK1Ff0l" target="_blank" class="whatsapp">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="badge mt-5" href="https://apps.apple.com/app/asobal/id1618309017" target="_blank"><img alt="Apple App Store" src="img/appleapp.png" style="width:200px"></a>
+                    <a class="badge" href="https://play.google.com/store/apps/details?id=com.tuplanb.ligaasobal" target="_blank"><img alt="Google Play Store" src="img/googleplay.png" style="width:200px"></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Links Footer-->
+
+</footer>
+<!-- End footer-->
+
+<!-- footer Down-->
+<div class="footer-down">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&copy; 2026 Liga ASOBAL. Todos los derechos reservados | <a href="/aviso-legal/" class="afooter-down" title="Leer aviso legal">Aviso Legal</a> | <a href="/politica-cookies/" class="afooter-down" title="Leer pol&iacute;tica de cookies">Pol&iacute;tica de cookies</a> | <a href="/politica-de-privacidad/" class="afooter-down" title="Leer pol&iacute;tica de privacidad">Pol&iacute;tica de privacidad</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer Down-->
+	</div>
+	<!-- End layout-->
+
+	<!-- ======================= JQuery libs =========================== -->
+	<!-- jQuery local-->
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<!-- popper.js-->
+	<script type="text/javascript" src="assets/js/popper.min.js"></script>
+	<!-- bootstrap.min.js-->
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<!-- required-scripts.js-->
+	<script type="text/javascript" src="assets/js/theme-scripts.js"></script>
+	<!-- theme-main.js-->
+	<script type="text/javascript" src="assets/js/theme-main.js"></script>
+	<script type="text/javascript">
+		var jorpar = 7 ;
+	</script>
+
+	<script type="text/javascript"
+		src="assets/js/act_indexesp.js?id=18072025">
+	</script>
+	<script type="text/javascript" src="assets/js/modalpartidos.js?id=18032025"></script>
+	<script type="text/javascript" src="assets/js/videos.js?id=5"></script>
+
+	<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/eb33fd8fadbe700ce232c154209a29e8.js">
+	</script>
+	<script>
+		$(document).ready(function() {
+
+			// Gets the video src from the data-src on each button
+			var $videoSrc;
+			$('.video-btn').click(function() {
+				$videoSrc = $(this).data("src");
+				console.log($videoSrc);
+			});
+
+
+
+
+			// when the modal is opened autoplay it  
+			$('#myModal').on('shown.bs.modal', function(e) {
+				console.log($videoSrc);
+				// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+				$("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+
+			})
+
+
+
+			// stop playing the youtube video when I close the modal
+			$('#myModal').on('hide.bs.modal', function(e) {
+				// a poor man's stop video
+				$("#video").attr('src', $videoSrc);
+			})
+
+
+
+
+
+
+			// document ready  
+		});
+	</script>
+	<!-- ======================= End JQuery libs =========================== -->
+
+</body>
+
+</html>
+
+   
+    <script src="https://caleida-storage.fra1.cdn.digitaloceanspaces.com/public/scripts/embedder/embedder.js"></script>
+    <script>
+		CaleidaChatBot.prototype.newMessageNotification = function () {};
+		const bot = new CaleidaChatBot({
+			id: "729871b7-888d-4054-8776-2e4d2732c139",
+			projectId: "d6b36538-8961-4aed-8803-5d5a140bf71c",
+			verificationToken: "67cddcb91829408bb5a4e4c2084576a2",
+			language: "auto",
+			width: "min(360px, calc(100vw - 24px))",
+			height: "500px",
+			src: "https://web-plugin.caleida.io",
+			className: "caleida.border-radius",
+			sessionTimeoutSeconds: 1800
+		});
+		bot.embed({
+			floating: true,
+			floatingConfig: {
+				right: "10px",
+				bottom: "10px",
+				height: "55px",
+				width: "55px",
+			},
+		});
+	</script>
