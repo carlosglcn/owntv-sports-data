@@ -132,6 +132,7 @@ def euroleague():
 
 ASOBAL = "https://www.asobal.es/"
 MADRID = ZoneInfo("Europe/Madrid")
+LOGOS = "https://raw.githubusercontent.com/carlosglcn/owntv-sports-data/main/logos/asobal/"
 
 
 def get_latin(url, retries=3):
@@ -231,14 +232,14 @@ def asobal(previous=None):
             clubs[m["home"]] = m.pop("club_home"); clubs[m["away"]] = m.pop("club_away")
         matches += rnd
     for t in (previous or {}).get("teams", []):
-        clubs.setdefault(t["id"], (t.get("logo") or "").rsplit("club", 1)[-1].replace(".svg", ""))
+        clubs.setdefault(t["id"], (t.get("logo") or "").rsplit("club", 1)[-1].replace(".png", ""))
     codes = {m["home"] for m in matches} | {m["away"] for m in matches}
     teams = []
     for code in sorted(codes):
         name, club = names.get(code, (code, clubs.get(code, "")))
         club = clubs.get(code) or club
         teams.append(dict(id=code, name=name, short=name, abbr=code,
-                          logo=ASOBAL + "imagenes/jornada/club%s.svg" % club if club else None))
+                          logo=LOGOS + "club%s.png" % club if club else None))
     matches.sort(key=lambda m: (m["start"], m["id"]))
     return dict(league="asobal", season="2026-27", teams=teams, matches=matches, standings=standings, open=sorted(still_open))
 
