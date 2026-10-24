@@ -1,8 +1,0 @@
-OK https://www.asobal.es/liga/calendario/8/ text/html; charset=iso-8859-1 59000
-OK https://www.asobal.es/liga/calendario/1/ text/html; charset=iso-8859-1 60586
-OK https://www.asobal.es/indexproximos/?jor=8&modal=1 text/html; charset=iso-8859-1 2458
-OK https://www.asobal.es/indexproximos/?jor=7&modal=1 text/html; charset=iso-8859-1 2478
-OK https://www.asobal.es/liga/calendario/indexproximos/?jor=8&modal=1 text/html; charset=ISO-8859-1 26363
-OK https://www.asobal.es/liga/resultados/8/ text/html; charset=ISO-8859-1 34678
-OK https://www.asobal.es/equipos/BAR/ text/html; charset=ISO-8859-1 132237
-OK https://www.asobal.es/estadisticas/35405652/ text/html; charset=iso-8859-1 100941

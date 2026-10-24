@@ -9,6 +9,7 @@ status: scheduled | live | final.  start: epoch milliseconds (UTC).
 """
 import json, re, sys, time, urllib.request, xml.etree.ElementTree as ET
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 
 UA = {"User-Agent": "Mozilla/5.0"}
 LIVE_WINDOW_MS = 3 * 3600 * 1000
@@ -129,6 +130,113 @@ def euroleague():
     return dict(league="euroleague", season="2026-27", teams=teams, matches=matches, standings=standings)
 
 
+ASOBAL = "https://www.asobal.es/"
+MADRID = ZoneInfo("Europe/Madrid")
+
+
+def get_latin(url, retries=3):
+    """ASOBAL serves ISO-8859-1."""
+    for i in range(retries):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
+                return r.read().decode("latin-1")
+        except Exception:
+            if i == retries - 1:
+                raise
+            time.sleep(3)
+
+
+def clean(t):
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", t)).strip()
+
+
+def asobal_round(html, n):
+    """The matches of one round page: [{id,code home/away,club ids,start,status,score,tv,period}]."""
+    out = []
+    block = html[html.find('class="info-results"'):]
+    for li in re.findall(r"<li>(.*?)</li>", block, flags=re.S):
+        d = re.search(r"(\d\d)/(\d\d)/(\d{4}) - (\d\d):(\d\d)", li)
+        codes = re.findall(r'href="equipos/([A-Za-z0-9]+)/"', li)
+        clubs = re.findall(r"imagenes/jornada/club(\d+)\.svg", li)
+        mid = re.search(r"estadisticas/(\d+)/", li)
+        if not (d and len(codes) >= 2 and len(clubs) >= 2 and mid):
+            continue
+        dd, mm, yy, hh, mi = map(int, d.groups())
+        start = int(datetime(yy, mm, dd, hh, mi, tzinfo=MADRID).timestamp() * 1000)
+        sc = re.search(r"<b>\s*(\d+)\s*</b>\s*-\s*<b>\s*(\d+)\s*</b>", li)
+        en = re.search(r'class="enlaces">(.*?)(?:\||</span>)', li, flags=re.S)
+        label = clean(en.group(1)) if en else ""
+        tvm = re.search(r"fa-television[^>]*></i>(.*?)<br", li, flags=re.S)
+        tv = [c.strip() for c in clean(tvm.group(1)).split("+") if c.strip()] if tvm else []
+        low = label.lower()
+        if "finalizado" in low:
+            st = "final"
+        elif "no ha comenzado" in low or not label:
+            st = "scheduled"
+        else:
+            st = "live"
+        out.append(dict(id=mid.group(1), round=n, start=start, status=st, home=codes[0], away=codes[1],
+                        club_home=clubs[0], club_away=clubs[1],
+                        hs=int(sc.group(1)) if sc and st != "scheduled" else None,
+                        **{"as": int(sc.group(2)) if sc and st != "scheduled" else None},
+                        period=label if st == "live" else None, tv=tv))
+    return out
+
+
+def asobal_table(html):
+    rows, names = [], {}
+    body = html[html.find("<tbody"):]
+    for tr in re.findall(r"<tr>(.*?)</tr>", body, flags=re.S):
+        pos = re.search(r"<h4>\s*(\d+)", tr)
+        code = re.search(r'href="equipos/([A-Za-z0-9]+)/"', tr)
+        club = re.search(r"imagenes/jornada/club(\d+)\.svg", tr)
+        name = re.search(r"<span>([^<]+)</span>", tr)
+        cells = [clean(c) for c in re.findall(r"<td>(.*?)</td>", tr, flags=re.S)]
+        if not (pos and code and club and name and len(cells) >= 8):
+            continue
+        v = [int(c.replace("+", "")) for c in cells[:8]]
+        names[code.group(1)] = (name.group(1).strip(), club.group(1))
+        rows.append(dict(team=code.group(1), pos=int(pos.group(1)), pts=v[0], p=v[1], w=v[2], d=v[3], l=v[4],
+                         pf=v[5], pa=v[6], diff=v[7]))
+    return rows, names
+
+
+def asobal(previous=None):
+    now = int(time.time() * 1000)
+    standings, names = asobal_table(get_latin(ASOBAL + "liga/clasificacion/"))
+    kept = {}
+    for m in (previous or {}).get("matches", []):
+        kept.setdefault(m["round"], []).append(m)
+    matches, clubs = [], {}
+    for n in range(1, 31):
+        old = kept.get(n)
+        recent = old and any(abs(m["start"] - now) < 3 * 86400 * 1000 for m in old)
+        if old and not recent and all(m["status"] == "final" for m in old):
+            matches += old
+            continue
+        try:
+            rnd = asobal_round(get_latin(ASOBAL + "liga/calendario/%d/" % n), n)
+        except Exception as e:
+            print("asobal round", n, "failed:", e, file=sys.stderr)
+            matches += old or []
+            continue
+        time.sleep(0.3)
+        for m in rnd:
+            clubs[m["home"]] = m.pop("club_home"); clubs[m["away"]] = m.pop("club_away")
+        matches += rnd
+    for t in (previous or {}).get("teams", []):
+        clubs.setdefault(t["id"], (t.get("logo") or "").rsplit("club", 1)[-1].replace(".svg", ""))
+    codes = {m["home"] for m in matches} | {m["away"] for m in matches}
+    teams = []
+    for code in sorted(codes):
+        name, club = names.get(code, (code, clubs.get(code, "")))
+        club = clubs.get(code) or club
+        teams.append(dict(id=code, name=name, short=name, abbr=code,
+                          logo=ASOBAL + "imagenes/jornada/club%s.svg" % club if club else None))
+    matches.sort(key=lambda m: (m["start"], m["id"]))
+    return dict(league="asobal", season="2026-27", teams=teams, matches=matches, standings=standings)
+
+
 def write(name, doc):
     path = name + ".json"
     try:
@@ -143,13 +251,20 @@ def write(name, doc):
 
 
 if __name__ == "__main__":
-    only = sys.argv[1:] or ["acb", "euroleague"]
+    only = sys.argv[1:] or ["acb", "euroleague", "asobal"]
     failed = 0
-    for n, fn in (("acb", acb), ("euroleague", euroleague)):
-        if n in only:
-            try:
-                write(n, fn())
-            except Exception as e:
-                failed += 1
-                print(n, "FAILED", repr(e), file=sys.stderr)
-    sys.exit(1 if failed == 2 else 0)
+    jobs = [n for n in ("acb", "euroleague", "asobal") if n in only]
+    for n in jobs:
+        try:
+            if n == "asobal":
+                try:
+                    old = json.load(open("asobal.json"))
+                except Exception:
+                    old = None
+                write(n, asobal(old))
+            else:
+                write(n, {"acb": acb, "euroleague": euroleague}[n]())
+        except Exception as e:
+            failed += 1
+            print(n, "FAILED", repr(e), file=sys.stderr)
+    sys.exit(1 if jobs and failed == len(jobs) else 0)
