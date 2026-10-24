@@ -1,0 +1,3570 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<!-- Basic -->
+	<meta charset="iso-8859-1">
+	<title>
+		Barça		- Equipos -
+		Liga NEXUS ENERGIA ASOBAL	</title>
+
+	<base href="https://asobal.es/" />
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/eb33fd8fadbe700ce232c154209a29e8.js"></script>	<link href="assets/css/all.min.css" rel="stylesheet">
+	<meta name="description" content="Información completa del Barça" />
+	<meta http-equiv="audiencie" content="general" />
+	<meta name="language" content="es" />
+	<meta name="rating" content="General" />
+	<meta name="distribution" content="Global" />
+	<meta name="robots" content="Index, Follow" />
+	<meta name="author" content="Plan b Comunicación - @comunicacionpb">
+	<meta http-equiv="Cache-control" content="public">
+
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ASOBAL">
+	<meta name="twitter:title" content="Barça - Equipos - Liga NEXUS ENERGIA ASOBAL">
+	<meta name="twitter:description" content="Información completa del Barça">
+	<meta name="twitter:creator" content="@ASOBAL">
+
+	<meta name="twitter:image" content="https://asobal.es/image.php?image=/imagenes/cabecerasequipos/1-cabecera1.jpg&width=800">
+
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Barça - Equipos - Liga NEXUS ENERGIA ASOBAL" />
+	<meta property="og:type" content="article" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:site_name" content="Liga NEXUS ENERGIA ASOBAL" />
+		<meta property="og:url"
+		content="https://asobal.es/equipos/BAR/" />
+
+	<meta property="og:image:width"
+		content="" />
+	<meta property="og:image:height"
+		content="" />
+	<meta property="og:image" content="https://asobal.es/image.php?image=/imagenes/cabecerasequipos/1-cabecera1.jpg&width=800" />
+	<meta property="og:description" content="Información completa del Barça" />
+	<meta property="og:site_name" content="Liga NEXUS ENERGIA ASOBAL" />
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Theme CSS -->
+
+	<link href="assets/css/main2425.css?v=16072025" rel="stylesheet" media="screen">
+
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/icons/favicon.png">
+	<link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KSZC77RL');</script>
+<!-- End Google Tag Manager --></head>
+
+<body>
+
+	<!-- layout-->
+	<div id="layout">
+
+		<div class="enlaceapp text-center">
+        <div id="app-banner" style="display: none; position: relative; text-align: center; padding: 15px; background-color: #002c58; color: #ffffff;">
+            <button onclick="cerrarAppBanner()" style="position: absolute; top: 10px; right: 15px; background: none; border: none; color: #ffffff; font-size: 20px; cursor: pointer; padding: 0; width: 25px; height: 25px; display: flex; align-items: center; justify-content: center;">&times;</button>
+            <p style="margin: 10px 0; font-size: 14px; color: #ffffff; line-height: 1.4;">Descarga la app oficial de ASOBAL y vive una experiencia más rápida, adaptada 100% a tu móvil.</p>
+            <a id="app-download-link" href="#" target="_blank" class="btn-app-download" style="display: inline-block; margin-top: 10px;">
+                <img id="app-download-img" src="" alt="" style="height: 40px;">
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Funciones para detectar dispositivos móviles con JavaScript
+        function esMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+        
+        function esIOS() {
+            return /iPad|iPhone|iPod/.test(navigator.userAgent);
+        }
+        
+        function esAndroid() {
+            return /Android/.test(navigator.userAgent);
+        }
+        
+        function cerrarAppBanner() {
+            document.getElementById("app-banner").style.display = "none";
+            localStorage.setItem("asobal_app_banner_closed", "true");
+        }
+        
+        function mostrarBannerApp() {
+            // Verificar si el banner ya fue cerrado
+            if (localStorage.getItem("asobal_app_banner_closed") === "true") {
+                return;
+            }
+            
+            // Solo mostrar en dispositivos móviles
+            if (!esMobile()) {
+                return;
+            }
+            
+            var banner = document.getElementById("app-banner");
+            var downloadLink = document.getElementById("app-download-link");
+            var downloadImg = document.getElementById("app-download-img");
+            
+            if (esIOS()) {
+                downloadLink.href = "https://apps.apple.com/app/asobal/id1618309017";
+                downloadImg.src = "img/appleapp.png";
+                downloadImg.alt = "Descargar en App Store";
+            } else if (esAndroid()) {
+                downloadLink.href = "https://play.google.com/store/apps/details?id=com.tuplanb.ligaasobal";
+                downloadImg.src = "img/googleplay.png";
+                downloadImg.alt = "Descargar en Google Play";
+            }
+            
+            // Mostrar el banner
+            banner.style.display = "block";
+        }
+        
+        // Ejecutar cuando el DOM esté listo
+        document.addEventListener("DOMContentLoaded", function() {
+            mostrarBannerApp();
+        });
+    </script>		<div class="container">
+			<!--c-->
+    
+    <div class="clubs text-center"><a href="/equipos/BID/"><img src="imagenes/jornada/club8.svg" class="imgclubmenu" alt="1 - IRUDEK Bidasoa Irun" title="1 - IRUDEK Bidasoa Irun" ></a><a href="/equipos/BAR/"><img src="imagenes/jornada/club1.svg" class="imgclubmenu" alt="2 - Barça" title="2 - Barça" ></a><a href="/equipos/ATV/"><img src="imagenes/jornada/club113.svg" class="imgclubmenu" alt="3 - Recoletas Salud At. Valladolid" title="3 - Recoletas Salud At. Valladolid" ></a><a href="/equipos/GRA/"><img src="imagenes/jornada/club7.svg" class="imgclubmenu" alt="4 - Fraikin BM. Granollers" title="4 - Fraikin BM. Granollers" ></a><a href="/equipos/LOG/"><img src="imagenes/jornada/club22.svg" class="imgclubmenu" alt="5 - Dicorpebal Logroño La Rioja" title="5 - Dicorpebal Logroño La Rioja" ></a><a href="/equipos/TLV/"><img src="imagenes/jornada/club141.svg" class="imgclubmenu" alt="6 - Bathco BM. Torrelavega" title="6 - Bathco BM. Torrelavega" ></a><a href="/equipos/CAS/"><img src="imagenes/jornada/club157.svg" class="imgclubmenu" alt="7 - BM Caserío Ciudad Real" title="7 - BM Caserío Ciudad Real" ></a><a href="/equipos/ADE/"><img src="imagenes/jornada/club3.svg" class="imgclubmenu" alt="8 - ABANCA Ademar León" title="8 - ABANCA Ademar León" ></a><a href="/equipos/PSG/"><img src="imagenes/jornada/club28.svg" class="imgclubmenu" alt="9 - Fertiberia Puerto Sagunto" title="9 - Fertiberia Puerto Sagunto" ></a><a href="/equipos/SEV/"><img src="imagenes/jornada/club158.svg" class="imgclubmenu" alt="10 - Cajasol Sevilla Bm. Proin" title="10 - Cajasol Sevilla Bm. Proin" ></a><a href="/equipos/CQN/"><img src="imagenes/jornada/club25.svg" class="imgclubmenu" alt="11 - REBI Balonmano Cuenca" title="11 - REBI Balonmano Cuenca" ></a><a href="/equipos/EON/"><img src="imagenes/jornada/club156.svg" class="imgclubmenu" alt="12 - HORNEO BM. Alicante" title="12 - HORNEO BM. Alicante" ></a><a href="/equipos/PGE/"><img src="imagenes/jornada/club35.svg" class="imgclubmenu" alt="13 - Cajasol Ángel Ximénez P. Genil" title="13 - Cajasol Ángel Ximénez P. Genil" ></a><a href="/equipos/CNG/"><img src="imagenes/jornada/club15.svg" class="imgclubmenu" alt="14 - Frigoríficos del Morrazo" title="14 - Frigoríficos del Morrazo" ></a><a href="/equipos/NAV/"><img src="imagenes/jornada/club135.svg" class="imgclubmenu" alt="15 - Viveros Herol BM. Nava" title="15 - Viveros Herol BM. Nava" ></a><a href="/equipos/VDA/"><img src="imagenes/jornada/club33.svg" class="imgclubmenu" alt="16 - Tubos Aranda Villa de Aranda" title="16 - Tubos Aranda Villa de Aranda" ></a>
+        <a href="/"><img src="img/clubs-logos/esp.png" alt="ESP" class="bandera"   width="20px"></a><a href="/eng/"><img src="img/clubs-logos/bri.png" alt="BRI"  class="align-middle bandera" style="opacity: 0.3;  margin-left:5px;" width="17px"></a> <a href="/" title="Liga NEXUS ENERGIA ASOBAL">
+                                       
+                                    </a><a href="/" title=" Liga NEXUS ENERGIA ASOBAL">                                        <img src="img/logonexus.png" class=" logo_img2" alt="Logo Liga NEXUS ENERGIA ASOBAL">
+</a>
+    </div>		</div>
+		<!-- Header-->
+
+            <header>
+                <!-- End headerbox-->
+                <div class="headerbox ">
+                    <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <!-- Logo-->
+                            <div class="col-7">
+                               <div class="logo">
+                                   <a href="/"  class="asinhov" title="Liga ASOBAL">
+                                        <img src="img/logoasobal.png" alt="Logo ASOBAL" class="logo_img">
+                                    </a>
+                               </div>
+                                
+                            </div>
+                            <div class="col-3 text-right">
+                            
+                            <!-- End Logo-->
+                            </div>
+
+                            <!-- Adds Header-->
+                            <div class="col-1">
+
+
+                                <!-- Call Nav Menu-->
+                                <a class="mobile-nav" href="#mobile-nav"><i class="fa fa-bars"></i></a>
+                                <!-- End Call Nav Menu-->
+                            </div>
+                            <!-- End Adds Header-->
+                        </div>
+                    </div>
+                </div>
+                <!-- End headerbox-->
+            </header>
+            <!-- End Header-->
+		<!-- mainmenu-->
+		<nav class="mainmenu">
+			<div class="container">
+				<!-- Menu-->
+<a href="/" class="asinhov" title="Liga ASOBAL">
+    <img src="img/logoasobal.png" alt="Logo ASOBAL" class="logo_img">
+</a>
+<ul class="sf-menu" id="menu">
+
+    <li class="current">
+        <a href="asobal/">ASOBAL</a>
+        <ul class="sub-current">
+            <li>
+                <a href="asobal/">Sobre nosotros</a>
+            </li>
+            <li>
+                <a href="transparencia/">Transparencia</a>
+            </li>
+            <li>
+                <a href="asobal/kit-de-marca/">Kit de Marca</a>
+            </li>
+            <li>
+                <a href="comunidad-asobal/">Comunidad ASOBAL</a>
+            </li>
+            <li>
+                <a href="newsletter/">Newsletter</a>
+            </li>
+        </ul>
+    </li>
+
+    <li class="current">
+        <a href="liga/clasificacion/">Liga NEXUS ENERGIA ASOBAL</a>
+        <ul class="sub-current">
+            <li>
+                <a href="liga/clasificacion/">Clasificación</a>
+            </li>
+            <li>
+                <a href="liga/resultados/">Resultados</a>
+            </li>
+            <li>
+                <a href="liga/calendario/">Calendario</a>
+            </li>
+            <li>
+                <a href="equipos/">Equipos</a>
+            </li>
+            <li>
+                <a href="liga/estadisticas/">Estadísticas</a>
+            </li>
+            <li>
+                <a href="liga/palmares/">Palmarés</a>
+            </li>
+            <li>
+                <a href="liga/plantilla-arbitral/">Plantilla arbitral</a>
+            </li>
+            <li>
+                <a href="liga/7-ideal/">El 7 Ideal de la Jornada</a>
+            </li>
+            <li>
+                <a href="liga/mvp-asobal/">MVP ASOBAL</a>
+            </li>
+            <li>
+                <a href="liga/all-star-team/">All Star Team</a>
+            </li>
+        </ul>
+    </li>
+
+    <li class="current">
+        <a href="noticias/">Noticias</a>
+    </li>
+
+    <li class="current">
+        <a tabindex="0">ASOBAL.tv</a>
+        <ul class="sub-current">
+            
+            <li>
+                <a href="https://streamwayplus.com/asobal-tv" target="_blank">ASOBAL.tv</a>
+            </li>
+
+        <!--
+        
+            <li>
+                <a href="videos/resumenes/">Resúmenes</a>
+            </li>
+            <li>
+                <a href="videos/completos/">Partidos completos</a>
+            </li> -->
+        </ul>
+    </li>
+
+    <li>
+        <a href="https://fantasy.asobal.es/" target="_blank">Fantasy</a>
+    </li>
+
+    <li>
+        <a href="https://afiliacion.decathlon.es/tracking/clk?act=25086&gel=0&pub=36282&org=2615&url=https://www.decathlon.es/es/ASOBAL_lp-U5BOZQ&ei1=Tienda ASOBAL"
+            target="_blank">Tienda <img src="img/sponsors/18blancomenu.png" style="height:25px"
+                alt="Tienda Decathlon" /></a>
+    </li>
+    <li>
+        <a href="hall-of-fame/"><img src="img/halloffame.png" style="height:40px;margin-top:-8px" alt="Hall of Fame"
+                title="Hall of Fame" /></a>
+    </li>
+    <li>
+        <a href="asobal/legacy-league/"><img src="img/all/logo-ALL-blanco.png" style="height:43px;margin-top:-9px"
+                alt="ASOBAL Legacy League" title="ASOBAL Legacy League" /></a>
+    </li>
+    <li>
+        <a href="comunidad-asobal/" title="Comunidad ASOBAL" aria-label="Comunidad ASOBAL" class=" outline"
+            style="font-size:24px; margin-top:-7px" tabindex="0"><i class="fa fa-user-circle"></i></a>
+    </li>
+
+</ul>
+<!-- End Menu-->
+			</div>
+		</nav>
+		<!-- End mainmenu-->
+
+		<!-- Mobile Nav-->
+		<div id="mobile-nav">
+			<!-- Menu-->
+<ul>
+    <li>
+        <a href="/">Inicio</a>
+    </li>
+    <li>
+        <a href="asobal/">ASOBAL</a>
+        <ul>
+            <li>
+                <a href="asobal/">Sobre nosotros</a>
+            </li>
+            <li>
+                <a href="transparencia/">Transparencia</a>
+            </li>
+            <li>
+                <a href="asobal/kit-de-marca/">Kit de Marca</a>
+            </li>
+            <li>
+                <a href="comunidad-asobal/">Comunidad ASOBAL</a>
+            </li>
+            <li>
+                <a href="newsletter/">Newsletter</a>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="liga/clasificacion/">Liga NEXUS ENERGIA ASOBAL</a>
+        <ul>
+            <li>
+                <a href="liga/clasificacion/">Clasificación</a>
+            </li>
+            <li>
+                <a href="liga/resultados/">Resultados</a>
+            </li>
+            <li>
+                <a href="liga/calendario/">Calendario</a>
+            </li>
+            <li>
+                <a href="equipos/">Equipos</a>
+            </li>
+            <li>
+                <a href="liga/estadisticas/">Estadísticas</a>
+            </li>
+            <li>
+                <a href="liga/palmares/">Palmarés</a>
+            </li>
+            <li>
+                <a href="liga/plantilla-arbitral/">Plantilla arbitral</a>
+            </li>
+            <li>
+                <a href="liga/7-ideal/">El 7 Ideal de la Jornada</a>
+            </li>
+            <li>
+                <a href="liga/mvp-asobal/">MVP ASOBAL</a>
+            </li>
+            <li>
+                <a href="liga/all-star-team/">All Star Team</a>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="noticias/">Noticias</a>
+    </li>
+
+    <li>
+        <a tabindex="0">ASOBAL.tv</a>
+        <ul>
+            
+            <li>
+                <a href="https://streamwayplus.com/asobal-tv" target="_blank">ASOBAL.tv</a>
+            </li>
+
+             <!--
+            
+            <li>
+                <a href="videos/resumenes/">Resúmenes</a>
+            </li>
+            <li>
+                <a href="videos/completos/">Partidos completos</a>
+            </li>
+
+-->
+        </ul>
+    </li>
+
+    <li>
+        <a href="https://fantasy.asobal.es/" target="_blank">Fantasy</a>
+    </li>
+    <li>
+        <a href="hall-of-fame/">Hall of Fame</a>
+    </li>
+    <li>
+        <a href="asobal/legacy-league/">ASOBAL Legacy League</a>
+    </li>
+    <li>
+        <a href="https://afiliacion.decathlon.es/tracking/clk?act=25086&gel=0&pub=36282&org=2615&url=https://www.decathlon.es/es/ASOBAL_lp-U5BOZQ&ei1=Tienda ASOBAL"
+            target="_blank">Tienda <img src="img/sponsors/18grismenu.png" style="height:25px"
+                alt="Tienda Decathlon" /></a>
+    </li>
+    <li>
+        <a href="eng/">English <img src="img/clubs-logos/bri.png" alt="BRI" width="20px"></a>
+    </li>
+</ul>
+<!-- End Menu-->
+		</div>
+		<!-- End Mobile Nav-->
+
+		<!-- Section Title -->
+		<div class="section-title-team">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-7">
+						<div class="row">
+							<div class="col-md-3">
+
+								<img src="imagenes/jornada/club1.svg" alt="Barça">
+							</div>
+
+							<div class="col-md-9">
+								<h1>Barça</h1>
+								<ul class="general-info">
+									<li>
+										<h6><strong>Pabellón:</strong> Palau Blaugrana</h6>
+									</li>
+									<li>
+										<h6><strong>Presidente/a:</strong> Joan Laporta</h6>
+									</li>
+									<li>
+										<h6><strong>Entrenador:</strong> Carlos Ortega</h6>
+									</li>
+
+									<li>
+										<h6><strong>Localidad:</strong> Barcelona</h6>
+									</li>
+									<li>
+										<h6>
+											<i class="fa fa-link" aria-hidden="true"></i>
+											<a href="http://www.fcbarcelona.cat" target="_blank">www.fcbarcelona.cat</a>
+										</h6>
+									</li>
+								</ul>
+
+								<ul class="social-teams">
+
+																		<li>
+										<div>
+											<a href="https://www.instagram.com/fcbhandbol/" class="instagram" target="_blank">
+												<i class="fa fa-instagram"></i>
+											</a>
+										</div>
+									</li>																		<li>
+										<div>
+											<a href="https://twitter.com/FCBhandbol" class="twitter-icon" target="_blank">
+												<i class="fa fa-twitter"></i>
+											</a>
+										</div>
+									</li>																		<li>
+										<div>
+											<a href="https://www.facebook.com/FCBHandbol" class="facebook" target="_blank">
+												<i class="fa fa-facebook"></i>
+											</a>
+										</div>
+									</li>
+									
+																		<li>
+										<div>
+											<a href="https://www.youtube.com/c/FCBarcelona" class="youtube" target="_blank">
+												<i class="fa fa-youtube"></i>
+											</a>
+										</div>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="bg-image-team"
+				style="background:url(image.php?image=/imagenes/cabecerasequipos/1-cabecera1.jpg&width=800);">
+			</div>
+		</div>
+		<!-- End Section Title -->
+
+		<!-- Section Area - Content Central -->
+		<section class="content-info">
+
+			<!-- Single Team Tabs -->
+			<div class="single-team-tabs">
+				<div class="container">
+					<div class="row">
+						<!-- Left Content - Tabs and Carousel -->
+						<div class="col-xl-12 col-md-12">
+							<!-- Nav Tabs -->
+							<ul class="nav nav-tabs" id="myTab">
+
+								<li class="active"><a href="#info" data-toggle="tab">Info</a></li>
+																<li><a href="#plantilla" data-toggle="tab">Plantilla</a></li>
+																								<li><a href="#prox" data-toggle="tab">Próximos Partidos</a></li>
+																								<li><a href="#results" data-toggle="tab">Resultados</a></li>
+																								<li><a href="#stats" data-toggle="tab">Estadísticas</a></li>
+																<li><a href="#palmares" data-toggle="tab">Palmarés</a></li>
+							</ul>
+							<!-- End Nav Tabs -->
+						</div>
+
+						<div class="col-lg-12 padding-top-mini">
+							<!-- Content Tabs -->
+							<div class="tab-content">
+								<!-- Tab One - overview -->
+								<div class="tab-pane active" id="info">
+									
+									<div class="panel-box padding-b">
+										<div class="titles">
+											<h4>Palau Blaugrana | Barcelona</h4>
+										</div>
+										<div class="row">
+
+
+											<div class="col-lg-12 col-xl-12">
+
+												<p><i class="fa fa-users"></i> <strong>Aforo:</strong>
+													7234												</p>
+												<div id="map">
+
+
+													<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBHomCdKGfCgoLwoceSZIX11AIKxPC_TK8&amp;q=Palau+Blaugrana&amp;language=es&amp;zoom=18&amp;maptype=satellite" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+												</div>
+												<hr>
+												<p><i class="fa fa-globe"></i> <strong>Sede social:</strong> F.C. Barcelona | Avda Arí­stides Maillol s/n | Barcelona<br>
+													<i class="fa fa-phone-square"></i> <strong>Teléfono:</strong> <a
+														href="tel:934967605">934967605</a><br>
+																										<i class="fa fa-envelope-o"></i> <strong>Email:</strong> <a href="mailto:handbol@fcbarcelona.cat">handbol@fcbarcelona.cat</a><br>
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<!--Items Club News -->
+									<div class="row">
+
+
+
+																				<div class="col-md-12">
+											<h3 class="clear-title">Últimas noticias</h3>
+										</div>
+										
+										<!--Item Club News -->
+										<div class="col-lg-6 col-xl-4">
+											<!-- Widget Text-->
+											<div class="panel-box">
+												<div class="titles no-margin">
+													<h4><a href="noticias/irudek-bidasoa-irun-duerme-l-der-y-bar-a-supera-a-rebi-balonmano-cuenca-en-el-primer-tramo-de-j7/8776/">IRUDEK Bidasoa Irun duerme líder y Barça supera a REBI Balonmano Cuenca en el primer tramo de J7</a></h4>
+												</div>
+												<a href="noticias/irudek-bidasoa-irun-duerme-l-der-y-bar-a-supera-a-rebi-balonmano-cuenca-en-el-primer-tramo-de-j7/8776/"><img width="100%" src="image.php?image=/imagenes/fotos/8776-hallcuenca.jpg&width=650"
+														alt="IRUDEK Bidasoa Irun duerme líder y Barça supera a REBI Balonmano Cuenca en el primer tramo de J7"
+														title="IRUDEK Bidasoa Irun duerme líder y Barça supera a REBI Balonmano Cuenca en el primer tramo de J7"></a>
+												<div class="row">
+													<div class="info-panel">
+														<span class="data-info">23/10/2026
+
+
+														</span>
+														<p>IRUDEK Bidasoa Irun duerme l&iacute;der tras superar a BM&#46; Caser&iacute;o Ciudad Real (36-32)
+
+IRUDEK Bidasoa Irun dormir&aacute; este viernes como l&iacute;der en solitario de la Liga NEXUS ENERG&Iacute;A ASOBAL tras encadenar su s&eacute;ptima victoria consecutiva ante BM&#46; Caser&iacute;o Ciudad Real (36-32).														</p>
+													</div>
+												</div>
+											</div>
+											<!-- End Widget Text-->
+										</div>
+										<!--End Item Club News -->
+
+										
+										<!--Item Club News -->
+										<div class="col-lg-6 col-xl-4">
+											<!-- Widget Text-->
+											<div class="panel-box">
+												<div class="titles no-margin">
+													<h4><a href="noticias/repasa-los-horarios-y-d-nde-ver-los-partidos-de-la-jornada-7-de-liga-nexus-energ-a-asobal/8772/">Repasa los horarios y dónde ver los partidos de la jornada 7 de Liga NEXUS ENERGÍA ASOBAL</a></h4>
+												</div>
+												<a href="noticias/repasa-los-horarios-y-d-nde-ver-los-partidos-de-la-jornada-7-de-liga-nexus-energ-a-asobal/8772/"><img width="100%" src="image.php?image=/imagenes/fotos/8772-bidparrilla.jpg&width=650"
+														alt="Repasa los horarios y dónde ver los partidos de la jornada 7 de Liga NEXUS ENERGÍA ASOBAL"
+														title="Repasa los horarios y dónde ver los partidos de la jornada 7 de Liga NEXUS ENERGÍA ASOBAL"></a>
+												<div class="row">
+													<div class="info-panel">
+														<span class="data-info">23/10/2026
+
+
+														</span>
+														<p>La s&eacute;ptima jornada de la Liga NEXUS ENERG&Iacute;A ASOBAL d&aacute;ra comienzo este pr&oacute;ximo viernes con la disputa de una nueva edici&oacute;n del &#39;Partido de la Jornada&#39;, que disputar&aacute;n IRUDEK Bidasoa Irun y BM&#46; Caser&iacute;o Ciudad Real&nbsp;(19h, en directo por ASOBAL TV, RTVE Play, Eurosport y Siroko TV).														</p>
+													</div>
+												</div>
+											</div>
+											<!-- End Widget Text-->
+										</div>
+										<!--End Item Club News -->
+
+										
+										<!--Item Club News -->
+										<div class="col-lg-6 col-xl-4">
+											<!-- Widget Text-->
+											<div class="panel-box">
+												<div class="titles no-margin">
+													<h4><a href="noticias/la-lucha-por-el-liderato-pasa-por-el--partido-de-la-jornada--de-artaleku/8773/">La lucha por el liderato pasa por el 'Partido de la Jornada' de Artaleku</a></h4>
+												</div>
+												<a href="noticias/la-lucha-por-el-liderato-pasa-por-el--partido-de-la-jornada--de-artaleku/8773/"><img width="100%" src="image.php?image=/imagenes/fotos/8773-xavitua.jpg&width=650"
+														alt="La lucha por el liderato pasa por el 'Partido de la Jornada' de Artaleku"
+														title="La lucha por el liderato pasa por el 'Partido de la Jornada' de Artaleku"></a>
+												<div class="row">
+													<div class="info-panel">
+														<span class="data-info">22/10/2026
+
+
+														</span>
+														<p>Artaleku estrenar&aacute; este viernes un nuevo cap&iacute;tulo de Liga NEXUS ENERG&Iacute;A ASOBAL con la disputa del s&eacute;ptimo &#39;Partido de la Jornada&#39; entre IRUDEK Bidasoa Irun y BM&#46; Caser&iacute;o Ciudad Real (19h, ASOBAL TV, RTVE Play, Eurosport y Siroko TV).														</p>
+													</div>
+												</div>
+											</div>
+											<!-- End Widget Text-->
+										</div>
+										<!--End Item Club News -->
+
+																				
+
+									</div>
+
+									<!--End Items Club video -->
+
+
+
+								</div>
+								<!-- Tab One - overview -->
+
+								<!-- Tab Two - squad -->
+								<div class="tab-pane" id="plantilla">
+									<div class="row">
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91261256-01_V_Hallgrimsson.png&width=350"
+														alt="Viktor Hallgrimsson"
+														width="100%">
+													<div class="overlay"><a href="jugadores/viktor-gisli-hallgrimsson/91261256/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														1													</span>
+													<h4>
+														Viktor Hallgrimsson														<span>Portero</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/isl.png" alt="ISL"> ISL</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>26</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>113 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>203 cm.</span></li>
+																												<li><strong><i class="fa fa-hand-paper-o"></i> Paradas</strong>
+															<span>57</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/viktor-gisli-hallgrimsson/91261256/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91261376-03_Smarasson.png&width=350"
+														alt="Janus Smárason"
+														width="100%">
+													<div class="overlay"><a href="jugadores/janus-dadi-sm-rason/91261376/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														3													</span>
+													<h4>
+														Janus Smárason														<span>Central</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/isl.png" alt="ISL"> ISL</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>31</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>88 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>185 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>6</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/janus-dadi-sm-rason/91261376/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91260748-06_Dani_Fernandez.png&width=350"
+														alt="Dani Fernández"
+														width="100%">
+													<div class="overlay"><a href="jugadores/daniel-fern-ndez-jim-nez/91260748/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														6													</span>
+													<h4>
+														Dani Fernández														<span>Extremo Izquierdo</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/esp.png" alt="ESP"> ESP</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>25</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>78 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>180 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>23</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/daniel-fern-ndez-jim-nez/91260748/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91260967-09_Carlsbogard.png&width=350"
+														alt="Jonathan Carlsbogard"
+														width="100%">
+													<div class="overlay"><a href="jugadores/jonathan--carlsbogard/91260967/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														9													</span>
+													<h4>
+														Jonathan Carlsbogard														<span>Lateral Izquierdo</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/swe.png" alt="SWE"> SWE</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>31</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>100 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>195 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>15</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/jonathan--carlsbogard/91260967/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91260399-10_Dika_Mem.png&width=350"
+														alt="Dika Mem"
+														width="100%">
+													<div class="overlay"><a href="jugadores/dika-akwa-mem/91260399/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														10													</span>
+													<h4>
+														Dika Mem														<span>Lateral Derecho</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/fra.png" alt="FRA"> FRA</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>29</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>90 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>194 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>28</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/dika-akwa-mem/91260399/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91261037-11_Djorgje_Cikusa.png&width=350"
+														alt="Djordje Cikusa"
+														width="100%">
+													<div class="overlay"><a href="jugadores/djordje-cikusa-i-jelicic/91261037/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														11													</span>
+													<h4>
+														Djordje Cikusa														<span>Lateral Derecho</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/esp.png" alt="ESP"> ESP</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>20</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>83 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>191 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>13</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/djordje-cikusa-i-jelicic/91261037/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91260742-18_Blaz_Janc.png&width=350"
+														alt="Blaz Janc"
+														width="100%">
+													<div class="overlay"><a href="jugadores/blaz-janc/91260742/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														18													</span>
+													<h4>
+														Blaz Janc														<span>Lateral Derecho</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/slo.png" alt="SLO"> SLO</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>29</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>89 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>184 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>11</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/blaz-janc/91260742/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91260398-19_NGessan.png&width=350"
+														alt="Timothey N'Guessan"
+														width="100%">
+													<div class="overlay"><a href="jugadores/timothey-n-guessan/91260398/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														19													</span>
+													<h4>
+														Timothey N'Guessan														<span>Lateral Izquierdo</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/fra.png" alt="FRA"> FRA</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>34</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>94 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>194 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>7</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/timothey-n-guessan/91260398/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91260225-20_Aleix.png&width=350"
+														alt="Aleix Gómez"
+														width="100%">
+													<div class="overlay"><a href="jugadores/aleix-g-mez-abell-/91260225/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														20													</span>
+													<h4>
+														Aleix Gómez														<span>Extremo Derecho</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/esp.png" alt="ESP"> ESP</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>29</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>81 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>183 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>4</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/aleix-g-mez-abell-/91260225/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91261383-21_Collado.png&width=350"
+														alt="Anselmo Collado"
+														width="100%">
+													<div class="overlay"><a href="jugadores/anselmo-collado-carri-n/91261383/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														21													</span>
+													<h4>
+														Anselmo Collado														<span>Central</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/esp.png" alt="ESP"> ESP</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>19</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>76 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>192 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>0</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/anselmo-collado-carri-n/91261383/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="img/nojugador.jpg"
+														alt="Adrián Sola"
+														width="100%">
+													<div class="overlay"><a href="jugadores/adri-n-sola-basterra/91261226/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														23													</span>
+													<h4>
+														Adrián Sola														<span>Extremo Derecho</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/esp.png" alt="ESP"> ESP</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>18</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>75 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>190 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>23</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/adri-n-sola-basterra/91261226/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91261382-24_Guido_Bayo.png&width=350"
+														alt="Guido Bayo Giraudo"
+														width="100%">
+													<div class="overlay"><a href="jugadores/guido-bayo-giraudo/91261382/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														24													</span>
+													<h4>
+														Guido Bayo Giraudo														<span>Pivote</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/esp.png" alt="ESP"> ESP</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>20</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>95 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>189 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>0</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/guido-bayo-giraudo/91261382/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91260233-25_Sergey_Hernandez.png&width=350"
+														alt="Sergey Hernandez Ferrer"
+														width="100%">
+													<div class="overlay"><a href="jugadores/sergey-hernandez-ferrer/91260233/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														25													</span>
+													<h4>
+														Sergey Hernandez Ferrer														<span>Portero</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/esp.png" alt="ESP"> ESP</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>31</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>94 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>198 cm.</span></li>
+																												<li><strong><i class="fa fa-hand-paper-o"></i> Paradas</strong>
+															<span>16</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/sergey-hernandez-ferrer/91260233/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91261150-27_Oscar_Grau.png&width=350"
+														alt="Óscar Grau"
+														width="100%">
+													<div class="overlay"><a href="jugadores/-scar-grau-ib-ez/91261150/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														27													</span>
+													<h4>
+														Óscar Grau														<span>Pivote</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/esp.png" alt="ESP"> ESP</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>22</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>95 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>190 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>17</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/-scar-grau-ib-ez/91261150/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91261222-29_Hanes_Holting.png&width=350"
+														alt="Hannes  Hölting Nilsson"
+														width="100%">
+													<div class="overlay"><a href="jugadores/hannes--h-lting-nilsson/91261222/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														29													</span>
+													<h4>
+														Hannes  Hölting Nilsson														<span>Lateral Izquierdo</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/swe.png" alt="SWE"> SWE</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>19</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>95 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>204 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>0</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/hannes--h-lting-nilsson/91261222/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="img/nojugador.jpg"
+														alt="Albert Quesada"
+														width="100%">
+													<div class="overlay"><a href="jugadores/albert-quesada-quesada/91261438/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														33													</span>
+													<h4>
+														Albert Quesada														<span>Portero</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/esp.png" alt="ESP"> ESP</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>18</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>92 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>190 cm.</span></li>
+																												<li><strong><i class="fa fa-hand-paper-o"></i> Paradas</strong>
+															<span>0</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/albert-quesada-quesada/91261438/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91261181-40_Manuel_ORtega.png&width=350"
+														alt="Manuel Ortega"
+														width="100%">
+													<div class="overlay"><a href="jugadores/manuel-ortega-ezcurdia/91261181/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														40													</span>
+													<h4>
+														Manuel Ortega														<span>Extremo Izquierdo</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/esp.png" alt="ESP"> ESP</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>21</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>78 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>182 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>5</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/manuel-ortega-ezcurdia/91261181/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91261257-45_Elderaa.png&width=350"
+														alt="Seif Mohamed  Yehia Elderaa"
+														width="100%">
+													<div class="overlay"><a href="jugadores/seif-mohamed--yehia-elderaa/91261257/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														45													</span>
+													<h4>
+														Seif Mohamed  Yehia Elderaa														<span>Central</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/egy.png" alt="EGY"> EGY</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>28</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>86 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>187 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>22</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/seif-mohamed--yehia-elderaa/91261257/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="img/nojugador.jpg"
+														alt="Sergej Novakovi&#263;"
+														width="100%">
+													<div class="overlay"><a href="jugadores/sergej-novakovi-263-/91261378/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														56													</span>
+													<h4>
+														Sergej Novakovi&#263;														<span>Portero</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/aut.png" alt="AUT"> AUT</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>18</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>85 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>196 cm.</span></li>
+																												<li><strong><i class="fa fa-hand-paper-o"></i> Paradas</strong>
+															<span>8</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/sergej-novakovi-263-/91261378/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91261223-70_San_Felipe.png&width=350"
+														alt="Oriol San Felipe Vilarrasa"
+														width="100%">
+													<div class="overlay"><a href="jugadores/oriol-san-felipe-vilarrasa/91261223/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														70													</span>
+													<h4>
+														Oriol San Felipe Vilarrasa														<span>Lateral Izquierdo</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/esp.png" alt="ESP"> ESP</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>20</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>80 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>198 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>6</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/oriol-san-felipe-vilarrasa/91261223/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91260558-72_Ludo_Fabregas.png&width=350"
+														alt="Ludovic Fàbregas"
+														width="100%">
+													<div class="overlay"><a href="jugadores/ludovic-f-bregas/91260558/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														72													</span>
+													<h4>
+														Ludovic Fàbregas														<span>Pivote</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/fra.png" alt="FRA"> FRA</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>30</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>100 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>198 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>13</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/ludovic-f-bregas/91260558/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91260744-82_Frade.png&width=350"
+														alt="Luis Frade"
+														width="100%">
+													<div class="overlay"><a href="jugadores/luis-diogo-da-sousa-frade/91260744/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														82													</span>
+													<h4>
+														Luis Frade														<span>Pivote</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/por.png" alt="POR"> POR</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>28</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>100 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>190 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>21</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/luis-diogo-da-sousa-frade/91260744/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91261052-83_Ian_Barrufet.png&width=350"
+														alt="Ian Barrufet Torrebejano"
+														width="100%">
+													<div class="overlay"><a href="jugadores/ian-barrufet-torrebejano/91261052/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														83													</span>
+													<h4>
+														Ian Barrufet Torrebejano														<span>Extremo Izquierdo</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/esp.png" alt="ESP"> ESP</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>22</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>85 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>195 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>25</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/ian-barrufet-torrebejano/91261052/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+													<img loading="lazy"
+														src="image.php?image=/imagenes/licencias/91261091-88_Petar_Cikusa.png&width=350"
+														alt="Petar Cikusa"
+														width="100%">
+													<div class="overlay"><a href="jugadores/petar-cikusa-i-jelicic/91261091/">+</a></div>
+												</div>
+												<div class="info-player">
+													<span class="number-player">
+														88													</span>
+													<h4>
+														Petar Cikusa														<span>Central</span>
+													</h4>
+													<ul>
+														<li>
+															<strong>Nacionalidad</strong> <span><img src="img/clubs-logos/esp.png" alt="ESP"> ESP</span>
+														</li>
+
+														<li><strong><i class="fa fa-calendar"></i> Edad:</strong> <span>20</span></li>
+														<li><strong><i class="fa fa-caret-square-o-down"></i> Peso:</strong> <span>80 kg.</span></li>
+														<li><strong><i class="fa fa-arrows-v"></i> Talla:</strong> <span>195 cm.</span></li>
+																												<li><strong><i class="fa fa-futbol-o"></i> Goles:</strong>
+															<span>15</span>
+														</li>
+																											</ul>
+												</div>
+												<a href="jugadores/petar-cikusa-i-jelicic/91261091/" class="btn">Ver <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				
+
+
+
+									</div>
+
+																		<h2>Oficiales</h2>
+									<div class="row">
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+																										<a href="oficiales/carlos-ortega-p-rez/702/">
+																												<img loading="lazy"
+															src="image.php?image=/imagenes/oficiales/702-ENT_A_Ortega.png&width=350"
+															alt="Carlos Ortega Pérez" width="100%">
+														</a>												</div>
+												<div class="info-player">
+
+													<h4>
+														Carlos Ortega Pérez																												<span>Entrenador</span>
+													</h4>
+
+												</div>
+
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+																				<!-- Item Player -->
+										<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 col-12">
+											<div class="item-player">
+												<div class="head-player">
+																											<img loading="lazy"
+															src="image.php?image=/imagenes/oficiales/9643-AYU_Igropulo.png&width=350"
+															alt="Konstantin Igropulo" width="100%">
+																										</div>
+												<div class="info-player">
+
+													<h4>
+														Konstantin Igropulo																												<span>Ayudante de Entrenador</span>
+													</h4>
+
+												</div>
+
+											</div>
+										</div>
+										<!-- End Item Player -->
+
+										
+
+
+
+
+									</div>
+
+									
+								</div>
+								<!-- End Tab Two - squad -->
+
+								<!-- Tab Theree - fixtures -->
+																<div class="tab-pane mb-5" id="prox"></div>
+																<!-- End Tab Theree - fixtures -->
+
+								<!-- Tab Theree - results -->
+																<div class="tab-pane" id="results"></div>
+																<!-- End Tab Theree - results -->
+																								<!-- Tab Theree - stats -->
+								<div class="tab-pane" id="stats">
+
+
+
+									<h2>Estadísticas Acumuladas</h2>
+
+									<div class="row">
+										<div class="col-lg-6 col-xl-6">
+
+											<div class="panel-box">
+												<div class="titles no-margin">
+													<h4><i class="fa fa-male"></i>Jugadores de Campo</h4>
+												</div>
+												<ul class="list-panel">
+													<li>
+														<p><strong>Total</strong>
+															<span><strong>255/335=76 %</strong></span>
+														</p>
+													</li>
+
+													<li>
+														<p>Lanzamientos 6M															<span>158/204=77 %</span>
+														</p>
+													</li>
+													<li>
+														<p>Lanzamientos 7M															<span>18/21=86 %</span>
+														</p>
+													</li>
+													<li>
+														<p>Lanzamientos 9M															<span>37/63=59 %</span>
+														</p>
+													</li>
+													<li>
+														<p>Lanzamientos Contrataque															<span>32/35=91 %</span>
+														</p>
+													</li>
+
+													<!-- <li><p>Pases de Gol <span></span>
+													</p>
+													</li>
+													<li>
+														<p>Recuperaciones
+															<span></span>
+														</p>
+													</li>
+													<li>
+														<p>Faltas técnicas
+															<span></span>
+														</p>
+													</li>
+													<li>
+														<p>Faltas reglamentarias
+															<span></span>
+														</p>
+													</li>-->
+												</ul>
+											</div>
+
+										</div>
+
+										
+										<div class="col-lg-6 col-xl-6">
+
+											<div class="panel-box">
+												<div class="titles no-margin">
+													<h4><i class="fa fa-hand-paper-o"></i>Porteros</h4>
+												</div>
+												<ul class="list-panel">
+													<li>
+														<p><strong>Total</strong>
+															<span><strong>81/257=32 %</strong></span>
+														</p>
+													</li>
+
+													<li>
+														<p>Lanzamientos 6M															<span>52/157=33 %</span>
+														</p>
+													</li>
+													<li>
+														<p>Lanzamientos 7M															<span>0/14=0 %</span>
+														</p>
+													</li>
+													<li>
+														<p>Lanzamientos 9M															<span>27/73=37 %</span>
+														</p>
+													</li>
+													<li>
+														<p>Lanzamientos Contrataque															<span>2/13=15 %</span>
+														</p>
+													</li>
+
+													<!--<li><p>Pases de Gol <span></span>
+													</p>
+													</li>
+													<li>
+														<p>Recuperaciones
+															<span></span>
+														</p>
+													</li>
+													<li>
+														<p>Faltas técnicas
+															<span></span>
+														</p>
+													</li>
+													<li>
+														<p>Faltas reglamentarias
+															<span></span>
+														</p>
+													</li>-->
+												</ul>
+											</div>
+
+										</div>
+
+
+
+										<div class="col-lg-12 col-xl-12">
+											<!-- Attack -->
+											<h2>Jugadores</h2>
+											<div class="panel-box">
+												<div class="titles no-margin">
+													<h4><i class="fa fa-male"></i>Jugadores de Campo</h4>
+												</div>
+												<table class="table-striped table-responsive table-hover">
+													<thead>
+														<tr>
+															<th>Dorsal</th>
+															<th>Jugador</th>
+															<th>Total</th>
+															<th>L 6M</th>
+															<th>L 7M</th>
+															<th>L 9M</th>
+															<th>L CONT.</th>
+															<th>Asistencias</th>
+
+															<!--  <th title="Pases de Gol">P/G</th>
+                                                                <th title="Recuperaciones">REC</th>
+                                                                <th title="Faltas técnicas">FT</th>
+                                                                <th title="Faltas reglamentarias">FR</th>-->
+														</tr>
+													</thead>
+													<tbody>
+
+														
+
+														<tr>
+															<td style="text-align: center;"> 3</td>
+															<td style="text-align: center;">
+																Janus Smárason															</td>
+															<td style="text-align: center;">
+																<strong>6/8=75 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																5/6=83 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																1/2=50 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																6															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 6</td>
+															<td style="text-align: center;">
+																Dani Fernández															</td>
+															<td style="text-align: center;">
+																<strong>23/26=88 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																8/11=73 %															</td>
+															<td style="text-align: center;">
+																6/6=100 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																7/7=100 %															</td>
+															<td style="text-align: center;">
+																2															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 9</td>
+															<td style="text-align: center;">
+																Jonathan Carlsbogard															</td>
+															<td style="text-align: center;">
+																<strong>15/23=65 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																12/15=80 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																1/6=17 %															</td>
+															<td style="text-align: center;">
+																2/2=100 %															</td>
+															<td style="text-align: center;">
+																13															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 10</td>
+															<td style="text-align: center;">
+																Dika Mem															</td>
+															<td style="text-align: center;">
+																<strong>28/41=68 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																17/20=85 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																10/20=50 %															</td>
+															<td style="text-align: center;">
+																1/1=100 %															</td>
+															<td style="text-align: center;">
+																3															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 11</td>
+															<td style="text-align: center;">
+																Djordje Cikusa															</td>
+															<td style="text-align: center;">
+																<strong>13/20=65 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																9/14=64 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																3/4=75 %															</td>
+															<td style="text-align: center;">
+																1/2=50 %															</td>
+															<td style="text-align: center;">
+																1															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 18</td>
+															<td style="text-align: center;">
+																Blaz Janc															</td>
+															<td style="text-align: center;">
+																<strong>11/14=79 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																8/9=89 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																3/5=60 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																5															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 19</td>
+															<td style="text-align: center;">
+																Timothey N'Guessan															</td>
+															<td style="text-align: center;">
+																<strong>7/10=70 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																2/4=50 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																4/4=100 %															</td>
+															<td style="text-align: center;">
+																1/1=100 %															</td>
+															<td style="text-align: center;">
+																1															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 20</td>
+															<td style="text-align: center;">
+																Aleix Gómez															</td>
+															<td style="text-align: center;">
+																<strong>4/6=67 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																2/4=50 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																1/1=100 %															</td>
+															<td style="text-align: center;">
+																0															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 21</td>
+															<td style="text-align: center;">
+																Anselmo Collado															</td>
+															<td style="text-align: center;">
+																<strong>0/0=0 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 23</td>
+															<td style="text-align: center;">
+																Adrián Sola															</td>
+															<td style="text-align: center;">
+																<strong>23/28=82 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																16/21=76 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																1/1=100 %															</td>
+															<td style="text-align: center;">
+																6/6=100 %															</td>
+															<td style="text-align: center;">
+																0															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 24</td>
+															<td style="text-align: center;">
+																Guido Bayo Giraudo															</td>
+															<td style="text-align: center;">
+																<strong>0/0=0 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 27</td>
+															<td style="text-align: center;">
+																Óscar Grau															</td>
+															<td style="text-align: center;">
+																<strong>17/21=81 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																14/18=78 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																1/1=100 %															</td>
+															<td style="text-align: center;">
+																1/1=100 %															</td>
+															<td style="text-align: center;">
+																2															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 29</td>
+															<td style="text-align: center;">
+																Hannes  Hölting Nilsson															</td>
+															<td style="text-align: center;">
+																<strong>0/0=0 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 40</td>
+															<td style="text-align: center;">
+																Manuel Ortega															</td>
+															<td style="text-align: center;">
+																<strong>5/9=56 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																4/7=57 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																1/2=50 %															</td>
+															<td style="text-align: center;">
+																0															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 45</td>
+															<td style="text-align: center;">
+																Seif Mohamed  Yehia Elderaa															</td>
+															<td style="text-align: center;">
+																<strong>22/24=92 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																12/13=92 %															</td>
+															<td style="text-align: center;">
+																4/4=100 %															</td>
+															<td style="text-align: center;">
+																5/6=83 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																2															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 70</td>
+															<td style="text-align: center;">
+																Oriol San Felipe Vilarrasa															</td>
+															<td style="text-align: center;">
+																<strong>6/14=43 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																2/6=33 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																3/7=43 %															</td>
+															<td style="text-align: center;">
+																1/1=100 %															</td>
+															<td style="text-align: center;">
+																7															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 72</td>
+															<td style="text-align: center;">
+																Ludovic Fàbregas															</td>
+															<td style="text-align: center;">
+																<strong>13/15=87 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																10/12=83 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																3/3=100 %															</td>
+															<td style="text-align: center;">
+																0															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 82</td>
+															<td style="text-align: center;">
+																Luis Frade															</td>
+															<td style="text-align: center;">
+																<strong>21/24=88 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																15/17=88 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																3/3=100 %															</td>
+															<td style="text-align: center;">
+																2/2=100 %															</td>
+															<td style="text-align: center;">
+																4															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 83</td>
+															<td style="text-align: center;">
+																Ian Barrufet Torrebejano															</td>
+															<td style="text-align: center;">
+																<strong>25/29=86 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																10/11=91 %															</td>
+															<td style="text-align: center;">
+																8/11=73 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																5/5=100 %															</td>
+															<td style="text-align: center;">
+																0															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 88</td>
+															<td style="text-align: center;">
+																Petar Cikusa															</td>
+															<td style="text-align: center;">
+																<strong>15/21=71 %</strong>
+															</td>
+
+															<td style="text-align: center;">
+																12/16=75 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																2/4=50 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																10															</td>
+															<!-- 
+                                                              <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+																																									</tbody>
+												</table>
+											</div>
+											<!-- End Attack -->
+										</div>
+
+
+										<div class="col-lg-12 col-xl-12">
+											<!-- Attack -->
+											<div class="panel-box">
+												<div class="titles no-margin">
+													<h4><i class="fa fa-hand-paper-o"></i>Porteros</h4>
+												</div>
+												<table class="table-striped table-responsive table-hover">
+													<thead>
+														<tr>
+
+
+															<th>Dorsal</th>
+															<th>Jugador</th>
+															<th>Goles</th>
+															<th>Total</th>
+															<th>L 6M</th>
+															<th>L 7M</th>
+															<th>L 9M</th>
+															<th>L CONT.</th>
+															<th>Asistencias</th>
+
+															<!--        <th title="Pases de Gol">P/G</th>
+                                                                <th title="Recuperaciones">REC</th>
+                                                                <th title="Faltas técnicas">FT</th>
+                                                                <th title="Faltas reglamentarias">FR</th>-->
+														</tr>
+													</thead>
+													<tbody>
+
+														
+
+														<tr>
+															<td style="text-align: center;"> 1</td>
+															<td style="text-align: center;">
+																Viktor Hallgrimsson															</td>
+															<td style="text-align: center;">
+																<strong>0</strong>
+															</td>
+															<td style="text-align: center;">
+																<strong>57/181=31 %</strong>
+															</td>
+															<td style="text-align: center;">
+																35/109=32 %															</td>
+															<td style="text-align: center;">
+																0/10=0 %															</td>
+															<td style="text-align: center;">
+																20/52=38 %															</td>
+															<td style="text-align: center;">
+																2/10=20 %															</td>
+															<td style="text-align: center;">
+																2															</td>
+
+															<!--   <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 25</td>
+															<td style="text-align: center;">
+																Sergey Hernandez Ferrer															</td>
+															<td style="text-align: center;">
+																<strong>0</strong>
+															</td>
+															<td style="text-align: center;">
+																<strong>16/51=31 %</strong>
+															</td>
+															<td style="text-align: center;">
+																10/31=32 %															</td>
+															<td style="text-align: center;">
+																0/3=0 %															</td>
+															<td style="text-align: center;">
+																6/15=40 %															</td>
+															<td style="text-align: center;">
+																0/2=0 %															</td>
+															<td style="text-align: center;">
+																0															</td>
+
+															<!--   <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 33</td>
+															<td style="text-align: center;">
+																Albert Quesada															</td>
+															<td style="text-align: center;">
+																<strong>0</strong>
+															</td>
+															<td style="text-align: center;">
+																<strong>0/0=0 %</strong>
+															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0/0=0 %															</td>
+															<td style="text-align: center;">
+																0															</td>
+
+															<!--   <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+														
+
+														<tr>
+															<td style="text-align: center;"> 56</td>
+															<td style="text-align: center;">
+																Sergej Novakovi&#263;															</td>
+															<td style="text-align: center;">
+																<strong>1</strong>
+															</td>
+															<td style="text-align: center;">
+																<strong>8/25=32 %</strong>
+															</td>
+															<td style="text-align: center;">
+																7/17=41 %															</td>
+															<td style="text-align: center;">
+																0/1=0 %															</td>
+															<td style="text-align: center;">
+																1/6=17 %															</td>
+															<td style="text-align: center;">
+																0/1=0 %															</td>
+															<td style="text-align: center;">
+																1															</td>
+
+															<!--   <td>
+                                                                 															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>-->
+
+														</tr>
+																																									</tbody>
+												</table>
+											</div>
+											<!-- End Attack -->
+										</div>
+
+
+
+
+
+
+
+									</div>
+
+								</div>
+								<!-- End Tab Theree - stats -->
+																<div class="tab-pane" id="palmares">
+
+
+
+
+
+									<div class="row">
+
+
+
+
+
+
+
+
+
+
+
+										<div class="col-lg-12 col-xl-12">
+											<!-- Attack -->
+											<div class="panel-box">
+												<div class="titles no-margin">
+													<h4><i class="fa fa-trophy"></i>Palmarés</h4>
+												</div>
+												<table class="table-striped table-responsive table-hover">
+													<thead>
+														<tr>
+															<th>Temporada</th>
+															<th>Club</th>
+
+															<th>Liga</th>
+															<th>Copa del Rey</th>
+															<th>Copa ASOBAL</th>
+															<th>Supercopa de España</th>
+															<th>Supercopa Ibérica</th>
+															<th>Europa</th>
+
+
+														</tr>
+													</thead>
+													<tbody>
+
+														
+
+														<tr>
+															<td> 2025/2026</td>
+															<td>
+																Barça															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Champions League - Campeón															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2024/2025</td>
+															<td>
+																Barça															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																1º															</td>
+															<td>
+																Champions League - 4º															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2023/2024</td>
+															<td>
+																Barça															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Champions League - Campeón															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2022/2023</td>
+															<td>
+																Barça															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Champions League - Semifinal															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2021/2022</td>
+															<td>
+																Barça															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																CHL - Campeón															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2020/2021</td>
+															<td>
+																Barça															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																CHL - Campeón 															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2019/2020</td>
+															<td>
+																Barça															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																CHL - Fin.															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2018/2019</td>
+															<td>
+																Barça Lassa															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																CHL - Semf.															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2017/2018</td>
+															<td>
+																FC Barcelona Lassa															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																CHL - 1/8															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2016/2017</td>
+															<td>
+																F.C. Barcelona Lassa															</td>
+
+															<td>
+																1															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																C.E.  - Semf.															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2015/2016</td>
+															<td>
+																F.C. Barcelona Lassa															</td>
+
+															<td>
+																1															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																C.E.  - 1/4															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2014/2015</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																C.E.  - 1															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2013/2014</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																 CHL -  3															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2012/2013</td>
+															<td>
+																F.C. Barcelona Intersport															</td>
+
+															<td>
+																1ª															</td>
+															<td>
+																Semifinal															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - Fin.															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2011/2012</td>
+															<td>
+																F.C. Barcelona Intersport															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Final															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Final															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - 1/4															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2010/2011</td>
+															<td>
+																F.C. Barcelona Borges															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Semifinal															</td>
+															<td>
+																Final															</td>
+															<td>
+																Final															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - 1															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2009/2010</td>
+															<td>
+																F.C. Barcelona Borges															</td>
+
+															<td>
+																2º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - Fin.															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2008/2009</td>
+															<td>
+																F.C. Barcelona Borges															</td>
+
+															<td>
+																2º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Final															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - 1/8															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2007/2008</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																2º															</td>
+															<td>
+																Semifinal															</td>
+															<td>
+																															</td>
+															<td>
+																Final															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - Semf.															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2006/2007</td>
+															<td>
+																F.C. Barcelona CIFEC															</td>
+
+															<td>
+																4º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Semifinal															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - 1/4															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2005/2006</td>
+															<td>
+																F.C. Barcelona CIFEC															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Semifinal															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - 1/4															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2004/2005</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																4º															</td>
+															<td>
+																Final															</td>
+															<td>
+																Semifinal															</td>
+															<td>
+																Final															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - 1															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2003/2004</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																2º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Final															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - 1/8															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2002/2003</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Final															</td>
+															<td>
+																Final															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																E.H.F - 1															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2001/2002</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																2º															</td>
+															<td>
+																Cuartos de Final															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																E.H.F - Fin															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 2000/2001</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																2º															</td>
+															<td>
+																Semifinal															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - Fin															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 1999/2000</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - 1															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 1998/1999</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Final															</td>
+															<td>
+																Final															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - 1															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 1997/1998</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Semifinal															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - 1															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 1996/1997</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Semifinal															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - 1															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 1995/1996</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Final															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - 1															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 1994/1995</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																2º															</td>
+															<td>
+																Semifinal															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Final															</td>
+															<td>
+																															</td>
+															<td>
+																R.E. - 1															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 1993/1994</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																3º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Final															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																R.E. - 1															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 1992/1993</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																3º															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																Semifinal															</td>
+															<td>
+																Semifinal															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - Semf															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 1991/1992</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Final															</td>
+															<td>
+																Semifinal															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - Semf															</td>
+
+
+														</tr>
+														
+
+														<tr>
+															<td> 1990/1991</td>
+															<td>
+																F.C. Barcelona															</td>
+
+															<td>
+																1º															</td>
+															<td>
+																Cuartos de Final															</td>
+															<td>
+																Semifinal															</td>
+															<td>
+																Campeón															</td>
+															<td>
+																															</td>
+															<td>
+																C.E. - 1															</td>
+
+
+														</tr>
+																																									</tbody>
+												</table>
+											</div>
+											<!-- End Attack -->
+										</div>
+
+
+
+
+									</div>
+
+								</div>
+								<!-- End Tab Theree - stats -->
+							</div>
+							<!-- Content Tabs -->
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+			<!-- Single Team Tabs -->
+
+			<div class="paddings-mini sponsors ">
+    <div class="container">
+        <div class="row">
+                        <div class="col-lg-12 pt-5">
+                <ul class="sponsors-carousel">
+                                        <li>
+                        <a href="https://www.nexusenergia.com/" target="_blank">
+                            <picture>
+                                                                <source srcset="img/sponsors/19blanco.webp" type="image/webp">
+                                                                                                <source srcset="img/sponsors/19blanco.png" type="image/png">
+                                                                <img src="img/sponsors/19blanco.png"
+                                     alt="">
+                            </picture>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="https://www.loteriasyapuestas.es/" target="_blank">
+                            <picture>
+                                                                <source srcset="img/sponsors/3blanco.webp" type="image/webp">
+                                                                                                <source srcset="img/sponsors/3blanco.png" type="image/png">
+                                                                <img src="img/sponsors/3blanco.png"
+                                     alt="">
+                            </picture>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="https://afiliacion.decathlon.es/tracking/clk?act=25086&amp;gel=0&amp;pub=36282&amp;org=2615&amp;url=https://www.decathlon.es/es/ASOBAL_lp-U5BOZQ&amp;ei1=Tienda ASOBAL" target="_blank">
+                            <picture>
+                                                                <source srcset="img/sponsors/18blanco.webp" type="image/webp">
+                                                                                                <source srcset="img/sponsors/18blanco.png" type="image/png">
+                                                                <img src="img/sponsors/18blanco.png"
+                                     alt="Decathlon">
+                            </picture>
+                        </a>
+                    </li>
+                                    </ul>
+            </div>
+                        <div class="col-lg-12">
+                <ul class="sponsors-carousel">
+                                        <li>
+                        <a href="https://www.artipubli.com" target="_blank">
+                            <picture>
+                                                                <source srcset="img/sponsors/17blanco.webp" type="image/webp">
+                                                                                                <source srcset="img/sponsors/17blanco.png" type="image/png">
+                                                                <img src="img/sponsors/17blanco.png"
+                                     alt="Artipubli.com">
+                            </picture>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="https://sportradar.com" target="_blank">
+                            <picture>
+                                                                                                <source srcset="img/sponsors/sp_sportradar_20260819185149_b.png" type="image/png">
+                                                                <img src="img/sponsors/sp_sportradar_20260819185149_b.png"
+                                     alt="Sport Radar">
+                            </picture>
+                        </a>
+                    </li>
+                                    </ul>
+            </div>
+                    </div>
+    </div>
+</div>
+		</section>
+		<!-- End Section Area -  Content Central -->
+
+
+
+		<div class="content-instagram">
+			<div id="instafeed"></div>
+		</div>
+
+		<!-- footer-->
+<footer id="footer" class="footer-2 pb-5">
+
+    <!-- Links Footer-->
+    <div class="links-footer pt-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- Col 1: ASOBAL -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="info-links">
+                        <h5>ASOBAL</h5>
+                        <ul>
+                            <li><a href="/noticias/">Noticias</a></li>
+                            <li><a href="/newsletter/">Newsletter</a></li>
+                            <li><a href="/asobal/">Sobre nosotros</a></li>
+                            <li><a href="/transparencia/">Transparencia</a></li>
+                            <li><a href="/asobal/kit-de-marca/">Kit de Marca</a></li>
+                            <li><a href="/comunidad-asobal/">Comunidad ASOBAL</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Col 2: Liga ASOBAL -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="info-links">
+                        <h5>Liga ASOBAL</h5>
+                        <ul class="columns">
+                            <li><a href="/liga/clasificacion/">Clasificaci&oacute;n</a></li>
+                            <li><a href="/liga/resultados/7/">Resultados</a></li>
+                            <li><a href="/liga/calendario/">Calendario</a></li>
+                            <li><a href="/equipos/">Equipos</a></li>
+                            <li><a href="/liga/estadisticas/">Estad&iacute;sticas</a></li>
+                            <li><a href="/liga/palmares/">Palmar&eacute;s</a></li>
+                            <li><a href="/liga/7-ideal/">El 7 Ideal de la Jornada</a></li>
+                            <li><a href="/liga/mvp-asobal/">MVP ASOBAL</a></li>
+                            <li><a href="/liga/plantilla-arbitral/">Plantilla arbitral</a></li>
+                            <li><a href="/liga/all-star-team/">All Star Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Col 3: ASOBAL.tv -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="info-links">
+                        <h5>ASOBAL.tv</h5>
+                        <ul>
+                             <li><a href="https://streamwayplus.com/asobal-tv" target="_blank">ASOBAL.tv</a></li> 
+                            <!-- <li><a href="/videos/resumenes/">Res&uacute;menes</a></li>
+                            <li><a href="/videos/completos/">Partidos completos</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Col 5: Especiales -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="info-links">
+                        <h5>Especiales</h5>
+                        <ul>
+                            <li><a href="https://fantasy.asobal.es/" target="_blank">Fantasy</a></li>
+                            <li><a href="/hall-of-fame/">Hall of Fame</a></li>
+                            <li><a href="/asobal/legacy-league/">ASOBAL Legacy League</a></li>
+                            <li><a href="https://afiliacion.decathlon.es/tracking/clk?act=25086&gel=0&pub=36282&org=2615&url=https://www.decathlon.es/es/ASOBAL_lp-U5BOZQ&ei1=Tienda ASOBAL" target="_blank">Tienda Decathlon</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Col 6: Redes Sociales + App -->
+                <div class="col-lg-3 col-md-12 col-sm-12 text-center">
+                    <ul class="social">
+                        <li>
+                            <div>
+                                <a href="https://www.instagram.com/asobal/" target="_blank" class="youtube">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="https://x.com/ASOBAL" target="_blank" class="twitter-icon">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="https://www.facebook.com/ASOBAL" target="_blank" class="facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="https://www.youtube.com/user/LigaASOBAL?gl=ES&hl=es" target="_blank" class="youtube">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="https://www.linkedin.com/company/asobal" target="_blank" class="linledin">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="https://www.tiktok.com/@asobal_" target="_blank" class="tiktok">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="https://whatsapp.com/channel/0029Vb0N9UmEQIaiQpK1Ff0l" target="_blank" class="whatsapp">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="badge mt-5" href="https://apps.apple.com/app/asobal/id1618309017" target="_blank"><img alt="Apple App Store" src="img/appleapp.png" style="width:200px"></a>
+                    <a class="badge" href="https://play.google.com/store/apps/details?id=com.tuplanb.ligaasobal" target="_blank"><img alt="Google Play Store" src="img/googleplay.png" style="width:200px"></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Links Footer-->
+
+</footer>
+<!-- End footer-->
+
+<!-- footer Down-->
+<div class="footer-down">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>&copy; 2026 Liga ASOBAL. Todos los derechos reservados | <a href="/aviso-legal/" class="afooter-down" title="Leer aviso legal">Aviso Legal</a> | <a href="/politica-cookies/" class="afooter-down" title="Leer pol&iacute;tica de cookies">Pol&iacute;tica de cookies</a> | <a href="/politica-de-privacidad/" class="afooter-down" title="Leer pol&iacute;tica de privacidad">Pol&iacute;tica de privacidad</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer Down-->
+	</div>
+	<!-- End layout-->
+
+	<!-- ======================= JQuery libs =========================== -->
+	<!-- jQuery local-->
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<!-- popper.js-->
+	<script type="text/javascript" src="assets/js/popper.min.js"></script>
+	<!-- bootstrap.min.js-->
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<!-- required-scripts.js-->
+	<script type="text/javascript" src="assets/js/theme-scripts.js"></script>
+	<!-- theme-main.js-->
+	<script type="text/javascript" src="assets/js/theme-main.js"></script>
+	<script>
+		var equi = "BAR";
+		var idi = "esp";
+	</script>
+	<script type="text/javascript" src="assets/js/act_equipos.js?v=5"></script>
+	<script type="text/javascript" src="assets/js/videos.js?v=4"></script>
+	<!-- ======================= End JQuery libs =========================== -->
+
+</body>
+
+</html>
