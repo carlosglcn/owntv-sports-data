@@ -1,0 +1,3 @@
+nonce 4cdca924ff pid 290235
+main.js actions: ['padelfip_refresh_nonce']
+livescore_tab_load ERR HTTP Error 403: Forbidden

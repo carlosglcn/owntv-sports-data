@@ -1,8 +1,0 @@
-
-=== SAVE https://www.padelfip.com/wp-content/themes/padelfiptheme-v2026-10-14/assets/js/iframe-widgets.js -> 200 text/javascript 9591
-  saved fip_iframe.js
-
-=== SAVE https://www.padelfip.com/wp-content/themes/padelfiptheme-v2026-10-14/assets/js/ajax_handle_draw.js -> 200 text/javascript 3221
-  saved fip_draw.js
-
-=== POSTSAVE https://www.padelfip.com/wp-admin/admin-ajax.php -> ERR HTTP Error 403: Forbidden
