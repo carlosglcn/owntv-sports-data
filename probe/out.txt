@@ -1,36 +1,22 @@
 
-=== SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetInitMatches -> 200 application/json; charset=utf-8 43878
-  saved cl_init.json
+=== SAVE https://ehfcl.eurohandball.com/frontend.kw/dist/assets/js/plugin.min.js?v=DXe0FBfLFLhFFSCsbO3phjOEt5JUBgmtc-TxQaZOgKo -> 200 text/javascript 84350
+  saved ehf_plugin.js
 
-=== SAVE https://www.eurohandball.com/umbraco/api/livescoreapi/GetLiveScoreMatches/138648 -> 200 application/json; charset=utf-8 73577
-  saved live.json
+=== SAVE https://www.lnh.fr/scripts/apps.js?v=2.3.2 -> 200 application/x-javascript 29313
+  saved lnh_apps.js
 
-=== SAVE https://www.eurohandball.com/umbraco/api/livescoreapi/GetTournaments/138648 -> 200 application/json; charset=utf-8 16170
-  saved tournaments.json
+=== POSTSAVE https://www.lnh.fr/ajax -> ERR HTTP Error 404: Not Found
 
-=== SAVE https://ehfcl.eurohandball.com/men/2026-27/matches/ -> 200 text/html; charset=utf-8 94588
-  saved cl_page.html
+=== POSTSAVE https://www.lnh.fr/ajax/sportsCalendars/index_ajax -> ERR HTTP Error 404: Not Found
 
-=== SAVE https://ehfcl.eurohandball.com/men/2026-27/standings/ -> 200 text/html; charset=utf-8 209049
-  saved cl_standings.html
+=== SAVE https://www.lnh.fr/daikin-starligue/classement -> 200 text/html; charset=UTF-8 64631
+  saved lnh_table2.html
 
-=== SAVE https://www.opel-hbl.de/de/hbl/spielplan -> 200 text/html;charset=utf-8 1130059
-  saved hbl_spielplan.html
+=== SAVE https://www.handball.net/ligen/sportradar.dhbdata.15984/spielplan -> ERR HTTP Error 404: Not Found
 
-=== SAVE https://www.lnh.fr/liquimoly-starligue/calendrier -> 200 text/html; charset=UTF-8 69803
-  saved lnh_cal.html
+=== SAVE https://www.handball.net/api/new/matches?date_from=2026-10-28&date_to=2026-11-02&per_page=50&page=1 -> ERR HTTP Error 403: Forbidden
 
-=== SAVE https://www.lnh.fr/liquimoly-starligue/classement -> 200 text/html; charset=UTF-8 64626
-  saved lnh_table.html
+=== SAVE https://www.handball.net/a/sportdata/1/widgets/tournament/sportradar.dhbdata.15984/schedule -> ERR HTTP Error 404: Not Found
 
-=== SAVE https://tophaandbold.dk/kampprogram/herreligaen -> 200 text/html; charset=UTF-8 770962
-  saved dk_prog.html
-
-=== SAVE https://tophaandbold.dk/stillinger/herreligaen -> 200 text/html; charset=UTF-8 216484
-  saved dk_table.html
-
-=== SAVE https://www.mksz.hu/static/js/app.b76bb16e.js -> 200 text/html 11708
-  saved mksz_app.js
-
-=== SAVE https://www.mksz.hu/js/app.b76bb16e.js -> 200 application/javascript 146517
-  saved mksz_app2.js
+=== SAVE https://www.mksz.hu/versenyek -> 200 text/html 11708
+  saved mksz_versenyek.html
