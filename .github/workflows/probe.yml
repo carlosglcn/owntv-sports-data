@@ -2,9 +2,15 @@ name: probe-handball
 on:
   push:
     branches: [probe-handball]
+    paths: [probe/urls.txt, probe/probe.py, .github/workflows/probe.yml]
+permissions:
+  contents: write
 jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 probe/probe.py
+      - run: python3 probe/probe.py > probe/out.txt 2>&1 || true
+      - run: |
+          git config user.name "github-actions"; git config user.email "actions@github.com"
+          git add probe/out.txt; git commit -qm "probe output"; git push
