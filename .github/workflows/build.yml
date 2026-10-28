@@ -23,9 +23,12 @@ jobs:
       - run: python3 scripts/cycling.py
         continue-on-error: true
         timeout-minutes: 15
+      - run: python3 scripts/snooker.py
+        continue-on-error: true
+        timeout-minutes: 8
       - name: Commit when the data changed
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add acb.json euroleague.json asobal.json ehfcl.json ehfel.json lnh.json hhl.json khl.json hbl.json tennis.json cycling.json logos
+          git add acb.json euroleague.json asobal.json ehfcl.json ehfel.json lnh.json hhl.json khl.json hbl.json tennis.json cycling.json snooker.json logos
           git diff --cached --quiet || { git commit -qm "Update data"; git pull -q --rebase; git push; }
