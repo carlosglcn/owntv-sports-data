@@ -1,15 +1,27 @@
 
-=== SAVE https://ehfcl.eurohandball.com/frontend.kw/dist/assets/js/common.min.js?v=ObAbUrBcy68qWLW1nv5WLUh2i3fVyLFSeCA3gQbppfI -> 200 text/javascript 41372
-  saved ehf_common.js
+=== SAVE https://ehfcl.eurohandball.com/frontend.kw/dist/assets/js/matches.min.js -> ERR HTTP Error 404: Not Found
 
-=== SAVE https://www.lnh.fr/ajaxpost1 -> 200 text/html; charset=UTF-8 717069
-  saved lnh_cal_ajax.html
+=== SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetMatches?competitionId=-Gd1tlJGDXtuVGsp4I0Chg&contentId=138649 -> 200 application/json; charset=utf-8 17805
+  saved ehf_gm1.json
 
-=== SAVE https://www.lnh.fr/daikin-starligue/classement -> 200 text/html; charset=UTF-8 64626
-  saved lnh_table2.html
+=== SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetMatches?competitionId=-Gd1tlJGDXtuVGsp4I0Chg&contentId=138649&past=true -> 200 application/json; charset=utf-8 17805
+  saved ehf_gm2.json
 
-=== SAVE https://public.mksz.hu/public/api/v1/versenyek/foversenyek?evadEv.equals=2027&nem.in=F&sportagKod.equals=SPAG_1&korosztalyId.equals=1&page=0&paged=true&size=300 -> 200 application/json 2
-  saved mksz_fo2027.json
+=== SAVE https://www.opel-hbl.de/de/hbl/spielplan/abonnieren -> 200 text/html;charset=utf-8 1124082
+  saved hbl_abo.html
 
-=== SAVE https://public.mksz.hu/public/api/v1/versenyek/foversenyek?evadEv.equals=2026&nem.in=F&sportagKod.equals=SPAG_1&korosztalyId.equals=1&page=0&paged=true&size=300 -> 200 application/json 2
-  saved mksz_fo2026.json
+=== SAVE https://www.kicker.de/handball-bundesliga/spieltag -> 202 text/html; charset=UTF-8 0
+  saved kicker_spieltag.html
+
+=== SAVE https://www.kicker.de/handball-bundesliga/tabelle -> 202 text/html; charset=UTF-8 0
+  saved kicker_tabelle.html
+
+=== SAVE https://www.kicker.de/handball-bundesliga/spieltag/2026-27/-1 -> 202 text/html; charset=UTF-8 0
+  saved kicker_spieltag2.html
+
+=== MKSZ https://public.mksz.hu/public/api/v1/versenyek/foversenyek?evadEv.equals=2027&page=0&paged=true&size=300 -> ERR HTTP Error 400: Bad Request
+
+=== MKSZ https://public.mksz.hu/public/api/v1/versenyek/foversenyek?evadEv.equals=2026&page=0&paged=true&size=300 -> ERR HTTP Error 400: Bad Request
+
+=== SAVE https://public.mksz.hu/public/api/v1/versenyek/program?csakMagyar.equals=true&globalisVersenyKod.in=NBI -> 200 application/json 31590
+  saved mksz_prog.json
