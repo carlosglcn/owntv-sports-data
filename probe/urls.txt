@@ -1,3 +1,12 @@
-SAVE https://www.sportschau.de/live-und-ergebnisse/handball/deutschland-hbl/spiele-und-ergebnisse ss_hbl_spiele.html
-SAVE https://www.sportschau.de/live-und-ergebnisse/handball/deutschland-hbl/tabelle ss_hbl_tabelle.html
-MKSZ https://public.mksz.hu/public/api/v1/versenyek/tabella/320228793 mksz_tabella.json
+SAVE https://www.procyclingstats.com/races.php?year=2026&circuit=1&filter=Filter pcs_races.html
+SAVE https://www.procyclingstats.com/race/vuelta-a-espana/2026/route/stages pcs_vuelta_stages.html
+SAVE https://www.procyclingstats.com/race/vuelta-a-espana/2026/stage-10 pcs_vuelta_s10.html
+SAVE https://www.procyclingstats.com/race/vuelta-a-espana/2026/gc pcs_vuelta_gc.html
+SAVE https://firstcycling.com/race.php?y=2026&t=2 fc_races.html
+SAVE https://www.premierpadel.com/en/tournaments pp_tournaments.html
+SAVE https://www.padelfip.com/calendar-premier-padel/ fip_cal.html
+SAVE https://www.pdc.tv/fixtures-results pdc_fixtures.html
+SAVE https://www.wst.tv/tournaments wst_tournaments.html
+SAVE https://api.wst.tv/ wst_api.html
+SAVE https://www.dartsdatabase.co.uk/ dartsdb.html
+SAVE https://www.snooker.org/res/index.asp?template=24 snookerorg.html
