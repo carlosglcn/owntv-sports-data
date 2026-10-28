@@ -1,12 +1,4 @@
 
-=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatchDraws -> ERR HTTP Error 500: Internal Server Error
+=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatchDraws -> ERR HTTP Error 500: Internal Server Error {"status":false,"code":500,"message":"Internal Server Error"}
 
-=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatchDraws -> ERR HTTP Error 500: Internal Server Error
-
-=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches -> ERR HTTP Error 500: Internal Server Error
-
-=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches -> ERR HTTP Error 500: Internal Server Error
-
-=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentInfo -> ERR HTTP Error 500: Internal Server Error
-
-=== PJ https://api-prod.premierpadel.com/api/tournament/getTournaments -> ERR HTTP Error 500: Internal Server Error
+=== PJ https://api-prod.premierpadel.com/api/tournament/getTournaments -> ERR HTTP Error 500: Internal Server Error {"status":false,"code":500,"message":"Internal Server Error"}
