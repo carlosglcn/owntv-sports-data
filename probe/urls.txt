@@ -1,5 +1,8 @@
-PJ https://api-prod.premierpadel.com/api/tournament/getTournaments {} pp_t0.json
-PJ https://api-prod.premierpadel.com/api/tournament/getTournaments {"year":2026} pp_t1.json
-PJ https://api-prod.premierpadel.com/api/tournament/getLiveTournament {} pp_live.json
-SAVE https://api-prod.premierpadel.com/api/tournament/getTournamentStrip pp_strip.json
-SAVE https://api-prod.premierpadel.com/api/player/getPlayerRankings pp_rank.json
+PJ https://api-prod.premierpadel.com/api/tournament/getTournaments {"page":1,"limit":50,"year":2026} pp_g1.json
+PJ https://api-prod.premierpadel.com/api/tournament/getTournaments {"year":"2026","type":"all"} pp_g2.json
+PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches {"tournament_id":"302"} pp_m1.json
+PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches {"tournamentId":"302"} pp_m2.json
+PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches {"id":"302"} pp_m3.json
+PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches {"slug":"kuwait-p1-2"} pp_m4.json
+PJ https://api-prod.premierpadel.com/api/tournament/getTournamentInfo {"slug":"kuwait-p1-2"} pp_i1.json
+SAVE https://api-prod.premierpadel.com/api/tournament/getTournamentDetails?slug=kuwait-p1-2 pp_d1.json
