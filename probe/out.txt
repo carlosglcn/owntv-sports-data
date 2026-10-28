@@ -1,154 +1,275 @@
 
-=== https://www.eurohandball.com/ -> 200 text/html; charset=utf-8 163296 bytes
-HEAD:  <!DOCTYPE html> <html class="no-outline" lang="en"> <head> <title>European Handball Federation - Home of Handball | EHF</title> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- disabling format detection --> <meta name="format-detection" content="telephone=no"> <meta name="format-detection" content="date=no">
-  ~ https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
-  ~ //apv-launcher.minute-ly.com/api/launcher/MIN-40600.js
-  ~ //www.google.com/recaptcha/api.js
-  ~ /umbraco/api/homeofhandballapi/GetCompetitions
-  ~ /umbraco/api/homeofhandballapi/GetHome
-  ~ /umbraco/api/homeofhandballapi/GetTeams
-  ~ /umbraco/api/homeofhandballapi/GetTeams/1171
-  ~ /umbraco/api/livescoreapi/GetLiveScoreMatches/1069
-  ~ /umbraco/api/livescoreapi/GetTournaments/1069
-  ~ /umbraco/api/sponsorapi/GetSponsors/home
+=== JS https://ehfcl.eurohandball.com/men/2026-27/matches/ -> 200 text/html; charset=utf-8 94588
 
-=== https://ehfcl.eurohandball.com/men/2026-27/matches/ -> 200 text/html; charset=utf-8 94588 bytes
-HEAD:  <!DOCTYPE html> <html class="no-outline" lang="en"> <head> <title>Matches, Results &amp; Schedule - EHF Champions League Men</title> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- disabling format detection --> <meta name="format-detection" content="telephone=no"> <meta name="format-detection" content="date
-  ~ https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
-  ~ //apv-launcher.minute-ly.com/api/launcher/MIN-40600.js
-  ~ //www.google.com/recaptcha/api.js
-  ~ /umbraco/api/competitionmatchesapi/GetInitMatches
-  ~ /umbraco/api/competitionmatchesapi/GetLiveMatchStatistics
-  ~ /umbraco/api/competitionmatchesapi/GetMatches
-  ~ /umbraco/api/homeofhandballapi/GetCompetitions
-  ~ /umbraco/api/homeofhandballapi/GetHome
-  ~ /umbraco/api/homeofhandballapi/GetTeams
-  ~ /umbraco/api/homeofhandballapi/GetTeams/1171
-  ~ /umbraco/api/livescoreapi/GetLiveScoreMatches/138648
-  ~ /umbraco/api/livescoreapi/GetTournaments/138648
-  ~ /umbraco/api/sponsorapi/GetSponsors/-Gd1tlJGDXtuVGsp4I0Chg
+=== BODY https://www.eurohandball.com/umbraco/api/livescoreapi/GetLiveScoreMatches/138648 -> 200 application/json; charset=utf-8 73577
+{"usePolling":true,"days":[{"date":"2026-10-28T00:00:00","dayFormatted":"28","dayDatumFormatted":"2026-10-28","monthFormatted":"Oct","liveScoreMatches":[{"match":{"id":"-Gd1tlJGDXtuVGsp4I0Chg","competitionType":"European Cup / EHF Champions League","competitionShortName":"EHF CL - M","cssClass":"theme--ochre","matchID":"202711020101016","homeTeam":{"fullName":"Orlen Wisla Plock","logoBig":"https://res.ehf.eu/doxtore/TLCEQLGQDD/e1GDx4hAd4m3OP2MUjZsUblI3hAS2CVXmCLcWXth6jYYlu6CjKTvZ41ZwHupP-RA0gwfNoS2XU4dN98hSNI-fw","photos":{"small":"https://res.ehf.eu/doxtore/TLCEQLGQDD/DQvUMm7H0OUJtAJngp2LFURf9zns23noZ9cKPB11SB3hubpEU6qr6HyidZsRKHX_xzs2AfXFkmNT6qnBI2RRGQ","big":"https://res.ehf.eu/doxtore/TLCEQLGQDD/DQvUMm7H0OUJtAJngp2LFURf9zns23noZ9cKPB11SB3hubpEU6qr6HyidZsRKHX_gevuV01qA_xtiAXJtfXVNw","w570":"https://res.ehf.eu/doxtore/TLCEQLGQDD/DQvUMm7H0OUJtAJngp2LFURf9zns23noZ9cKPB11SB3hubpEU6qr6HyidZsRKHX_n0FS7J6HMK1i-UXxzSbd2Q","w990":"https://res.ehf.eu/doxtore/TLCEQLGQDD/DQvUMm7H0OUJtAJngp2LFURf9zns23noZ9cKPB11SB3hubpEU6qr6HyidZsRKHX_EbxSuX-Jc8BCMMzPg2q0-A","w1140":"https://res.ehf.eu/doxtore/TLCEQLGQDD/DQvUMm7H0OUJtAJngp2LFURf9zns23noZ9cKPB11SB3hubpEU6qr6HyidZsRKHX_pPyMZ0eJ4bwagc47H2HhvQ","w1920":"https://res.ehf.eu/doxtore/TLCEQLGQDD/DQvUMm7H0OUJtAJngp2LFURf9zns23noZ9cKPB11SB3hubpEU6qr6HyidZsRKHX_H8H-a3WJZFzY5Nt-Vukjfw","w1980":"https://res.ehf.eu/doxtore/TLCEQLGQDD/DQvUMm7H0OUJtAJngp2LFURf9zns23noZ9cKPB11SB3hubpEU6qr6HyidZsRKHX_UH7uFZoircbg5vvysiKrRQ","w2880":"https://res.ehf.eu/doxtore/TLCEQLGQDD/DQvUMm7H0OUJtAJngp2LFURf9zns23noZ9cKPB11SB3hubpEU6qr6HyidZsRKHX__4NhsLFQQNbcnnNoZfxzXg"},"countryFlag":null,"countryName":null,"formerNames":[],"lastParticipation":[],"ageClass":null,"address":null,"isClub":false,"isOthers":false,"communications":[],"socialChannels":[],"LastParticipation":null,"clubInfoPdf":null,"playerListPdf":null,"cumulativeStatsPdf":null,"id":"Qg5-SUEq-U2qV3euQZ48RQ","name":"Orlen Wisla Plock","shortName":null,"nationAbbreviation":"POL","isNationAbbreviation
 
-=== https://ehfel.eurohandball.com/men/2026-27/matches/ -> 200 text/html; charset=utf-8 91613 bytes
-HEAD:  <!DOCTYPE html> <html class="no-outline" lang="en"> <head> <title>EHF European League Men 2026/27: Matches, Results &amp; Schedule</title> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- disabling format detection --> <meta name="format-detection" content="telephone=no"> <meta name="format-detection" content
-  ~ https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
-  ~ //apv-launcher.minute-ly.com/api/launcher/MIN-40600.js
-  ~ //www.google.com/recaptcha/api.js
-  ~ /umbraco/api/competitionmatchesapi/GetInitMatches
-  ~ /umbraco/api/competitionmatchesapi/GetLiveMatchStatistics
-  ~ /umbraco/api/competitionmatchesapi/GetMatches
-  ~ /umbraco/api/homeofhandballapi/GetCompetitions
-  ~ /umbraco/api/homeofhandballapi/GetHome
-  ~ /umbraco/api/homeofhandballapi/GetTeams
-  ~ /umbraco/api/homeofhandballapi/GetTeams/1171
-  ~ /umbraco/api/livescoreapi/GetLiveScoreMatches/138790
-  ~ /umbraco/api/livescoreapi/GetTournaments/138790
-  ~ /umbraco/api/sponsorapi/GetSponsors/0LdFJEv4Xeq34p7ZoHYnNQ
+=== BODY https://www.eurohandball.com/umbraco/api/livescoreapi/GetTournaments/138648 -> 200 application/json; charset=utf-8 16170
+[{"competitionId":"OKgx__G3mr8UE_8dFr2cOQ","name":"Men’s EHF EURO 2028","shortName":"EHF EURO 2028 - M","logo":"/media/f3bly55t/meuro28header-logo.png","type":"European Championship","CompetitionMainType":"European Championship","CompetitionSubType":"European Championship","gender":"M","season":"2028","seasonName":"2028","division":0,"typeTags":["indoor","adults","national"],"dateFrom":{"utc":"2025-01-10T00:00:00Z","local":"2025-01-10T00:00:00Z","cet":"2025-01-10T01:00:00","timeZoneName":"CET","formattedTime":"01:00","hasTime":false,"hasDate":true,"formattedDate":"10.01.2025","formattedDateFull":"Fri Jan 10, 2025","formattedTournamentDate":"10/01"},"dateTo":{"utc":"2028-12-31T00:00:00Z","local":"2028-12-31T00:00:00Z","cet":"2028-12-31T01:00:00","timeZoneName":"CET","formattedTime":"01:00","hasTime":false,"hasDate":true,"formattedDate":"31.12.2028","formattedDateFull":"Sun Dec 31, 2028","formattedTournamentDate":"31/12"},"phaseName":null,"venue":[],"leg":null,"linkToTv":"http://ehfcl.eurohandball.com/men/2026-27/tv-guide/?competitionId=OKgx__G3mr8UE_8dFr2cOQ","buyTicketsUrl":null,"websiteUrl":"http://ehfeuro.eurohandball.com/men/2028/","linkTarget":null,"scheduleUrl":"http://ehfeuro.eurohandball.com/men/2028/matches/","isNational":true,"isClub":false,"isEbt":false,"isBeach":false,"cssClass":"theme--blue"},{"competitionId":"geUe4-8vreQ-I8HeX-A38w","name":"Women’s EHF EURO 2026","shortName":"EHF EURO 2026 - W","logo":"/media/vmvf5mm5/logo_500x130_date.png","type":"European Championship","CompetitionMainType":"European Championship","CompetitionSubType":"European Championship","gender":"F","season":"2026","seasonName":"2026","division":0,"typeTags":["indoor","adults","national"],"dateFrom":{"utc":"2025-03-07T00:00:00Z","local":"2025-03-07T00:00:00Z","cet":"2025-03-07T01:00:00","timeZoneName":"CET","formattedTime":"01:00","hasTime":false,"hasDate":true,"formattedDate":"07.03.2025","formattedDateFull":"Fri Mar 07, 2025","formattedTournamentDate":"07/03"},"dateTo":{"utc":"
 
-=== https://ehfeuro.eurohandball.com/ -> 200 text/html; charset=utf-8 157044 bytes
-HEAD:  <!DOCTYPE html> <html class="no-outline" lang="en"> <head> <title>EHF EURO - Latest News and Results | EHF</title> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- disabling format detection --> <meta name="format-detection" content="telephone=no"> <meta name="format-detection" content="date=no"> <meta name=
-  ~ https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
-  ~ //apv-launcher.minute-ly.com/api/launcher/MIN-40600.js
-  ~ //www.google.com/recaptcha/api.js
-  ~ /umbraco/api/homeofhandballapi/GetCompetitions
-  ~ /umbraco/api/homeofhandballapi/GetHome
-  ~ /umbraco/api/homeofhandballapi/GetTeams
-  ~ /umbraco/api/homeofhandballapi/GetTeams/1171
-  ~ /umbraco/api/livescoreapi/GetLiveScoreMatches/1224
-  ~ /umbraco/api/livescoreapi/GetTournaments/1224
-  ~ /umbraco/api/sponsorapi/GetSponsors/home
+=== BODY https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetInitMatches -> 200 application/json; charset=utf-8 43878
+{"matches":[{"matchID":"202711020101067","pairId":"ovZKSCWb6WLDPDNzUhFf_Q","streamingUrl":null,"venue":{"place":{"countryAbbreviation":"POL","cityName":"Kielce","hallName":"Hala Legionow","courtNo":null,"spectatorsCount":null,"soldOut":false},"date":{"utc":"2026-10-28T19:45:00Z","local":"2026-10-28T20:45:00Z","cet":"2026-10-28T20:45:00","timeZoneName":"CET","formattedTime":"20:45","hasTime":true,"hasDate":true,"formattedDate":"28.10.2026","formattedDateFull":"Wed Oct 28, 2026","formattedTournamentDate":"28/10"},"schedule":{"from":"0001-01-01T00:00:00","until":"0001-01-01T00:00:00","hasDate":false},"formattedDateFull":"Wed Oct 28, 2026","formattedTimeFull":"20:45 (CET)","formattedTime":"20:45","formattedTimeZoneName":" (CET)"},"comp":{"id":"-Gd1tlJGDXtuVGsp4I0Chg","name":"EHF Champions League Men","shortName":"EHF CL - M","type":"European Cup / EHF Champions League","competitionMainType":"European Cup","competitionSubType":"EHF Champions League","gender":"M","season":"2027","seasonName":"2026/27","longSeasonName":"EHF Champions League 2026/27","division":0,"statsDepth":0,"typeTags":["indoor","adults","club"],"legName":6,"round":{"id":"Xg2Ubz1_S9dxy0p0unxCBg","name":"Group Phase","shortName":"GP","active":true,"sort":1,"roundReportUrl":"https://res.ehf.eu/doxtore/TLCEQLGQDD/uZmIpvhei6cdVrjznr1dSkzit8LlAqexyMbSLGb4tD_ZMX-LocRKv2PqR7Zha_V1BEBQkK0MUI4tcJs0zHcC_w","venue":{"beginDate":"2026-09-09T00:00:00Z","endDate":"2026-10-29T00:00:00Z"},"isFinalRound":false},"phase":{"id":"-lcT
 
-=== https://www.liquimoly-hbl.de/de/s/spielplan/ -> ERR HTTP Error 404: Not Found
+=== GREP https://ehfcl.eurohandball.com/men/2026-27/matches/ -> 200 text/html; charset=utf-8 94588
+  ~ data-iub-purposes="3"
+  ~ data-suppressedsrc="//apv-launcher.minute-ly.com/api/launcher/MIN-40600.js"
+  ~ data-purposes="${purposes}"
+  ~ data-iub-enabled="1"
+  ~ data-iub-type="module"
+  ~ data-iub-purposes="1"
+  ~ data-iub-purposes="4"
+  ~ data-eloqua-site-id="2069535878"
+  ~ data-js-requires="livescores"
+  ~ data-url="/umbraco/api/livescoreapi/GetLiveScoreMatches/138648"
+  ~ data-competitionurl="/umbraco/api/livescoreapi/GetTournaments/138648"
+  ~ data-category="livescores"
+  ~ data-tab="#tab-content-livescore"
+  ~ data-category="tournaments"
+  ~ data-tab="#tab-content-tournaments"
+  ~ data-target-id="138673"
+  ~ data-target-id="138679"
+  ~ data-target-id="138720"
+  ~ data-nav-id="138649"
+  ~ data-nav-level="2"
+  ~ data-nav-id="138670"
+  ~ data-nav-id="138671"
+  ~ data-nav-id="138673"
+  ~ data-nav-id="138677"
+  ~ data-nav-id="138678"
+  ~ data-nav-id="138679"
+  ~ data-nav-level="3"
+  ~ data-nav-id="138720"
+  ~ data-nav-id="138730"
+  ~ data-nav-id="138727"
+  ~ data-js-requires="matches"
+  ~ data-init-matches-url="/umbraco/api/competitionmatchesapi/GetInitMatches"
+  ~ data-filter-matches-url="/umbraco/api/competitionmatchesapi/GetMatches"
+  ~ data-filtermatchlivestaturl="/umbraco/api/competitionmatchesapi/GetLiveMatchStatistics"
+  ~ data-competition-id="-Gd1tlJGDXtuVGsp4I0Chg"
+  ~ data-currentcontentid="138649"
+  ~ data-header="matches"
+  ~ data-header="date"
+  ~ data-header="results"
+  ~ data-header="round"
 
-=== https://www.liquimoly-hbl.de/ -> 200 text/html;charset=utf-8 1205201 bytes
-HEAD: <!DOCTYPE html><html dir="ltr" lang="de-DE" class=""><head><meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <script type="importmap">{"imports":{"#entry":"/_nuxt/B6mwsV6f.js"}}</script> <link rel="icon" href="/image/_CMS/HBL_Favicon-RGB.png"> <title>Opel HBL | Die offizielle Seite</title> <meta name="description" content="Die offizielle Seite der Opel HB
+=== GREP https://www.liquimoly-hbl.de/ -> 200 text/html;charset=utf-8 1204546
+  ~ https://www.opel-hbl.de/image/fallback
+  ~ https://www.opel-hbl.de/de/hbl
+  ~ https://www.weplayhandball.de/hbl
+  ~ https://www.dyn.sport/sport_handball
+  ~ https://login.handball-bundesliga.de/
+  ~ https://www.opel-hbl.de/de/hbl/statistiken/dashboard
+  ~ https://www.opel-hbl.de/de/hbl/60-jahre-hbl
+  ~ https://tippspiel.handball-bundesliga.de/
+  ~ https://www.dyn.sport/competition/
+  ~ https://www.dyn.sport/competition/2_
+  ~ https://sportradar.com/
   ~ https://ott.opel-hbl.de/api/v3/contents/
+  ~ https://avplayer-cdn.sportradar.com/dist
+  ~ https://avplayer.sportradar.com/agamo
+  ~ https://dev-cf.avplayer-nonprod.sportradar.dev/agamo
 
-=== https://www.handball.net/ -> 200 text/html; charset=utf-8 1444177 bytes
-HEAD: <!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Handball.net</title><base href="/"><!-- Preconnects criticos --><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="preconnect" href="https://c.delivery.consentmanager.net" crossorigin=""><!-- Consentmanager (CMP) - au
-  ~ http://127.0.0.1:4055/api/new/competitions
-  ~ http://127.0.0.1:4055/api/new/competitions?page=1&per_page=12&season_id=2627
-  ~ http://127.0.0.1:4055/api/new/content/mega-menu
-  ~ http://127.0.0.1:4055/api/new/content/press/config
-  ~ http://127.0.0.1:4055/api/new/content/press/config?federation_id=1
-  ~ http://127.0.0.1:4055/api/new/content/sliders/slider_1
-  ~ http://127.0.0.1:4055/api/new/content/sliders/slider_2
-  ~ http://127.0.0.1:4055/api/new/content/widgets/home-highlights-carousel
-  ~ http://127.0.0.1:4055/api/new/content/widgets/home-news-carousel
-  ~ http://127.0.0.1:4055/api/new/content/widgets/home-toptopics-carousel
-  ~ http://127.0.0.1:4055/api/new/matches
-  ~ http://127.0.0.1:4055/api/new/matches?date_from=2026-10-28&date_to=2026-10-28&per_page=12&page=1
-  ~ http://127.0.0.1:4055/api/new/news
-  ~ http://127.0.0.1:4055/api/new/news/blocks
-  ~ http://127.0.0.1:4055/api/new/news/blocks?federation_id=1&page=1&per_page=20
-  ~ http://127.0.0.1:4055/api/new/news/blocks?federation_id=1&page=1&per_page=30
-  ~ http://127.0.0.1:4055/api/new/news?filter%5Bcontent_type%5D=press&sort%5Bvisits%5D=desc&per_page=10&page=1&filter%5Bfederation_id%5D=1
-  ~ http://127.0.0.1:4055/api/new/news?filter%5Bfederation_id%5D=1&per_page=16&page=1&sort%5Bpublished_at%5D=desc&filter%5Btag_id%5D=41
-  ~ http://127.0.0.1:4055/api/new/news?filter%5Bfederation_id%5D=1&per_page=6&page=1&sort%5Bpublished_at%5D=desc&filter%5Bchannel_id%5D=1540
-  ~ http://127.0.0.1:4055/api/new/news?filter%5Bfederation_id%5D=1&per_page=6&page=1&sort%5Bpublished_at%5D=desc&filter%5Bchannel_id%5D=1544
-  ~ http://127.0.0.1:4055/api/new/news?filter%5Bfederation_id%5D=1&per_page=9&page=1&sort%5Bpublished_at%5D=desc
-  ~ http://127.0.0.1:4055/api/new/seasons
-  ~ http://127.0.0.1:4055/api/new/stats/team-stats
-  ~ http://127.0.0.1:4055/api/new/stats/team-stats?season_id=2627&per_page=10&sort_by=goals&age_id=1,2,3,4&gender=female
-  ~ http://127.0.0.1:4055/api/new/stats/team-stats?season_id=2627&per_page=10&sort_by=goals&age_id=1,2,3,4&gender=male
-  ~ http://127.0.0.1:4055/api/new/stats/top-scorers
-  ~ http://127.0.0.1:4055/api/new/stats/top-scorers?season_id=2627&per_page=10&sort_by=goals&age_id=1,2,3,4&gender=female
-  ~ http://127.0.0.1:4055/api/new/stats/top-scorers?season_id=2627&per_page=10&sort_by=goals&age_id=1,2,3,4&gender=male
-  ~ http://127.0.0.1:4055/api/new/teams/clubs
-  ~ http://127.0.0.1:4055/api/new/teams/clubs?page=1&per_page=12&sort=random
-  ~ https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap
-  ~ https://fonts.googleapis.com/icon?family=Material+Icons&amp;display=swap
+=== JS https://www.liquimoly-hbl.de/ -> 200 text/html;charset=utf-8 1204546
+  [B6mwsV6f.js] "scheduler flush"
+  [B6mwsV6f.js] "?a.scheduler=h=>{ne(h,l&&l.suspense)}:o!=="
+  [B6mwsV6f.js] "Hydration completed but contains mismatches."
+  [B6mwsV6f.js] ")?!0:s.includes(hb[t])}}const mb=Qn().requestIdleCallback||(e=>setTimeout(e,1)),pb=Qn().cancelIdleCallback||(e=>clearTimeout(e)),gb=(e=1e4)=>t=>{const n=mb(t,{timeout:e});return()=>pb(n)};function vb(e){const{top:t,left
+  [B6mwsV6f.js] "&&(l.options.baseURL&&(l.request=ga(l.request,l.options.baseURL)),l.options.query&&(l.request=Mr(l.request,l.options.query),delete l.options.query),"
+  [B6mwsV6f.js] ")),aC=As.Headers,cC=As.AbortController,lC=mf({fetch:iC,Headers:aC,AbortController:cC}),uC=lC,fC=()=>window?.__NUXT__?.config||window?.useNuxtApp?.().payload?.config,va=()=>fC().app,dC=()=>va().baseURL,hC=()=>va().buildA
+  [B6mwsV6f.js] ",...oM(g)]));if(!g.baseURL&&typeof b.value=="
+  [B6mwsV6f.js] ",({error:o})=>{s.add(o)});function r(o){const i=V4(n.app.baseURL,o.fullPath);bd({path:i,persistState:!0})}e.hook("
+  [B6mwsV6f.js] "/api/_auth/session"
+  [B6mwsV6f.js] ").matches),e.missingIconAbstract=function(){const n=[],s={fill:"
+  [B6mwsV6f.js] "/api/translations"
+  [B6mwsV6f.js] "/api/config"
+  [B6mwsV6f.js] "}},matchesPlayed:{t:0,b:{t:2,i:[{t:3}],s:"
+  [B6mwsV6f.js] "tabelle"
+  [B6mwsV6f.js] "spielplan"
+  [DPEYnj5B.js] "/api/page"
+  [DRowOBGd.js] "/api/document-center/download/cancel"
+  [DRowOBGd.js] "/api/document-center/download/status"
+  [DRowOBGd.js] "/api/document-center/download/start"
+  [DRowOBGd.js] `/api/document-center/download/file?jobId=${encodeURIComponent(M)}`
+  [DRowOBGd.js] `/api/image/metadata/${ne(a.pageDataBySlug.fields.image)}`
+  [DRowOBGd.js] "/api/jwt/lco/token"
+  [DRowOBGd.js] "/api/filter"
+  [CJ9__0yh.js] "?e():e,t)}const ce=k({getImage(e,t){let i=t.baseURL;const r=t.modifiers;if(i||(i=S().app.baseUrl),i=i||"
+  [CJ9__0yh.js] `)}}}),de=k({getImage(e,t){let i=t.baseURL;return i||(i=S().app.baseUrl),i=i||"
+  [CJ9__0yh.js] `)}}}),le=k({getImage(e,t){let i=t.baseURL;return i||(i=S().app.baseUrl),i=i||"
+  [CJ9__0yh.js] "+z(t.toString())}),fe=k({validateDomains:!0,supportsAlias:!0,getImage:(e,{modifiers:t,baseURL:i},r)=>{t.width&&t.height&&(t.resize=`
+  [CJ9__0yh.js] ";return i||(i=y(r.options.nuxt.baseURL,"
+  [CJ9__0yh.js] ":{setup:le,defaults:{}},ipx:{setup:fe,defaults:{}}}},L=e=>{const t=S(),i=P();return i.$img||i._img||(i._img=re({...ge,event:i.ssrContext?.event,nuxt:{baseURL:t.app.baseURL},runtimeConfig:t}))};function he(e){performance
+  [Dy20U7lx.js] "?document.querySelector(n):n;if(o==null)return;let a=[...o.children].find(r=>r.matches("
+  [CtO7Z_mC.js] "/api/synergy/season-for-match"
+  [CXK8a5T8.js] "/api/navigation"
+  [B09i1TOZ.js] "/api/synergy/seasons"
+  [B09i1TOZ.js] `/api/synergy/${e}/seasons`
 
-=== https://www.lnh.fr/liquimoly-starligue/calendrier -> 200 text/html; charset=UTF-8 126061 bytes
-HEAD: <!DOCTYPE HTML> <html lang="fr"> <head> <meta charset="utf-8" /> <meta name="robots" content="index,follow"> <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" /> <meta name="google-site-verification" content="P--fUhIuIGKkFFtGycgE_q9tWgbusgiNWsyOte3kj_8" /> <meta http-equiv="Expires" content="30"> <base href="https://www.lnh.fr/"> <title>Calendr
-  ~ https://fonts.googleapis.com
-  ~ https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap
-  ~ https://fonts.googleapis.com/icon?family=Material+Icons
-  ~ https://www.lnh.fr/webroot/assets/css/popin-widget.css?v=20260804-2
-  ~ https://www.lnh.fr/webroot/assets/js/popin-widget.js?v=20260824-1
+=== BODY https://www.lnh.fr/liquimoly-starligue/calendrier -> 200 text/html; charset=UTF-8 125876
+<!DOCTYPE HTML> <html lang="fr"> <head> <meta charset="utf-8" /> <meta name="robots" content="index,follow"> <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"
 
-=== https://www.lnh.fr/liquimoly-starligue/classement -> 200 text/html; charset=UTF-8 64747 bytes
-HEAD: <!DOCTYPE HTML><html lang="fr"><head><meta charset="utf-8"/><meta name="robots" content="index,follow"><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/><meta name="google-site-verification" content="P--fUhIuIGKkFFtGycgE_q9tWgbusgiNWsyOte3kj_8"/><meta http-equiv="Expires" content="30"><base href="https://www.lnh.fr/"><title>Classement Daikin StarLigue • Handball
-  ~ https://fonts.googleapis.com
-  ~ https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap
-  ~ https://fonts.googleapis.com/icon?family=Material+Icons
-  ~ https://www.lnh.fr/webroot/assets/css/popin-widget.css?v=20260804-2
-  ~ https://www.lnh.fr/webroot/assets/js/popin-widget.js?v=20260824-1
+=== GREP https://www.lnh.fr/liquimoly-starligue/calendrier -> 200 text/html; charset=UTF-8 69810
 
-=== https://www.haandboldligaen.dk/ -> 200 text/html; charset=UTF-8 53322 bytes
-HEAD: <!DOCTYPE html> <html lang="da-DK" class="html_stretched responsive av-preloader-disabled html_header_top html_logo_left html_main_nav_header html_menu_right html_custom html_header_sticky html_header_shrinking_disabled html_mobile_menu_phone html_header_searchicon html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled html_av-overlay-side html_av-overlay-side-cla
-  ~ https://api.w.org/
-  ~ https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=auto
-  ~ https://widgets.oddspedia.com/images/logo-oddspedia-dark.svg
-  ~ https://widgets.oddspedia.com/js/widget/init.js?widgetId=oddspediaWidgetStandingsLeagueId2293
-  ~ https://widgets.oddspedia.com/js/widget/init.js?widgetId=oddspediaWidgetStandingsLeagueId2294
-  ~ https://www.haandboldligaen.dk/comments/feed/
-  ~ https://www.haandboldligaen.dk/feed/
-  ~ https://www.haandboldligaen.dk/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3
-  ~ https://www.haandboldligaen.dk/wp-json/
-  ~ https://www.haandboldligaen.dk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.haandboldligaen.dk%2F
-  ~ https://www.haandboldligaen.dk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.haandboldligaen.dk%2F&#038;format=xml
-  ~ https://www.haandboldligaen.dk/wp-json/wp/v2/pages/24
+=== GREP https://www.lnh.fr/liquimoly-starligue/classement -> 200 text/html; charset=UTF-8 113466
 
-=== https://www.dhf.dk/ -> 200 text/html;charset=utf-8 127099 bytes
-HEAD: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>DanskHåndbold - Forside | Håndbold.dk</title><script type="importmap">{"imports":{"#entry":"/_nuxt/Cd9oZXr7.js"}}</script><style>/*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */ @layer properties{@supports (((-webkit-hyphens:none)) and (not (margin-trim:inlin
-  ~ https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAVlYW7ZwxK7Vj6_n50ksYZNH3ROOLOXQo&loading=async&callback=google.maps.__ib__
-  ~ /api
+=== JS https://www.mksz.hu/ -> 200 text/html 11708
+  [chunk-vendors.732fb86a.js] "Moment Timezone requires Moment.js. See https://momentjs.com/timezone/docs/#/use-it/browser/"
+  [chunk-vendors.732fb86a.js] ". See http://momentjs.com/timezone/docs/#/data-loading/."
+  [chunk-vendors.732fb86a.js] "urt._ots._mar._api._mai._eka._uzt._abu._ira._urr._aza._abe."
+  [chunk-vendors.732fb86a.js] "}});return t}))},1157:function(e,t,n){var a,r;
+/*!
+ * jQuery JavaScript Library v3.7.1
+ * https://jquery.com/
+ *
+ * Copyright OpenJS Foundation and other contributors
+ * Released under the MIT license
+ * https://jquery.
+  [chunk-vendors.732fb86a.js] "http://www.w3.org/1999/xlink"
+  [chunk-vendors.732fb86a.js] "http://www.w3.org/2000/svg"
+  [chunk-vendors.732fb86a.js] "http://www.w3.org/1998/Math/MathML"
+  [chunk-vendors.732fb86a.js] ";
+/*! 
+  * portal-vue © Thorsten Lünborg, 2019 
+  * 
+  * Version: 2.1.7
+  * 
+  * LICENCE: MIT 
+  * 
+  * https://github.com/linusborg/portal-vue
+  * 
+ */function a(e){return e&&"
+  [chunk-vendors.732fb86a.js] ");
+/**
+ * @license
+ * slighly modified parse-headers 2.0.2 <https://github.com/kesla/parse-headers/>
+ * Copyright (c) 2014 David Björklund
+ * Available under the MIT license
+ * <https://github.com/kesla/parse-headers/bl
+  [chunk-vendors.732fb86a.js] "See: https://bootstrap-vue.org/docs#using-module-bundlers"
+  [chunk-vendors.732fb86a.js] ";var n=e%10,a=e%100-n,r=e>=100?100:null;return e+(t[n]||t[a]||t[r])},week:{dow:1,doy:7}});return n}))},4989:function(e,t,n){
+/*!
+  * Bootstrap v4.6.2 (https://getbootstrap.com/)
+  * Copyright 2011-2022 The Bootstrap Aut
+  [chunk-vendors.732fb86a.js] 's dropdowns require Popper (https://popper.js.org)"
+  [chunk-vendors.732fb86a.js] 's tooltips require Popper (https://popper.js.org)"
+  [chunk-vendors.732fb86a.js] ":function(e,t,n){var a,r,i;
+/*!
+ * jQuery UI Datepicker 1.14.2
+ * https://jqueryui.com
+ *
+ * Copyright OpenJS Foundation and other contributors
+ * Released under the MIT license.
+ * https://jquery.org/license
+ */(functi
+  [chunk-vendors.732fb86a.js] "http://example.com"
+  [chunk-vendors.732fb86a.js] "http://www.w3.org/1999/xhtml"
+  [chunk-vendors.732fb86a.js] "http://www.w3.org/XML/1998/namespace"
+  [chunk-vendors.732fb86a.js] "http://www.w3.org/2000/xmlns/"
+  [chunk-vendors.732fb86a.js] "https://public.mksz.hu"
+  [chunk-vendors.732fb86a.js] "https://bo.mksz.hu"
+  [chunk-vendors.732fb86a.js] "https://cdn.mksz.hu"
+  [chunk-vendors.732fb86a.js] "https://bo.mksz.hu/jatekosugynok-eloregisztracio"
+  [chunk-vendors.732fb86a.js] "https://livescore.mksz.hu/"
+  [chunk-vendors.732fb86a.js] "https://livescore-socket.mksz.hu/eredmeny?api_key="
+  [chunk-vendors.732fb86a.js] "public/api/v1"
+  [chunk-vendors.732fb86a.js] "external/api/v1"
+  [chunk-vendors.732fb86a.js] "digit-jk-mw/api/v1"
+  [chunk-vendors.732fb86a.js] "https://videojs.com/html5-video-support/"
+  [chunk-vendors.732fb86a.js] "https://www.googletagmanager.com/gtag/js"
+  [chunk-vendors.732fb86a.js] "https://www.googletagmanager.com"
+  [chunk-vendors.732fb86a.js] "https://static.hotjar.com/c/hotjar-"
+  [chunk-vendors.732fb86a.js] ";(function(e){
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <http://feross.org>
+ * @license  MIT
+ */
+var a=n("
+  [chunk-vendors.732fb86a.js] ",i=Object.prototype,o=i.hasOwnProperty;function c(e){var t=this.__data__;if(a){var n=t[e];return n===r?void 0:n}return o.call(t,e)?t[e]:void 0}e.exports=c},bc1c:function(e,t,n){var a,r,i;
+/*!
+ * jQuery UI Keycode 1.14.2
+  [chunk-vendors.732fb86a.js] "use moment.updateLocale(localeName, config) to change an existing locale. moment.defineLocale(localeName, config) should only be used for creating a new locale See http://momentjs.com/guides/#/warnings/define-locale/ fo
+  [chunk-vendors.732fb86a.js] "value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refe
+  [chunk-vendors.732fb86a.js] "moment().min is deprecated, use moment.max instead. http://momentjs.com/guides/#/warnings/min-max/"
+  [chunk-vendors.732fb86a.js] "moment().max is deprecated, use moment.min instead. http://momentjs.com/guides/#/warnings/min-max/"
+  [chunk-vendors.732fb86a.js] "(number, period). See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info."
+  [chunk-vendors.732fb86a.js] "moment().zone is deprecated, use moment().utcOffset instead. http://momentjs.com/guides/#/warnings/zone/"
+  [chunk-vendors.732fb86a.js] "isDSTShifted is deprecated. See http://momentjs.com/guides/#/warnings/dst-shifted/ for more information"
+  [chunk-vendors.732fb86a.js] "https://github.com/zloirock/core-js/blob/v3.51.0/LICENSE"
+  [chunk-vendors.732fb86a.js] "https://github.com/zloirock/core-js"
+  [chunk-vendors.732fb86a.js] "https://vjs.zencdn.net/vttjs/0.14.1/vtt.min.js"
+  [chunk-vendors.732fb86a.js] 're doing.\nSee https://github.com/videojs/video.js/issues/2617 for more info.\n"
+  [chunk-vendors.732fb86a.js] "LL-HLS manifest has parts but lacks required #EXT-X-PART-INF:PART-TARGET value. See https://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis-09#section-4.4.3.7. Playback is not guaranteed."
+  [chunk-vendors.732fb86a.js] ". For HLS content, a duration in excess of the target duration may result in playback issues. See the HLS specification section on EXT-X-TARGETDURATION for more details: https://tools.ietf.org/html/draft-pantos-http-liv
+  [chunk-vendors.732fb86a.js] "Overriding native HLS requires emulated tracks. See https://git.io/vMpjB"
+  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/mksz_dummy.png"
+  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/icons/calendar.svg"
+  [app.b76bb16e.js] "App is being served from cache by a service worker.\nFor more details, visit https://goo.gl/AFskqB"
+  [app.b76bb16e.js] "https://bet.szerencsejatek.hu/jatekok/lutri/leiras"
+  [app.b76bb16e.js] "http://www.kezitortenelem.hu/"
+  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/MKSZ_Logo_horizontal_white.png"
+  [app.b76bb16e.js] "https://www.facebook.com/kezivalogatott"
+  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/icons/facebook_w.svg"
+  [app.b76bb16e.js] "https://www.youtube.com/channel/UCXB5imWkl9MP94X7MWxCAaA"
+  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/icons/youtube_w.svg"
+  [app.b76bb16e.js] "https://www.instagram.com/mkszkezilabda"
+  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/icons/instagram_w.svg"
+  [app.b76bb16e.js] "https://kormany.hu/kormanyzat/belugyminiszterium"
+  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/BM_sfat_logo_horizontalis_fekete.png"
+  [app.b76bb16e.js] "https://sportolonemzet.hu"
+  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/sn.png"
+  [app.b76bb16e.js] "https://sportintezet.hu"
+  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/nsmi_logo_elsodleges_horiz_HU_kek-1.png"
+  [app.b76bb16e.js] "https://www.szerencsejatek.hu/"
+  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/big/tippmix_300x58.jpg"
+  [app.b76bb16e.js] "https://mol.hu/hu/"
+  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/MOL_logo_2014_ok-01.jpg"
+  [app.b76bb16e.js] "https://jysk.hu/"
+  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/big/jysk_347x159.png"
+  [app.b76bb16e.js] "https://www.alfa.hu"
+  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/alfa.png"
+  [app.b76bb16e.js] "https://www.kh.hu/bank"
+  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/big/kh_liga_300x208.png"
+  [app.b76bb16e.js] "https://www.obi.hu"
+  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/OBI-Logo-orange-RGB.png"
+  [app.b76bb16e.js] "https://www.mueller.co.hu"
+  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/mueller-logo-neben-bluete-69522-0.jpg"
+  [app.b76bb16e.js] "https://www.telekom.hu"
 
-=== https://www.tophaandbold.dk/ -> 200 text/html; charset=UTF-8 226526 bytes
-HEAD: <!DOCTYPE html> <html lang="da-DK"> <head><script> if (typeof gtag === 'undefined') { window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } } var Gdpr = { /** * which categories has the user consented to */ consents: [], /** * Has the user consid
-  ~ /gdpr/widgets/save.json
-  ~ /tophaandbold-theme/statistics/frontpage-statistics/CONTAINERID/LEAGUEINDEX.json
+=== BODY https://www.dhf.dk/api -> ERR HTTP Error 404: [GET] "/api/cms/resolve-page?url=%2Fapi": 404 Not Found
 
-=== https://www.mksz.hu/ -> 200 text/html 12132 bytes
-HEAD: <!DOCTYPE html><html lang="hu"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><!--[if IE]><link rel="icon" type="image/svg+xml" href="/favicon.svg" /><![endif]--><link rel="shortcut icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"><l
-  ~ /js/alapitvanyok.54080c17.js
-  ~ /js/napimusor.dab96e8a.js
-  ~ /js/tamogatoi-alapitvany.9d5d265d.js
-  ~ /manifest.json
+=== GREP https://www.tophaandbold.dk/ -> 200 text/html; charset=UTF-8 226408
+  ~ href="https://tophaandbold.dk/klubber/herreligaen"
+  ~ href="/stillinger/herre-haandbold-ligaen"
+  ~ href="https://tophaandbold.dk/stillinger/1-division-kvinder"
+  ~ href="https://tophaandbold.dk/stillinger/1-division-herrer"
+  ~ href="https://tophaandbold.dk/stillinger/herreligaen"
+  ~ href="https://tophaandbold.dk/stillinger/kvindeligaen"
+  ~ href="/kampprogrammer"
+  ~ href="https://tophaandbold.dk/kampprogram/1-division-kvinder"
+  ~ href="https://tophaandbold.dk/kampprogram/1-division-herrer"
+  ~ href="https://tophaandbold.dk/kampprogram/herreligaen"
+  ~ href="https://tophaandbold.dk/kampprogram/kvindeligaen"
+  ~ href="https://tophaandbold.dk/kampprogram/pokalturnering-kvinder"
+  ~ href="https://tophaandbold.dk/kampprogram/pokalturnering-herrer"
+  ~ href="https://tophaandbold.dk/kampprogram/supercup"
+  ~ href="https://tophaandbold.dk/tophaandbold/kaaringer/herreligaen-all-stars"
+  ~ href="https://tophaandbold.dk/tophaandbold/kaaringer/aarets-topscorer-herreligaen"
+  ~ href="https://tophaandbold.dk/tophaandbold/kaaringer/fairplay-pris-herreligaen"
+  ~ href="https://tophaandbold.dk/herreligaen-artikler/rundens-hold-11-betoro-herreligaen"
+  ~ href="https://tophaandbold.dk/herreligaen-artikler/match-of-the-round-en-kamp-mellem-talenterne"
+  ~ href="https://tophaandbold.dk/herreligaen-artikler/rundens-hold-10-betoro-herreligaen"
+  ~ href="https://sport.tv2.dk/haandbold/2026-10-25-forbund-har-ikke-taget-stilling-til-boerne-diskussion-en-udfordring-mener-ekspert"
 
-=== https://www.ihf.info/ -> 200 text/html; charset=UTF-8 208640 bytes
-HEAD: <!DOCTYPE html> <html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# schema: http://schema.org/ sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/200
+=== JS https://www.dhf.dk/ -> 200 text/html;charset=utf-8 126917
+  [Cd9oZXr7.js] `/api/preview/:id()`
+  [Cd9oZXr7.js] `,({error:e})=>{r.add(e)});function i(e){En({path:be(n.app.baseURL,e.fullPath),persistState:!0})}e.hook(`
+  [BvwtkH_d.js] `&&(u.options.baseURL&&(u.request=e(u.request,u.options.baseURL)),u.options.query&&(u.request=t(u.request,u.options.query),delete u.options.query),`
+  [t36sMkpi.js] `https://maps.googleapis.com/maps/api/js`
+  [BV6PB8pM.js] `baseURL`
+  [BV6PB8pM.js] `,...Ee(w)]));if(!w.baseURL&&typeof T.value==`
+  [BkC1saLJ.js] `/api/cms`
+  [C_X_fbGV.js] `,async setup(u){let v,y,b=d(),{pages:x}=g(),S=e(),C=(()=>{let e=S.app.baseURL||`
 
-=== https://api.sofascore.com/api/v1/sport/handball/scheduled-events/2026-10-28 -> ERR HTTP Error 403: Forbidden
-
-=== https://www.thesportsdb.com/api/v1/json/3/search_all_leagues.php?s=Handball -> ERR HTTP Error 403: Forbidden
+=== GREP https://www.ihf.info/competitions/men/308 -> ERR HTTP Error 500: Internal Server Error
