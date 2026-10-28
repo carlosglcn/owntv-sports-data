@@ -1,0 +1,9 @@
+
+=== JS https://www.premierpadel.com/en/tournaments -> 200 text/html; charset=utf-8 58068
+  [3rxd-p75738xv.js] "https://api-prod.premierpadel.com?socketType=match"
+  [1puv6lsejt6wt.js] "https://api-prod.premierpadel.com/api/"
+
+=== JS https://www.premierpadel.com/en/tournaments -> 200 text/html; charset=utf-8 58068
+
+=== SAVE https://www.premierpadel.com/en/tournaments/kuwait-major-2026 -> 200 text/html; charset=utf-8 58130
+  saved pp_kuwait.html
