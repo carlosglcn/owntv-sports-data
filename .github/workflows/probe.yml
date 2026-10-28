@@ -2,7 +2,7 @@ name: probe-handball
 on:
   push:
     branches: [probe-handball]
-    paths: [scripts/handball.py, .github/workflows/probe.yml]
+    paths: [probe/tennis_probe.py, scripts/tennis.py, .github/workflows/probe.yml]
 permissions:
   contents: write
 jobs:
@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 scripts/handball.py > probe/run.txt 2>&1 || true
+      - run: python3 probe/tennis_probe.py || true
       - run: |
+          if [ -f scripts/tennis.py ]; then python3 scripts/tennis.py > probe/tennis_run.txt 2>&1 || true; fi
           git config user.name "github-actions"; git config user.email "actions@github.com"
-          git add probe/run.txt ehfcl.json ehfel.json lnh.json hhl.json khl.json hbl.json 2>/dev/null || true
-          git add -A probe; git commit -qm "probe: handball run" || true; git push
+          git add -A probe tennis.json 2>/dev/null || git add -A probe; git commit -qm "probe: tennis" || true; git push
