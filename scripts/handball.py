@@ -188,7 +188,7 @@ def lnh(league_path="daikin-starligue"):
         if not cls:
             continue
         head = re.search(r'class="competition">\s*([^<]*?)\s*</span>\s*<br>\s*([^<]+)', item)
-        sides = re.findall(r'<a href="[^"]*/equipes/([^"]+)" title="([^"]+)">\s*<img src="([^"]+)"', item)
+        sides = re.findall(r'<a href="[^"]*/equipes/([^"]+)"[^>]*title="([^"]+)"[^>]*>\s*<img src="([^"]+)"', item)
         if not head or len(sides) < 2:
             continue
         rnd = re.search(r"J(\d+)", head.group(1))
