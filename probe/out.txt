@@ -1,0 +1,154 @@
+
+=== https://www.eurohandball.com/ -> 200 text/html; charset=utf-8 163296 bytes
+HEAD:  <!DOCTYPE html> <html class="no-outline" lang="en"> <head> <title>European Handball Federation - Home of Handball | EHF</title> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- disabling format detection --> <meta name="format-detection" content="telephone=no"> <meta name="format-detection" content="date=no">
+  ~ https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+  ~ //apv-launcher.minute-ly.com/api/launcher/MIN-40600.js
+  ~ //www.google.com/recaptcha/api.js
+  ~ /umbraco/api/homeofhandballapi/GetCompetitions
+  ~ /umbraco/api/homeofhandballapi/GetHome
+  ~ /umbraco/api/homeofhandballapi/GetTeams
+  ~ /umbraco/api/homeofhandballapi/GetTeams/1171
+  ~ /umbraco/api/livescoreapi/GetLiveScoreMatches/1069
+  ~ /umbraco/api/livescoreapi/GetTournaments/1069
+  ~ /umbraco/api/sponsorapi/GetSponsors/home
+
+=== https://ehfcl.eurohandball.com/men/2026-27/matches/ -> 200 text/html; charset=utf-8 94588 bytes
+HEAD:  <!DOCTYPE html> <html class="no-outline" lang="en"> <head> <title>Matches, Results &amp; Schedule - EHF Champions League Men</title> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- disabling format detection --> <meta name="format-detection" content="telephone=no"> <meta name="format-detection" content="date
+  ~ https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+  ~ //apv-launcher.minute-ly.com/api/launcher/MIN-40600.js
+  ~ //www.google.com/recaptcha/api.js
+  ~ /umbraco/api/competitionmatchesapi/GetInitMatches
+  ~ /umbraco/api/competitionmatchesapi/GetLiveMatchStatistics
+  ~ /umbraco/api/competitionmatchesapi/GetMatches
+  ~ /umbraco/api/homeofhandballapi/GetCompetitions
+  ~ /umbraco/api/homeofhandballapi/GetHome
+  ~ /umbraco/api/homeofhandballapi/GetTeams
+  ~ /umbraco/api/homeofhandballapi/GetTeams/1171
+  ~ /umbraco/api/livescoreapi/GetLiveScoreMatches/138648
+  ~ /umbraco/api/livescoreapi/GetTournaments/138648
+  ~ /umbraco/api/sponsorapi/GetSponsors/-Gd1tlJGDXtuVGsp4I0Chg
+
+=== https://ehfel.eurohandball.com/men/2026-27/matches/ -> 200 text/html; charset=utf-8 91613 bytes
+HEAD:  <!DOCTYPE html> <html class="no-outline" lang="en"> <head> <title>EHF European League Men 2026/27: Matches, Results &amp; Schedule</title> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- disabling format detection --> <meta name="format-detection" content="telephone=no"> <meta name="format-detection" content
+  ~ https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+  ~ //apv-launcher.minute-ly.com/api/launcher/MIN-40600.js
+  ~ //www.google.com/recaptcha/api.js
+  ~ /umbraco/api/competitionmatchesapi/GetInitMatches
+  ~ /umbraco/api/competitionmatchesapi/GetLiveMatchStatistics
+  ~ /umbraco/api/competitionmatchesapi/GetMatches
+  ~ /umbraco/api/homeofhandballapi/GetCompetitions
+  ~ /umbraco/api/homeofhandballapi/GetHome
+  ~ /umbraco/api/homeofhandballapi/GetTeams
+  ~ /umbraco/api/homeofhandballapi/GetTeams/1171
+  ~ /umbraco/api/livescoreapi/GetLiveScoreMatches/138790
+  ~ /umbraco/api/livescoreapi/GetTournaments/138790
+  ~ /umbraco/api/sponsorapi/GetSponsors/0LdFJEv4Xeq34p7ZoHYnNQ
+
+=== https://ehfeuro.eurohandball.com/ -> 200 text/html; charset=utf-8 157044 bytes
+HEAD:  <!DOCTYPE html> <html class="no-outline" lang="en"> <head> <title>EHF EURO - Latest News and Results | EHF</title> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- disabling format detection --> <meta name="format-detection" content="telephone=no"> <meta name="format-detection" content="date=no"> <meta name=
+  ~ https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+  ~ //apv-launcher.minute-ly.com/api/launcher/MIN-40600.js
+  ~ //www.google.com/recaptcha/api.js
+  ~ /umbraco/api/homeofhandballapi/GetCompetitions
+  ~ /umbraco/api/homeofhandballapi/GetHome
+  ~ /umbraco/api/homeofhandballapi/GetTeams
+  ~ /umbraco/api/homeofhandballapi/GetTeams/1171
+  ~ /umbraco/api/livescoreapi/GetLiveScoreMatches/1224
+  ~ /umbraco/api/livescoreapi/GetTournaments/1224
+  ~ /umbraco/api/sponsorapi/GetSponsors/home
+
+=== https://www.liquimoly-hbl.de/de/s/spielplan/ -> ERR HTTP Error 404: Not Found
+
+=== https://www.liquimoly-hbl.de/ -> 200 text/html;charset=utf-8 1205201 bytes
+HEAD: <!DOCTYPE html><html dir="ltr" lang="de-DE" class=""><head><meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <script type="importmap">{"imports":{"#entry":"/_nuxt/B6mwsV6f.js"}}</script> <link rel="icon" href="/image/_CMS/HBL_Favicon-RGB.png"> <title>Opel HBL | Die offizielle Seite</title> <meta name="description" content="Die offizielle Seite der Opel HB
+  ~ https://ott.opel-hbl.de/api/v3/contents/
+
+=== https://www.handball.net/ -> 200 text/html; charset=utf-8 1444177 bytes
+HEAD: <!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Handball.net</title><base href="/"><!-- Preconnects criticos --><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="preconnect" href="https://c.delivery.consentmanager.net" crossorigin=""><!-- Consentmanager (CMP) - au
+  ~ http://127.0.0.1:4055/api/new/competitions
+  ~ http://127.0.0.1:4055/api/new/competitions?page=1&per_page=12&season_id=2627
+  ~ http://127.0.0.1:4055/api/new/content/mega-menu
+  ~ http://127.0.0.1:4055/api/new/content/press/config
+  ~ http://127.0.0.1:4055/api/new/content/press/config?federation_id=1
+  ~ http://127.0.0.1:4055/api/new/content/sliders/slider_1
+  ~ http://127.0.0.1:4055/api/new/content/sliders/slider_2
+  ~ http://127.0.0.1:4055/api/new/content/widgets/home-highlights-carousel
+  ~ http://127.0.0.1:4055/api/new/content/widgets/home-news-carousel
+  ~ http://127.0.0.1:4055/api/new/content/widgets/home-toptopics-carousel
+  ~ http://127.0.0.1:4055/api/new/matches
+  ~ http://127.0.0.1:4055/api/new/matches?date_from=2026-10-28&date_to=2026-10-28&per_page=12&page=1
+  ~ http://127.0.0.1:4055/api/new/news
+  ~ http://127.0.0.1:4055/api/new/news/blocks
+  ~ http://127.0.0.1:4055/api/new/news/blocks?federation_id=1&page=1&per_page=20
+  ~ http://127.0.0.1:4055/api/new/news/blocks?federation_id=1&page=1&per_page=30
+  ~ http://127.0.0.1:4055/api/new/news?filter%5Bcontent_type%5D=press&sort%5Bvisits%5D=desc&per_page=10&page=1&filter%5Bfederation_id%5D=1
+  ~ http://127.0.0.1:4055/api/new/news?filter%5Bfederation_id%5D=1&per_page=16&page=1&sort%5Bpublished_at%5D=desc&filter%5Btag_id%5D=41
+  ~ http://127.0.0.1:4055/api/new/news?filter%5Bfederation_id%5D=1&per_page=6&page=1&sort%5Bpublished_at%5D=desc&filter%5Bchannel_id%5D=1540
+  ~ http://127.0.0.1:4055/api/new/news?filter%5Bfederation_id%5D=1&per_page=6&page=1&sort%5Bpublished_at%5D=desc&filter%5Bchannel_id%5D=1544
+  ~ http://127.0.0.1:4055/api/new/news?filter%5Bfederation_id%5D=1&per_page=9&page=1&sort%5Bpublished_at%5D=desc
+  ~ http://127.0.0.1:4055/api/new/seasons
+  ~ http://127.0.0.1:4055/api/new/stats/team-stats
+  ~ http://127.0.0.1:4055/api/new/stats/team-stats?season_id=2627&per_page=10&sort_by=goals&age_id=1,2,3,4&gender=female
+  ~ http://127.0.0.1:4055/api/new/stats/team-stats?season_id=2627&per_page=10&sort_by=goals&age_id=1,2,3,4&gender=male
+  ~ http://127.0.0.1:4055/api/new/stats/top-scorers
+  ~ http://127.0.0.1:4055/api/new/stats/top-scorers?season_id=2627&per_page=10&sort_by=goals&age_id=1,2,3,4&gender=female
+  ~ http://127.0.0.1:4055/api/new/stats/top-scorers?season_id=2627&per_page=10&sort_by=goals&age_id=1,2,3,4&gender=male
+  ~ http://127.0.0.1:4055/api/new/teams/clubs
+  ~ http://127.0.0.1:4055/api/new/teams/clubs?page=1&per_page=12&sort=random
+  ~ https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap
+  ~ https://fonts.googleapis.com/icon?family=Material+Icons&amp;display=swap
+
+=== https://www.lnh.fr/liquimoly-starligue/calendrier -> 200 text/html; charset=UTF-8 126061 bytes
+HEAD: <!DOCTYPE HTML> <html lang="fr"> <head> <meta charset="utf-8" /> <meta name="robots" content="index,follow"> <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" /> <meta name="google-site-verification" content="P--fUhIuIGKkFFtGycgE_q9tWgbusgiNWsyOte3kj_8" /> <meta http-equiv="Expires" content="30"> <base href="https://www.lnh.fr/"> <title>Calendr
+  ~ https://fonts.googleapis.com
+  ~ https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap
+  ~ https://fonts.googleapis.com/icon?family=Material+Icons
+  ~ https://www.lnh.fr/webroot/assets/css/popin-widget.css?v=20260804-2
+  ~ https://www.lnh.fr/webroot/assets/js/popin-widget.js?v=20260824-1
+
+=== https://www.lnh.fr/liquimoly-starligue/classement -> 200 text/html; charset=UTF-8 64747 bytes
+HEAD: <!DOCTYPE HTML><html lang="fr"><head><meta charset="utf-8"/><meta name="robots" content="index,follow"><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/><meta name="google-site-verification" content="P--fUhIuIGKkFFtGycgE_q9tWgbusgiNWsyOte3kj_8"/><meta http-equiv="Expires" content="30"><base href="https://www.lnh.fr/"><title>Classement Daikin StarLigue • Handball
+  ~ https://fonts.googleapis.com
+  ~ https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap
+  ~ https://fonts.googleapis.com/icon?family=Material+Icons
+  ~ https://www.lnh.fr/webroot/assets/css/popin-widget.css?v=20260804-2
+  ~ https://www.lnh.fr/webroot/assets/js/popin-widget.js?v=20260824-1
+
+=== https://www.haandboldligaen.dk/ -> 200 text/html; charset=UTF-8 53322 bytes
+HEAD: <!DOCTYPE html> <html lang="da-DK" class="html_stretched responsive av-preloader-disabled html_header_top html_logo_left html_main_nav_header html_menu_right html_custom html_header_sticky html_header_shrinking_disabled html_mobile_menu_phone html_header_searchicon html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled html_av-overlay-side html_av-overlay-side-cla
+  ~ https://api.w.org/
+  ~ https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=auto
+  ~ https://widgets.oddspedia.com/images/logo-oddspedia-dark.svg
+  ~ https://widgets.oddspedia.com/js/widget/init.js?widgetId=oddspediaWidgetStandingsLeagueId2293
+  ~ https://widgets.oddspedia.com/js/widget/init.js?widgetId=oddspediaWidgetStandingsLeagueId2294
+  ~ https://www.haandboldligaen.dk/comments/feed/
+  ~ https://www.haandboldligaen.dk/feed/
+  ~ https://www.haandboldligaen.dk/wp-content/plugins/q2w3-fixed-widget/js/frontend.min.js?ver=6.2.3
+  ~ https://www.haandboldligaen.dk/wp-json/
+  ~ https://www.haandboldligaen.dk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.haandboldligaen.dk%2F
+  ~ https://www.haandboldligaen.dk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.haandboldligaen.dk%2F&#038;format=xml
+  ~ https://www.haandboldligaen.dk/wp-json/wp/v2/pages/24
+
+=== https://www.dhf.dk/ -> 200 text/html;charset=utf-8 127099 bytes
+HEAD: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>DanskHåndbold - Forside | Håndbold.dk</title><script type="importmap">{"imports":{"#entry":"/_nuxt/Cd9oZXr7.js"}}</script><style>/*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */ @layer properties{@supports (((-webkit-hyphens:none)) and (not (margin-trim:inlin
+  ~ https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAVlYW7ZwxK7Vj6_n50ksYZNH3ROOLOXQo&loading=async&callback=google.maps.__ib__
+  ~ /api
+
+=== https://www.tophaandbold.dk/ -> 200 text/html; charset=UTF-8 226526 bytes
+HEAD: <!DOCTYPE html> <html lang="da-DK"> <head><script> if (typeof gtag === 'undefined') { window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } } var Gdpr = { /** * which categories has the user consented to */ consents: [], /** * Has the user consid
+  ~ /gdpr/widgets/save.json
+  ~ /tophaandbold-theme/statistics/frontpage-statistics/CONTAINERID/LEAGUEINDEX.json
+
+=== https://www.mksz.hu/ -> 200 text/html 12132 bytes
+HEAD: <!DOCTYPE html><html lang="hu"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><!--[if IE]><link rel="icon" type="image/svg+xml" href="/favicon.svg" /><![endif]--><link rel="shortcut icon" href="/favicon.ico"><link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"><l
+  ~ /js/alapitvanyok.54080c17.js
+  ~ /js/napimusor.dab96e8a.js
+  ~ /js/tamogatoi-alapitvany.9d5d265d.js
+  ~ /manifest.json
+
+=== https://www.ihf.info/ -> 200 text/html; charset=UTF-8 208640 bytes
+HEAD: <!DOCTYPE html> <html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# schema: http://schema.org/ sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/200
+
+=== https://api.sofascore.com/api/v1/sport/handball/scheduled-events/2026-10-28 -> ERR HTTP Error 403: Forbidden
+
+=== https://www.thesportsdb.com/api/v1/json/3/search_all_leagues.php?s=Handball -> ERR HTTP Error 403: Forbidden
