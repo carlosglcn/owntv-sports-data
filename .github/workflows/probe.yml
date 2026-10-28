@@ -1,0 +1,10 @@
+name: probe-handball
+on:
+  push:
+    branches: [probe-handball]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 probe/probe.py

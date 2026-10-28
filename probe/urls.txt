@@ -1,0 +1,16 @@
+https://www.eurohandball.com/
+https://ehfcl.eurohandball.com/men/2026-27/matches/
+https://ehfel.eurohandball.com/men/2026-27/matches/
+https://ehfeuro.eurohandball.com/
+https://www.liquimoly-hbl.de/de/s/spielplan/
+https://www.liquimoly-hbl.de/
+https://www.handball.net/
+https://www.lnh.fr/liquimoly-starligue/calendrier
+https://www.lnh.fr/liquimoly-starligue/classement
+https://www.haandboldligaen.dk/
+https://www.dhf.dk/
+https://www.tophaandbold.dk/
+https://www.mksz.hu/
+https://www.ihf.info/
+https://api.sofascore.com/api/v1/sport/handball/scheduled-events/2026-10-28
+https://www.thesportsdb.com/api/v1/json/3/search_all_leagues.php?s=Handball
