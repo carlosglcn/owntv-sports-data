@@ -1,16 +1,15 @@
-https://www.eurohandball.com/
-https://ehfcl.eurohandball.com/men/2026-27/matches/
-https://ehfel.eurohandball.com/men/2026-27/matches/
-https://ehfeuro.eurohandball.com/
-https://www.liquimoly-hbl.de/de/s/spielplan/
-https://www.liquimoly-hbl.de/
-https://www.handball.net/
-https://www.lnh.fr/liquimoly-starligue/calendrier
-https://www.lnh.fr/liquimoly-starligue/classement
-https://www.haandboldligaen.dk/
-https://www.dhf.dk/
-https://www.tophaandbold.dk/
-https://www.mksz.hu/
-https://www.ihf.info/
-https://api.sofascore.com/api/v1/sport/handball/scheduled-events/2026-10-28
-https://www.thesportsdb.com/api/v1/json/3/search_all_leagues.php?s=Handball
+JS https://ehfcl.eurohandball.com/men/2026-27/matches/ ["'`][^"'`]*(?:umbraco/api|competitionmatchesapi|livescoreapi|roundId|competitionId|seasonId|phaseId)[^"'`]{0,160}["'`]
+BODY https://www.eurohandball.com/umbraco/api/livescoreapi/GetLiveScoreMatches/138648 2000
+BODY https://www.eurohandball.com/umbraco/api/livescoreapi/GetTournaments/138648 2000
+BODY https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetInitMatches 1500
+GREP https://ehfcl.eurohandball.com/men/2026-27/matches/ data-[a-z-]+="[^"]{1,80}"
+GREP https://www.liquimoly-hbl.de/ https?://[a-z0-9.-]*(?:hbl|handball|sportradar|dyn)[a-z0-9./_-]*
+JS https://www.liquimoly-hbl.de/ ["'`][^"'`]*(?:/api/|apiBase|baseURL|spielplan|tabelle|matches|schedule)[^"'`]{0,140}["'`]
+BODY https://www.lnh.fr/liquimoly-starligue/calendrier 200
+GREP https://www.lnh.fr/liquimoly-starligue/calendrier (?:class="[^"]*(?:match|score|team|journee|date)[^"]*"[^>]*>[^<]{0,80})
+GREP https://www.lnh.fr/liquimoly-starligue/classement (?:class="[^"]*(?:rank|team|pts|point|club)[^"]*"[^>]*>[^<]{0,60})
+JS https://www.mksz.hu/ ["'`][^"'`]*(?:/api|api\.|https?://)[^"'`]{2,140}["'`]
+BODY https://www.dhf.dk/api 800
+GREP https://www.tophaandbold.dk/ href="[^"]*(?:herreligaen|kampprogram|stilling|turnering)[^"]*"
+JS https://www.dhf.dk/ ["'`][^"'`]*(?:/api/|apiBase|baseURL)[^"'`]{0,140}["'`]
+GREP https://www.ihf.info/competitions/men/308 href="[^"]*(?:competition|match|schedule)[^"]*"

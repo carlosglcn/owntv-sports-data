@@ -1,16 +1,35 @@
-import re, sys, urllib.request, ssl
-UA={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36","Accept-Language":"en"}
-urls=[l.strip() for l in open("probe/urls.txt") if l.strip() and not l.startswith("#")]
-API=re.compile(r"""https?://[^"'\s<>\\)]*(?:api|json|feed|graphql|sportdata|widget)[^"'\s<>\\)]*""",re.I)
-REL=re.compile(r"""["'](/[^"'\s<>]*(?:api|json|sportdata)[^"'\s<>]*)["']""",re.I)
-for u in urls:
+import re, sys, json, urllib.request, urllib.parse
+UA={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36","Accept-Language":"en","Accept":"*/*"}
+def get(u):
+    r=urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=25); b=r.read()
+    return r.status, r.headers.get("content-type"), b.decode("utf-8","replace")
+for line in open("probe/urls.txt"):
+    line=line.rstrip("\n")
+    if not line.strip() or line.startswith("#"): continue
+    mode,u,*arg=line.split(" ",2); arg=arg[0] if arg else ""
     try:
-        r=urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=25)
-        b=r.read(); t=b.decode("utf-8","replace")
-        print("\n=== %s -> %s %s %d bytes"%(u,r.status,r.headers.get("content-type"),len(b)))
-        print("HEAD:",re.sub(r"\s+"," ",t[:400]))
-        found=sorted(set(API.findall(t)))[:40]+sorted(set(REL.findall(t)))[:30]
-        for f in found: print("  ~",f[:200])
-        if "__NEXT_DATA__" in t: print("  NEXT_DATA present")
+        st,ct,t=get(u)
+        print("\n=== %s %s -> %s %s %d"%(mode,u,st,ct,len(t)))
+        if mode=="BODY":
+            print(re.sub(r"\s+"," ",t[:int(arg or 1500)]))
+        elif mode=="GREP":
+            seen=set()
+            for m in re.finditer(arg,t,re.S):
+                s=re.sub(r"\s+"," ",m.group(0))[:300]
+                if s not in seen: seen.add(s); print("  ~",s)
+                if len(seen)>=40: break
+        elif mode=="JS":
+            srcs=re.findall(r"""<script[^>]+src=["']([^"']+)["']""",t)+re.findall(r"""["'](/_nuxt/[^"']+\.js)["']""",t)
+            pat=arg or r"""["'`][^"'`]*(?:api|Api)[^"'`]{2,120}["'`]"""
+            seen=set()
+            for s in dict.fromkeys(srcs):
+                full=urllib.parse.urljoin(u,s)
+                if any(x in full for x in ("google","jquery","recaptcha","gtag","cookie","minute-ly")): continue
+                try: _,_,js=get(full)
+                except Exception as e: print("  js ERR",full,e); continue
+                for m in re.finditer(pat,js):
+                    g=m.group(0)[:220]
+                    if g not in seen: seen.add(g); print("  [%s] %s"%(full.rsplit('/',1)[-1][:30],g))
+                    if len(seen)>=80: break
     except Exception as e:
-        print("\n=== %s -> ERR %s"%(u,e))
+        print("\n=== %s %s -> ERR %s"%(mode,u,e))
