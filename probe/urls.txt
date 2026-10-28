@@ -1,5 +1,10 @@
-SAVE https://ehfcl.eurohandball.com/frontend.kw/dist/assets/js/common.min.js?v=ObAbUrBcy68qWLW1nv5WLUh2i3fVyLFSeCA3gQbppfI ehf_common.js
-POSTSAVE https://www.lnh.fr/ajaxpost1 seasons_id=40&days_id=all&teams_id=all&univers=d1-26623&key=281861894&current_month=all&type=all&type_id=all&contents_controller=sportsCalendars&contents_action=index_ajax&cache=yes&cacheKeys=univers,seasons_id,days_id lnh_cal_ajax.html
-SAVE https://www.lnh.fr/daikin-starligue/classement lnh_table2.html
-MKSZ https://public.mksz.hu/public/api/v1/versenyek/foversenyek?evadEv.equals=2027&nem.in=F&sportagKod.equals=SPAG_1&korosztalyId.equals=1&page=0&paged=true&size=300 mksz_fo2027.json
-MKSZ https://public.mksz.hu/public/api/v1/versenyek/foversenyek?evadEv.equals=2026&nem.in=F&sportagKod.equals=SPAG_1&korosztalyId.equals=1&page=0&paged=true&size=300 mksz_fo2026.json
+SAVE https://ehfcl.eurohandball.com/frontend.kw/dist/assets/js/matches.min.js ehf_matches.js
+SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetMatches?competitionId=-Gd1tlJGDXtuVGsp4I0Chg&contentId=138649 ehf_gm1.json
+SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetMatches?competitionId=-Gd1tlJGDXtuVGsp4I0Chg&contentId=138649&past=true ehf_gm2.json
+SAVE https://www.opel-hbl.de/de/hbl/spielplan/abonnieren hbl_abo.html
+SAVE https://www.kicker.de/handball-bundesliga/spieltag kicker_spieltag.html
+SAVE https://www.kicker.de/handball-bundesliga/tabelle kicker_tabelle.html
+SAVE https://www.kicker.de/handball-bundesliga/spieltag/2026-27/-1 kicker_spieltag2.html
+MKSZ https://public.mksz.hu/public/api/v1/versenyek/foversenyek?evadEv.equals=2027&page=0&paged=true&size=300 mksz_fo_all27.json
+MKSZ https://public.mksz.hu/public/api/v1/versenyek/foversenyek?evadEv.equals=2026&page=0&paged=true&size=300 mksz_fo_all26.json
+MKSZ https://public.mksz.hu/public/api/v1/versenyek/program?csakMagyar.equals=true&globalisVersenyKod.in=NBI mksz_prog.json
