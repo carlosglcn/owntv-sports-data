@@ -1,1 +1,1 @@
-JS https://www.premierpadel.com/en/tournaments/kuwait-p1-2 .{0,60}(?:tournament_id|tournamentId|event_code|draw_type|match_date|round_id|"day"|court).{0,140}
+SAVE https://www.premierpadel.com/_next/static/chunks/0xuca16ap_k9u.js pp_q.js
