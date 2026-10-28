@@ -1,10 +1,6 @@
-SAVE https://ehfcl.eurohandball.com/frontend.kw/dist/assets/js/matches.min.js ehf_matches.js
-SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetMatches?competitionId=-Gd1tlJGDXtuVGsp4I0Chg&contentId=138649 ehf_gm1.json
-SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetMatches?competitionId=-Gd1tlJGDXtuVGsp4I0Chg&contentId=138649&past=true ehf_gm2.json
-SAVE https://www.opel-hbl.de/de/hbl/spielplan/abonnieren hbl_abo.html
-SAVE https://www.kicker.de/handball-bundesliga/spieltag kicker_spieltag.html
-SAVE https://www.kicker.de/handball-bundesliga/tabelle kicker_tabelle.html
-SAVE https://www.kicker.de/handball-bundesliga/spieltag/2026-27/-1 kicker_spieltag2.html
-MKSZ https://public.mksz.hu/public/api/v1/versenyek/foversenyek?evadEv.equals=2027&page=0&paged=true&size=300 mksz_fo_all27.json
-MKSZ https://public.mksz.hu/public/api/v1/versenyek/foversenyek?evadEv.equals=2026&page=0&paged=true&size=300 mksz_fo_all26.json
-MKSZ https://public.mksz.hu/public/api/v1/versenyek/program?csakMagyar.equals=true&globalisVersenyKod.in=NBI mksz_prog.json
+SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionapi/GetStandingMatches?contentId=138673&competitionId=-Gd1tlJGDXtuVGsp4I0Chg ehf_standmatches.json
+SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetMatches?competitionId=-Gd1tlJGDXtuVGsp4I0Chg&contentId=138649&date=2026-10-01&isPast=true ehf_gm3.json
+SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetMatches?competitionId=-Gd1tlJGDXtuVGsp4I0Chg&contentId=138649&lastDate=2026-10-29&direction=past ehf_gm4.json
+SAVE https://ehfel.eurohandball.com/men/2026-27/standings/ el_standings.html
+SAVE https://ehfel.eurohandball.com/umbraco/api/competitionmatchesapi/GetInitMatches el_init.json
+SAVE https://www.eurohandball.com/umbraco/api/livescoreapi/GetLiveScoreMatches/1069 live_home.json
