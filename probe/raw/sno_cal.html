@@ -1,0 +1,914 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type"       content="text/html; charset=utf-8" /> <!-- Alternative: iso-8859-1 -->
+    <meta http-equiv="content-style-type" content="text/css"                 />
+		<meta name="format-detection" content="telephone=no" />
+
+		<meta property="og:title"       content="Live Scores - snooker.org"                   />
+		<meta property="og:image"       content="https://snooker.org/img/snookerorg.png" />
+   <meta property="og:description" content="Snooker results and ranking"            />
+
+    <title>Live Scores - snooker.org</title>
+
+    <meta name="description" content="Snooker results and ranking" />
+    <meta name="keywords"    content="snooker"                     />
+    <meta name="Publisher"   content="snooker.org"                 />
+    <meta name="Author"      content="Hermund �rdalen"             />
+  <link rel="apple-touch-icon" sizes="57x57" href="/res/scorekeeper/gfx/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/res/scorekeeper/gfx/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/res/scorekeeper/gfx/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/res/scorekeeper/gfx/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/res/scorekeeper/gfx/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/res/scorekeeper/gfx/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/res/scorekeeper/gfx/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/res/scorekeeper/gfx/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/res/scorekeeper/gfx/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/res/scorekeeper/gfx/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/res/scorekeeper/gfx/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/res/scorekeeper/gfx/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/res/scorekeeper/gfx/icons/favicon-16x16.png">
+  <!-- link rel="manifest" href="/res/scorekeeper/gfx/icons/manifest.json" -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/res/scorekeeper/gfx/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+    <!-- Standard -->
+    <link rel="stylesheet" type="text/css" media="all" href="/res/style/presentation.css?28.10.202605:41:55"       />
+    <!-- /Standard -->
+
+<!-- InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
+<script type="text/javascript">
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://cmp.inmobi.com'
+    .concat('/choice/', 'QhvLnH_DqGvuS', '/', host, '/choice.js?tag_version=V3');
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        if(args[0] === 'init' && typeof args[3] === 'object') {
+          args[3] = Object.assign(args[3], { tag_version: 'V3' });
+        }
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            if (event && event.source && event.source.postMessage) {
+              event.source.postMessage(returnMsg, '*');
+            }
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  function makeGppStub() {
+    const CMP_ID = 10;
+    const SUPPORTED_APIS = [
+      '2:tcfeuv2',
+      '6:uspv1',
+      '7:usnatv1',
+      '8:usca',
+      '9:usvav1',
+      '10:uscov1',
+      '11:usutv1',
+      '12:usctv1'
+    ];
+
+    window.__gpp_addFrame = function (n) {
+      if (!window.frames[n]) {
+        if (document.body) {
+          var i = document.createElement("iframe");
+          i.style.cssText = "display:none";
+          i.name = n;
+          document.body.appendChild(i);
+        } else {
+          window.setTimeout(window.__gpp_addFrame, 10, n);
+        }
+      }
+    };
+    window.__gpp_stub = function () {
+      var b = arguments;
+      __gpp.queue = __gpp.queue || [];
+      __gpp.events = __gpp.events || [];
+
+      if (!b.length || (b.length == 1 && b[0] == "queue")) {
+        return __gpp.queue;
+      }
+
+      if (b.length == 1 && b[0] == "events") {
+        return __gpp.events;
+      }
+
+      var cmd = b[0];
+      var clb = b.length > 1 ? b[1] : null;
+      var par = b.length > 2 ? b[2] : null;
+      if (cmd === "ping") {
+        clb(
+          {
+            gppVersion: "1.1",
+            cmpStatus: "stub",
+            cmpDisplayStatus: "hidden",
+            signalStatus: "not ready",
+            supportedAPIs: SUPPORTED_APIS,
+            cmpId: CMP_ID,
+            sectionList: [],
+            applicableSections: [-1],
+            gppString: "",
+            parsedSections: {},
+          },
+          true
+        );
+      } else if (cmd === "addEventListener") {
+        if (!("lastId" in __gpp)) {
+          __gpp.lastId = 0;
+        }
+        __gpp.lastId++;
+        var lnr = __gpp.lastId;
+        __gpp.events.push({
+          id: lnr,
+          callback: clb,
+          parameter: par,
+        });
+        clb(
+          {
+            eventName: "listenerRegistered",
+            listenerId: lnr,
+            data: true,
+            pingData: {
+              gppVersion: "1.1",
+              cmpStatus: "stub",
+              cmpDisplayStatus: "hidden",
+              signalStatus: "not ready",
+              supportedAPIs: SUPPORTED_APIS,
+              cmpId: CMP_ID,
+              sectionList: [],
+              applicableSections: [-1],
+              gppString: "",
+              parsedSections: {},
+            },
+          },
+          true
+        );
+      } else if (cmd === "removeEventListener") {
+        var success = false;
+        for (var i = 0; i < __gpp.events.length; i++) {
+          if (__gpp.events[i].id == par) {
+            __gpp.events.splice(i, 1);
+            success = true;
+            break;
+          }
+        }
+        clb(
+          {
+            eventName: "listenerRemoved",
+            listenerId: par,
+            data: success,
+            pingData: {
+              gppVersion: "1.1",
+              cmpStatus: "stub",
+              cmpDisplayStatus: "hidden",
+              signalStatus: "not ready",
+              supportedAPIs: SUPPORTED_APIS,
+              cmpId: CMP_ID,
+              sectionList: [],
+              applicableSections: [-1],
+              gppString: "",
+              parsedSections: {},
+            },
+          },
+          true
+        );
+      } else if (cmd === "hasSection") {
+        clb(false, true);
+      } else if (cmd === "getSection" || cmd === "getField") {
+        clb(null, true);
+      }
+
+      else {
+        __gpp.queue.push([].slice.apply(b));
+      }
+    };
+    window.__gpp_msghandler = function (event) {
+      var msgIsString = typeof event.data === "string";
+      try {
+        var json = msgIsString ? JSON.parse(event.data) : event.data;
+      } catch (e) {
+        var json = null;
+      }
+      if (typeof json === "object" && json !== null && "__gppCall" in json) {
+        var i = json.__gppCall;
+        window.__gpp(
+          i.command,
+          function (retValue, success) {
+            var returnMsg = {
+              __gppReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: i.callId,
+              },
+            };
+            event.source.postMessage(msgIsString ? JSON.stringify(returnMsg) : returnMsg, "*");
+          },
+          "parameter" in i ? i.parameter : null,
+          "version" in i ? i.version : "1.1"
+        );
+      }
+    };
+    if (!("__gpp" in window) || typeof window.__gpp !== "function") {
+      window.__gpp = window.__gpp_stub;
+      window.addEventListener("message", window.__gpp_msghandler, false);
+      window.__gpp_addFrame("__gppLocator");
+    }
+  };
+
+  makeGppStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<!-- End InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
+
+<script language="JavaScript">
+var s=document.getElementsByTagName('script')[0];
+var sc=document.createElement('script');
+sc.type='text/javascript';
+sc.async=true;
+sc.src='https://cdn.adfirst.media/hb/snooker.js?v' + new Date().getTime();
+s.parentNode.insertBefore(sc,s);
+</script>
+    <!-- jQuery etc -->
+		<script src="/res/scorekeeper/scripts/jquery/js/jquery-1.11.3.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/res/scorekeeper/scripts/jquery/jquery.throbber-0.1.2_2/jquery.throbber.min.js"></script>
+		<script src="/res/scorekeeper/scripts/jquery/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+
+		<link rel="stylesheet" href="/res/scorekeeper/scripts/jquery/jquery-ui-1.11.4.custom/jquery-ui.css">
+    <script src="/res/scorekeeper/scripts/jquery/localtime/src/jquery.localtime.js"></script>
+<script language="javascript" type="text/javascript" src="/res/scorekeeper/scripts/js.cookie.min.js"></script> <!-- https://www.jsdelivr.com/package/npm/js-cookie -->
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function() {
+  	    	$(".dialog").dialog({autoOpen: false});
+
+  	    	$(".opener").click(function(event) {
+        		event.preventDefault();
+        		var $this = $(this);
+        		var $id = $this.attr("id");
+        		$id = $id.replace("opener", "dialog")
+        		$("div#" + $id).dialog("open");
+  	    	});
+			  $('.partofteam').hide();
+
+				// Automatically expand final and active matches
+		    $('.round15.partofteam').show();
+		    $('.unfinished.partofteam').show();
+
+			  $('a.togglesingles').click(function(event){
+			  	event.preventDefault();
+
+			    //get collapse content selector
+			    var collapse_content_selector = $(this).attr('href');
+
+			    //make the collapse content to be shown or hide
+			    var toggle_switch = $(this);
+
+					var newlabel;
+
+			  	if($(collapse_content_selector).css('display')=='none'){
+
+			  		//Change the button label to be 'Show'
+
+			  		$(collapse_content_selector).show();
+
+						newlabel = "<img src='/res/scorekeeper/gfx/icon-minus.png' alt='Hide singles matches' title='Hide singles matches' />";
+
+			  		toggle_switch.html(newlabel);
+
+						if (collapse_content_selector == '.partofteam') {
+							$("a.togglesingles").html(newlabel);
+
+						}
+
+			    }else{
+					  // Change the button label to be 'Hide'
+
+						newlabel = "<img src='/res/scorekeeper/gfx/icon-plus.png' alt='Display singles matches' title='Display singles matches' />";
+
+			  		toggle_switch.html(newlabel);
+
+			  		$(collapse_content_selector).hide();
+
+						if (collapse_content_selector == '.partofteam') {
+							$("a.togglesingles").html(newlabel);
+						}
+			    }
+
+			  });
+			  $('form.autosubmit select, div.matches form.autosubmit select, form .opponent').change(function() {
+		      $(this).closest('form').submit();
+	      });
+
+	      $('.javascript_off').hide();
+	      $('.javascript_on').show();
+
+
+				$("body#front form#h2h #player2").hide();
+				// $("body#head2head form#h2h #player2").hide();
+
+        // Head 2 Head: Automatically populate the second player list with possible opponents
+        $("select#player1").change(function(){
+
+				  $("form#h2h img.throbber").show();
+
+				  var this_select_id = $(this).attr("id");
+			  	var other_select_id = '';
+
+			  	if (this_select_id == 'player1') {
+			  		other_select_id = 'player2';
+			  	}	else {
+			  		other_select_id = 'player1';
+			  	}
+
+			  	// alert(this_select_id + ' - ' + other_select_id);
+
+          $.getJSON("/res/scorekeeper/tools/getOpponents.asp",{player: $(this).val(), ajax: 'true'}, function(j){
+			  	  var options = '';
+
+            for (var i = 0; i < j.length; i++) {
+              options += '<option value="' + j[i].optionValue + '">' + j[i].optionDisplay + '</option>';
+            }
+            $("select#"+other_select_id).html(options);
+            // $("select#"+other_select_id).shoq();
+          })
+
+				  $("body#front form#h2h #player2").show();
+					$("body#head2head form#h2h #player2").show();
+
+				  $("form#h2h img.throbber").hide();
+        });
+
+
+if (Cookies.get('displaymatchinfo') == 'false') {
+   hidematchinfo();
+} else {
+   displaymatchinfo();
+}
+if (Cookies.get('displaychat') == 'false') {
+   hidechat();
+} else {
+   displaychat();
+}
+
+		hideextendednote();
+$('.hidematchinfo').click(function(event){
+	event.preventDefault();
+  hidematchinfo();
+});
+
+$('.displaymatchinfo').click(function(event){
+	event.preventDefault();
+  displaymatchinfo();
+});
+
+
+function hidematchinfo() {
+  $('.hidematchinfo').hide();
+  $('.displaymatchinfo').show();
+  $('tr.eventinfo td').hide();
+  $('tr.roundnote td').hide();
+  $('div.roundinfo').hide();
+  $('table.league caption').hide();
+  $('td span.roundinfo').hide();
+  $('tr.info td').hide();
+  $('tr td.h2h').hide();
+  $('tr td.scheduled').hide();
+  // $('tr td.scheduled img').hide();
+  // $('tr td.scheduled br.stuff').hide();
+  // $('p.framescores').hide();
+  // $('tr.info td').hide();
+  // $('tr.info').hide();
+
+  	Cookies.set('displaymatchinfo', 'false', { expires: 7 });  // Create a cookie that expires 7 days from now, valid across the entire site:
+}
+
+function displaymatchinfo() {
+  $('.displaymatchinfo').hide();
+  $('.hidematchinfo').show();
+  $('tr.eventinfo td').show();
+  $('tr.roundnote td').show();
+  $('div.roundinfo').show();
+  $('table.league caption').show();
+  $('td span.roundinfo').show();
+  $('tr.info td').show();
+  $('tr td.h2h').show();
+  $('tr td.scheduled').show();
+  // $('tr td.scheduled img').show();
+  // $('tr td.scheduled br.stuff').show();
+  // $('p.framescores').show();
+  // $('tr.info').show();
+  // $('tr.info td').show();
+
+  	Cookies.set('displaymatchinfo', 'true', { expires: 7 });  // Create a cookie that expires 7 days from now, valid across the entire site:
+}
+
+
+$('.hidechat').click(function(event){
+	event.preventDefault();
+  hidechat();
+});
+
+$('.displaychat').click(function(event){
+	event.preventDefault();
+  displaychat();
+});
+
+
+function hidechat() {
+  $('.hidechat').hide();
+  $('.displaychat').show();
+  $('#disqus_thread').hide();
+
+  	Cookies.set('displaychat', 'false', { expires: 30 });  // Create a cookie that expires 30 days from now, valid across the entire site:
+}
+
+function displaychat() {
+  $('.displaychat').hide();
+  $('.hidechat').show();
+  $('#disqus_thread').show();
+
+  	Cookies.set('displaychat', 'true', { expires: 30 });  // Create a cookie that expires 30 days from now, valid across the entire site:
+}
+
+
+$('#hideextendednote').click(function(event){
+	event.preventDefault();
+  hideextendednote();
+});
+
+$('#displayextendednote').click(function(event){
+	event.preventDefault();
+  displayextendednote();
+});
+
+
+function hideextendednote() {
+  $('#hideextendednote').hide();
+  $('#displayextendednote').show();
+  $('tr.extendednoteonly td').hide();
+  $('p.extendednote').hide();
+}
+
+function displayextendednote() {
+  $('#displayextendednote').hide();
+  $('#hideextendednote').show();
+  $('tr.extendednoteonly td').show();
+  $('p.extendednote').show();
+}
+
+
+
+displayplayers();
+
+$('#hideplayers').click(function(event){
+	event.preventDefault();
+  hideplayers();
+});
+
+$('#displayplayers').click(function(event){
+	event.preventDefault();
+  displayplayers();
+});
+
+
+function hideplayers() {
+  $('#hideplayers').hide();
+  $('#displayplayers').show();
+  $('tr.partofteam').hide();
+}
+
+
+function displayplayers() {
+  $('#displayplayers').hide();
+  $('#hideplayers').show();
+  $('tr.partofteam').show();
+}
+
+			} );
+
+		</script>
+    <style type="text/css" title="currentStyle">
+
+      body#front div#content {
+      	width: 760px;
+      }
+		  table#diary, table#finals, table.matches, table#matchstatsplayer {
+        color:#333333;
+        font-size:12.8px;
+        line-height: 1.45em;
+        font-family: "Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+      }
+        table.matches, table#matchstatsplayer {
+			    clear: both;
+			    margin: 0 auto;
+			    /* width:100%; */
+        }
+
+        table#matchstatsplayer {
+			    margin-bottom: 12px !important;
+          border: 1px solid #ccc;
+        }
+
+        table.matches thead th {
+          border-bottom:1px solid black;
+          font-weight:bold;
+					font-size: 14px;
+          padding:13px 18px 5px 10px;
+			  }
+
+        table#matchstatsplayer thead th {
+          border-bottom:1px solid black;
+          font-weight:bold;
+					 /* font-size: 14px; */
+			  }
+
+        table#matchstatsplayer thead th, table#matchstatsplayer tbody td {
+          padding: 2px 8px 4px 8px;
+			  }
+
+			  table.matches, table#matchstatsplayer {
+			  	 /* background-color:#DDFFDD; */   /* WAS xxxx */
+        }
+
+			  table.matches, table#matchstatsplayer {
+			    padding: 3px 0px 3px 0px;
+			  }
+
+        table#matchstatsplayer .divider {
+			    border-left: 1px dashed #ccc !important;
+        }
+			p.info {
+			  text-align: center;
+			}
+
+			table.matches td.nationality {
+		    padding-top: 5px !important;
+		    padding-right: 0px !important;
+		    padding-left: 4px !important;
+			  width: 20px;
+			}
+			table.matches td.player {
+		    padding-right: 5px !important;
+		    padding-left: 1px !important;
+			}
+			table.matches td.score {
+			  /* text-align: center; */
+		    padding-right: 3px !important;
+		    padding-left: 0px !important;
+				text-align: center;
+			  /* width: 32px; */
+			}
+			table.matches td.score-delim {
+		    padding-left: 0px !important;
+		    padding-right: 0px !important;
+				text-align: center;
+			}
+			table.matches td.first-score {
+		    padding-left: 4px !important;
+		    padding-right: 0px !important;
+			  text-align: right !important;
+			}
+			table.matches td.last-score {
+		    padding-left: 0px !important;
+		    padding-right: 5px !important;
+			  text-align: left !important;
+			}
+			table.matches td.info {
+			  width: 80px;
+			}
+		</style>
+<script type="text/javascript" src="scorekeeper/scripts/pngfix.js"></script>
+			<script type="text/javascript">
+			function calculateAge (birthDate, otherDate) {
+			    birthDate = new Date(birthDate);
+			    otherDate = new Date(otherDate);
+
+			    var years = (otherDate.getFullYear() - birthDate.getFullYear());
+
+			    if (otherDate.getMonth() < birthDate.getMonth() ||
+			        otherDate.getMonth() == birthDate.getMonth() && otherDate.getDate() < birthDate.getDate()) {
+			        years--;
+			    }
+
+			    return years;
+			}
+			</script>
+	</head>
+<body class="main redesign2"  id="activematches" >
+
+<div id="afm_stickySideAdLeft"></div>
+<div id="afm_stickySideAd"></div>
+    <!--start wrapper-->
+    <div id="wrapper"  >
+
+      <!--start main-holder-->
+      <div id="main">
+<div id="toppbanner" style="text-align: center; padding-bottom: 5px;">
+
+  <div class="bilderamme"><a href="/index.asp"><img src="/Img/design/snookerorg.png?unique" border="0" alt="snooker.org Frontpage" /></a></div>
+</div>
+<center>
+
+<table class="topmenu">
+  <tr valign="top">
+	  <!--
+    <td><a href="/" title="Homepage">Home</a>&nbsp;&gt;</td>
+    <td><a href="/trn/" title="Events">Events</a>&nbsp;&gt;</td>
+		-->
+    <td><a href="/res/index.asp?season=2026" title="The 2026/2027 season">2026/2027</a>:</td>
+    <td align="left">
+      <a href="/whatsnew" title="Chronological list of updates">What's new</a>&nbsp;|
+      <a href="/res/index.asp?template=21&season=2026" title="Ongoing matches">Live</a>&nbsp;|
+      <a href="/res/index.asp?template=22&season=2026" title="Concluded matches">Results</a>&nbsp;|
+      <a href="/res/index.asp?template=24&season=2026" title="Upcoming matches">Upcoming</a>&nbsp;|
+      <a href="/res/index.asp?template=2&season=2026#current" title="All the events of the season">Calendar</a>&nbsp;|
+      <a href="/res/index.asp?template=7&season=2026" title="Concluded events">Winners</a>&nbsp;|
+      <a href="/res/index.asp?template=38&season=2026" title="Players on the Main Tour">Main Tour players</a>&nbsp;|
+			<!--
+      <a href="/res/index.asp?template=4&season=2026" title="Info and matches on each player">All players</a>&nbsp;|
+      <a href="/res/index.asp?template=6&season=2026" title="Head to heads">H2H</a>&nbsp;|
+			-->
+      <a href="/res/index.asp?template=5&season=2026" title="Win percentages">Match stats</a>
+    </td>
+		<!--
+		<td>
+		  <div class="followtwitter"><a href="https://twitter.com/snookerorg" title="Follow us on Twitter"><img src="/res/scorekeeper/gfx/t_mini-a.png" alt="Twitter" /></a></div>
+		</td>
+		-->
+  </tr>
+</table>
+
+</center>
+
+<!--start content-->
+<div id="content">
+<h1>Live Scores      <span class="shorthiders">
+        <a class="hidematchinfo" href="#" title="Hide notes, etc">[ - ]</a>
+        <a class="displaymatchinfo" href="#" title="Display notes, etc">[ + ]</a>
+      </span>
+</h1>
+<p class="info">
+Recent, ongoing and imminent matches (0).<br/><br/>See also our associated iPhone app <a href="https://apps.apple.com/gb/app/snooker-live/id1665484317">Snooker Live</a>.
+</p>
+<div class="livecontainer livecontainer2">
+<p class="info"><em>No matches</em></p>
+
+<span class="this-moddate">27.10.2026 18:18:48</span></div>
+<p class="info">
+See also
+<a href="/res/index.asp?template=22">earlier results</a>
+ (2&nbsp;164)
+ and  <a href="/res/index.asp?template=24">upcoming matches</a> (76)
+</p>
+<!-- #content --></div>
+
+<!--end content start sidebar-->
+<!-- #main --></div>
+
+
+<!-- ============= BUNN - START ============= -->
+<div id="ytre-bunn">
+  <div id="indre-bunn">
+<div class="share-outer">
+<div class="share-inner">
+      <span class="shorthiders">
+        <a class="hidechat"    href="#" title="Hide chat room">Hide chat</a>
+        <a class="displaychat" href="#" title="Show chat room">Show chat</a>
+      </span>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname  = 'new-snooker-org'; // required: replace example with your forum shortname
+
+ 	 var disqus_identifier = '21';
+		 var disqus_title      = 'Live Scores';
+		 var disqus_url        = 'https://snooker.org/res/index.asp?template=21';
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+<footer>
+  <p>
+Generated: <span data-localtime-format="ddd dd MMM yyyy HH:mm">2026-10-28 04:41:00Z</span> (<strong><script>document.write(Intl.DateTimeFormat().resolvedOptions().timeZone)</script></strong>)  </p>
+
+  <ul id="internals">
+    <li><a href="/about">About</a></li>
+    <li><a href="/contents">A &mdash; Z</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/credits">Credits</a></li>
+    <li><a href="/search">Search</a></li>
+    <li><a href="/about/privacypage.shtml">Privacy</a></li>
+  </ul>
+
+  <ul id="sharing">
+    <li><a class="fbk" target="_blank" href="//facebook.com/snookerorg"><svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg></a></li>
+<!--
+
+<span class="share-bluesky">
+    <a id="bluesky-share-link"
+        target="_blank" 
+        title="Share on Bluesky" 
+        href="#">
+        <svg width="1em" height="1em" fill="#fff" viewBox="0 0 600 530" xmlns="http://www.w3.org/2000/svg">
+        <path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z"/>
+        </svg>
+    </a>
+</span>
+<script>
+  (function(){
+    const pageTitle = encodeURIComponent(document.title);
+    const pageUrl = encodeURIComponent(window.location.href);
+    const blueskyUrl = `https://bsky.app/intent/compose?text=${pageTitle}%20${pageUrl}`;
+    document.getElementById('bluesky-share-link').href = blueskyUrl;
+  })();
+</script>
+<style>
+  span.share-bluesky {
+    display: block;
+    height: 1.6em;
+    width: 1.6em;
+    text-align: center;
+    border-radius: 0.2em;
+    background: #1185fe;
+  }
+  span.share-bluesky > svg {
+    fill: #fff;
+    width: 1em;
+    height: 1em;
+    margin: 0.3em;
+  }
+	</style>
+-->
+		<!-- Needs to be updated
+    <li><a class="rss" target="_blank" href="//feed43.com/3646500336171735.xml"><svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM112 416c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm157.533 0h-34.335c-6.011 0-11.051-4.636-11.442-10.634-5.214-80.05-69.243-143.92-149.123-149.123-5.997-.39-10.633-5.431-10.633-11.441v-34.335c0-6.535 5.468-11.777 11.994-11.425 110.546 5.974 198.997 94.536 204.964 204.964.352 6.526-4.89 11.994-11.425 11.994zm103.027 0h-34.334c-6.161 0-11.175-4.882-11.427-11.038-5.598-136.535-115.204-246.161-251.76-251.76C68.882 152.949 64 147.935 64 141.774V107.44c0-6.454 5.338-11.664 11.787-11.432 167.83 6.025 302.21 141.191 308.205 308.205.232 6.449-4.978 11.787-11.432 11.787z"/></svg></a></li>
+		-->
+    <!--<li><a class="twr" target="_blank" href="//twitter.com/snookerorg"><svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg></a></li>-->
+  </ul>
+
+</footer>
+
+
+        </div> <!-- indre-bunn -->
+      </div> <!-- ytre-bunn -->
+      <!-- ============= BUNN - SLUTT ============= -->
+
+<!-- #wrapper --></div>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SCCCWZSX3N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SCCCWZSX3N');
+</script>
+  <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a519628a0c8e8acf',t:'MTc5MzE4NDY4Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

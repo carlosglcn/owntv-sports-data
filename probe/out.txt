@@ -1,4 +1,32 @@
 
-=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatchDraws -> ERR HTTP Error 500: Internal Server Error {"status":false,"code":500,"message":"Internal Server Error"}
+=== JS https://www.pdc.tv/fixtures-results -> 200 text/html 1241736
+  [dec9272d-fbf2-464a-9a3d-bf8bc4] "https://snackmedia-pdc-tagan.adlightning.com/op.js"
+  js ERR https://euc-widget.freshworks.com/widgets/undefined.js HTTP Error 403: Forbidden
+  [224mlCi2.js] "https://dev.api.usestoryteller.com"
+  [224mlCi2.js] "https://staging.api.usestoryteller.com"
+  [224mlCi2.js] "https://api.usestoryteller.com"
+  [224mlCi2.js] `https://sa-api.gc.${this.url}/v1/refresh_token`
+  [224mlCi2.js] `https://sa-api.gc.${this.url}/v1/sessionsignin/`
+  [224mlCi2.js] `https://streamline.webapi.gc.${__classPrivateFieldGet$g(this,_FootballWeb_url,"
+  [224mlCi2.js] `https://streamline.webapi.gc.${__classPrivateFieldGet$2(this,_VideosWeb_features,"
+  [224mlCi2.js] "https://images.gc.pdcservices.co.uk/95443cb0-66e0-11f0-a813-014cdc4de757.png"
+  [COkLO2fd.js] "https://android.googleapis.com/gcm/send"
 
-=== PJ https://api-prod.premierpadel.com/api/tournament/getTournaments -> ERR HTTP Error 500: Internal Server Error {"status":false,"code":500,"message":"Internal Server Error"}
+=== SAVE https://www.snooker.org/res/index.asp?event=2762 -> 200 text/html 205177
+  saved sno_event.html
+
+=== SAVE https://www.snooker.org/res/index.asp?template=31 -> 200 text/html 162037
+  saved sno_rank.html
+
+=== SAVE https://www.snooker.org/res/index.asp?template=21 -> 200 text/html 32552
+  saved sno_cal.html
+
+=== SAVE https://www.dartsdatabase.co.uk/EventList.aspx -> ERR HTTP Error 404: Not Found <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+<script>(function(){function c(){var b=a.contentDocument||(a
