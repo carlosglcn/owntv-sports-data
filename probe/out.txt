@@ -1,22 +1,15 @@
 
-=== SAVE https://ehfcl.eurohandball.com/frontend.kw/dist/assets/js/plugin.min.js?v=DXe0FBfLFLhFFSCsbO3phjOEt5JUBgmtc-TxQaZOgKo -> 200 text/javascript 84350
-  saved ehf_plugin.js
+=== SAVE https://ehfcl.eurohandball.com/frontend.kw/dist/assets/js/common.min.js?v=ObAbUrBcy68qWLW1nv5WLUh2i3fVyLFSeCA3gQbppfI -> 200 text/javascript 41372
+  saved ehf_common.js
 
-=== SAVE https://www.lnh.fr/scripts/apps.js?v=2.3.2 -> 200 application/x-javascript 29313
-  saved lnh_apps.js
+=== SAVE https://www.lnh.fr/ajaxpost1 -> 200 text/html; charset=UTF-8 717069
+  saved lnh_cal_ajax.html
 
-=== POSTSAVE https://www.lnh.fr/ajax -> ERR HTTP Error 404: Not Found
-
-=== POSTSAVE https://www.lnh.fr/ajax/sportsCalendars/index_ajax -> ERR HTTP Error 404: Not Found
-
-=== SAVE https://www.lnh.fr/daikin-starligue/classement -> 200 text/html; charset=UTF-8 64631
+=== SAVE https://www.lnh.fr/daikin-starligue/classement -> 200 text/html; charset=UTF-8 64626
   saved lnh_table2.html
 
-=== SAVE https://www.handball.net/ligen/sportradar.dhbdata.15984/spielplan -> ERR HTTP Error 404: Not Found
+=== SAVE https://public.mksz.hu/public/api/v1/versenyek/foversenyek?evadEv.equals=2027&nem.in=F&sportagKod.equals=SPAG_1&korosztalyId.equals=1&page=0&paged=true&size=300 -> 200 application/json 2
+  saved mksz_fo2027.json
 
-=== SAVE https://www.handball.net/api/new/matches?date_from=2026-10-28&date_to=2026-11-02&per_page=50&page=1 -> ERR HTTP Error 403: Forbidden
-
-=== SAVE https://www.handball.net/a/sportdata/1/widgets/tournament/sportradar.dhbdata.15984/schedule -> ERR HTTP Error 404: Not Found
-
-=== SAVE https://www.mksz.hu/versenyek -> 200 text/html 11708
-  saved mksz_versenyek.html
+=== SAVE https://public.mksz.hu/public/api/v1/versenyek/foversenyek?evadEv.equals=2026&nem.in=F&sportagKod.equals=SPAG_1&korosztalyId.equals=1&page=0&paged=true&size=300 -> 200 application/json 2
+  saved mksz_fo2026.json
