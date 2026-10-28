@@ -1,2 +1,5 @@
-PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatchDraws {"slug":"kuwait-p1-2","draw_type":"MD"} pp_dr1.json
-PJ https://api-prod.premierpadel.com/api/tournament/getTournaments {"year":2026} pp_g4.json
+JS https://www.pdc.tv/fixtures-results ["'`]https?://[a-z0-9.-]*(?:api|feed|data|stats|sportradar|dartsdata|pdc)[a-z0-9.-]*\.[a-z]{2,}[^"'`]{0,100}["'`]
+SAVE https://www.snooker.org/res/index.asp?event=2762 sno_event.html
+SAVE https://www.snooker.org/res/index.asp?template=31 sno_rank.html
+SAVE https://www.snooker.org/res/index.asp?template=21 sno_cal.html
+SAVE https://www.dartsdatabase.co.uk/EventList.aspx sdb_events.html
