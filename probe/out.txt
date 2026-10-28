@@ -1,9 +1,34 @@
 
-=== SAVE https://www.sportschau.de/live-und-ergebnisse/handball/deutschland-hbl/spiele-und-ergebnisse -> 200 text/html; charset=utf-8 451545
-  saved ss_hbl_spiele.html
+=== SAVE https://www.procyclingstats.com/races.php?year=2026&circuit=1&filter=Filter -> 200 text/html; charset=UTF-8 34748
+  saved pcs_races.html
 
-=== SAVE https://www.sportschau.de/live-und-ergebnisse/handball/deutschland-hbl/tabelle -> 200 text/html; charset=utf-8 458182
-  saved ss_hbl_tabelle.html
+=== SAVE https://www.procyclingstats.com/race/vuelta-a-espana/2026/route/stages -> 200 text/html; charset=UTF-8 613784
+  saved pcs_vuelta_stages.html
 
-=== SAVE https://public.mksz.hu/public/api/v1/versenyek/tabella/320228793 -> 200 application/json;charset=UTF-8 9794
-  saved mksz_tabella.json
+=== SAVE https://www.procyclingstats.com/race/vuelta-a-espana/2026/stage-10 -> 200 text/html; charset=UTF-8 647460
+  saved pcs_vuelta_s10.html
+
+=== SAVE https://www.procyclingstats.com/race/vuelta-a-espana/2026/gc -> 200 text/html; charset=UTF-8 612291
+  saved pcs_vuelta_gc.html
+
+=== SAVE https://firstcycling.com/race.php?y=2026&t=2 -> ERR HTTP Error 403: Forbidden
+
+=== SAVE https://www.premierpadel.com/en/tournaments -> 200 text/html; charset=utf-8 58068
+  saved pp_tournaments.html
+
+=== SAVE https://www.padelfip.com/calendar-premier-padel/ -> 200 text/html; charset=UTF-8 229526
+  saved fip_cal.html
+
+=== SAVE https://www.pdc.tv/fixtures-results -> 200 text/html 1241736
+  saved pdc_fixtures.html
+
+=== SAVE https://www.wst.tv/tournaments -> 200 text/html 180247
+  saved wst_tournaments.html
+
+=== SAVE https://api.wst.tv/ -> ERR <urlopen error [Errno -2] Name or service not known>
+
+=== SAVE https://www.dartsdatabase.co.uk/ -> 200 text/html; charset=UTF-8 55907
+  saved dartsdb.html
+
+=== SAVE https://www.snooker.org/res/index.asp?template=24 -> 200 text/html 136768
+  saved snookerorg.html
