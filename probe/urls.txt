@@ -1,12 +1,9 @@
-SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetInitMatches cl_init.json
-SAVE https://www.eurohandball.com/umbraco/api/livescoreapi/GetLiveScoreMatches/138648 live.json
-SAVE https://www.eurohandball.com/umbraco/api/livescoreapi/GetTournaments/138648 tournaments.json
-SAVE https://ehfcl.eurohandball.com/men/2026-27/matches/ cl_page.html
-SAVE https://ehfcl.eurohandball.com/men/2026-27/standings/ cl_standings.html
-SAVE https://www.opel-hbl.de/de/hbl/spielplan hbl_spielplan.html
-SAVE https://www.lnh.fr/liquimoly-starligue/calendrier lnh_cal.html
-SAVE https://www.lnh.fr/liquimoly-starligue/classement lnh_table.html
-SAVE https://tophaandbold.dk/kampprogram/herreligaen dk_prog.html
-SAVE https://tophaandbold.dk/stillinger/herreligaen dk_table.html
-SAVE https://www.mksz.hu/static/js/app.b76bb16e.js mksz_app.js
-SAVE https://www.mksz.hu/js/app.b76bb16e.js mksz_app2.js
+SAVE https://ehfcl.eurohandball.com/frontend.kw/dist/assets/js/plugin.min.js?v=DXe0FBfLFLhFFSCsbO3phjOEt5JUBgmtc-TxQaZOgKo ehf_plugin.js
+SAVE https://www.lnh.fr/scripts/apps.js?v=2.3.2 lnh_apps.js
+POSTSAVE https://www.lnh.fr/ajax controller=sportsCalendars&action=index_ajax&seasons_id=40&days_id=all&teams_id=all&univers=d1-26623&key=281861894&current_month=all&type=all&type_id=all lnh_ajax1.html
+POSTSAVE https://www.lnh.fr/ajax/sportsCalendars/index_ajax seasons_id=40&days_id=all&teams_id=all&univers=d1-26623&key=281861894&current_month=all&type=all&type_id=all lnh_ajax2.html
+SAVE https://www.lnh.fr/daikin-starligue/classement lnh_table2.html
+SAVE https://www.handball.net/ligen/sportradar.dhbdata.15984/spielplan hn_spielplan.html
+SAVE https://www.handball.net/api/new/matches?date_from=2026-10-28&date_to=2026-11-02&per_page=50&page=1 hn_api_matches.json
+SAVE https://www.handball.net/a/sportdata/1/widgets/tournament/sportradar.dhbdata.15984/schedule hn_widget.json
+SAVE https://www.mksz.hu/versenyek mksz_versenyek.html

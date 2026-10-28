@@ -1,14 +1,20 @@
 import re, sys, json, urllib.request, urllib.parse
 UA={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36","Accept-Language":"en","Accept":"*/*"}
-def get(u):
-    r=urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=25); b=r.read()
+def get(u,data=None,extra=None):
+    h=dict(UA); h.update(extra or {})
+    r=urllib.request.urlopen(urllib.request.Request(u,data=data,headers=h),timeout=25); b=r.read()
     return r.status, r.headers.get("content-type"), b.decode("utf-8","replace")
 for line in open("probe/urls.txt"):
     line=line.rstrip("\n")
     if not line.strip() or line.startswith("#"): continue
     mode,u,*arg=line.split(" ",2); arg=arg[0] if arg else ""
     try:
-        st,ct,t=get(u)
+        if mode.startswith("POST"):
+            body,_,rest=arg.partition(" ")
+            st,ct,t=get(u,body.encode(),{"Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","X-Requested-With":"XMLHttpRequest"})
+            mode="SAVE" if mode=="POSTSAVE" else "BODY"; arg=rest
+        else:
+            st,ct,t=get(u)
         print("\n=== %s %s -> %s %s %d"%(mode,u,st,ct,len(t)))
         if mode=="SAVE":
             import os; os.makedirs("probe/raw",exist_ok=True); open("probe/raw/"+arg,"w").write(t); print("  saved",arg)
