@@ -1,18 +1,32 @@
 
-=== SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionapi/GetStandingMatches?contentId=138673&competitionId=-Gd1tlJGDXtuVGsp4I0Chg -> 200 application/json; charset=utf-8 698752
-  saved ehf_standmatches.json
+=== JS https://www.opel-hbl.de/de/hbl/spielplan -> 200 text/html;charset=utf-8 1130059
+  [B6mwsV6f.js] DError",ez],["DFooter",tz],["DFormBuilder",nz],["DHeadline",sz],["DPage",rz],["DPopup",oz],["DStatCenterContent",iz],["DSynergyWidget",az],["DTextImage",cz],["DToolbarItems",lz],["DToolbarItemsDynamic",uz]],dz=I1({name:"
+  [DRowOBGd.js] ",props:{pageDataBySlug:{}},setup(e){const t=e,l=L(!1);ut(b(()=>l.value?{link:[{rel:"stylesheet",href:"https://avplayer.sportradar.com/agamo/latest/avvpl-player.css"}],script:[{src:"https://avplayer.sportradar.com/agamo/
+  [DRowOBGd.js] rchParams(F),window.location.href=`${window.clientUrl}?${F}`}),k}),g=b(()=>({matchId:t.pageDataBySlug?.fields.matchTag?.sportradarId,seasonId:t.pageDataBySlug?.fields.seasonTag?.sportradarId,sportId:t.pageDataBySlug?.fie
+  [DRowOBGd.js] ortradarId,teamUid:t.pageDataBySlug?.fields.teamTag?.sportradarId,competitionId:t.pageDataBySlug?.fields.competitionTag?.sportradarId,utid:t.pageDataBySlug?.fields.uniqueTournamentId?.sportradarId,uniqueTournamentId:t.pa
+  [DRowOBGd.js] ataBySlug?.fields.uniqueTournamentId?.sportradarId,tid:t.pageDataBySlug?.fields.tournamentId?.sportradarId,tournamentId:t.pageDataBySlug?.fields.tournamentId?.sportradarId,...d.value})),_=k=>k?.constructor===Object,y=b((
+  [DRowOBGd.js]         )})(window,document,"script", "https://widgets.sir.sportradar.com/${l.widgetClientId}/widgetloader", "SIR", ${JSON.stringify(u)});
+  [BbZleKxy.js] tags.async=!0,tags.src="https://sportradar.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+  [BbZleKxy.js] ummary_large_image",twitterTitle:s,twitterDescription:o,twitterImage:d},{tagPriority:0});const h=p(()=>{const u=[],f=/\.sportradar\.com/.test(a.host);return e?.value?.content?.robotTags&&u.push({name:"robots",content:f?"
+  [CtO7Z_mC.js] ("scroll",S)});const{$dxp:E}=Ae(),W=Pe().locale,{toggleMenu:A,isOpen:y}=me(),d=Re();async function T(V){return Ht("/api/synergy/season-for-match",{params:{matchId:V}})}let{data:v}=([l,o]=De(()=>T(d.params.matchId)),l=awa
+  [pxOdzM31.js] "statistics_entities","fixture"],w={de:"de-DE",en:"en-EN"},f=$.includes(e?.widget?.type)?e?.widget?.type:"standings",u=`synergy-widget-${f}-${e?.data?.id}`,r=D(e?.data?.website_id);function L(){return e?.widget?.fragment
+  [pxOdzM31.js] A(P());r.value=t.value,m(t,a=>{r.value=a})}else m(()=>e.data.website_id,t=>{r.value=t});function k(t){c&&console.warn("[SynergyWidget] env:",g?.env);const a={"data-type":N,"data-locale":e?.data?.locale&&e.data.locale in 
+  [pxOdzM31.js] c?"https://widget.eui.stg.connect-nonprod.sportradar.dev/widget.js":"https://widget.eui.connect.sportradar.com/widget.js","data-hide-main-navigation":"true"};e?.widget?.fragment&&(a["data-is-standalone"]="true"),e?.data?
+  [pxOdzM31.js] btree:!0})}),(t,a)=>(l(),b(M,null,[e?.widget?.title?(l(),b("h3",K,y(e?.widget?.title),1)):h("",!0),q("div",{id:u,class:"synergy-widget widget"}),e?.widget?.linking?(l(),H(J,{key:1,href:e?.widget?.linking.url,target:e?.wi
+  [pxOdzM31.js] get.linkTitle),1)]),_:1},8,["href","target"])):h("",!0)],64))}}),Z=Object.assign(z,{__name:"SynergyWidget"});export{Z as _};
+  [B09i1TOZ.js] "),f=r({}),w=r({}),D=r(!1),C=r({}),p=r({});async function F(e,n){const s=g();for(const t of v)try{const o=await s("/api/synergy/seasons",{params:{competitionId:t}}),a=o?.find(u=>u.status==="ACTIVE")??o?.[0];if(a){const u
+  [B09i1TOZ.js] ]??={competitionId:t},u}}catch{continue}}async function k(e,n){const s=g();let t=3;for(;t>0;){try{const o=await s(`/api/synergy/${e}/seasons`,{params:{id:n}});if(o)return o}catch{}t--,t>0&&await new Promise(o=>setTimeout
+  [DA2WDkvJ.js] Class)},null,2)]),_:2},1032,["to"])]))),128))])]),a("div",Xt,[n(u,{to:"https://play.google.com/store/apps/details?id=ag.sportradar.android.livescore.hbl&hl=de",target:"_blank"},{default:s(()=>[...l[0]||(l[0]=[a("img",{sr
+  [DA2WDkvJ.js] "Download on the App Store",height:"45px",width:"auto"},null,-1)])]),_:1})])]),a("div",Yt,[a("div",Zt,[n(u,{to:"https://sportradar.com/",target:"_blank"},{default:s(()=>[...l[2]||(l[2]=[a("img",{src:$t,alt:"Powered by Sp
+  [T88yUNpx.js] js";import"./DfS-tLHi.js";/* empty css        */const D=["data-element-id"],S={class:"component-wrapper"},V=_({__name:"DSynergyWidget",props:{pageDataBySlug:{}},setup(r){const e=r,t=B(()=>e.pageDataBySlug.fields.widgets.
+  [T88yUNpx.js] nent-element synergy-widget-component","data-element-id":`synergy-widget-${e?.pageDataBySlug?.id}`},[y("div",S,[n(u,null,{default:o(()=>[n(m,null,{default:o(()=>[(a(!0),l(f,null,x(e?.pageDataBySlug?.fields?.widgets,(i,g)
+  [T88yUNpx.js] ull,8,["widget","data"])]),_:2},1032,["lg","xl","xxl"]))),128))]),_:1})]),_:1})])],8,D)}}}),j=Object.assign(V,{__name:"DSynergyWidget"});export{j as default};
 
-=== SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetMatches?competitionId=-Gd1tlJGDXtuVGsp4I0Chg&contentId=138649&date=2026-10-01&isPast=true -> 200 application/json; charset=utf-8 17805
-  saved ehf_gm3.json
+=== SAVE https://public.mksz.hu/public/api/v1/versenyek/program?evadEv.equals=2026&globalisVersenyKod.in=NBI&nem.in=F&size=600&page=0&paged=true -> 200 application/json 302938
+  saved mksz_prog26.json
 
-=== SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetMatches?competitionId=-Gd1tlJGDXtuVGsp4I0Chg&contentId=138649&lastDate=2026-10-29&direction=past -> 200 application/json; charset=utf-8 17805
-  saved ehf_gm4.json
+=== SAVE https://public.mksz.hu/public/api/v1/versenyek/program?evadEv.equals=2027&globalisVersenyKod.in=NBI&nem.in=F&size=600&page=0&paged=true -> 200 application/json 2
+  saved mksz_prog27.json
 
-=== SAVE https://ehfel.eurohandball.com/men/2026-27/standings/ -> 200 text/html; charset=utf-8 262841
-  saved el_standings.html
-
-=== SAVE https://ehfel.eurohandball.com/umbraco/api/competitionmatchesapi/GetInitMatches -> 200 application/json; charset=utf-8 44081
-  saved el_init.json
-
-=== SAVE https://www.eurohandball.com/umbraco/api/livescoreapi/GetLiveScoreMatches/1069 -> 200 application/json; charset=utf-8 69805
-  saved live_home.json
+=== SAVE https://www.sportschau.de/handball/bundesliga/ -> 200 text/html;charset=UTF-8 561629
+  saved sportschau.html
