@@ -1,4 +1,4 @@
-GREP https://www.dartsdatabase.co.uk/ href="[^"]*(?:Event|event)[^"]*"
-SAVE https://dartsorakel.com/ do_home.html
-SAVE https://www.mastercaller.com/ mc_home.html
-SAVE https://api.mastercaller.com/ mc_api.html
+GREP https://www.mastercaller.com/ href="[^"]*(?:matchcenter|tournaments/pdc|calendar)[^"]*"
+SAVE https://www.mastercaller.com/matchcenter mc_matchcenter.html
+SAVE https://dartsdatabase.co.uk/display-event.php?eid=25855&tna=European+Championship&eda=2026 sdb_event.html
+SAVE https://dartsdatabase.co.uk/events-pdc.php sdb_pdc.html
