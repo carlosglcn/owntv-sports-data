@@ -10,7 +10,9 @@ for line in open("probe/urls.txt"):
     try:
         st,ct,t=get(u)
         print("\n=== %s %s -> %s %s %d"%(mode,u,st,ct,len(t)))
-        if mode=="BODY":
+        if mode=="SAVE":
+            import os; os.makedirs("probe/raw",exist_ok=True); open("probe/raw/"+arg,"w").write(t); print("  saved",arg)
+        elif mode=="BODY":
             print(re.sub(r"\s+"," ",t[:int(arg or 1500)]))
         elif mode=="GREP":
             seen=set()

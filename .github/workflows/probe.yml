@@ -13,4 +13,4 @@ jobs:
       - run: python3 probe/probe.py > probe/out.txt 2>&1 || true
       - run: |
           git config user.name "github-actions"; git config user.email "actions@github.com"
-          git add probe/out.txt; git commit -qm "probe output"; git push
+          git add probe/out.txt probe/raw || true; git add probe/out.txt; git commit -qm "probe output"; git push
