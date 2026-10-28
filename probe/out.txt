@@ -1,10 +1,12 @@
 
-=== SAVE https://www.premierpadel.com/_next/static/chunks/1puv6lsejt6wt.js -> 200 application/javascript; charset=UTF-8 53927
-  saved pp_chunk_api.js
+=== PJ https://api-prod.premierpadel.com/api/tournament/getTournaments -> ERR HTTP Error 500: Internal Server Error
 
-=== SAVE https://www.premierpadel.com/_next/static/chunks/3rxd-p75738xv.js -> 200 application/javascript; charset=UTF-8 19712
-  saved pp_chunk_socket.js
+=== PJ https://api-prod.premierpadel.com/api/tournament/getTournaments -> ERR HTTP Error 500: Internal Server Error
 
-=== SAVE https://api-prod.premierpadel.com/api/tournaments -> ERR HTTP Error 404: Not Found
+=== PJ https://api-prod.premierpadel.com/api/tournament/getLiveTournament -> ERR HTTP Error 500: Internal Server Error
 
-=== SAVE https://api-prod.premierpadel.com/api/tournament -> ERR HTTP Error 404: Not Found
+=== SAVE https://api-prod.premierpadel.com/api/tournament/getTournamentStrip -> 200 application/json; charset=utf-8 2390
+  saved pp_strip.json
+
+=== SAVE https://api-prod.premierpadel.com/api/player/getPlayerRankings -> 200 application/json; charset=utf-8 8237
+  saved pp_rank.json
