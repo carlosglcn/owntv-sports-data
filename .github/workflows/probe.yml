@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 scripts/cycling.py --force > probe/cycling_run.txt 2>&1 || true
+      - run: python3 probe/probe.py > probe/out.txt 2>&1 || true
       - run: |
           git config user.name "github-actions"; git config user.email "actions@github.com"
           git add -A probe cycling.json 2>/dev/null || git add -A probe; git commit -qm "probe: cycling" || true; git push
