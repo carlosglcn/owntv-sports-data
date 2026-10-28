@@ -1,8 +1,1 @@
-Traceback (most recent call last):
-  File "/home/runner/work/owntv-sports-data/owntv-sports-data/scripts/tennis.py", line 97, in <module>
-    main()
-    ~~~~^^
-  File "/home/runner/work/owntv-sports-data/owntv-sports-data/scripts/tennis.py", line 72, in main
-    players[a["id"]] = (a.get("displayName") or "", (a.get("headshot") or {}).get("href"))
-                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'str' object has no attribute 'get'
+tennis written: 245 of 300 players have a photo; 82 from ESPN
