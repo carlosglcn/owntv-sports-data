@@ -1,3 +1,12 @@
 
-=== SAVE https://www.premierpadel.com/_next/static/chunks/0xuca16ap_k9u.js -> 200 application/javascript; charset=UTF-8 42483
-  saved pp_q.js
+=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatchDraws -> ERR HTTP Error 500: Internal Server Error
+
+=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatchDraws -> ERR HTTP Error 500: Internal Server Error
+
+=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches -> ERR HTTP Error 500: Internal Server Error
+
+=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches -> ERR HTTP Error 500: Internal Server Error
+
+=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentInfo -> ERR HTTP Error 500: Internal Server Error
+
+=== PJ https://api-prod.premierpadel.com/api/tournament/getTournaments -> ERR HTTP Error 500: Internal Server Error
