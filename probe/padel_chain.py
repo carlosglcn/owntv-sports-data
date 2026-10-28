@@ -16,6 +16,14 @@ mj = re.search(r'src="([^"]*assets/js/main[^"]*\.js[^"]*)"', page)
 if mj:
     js = get(mj.group(1)); open("probe/raw/fip_main.js", "w").write(js)
     out.append("main.js actions: %s" % sorted(set(re.findall(r"action['\"]?\s*:\s*['\"]([a-z_]+)", js))))
+AJ = {"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8", "X-Requested-With": "XMLHttpRequest",
+      "Referer": "https://www.padelfip.com/events/kuwait-major-2026/", "Origin": "https://www.padelfip.com"}
+try:
+    r = get("https://www.padelfip.com/wp-admin/admin-ajax.php", b"action=padelfip_refresh_nonce", AJ)
+    out.append("refresh -> %s" % r[:200])
+    nonce = json.loads(r)["data"]["nonce"]
+except Exception as e:
+    out.append("refresh ERR %s" % e)
 for action in ("livescore_tab_load",):
     try:
         res = get("https://www.padelfip.com/wp-admin/admin-ajax.php",
