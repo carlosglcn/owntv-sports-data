@@ -1,1 +1,6 @@
-SAVE https://www.premierpadel.com/_next/static/chunks/0xuca16ap_k9u.js pp_q.js
+PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatchDraws {"slug":"kuwait-p1-2","draw_type":"MD"} pp_dr1.json
+PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatchDraws {"slug":"kuwait-p1-2","draw_type":"M"} pp_dr2.json
+PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches {"slug":"kuwait-p1-2","date":"2026-10-28"} pp_m5.json
+PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches {"slug":"kuwait-p1-2","gender":"M"} pp_m6.json
+PJ https://api-prod.premierpadel.com/api/tournament/getTournamentInfo {"slug":"kuwait-p1-2","type":"matches"} pp_i2.json
+PJ https://api-prod.premierpadel.com/api/tournament/getTournaments {"filter":"all","year":2026,"page":1,"limit":40} pp_g3.json
