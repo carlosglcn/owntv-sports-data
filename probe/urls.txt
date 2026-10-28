@@ -1,4 +1,3 @@
-JS https://www.opel-hbl.de/de/hbl/spielplan .{0,120}(?:synergy|Synergy|SYNERGY|widget\.js|widgets?/|apiKey|api_key|sportradar).{0,160}
-MKSZ https://public.mksz.hu/public/api/v1/versenyek/program?evadEv.equals=2026&globalisVersenyKod.in=NBI&nem.in=F&size=600&page=0&paged=true mksz_prog26.json
-MKSZ https://public.mksz.hu/public/api/v1/versenyek/program?evadEv.equals=2027&globalisVersenyKod.in=NBI&nem.in=F&size=600&page=0&paged=true mksz_prog27.json
-SAVE https://www.sportschau.de/handball/bundesliga/ sportschau.html
+SAVE https://www.sportschau.de/live-und-ergebnisse/handball/deutschland-hbl/spiele-und-ergebnisse ss_hbl_spiele.html
+SAVE https://www.sportschau.de/live-und-ergebnisse/handball/deutschland-hbl/tabelle ss_hbl_tabelle.html
+MKSZ https://public.mksz.hu/public/api/v1/versenyek/tabella/320228793 mksz_tabella.json
