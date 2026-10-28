@@ -1,4 +1,5 @@
-SAVE https://www.premierpadel.com/_next/static/chunks/1puv6lsejt6wt.js pp_chunk_api.js
-SAVE https://www.premierpadel.com/_next/static/chunks/3rxd-p75738xv.js pp_chunk_socket.js
-SAVE https://api-prod.premierpadel.com/api/tournaments pp_api_t.json
-SAVE https://api-prod.premierpadel.com/api/tournament pp_api_t2.json
+PJ https://api-prod.premierpadel.com/api/tournament/getTournaments {} pp_t0.json
+PJ https://api-prod.premierpadel.com/api/tournament/getTournaments {"year":2026} pp_t1.json
+PJ https://api-prod.premierpadel.com/api/tournament/getLiveTournament {} pp_live.json
+SAVE https://api-prod.premierpadel.com/api/tournament/getTournamentStrip pp_strip.json
+SAVE https://api-prod.premierpadel.com/api/player/getPlayerRankings pp_rank.json

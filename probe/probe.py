@@ -9,7 +9,11 @@ for line in open("probe/urls.txt"):
     if not line.strip() or line.startswith("#"): continue
     mode,u,*arg=line.split(" ",2); arg=arg[0] if arg else ""
     try:
-        if mode.startswith("POST"):
+        if mode=="PJ":
+            body,_,rest=arg.partition(" ")
+            st,ct,t=get(u,body.encode(),{"Content-Type":"application/json","language_code":"en","Origin":"https://www.premierpadel.com","Referer":"https://www.premierpadel.com/"})
+            mode="SAVE"; arg=rest
+        elif mode.startswith("POST"):
             body,_,rest=arg.partition(" ")
             st,ct,t=get(u,body.encode(),{"Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","X-Requested-With":"XMLHttpRequest"})
             mode="SAVE" if mode=="POSTSAVE" else "BODY"; arg=rest
