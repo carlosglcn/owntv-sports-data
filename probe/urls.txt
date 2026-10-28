@@ -1,5 +1,4 @@
-JS https://www.pdc.tv/fixtures-results ["'`]https?://[a-z0-9.-]*(?:api|feed|data|stats|sportradar|dartsdata|pdc)[a-z0-9.-]*\.[a-z]{2,}[^"'`]{0,100}["'`]
-SAVE https://www.snooker.org/res/index.asp?event=2762 sno_event.html
-SAVE https://www.snooker.org/res/index.asp?template=31 sno_rank.html
-SAVE https://www.snooker.org/res/index.asp?template=21 sno_cal.html
-SAVE https://www.dartsdatabase.co.uk/EventList.aspx sdb_events.html
+GREP https://www.dartsdatabase.co.uk/ href="[^"]*(?:Event|event)[^"]*"
+SAVE https://dartsorakel.com/ do_home.html
+SAVE https://www.mastercaller.com/ mc_home.html
+SAVE https://api.mastercaller.com/ mc_api.html
