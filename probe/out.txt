@@ -1,17 +1,8 @@
 
-=== PJ https://api-prod.premierpadel.com/api/tournament/getTournaments -> ERR HTTP Error 500: Internal Server Error
-
-=== PJ https://api-prod.premierpadel.com/api/tournament/getTournaments -> ERR HTTP Error 500: Internal Server Error
-
-=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches -> ERR HTTP Error 500: Internal Server Error
-
-=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches -> ERR HTTP Error 500: Internal Server Error
-
-=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches -> ERR HTTP Error 500: Internal Server Error
-
-=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches -> ERR HTTP Error 500: Internal Server Error
-
-=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentInfo -> ERR HTTP Error 500: Internal Server Error
-
-=== SAVE https://api-prod.premierpadel.com/api/tournament/getTournamentDetails?slug=kuwait-p1-2 -> 200 application/json; charset=utf-8 2437
-  saved pp_d1.json
+=== JS https://www.premierpadel.com/en/tournaments/kuwait-p1-2 -> 200 text/html; charset=utf-8 58112
+  [0p-wzy2t3a7hh.js] ng",year:"numeric"}).formatToParts(new Date(e)),n=r.find(e=>"day"===e.type).value,o=r.find(e=>"month"===e.type).value,i=r.find(e=>"year"===e.type).value;return`${n} ${o} ${i}`}catch(e){return console.log(e
+  [0uw61g4s-57ke.js] case"yrs":case"yr":case"y":return 315576e5*o;case"days":case"day":case"d":return 864e5*o;case"hours":case"hour":case"hrs":case"hr":case"h":return 36e5*o;case"minutes":case"minute":case"mins":case"min":case
+  [0uw61g4s-57ke.js] n}if("number"===s&&!1===isNaN(e)){return t.long?r(a=e,864e5,"day")||r(a,36e5,"hour")||r(a,6e4,"minute")||r(a,1e3,"second")||a+" ms":(n=e)>=864e5?Math.round(n/864e5)+"d":n>=36e5?Math.round(n/36e5)+"h":n>=6e
+  [0xuca16ap_k9u.js] =e=>t.find(t=>t.type===e)?.value.replace(".","");return`${r("day")} ${r("month")}`},`${L(eF)} - ${L(eL)}`)}),(0,t.jsx)(s.default,{href:(0,C.f)(`/tournaments-detail/${P?.slug}`,f),className:"cursor-pointer"
+  [0xuca16ap_k9u.js] ueryKey:["tournamentDraws",e,s],queryFn:()=>(0,t.Y)({slug:e,draw_type:s}),enabled:!!e&&!!s,refetchOnWindowFocus:!1}),"g",0,(e,s=!1)=>(0,r.f)({queryKey:["tournamentinfo",e],queryFn:()=>(0,t.J)({...e}),placehold
+  [1xq-97iykhymu.js] fault,{src:"/images/new-hero-banner.png",alt:"Premier Padel court",fill:!0,priority:!0,className:"object-cover object-center"}),(0,t.jsxs)("div",{className:"relative z-10 flex  flex-col mt-25 items-center 
