@@ -1,3 +1,4 @@
-JS https://www.premierpadel.com/en/tournaments ["'`]https?://[a-z0-9.-]*(?:api|backend|cms|data|graphql)[a-z0-9.-]*[^"'`]{0,120}["'`]
-JS https://www.premierpadel.com/en/tournaments ["'`]/api/[^"'`]{2,120}["'`]
-SAVE https://www.premierpadel.com/en/tournaments/kuwait-major-2026 pp_kuwait.html
+SAVE https://www.premierpadel.com/_next/static/chunks/1puv6lsejt6wt.js pp_chunk_api.js
+SAVE https://www.premierpadel.com/_next/static/chunks/3rxd-p75738xv.js pp_chunk_socket.js
+SAVE https://api-prod.premierpadel.com/api/tournaments pp_api_t.json
+SAVE https://api-prod.premierpadel.com/api/tournament pp_api_t2.json
