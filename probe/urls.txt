@@ -1,6 +1,4 @@
-SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionapi/GetStandingMatches?contentId=138673&competitionId=-Gd1tlJGDXtuVGsp4I0Chg ehf_standmatches.json
-SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetMatches?competitionId=-Gd1tlJGDXtuVGsp4I0Chg&contentId=138649&date=2026-10-01&isPast=true ehf_gm3.json
-SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetMatches?competitionId=-Gd1tlJGDXtuVGsp4I0Chg&contentId=138649&lastDate=2026-10-29&direction=past ehf_gm4.json
-SAVE https://ehfel.eurohandball.com/men/2026-27/standings/ el_standings.html
-SAVE https://ehfel.eurohandball.com/umbraco/api/competitionmatchesapi/GetInitMatches el_init.json
-SAVE https://www.eurohandball.com/umbraco/api/livescoreapi/GetLiveScoreMatches/1069 live_home.json
+JS https://www.opel-hbl.de/de/hbl/spielplan .{0,120}(?:synergy|Synergy|SYNERGY|widget\.js|widgets?/|apiKey|api_key|sportradar).{0,160}
+MKSZ https://public.mksz.hu/public/api/v1/versenyek/program?evadEv.equals=2026&globalisVersenyKod.in=NBI&nem.in=F&size=600&page=0&paged=true mksz_prog26.json
+MKSZ https://public.mksz.hu/public/api/v1/versenyek/program?evadEv.equals=2027&globalisVersenyKod.in=NBI&nem.in=F&size=600&page=0&paged=true mksz_prog27.json
+SAVE https://www.sportschau.de/handball/bundesliga/ sportschau.html
