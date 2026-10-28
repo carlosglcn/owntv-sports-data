@@ -1,0 +1,880 @@
+
+
+<style>
+    #latest-matches-container .v3-home-results-text,
+    #latest-matches-container .v3-home-results-text a:not(.btn) {
+        font-size: .75rem;
+    }
+
+    #latest-matches-container .v3-home-results-chip {
+        font-size: .7rem;
+    }
+    
+    .seer-img {
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0.8 !important;
+            transform: rotate(0deg) !important;
+            padding: 1rem;
+    }
+
+
+    .seer-img img {
+        height: 100% !important;
+        -webkit-mask-image: none !important;
+        mask-image: none !important;
+    }
+
+    
+    .seer-img::after {
+    content: '';
+    position: absolute;
+    top: 35%;
+    right: 67%;
+    width: 100%;
+    height: 120%;
+    transform: rotate(15deg);
+    background: url("https://dartsorakel.com/img/v3/covers/iphone_autoscoring.png?v1") center / contain no-repeat;
+    opacity: 0.7;
+    }
+      
+
+    
+</style>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="dns-prefetch" href="//dartsorakel.com">
+<link rel="dns-prefetch" href="//dartsorakel.com"">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+<link rel="dns-prefetch" href="//live.dartsorakel.com">
+<link rel="dns-prefetch" href="//unicorn.playwiththebest.com">
+<link rel="dns-prefetch" href="//apps.apple.com">
+<link rel="dns-prefetch" href="//play.google.com">
+    <meta charset="utf-8"/>
+    <title>Darts Orakel</title>
+                <link rel="canonical" href="https://dartsorakel.com"/>
+        <meta name="description" content="Darts Orakel"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="csrf-token" content="MuqaXqXLT3a5VHQesSXzV9u8r1BMlHd3YCKe0Tq1">
+    <link rel="shortcut icon" type="image/png" href="https://dartsorakel.com/img/v3/logos/logo-icon-only.png"/>
+
+    
+    <script>
+        (function () {
+            try {
+                var q = new URLSearchParams(window.location.search).get('theme');
+                var theme = (q === 'light' || q === 'dark') ? q : localStorage.getItem('v3Theme');
+                if (q === 'light' || q === 'dark') localStorage.setItem('v3Theme', q);
+                if (theme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+            } catch (e) {}
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    
+    <link href="https://dartsorakel.com/demo1/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
+    <link href="https://dartsorakel.com/demo1/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css"/>
+    
+    <link href="https://dartsorakel.com/css/v3/style.css?v=1792749526" rel="stylesheet" type="text/css"/>
+
+    
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5645281893583678" crossorigin="anonymous"></script>
+    
+    </head>
+<body class="v3">
+
+    <div class="v3-topbar">
+    <div class="container v3-container d-flex align-items-center justify-content-between">
+        <nav class="d-flex align-items-center gap-4">
+            <a href="https://dartsorakel.com/about-us" class="v3-topbar-link">About Us</a>
+            <a href="https://dartsorakel.com/blog" class="v3-topbar-link">Blog</a>
+        </nav>
+        <div class="d-flex align-items-center gap-4">
+            <form action="https://dartsorakel.com/stats/player" method="GET" class="v3-topbar-search d-none mb-0 d-md-flex align-items-center">
+                <i class="bi bi-search"></i>
+                <input type="search" name="search" class="v3-topbar-search-input" placeholder="Search players by name...">
+            </form>
+                        <div class="dropdown v3-lang">
+                <button type="button" class="v3-topbar-link v3-lang-toggle" id="v3LangToggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-globe2 me-1"></i>English
+                </button>
+                <div class="dropdown-menu dropdown-menu-end v3-lang-menu" aria-labelledby="v3LangToggle">
+                    <form action="https://dartsorakel.com/users/update-language" method="post" class="m-0">
+                        <input type="hidden" name="_token" value="MuqaXqXLT3a5VHQesSXzV9u8r1BMlHd3YCKe0Tq1">                                                    <button type="submit" name="language" value="en"
+                                    class="dropdown-item v3-lang-item active">
+                                <img src="https://dartsorakel.com/flags/eng.gif" alt="" class="v3-lang-flag">English
+                            </button>
+                                                    <button type="submit" name="language" value="es"
+                                    class="dropdown-item v3-lang-item ">
+                                <img src="https://dartsorakel.com/flags/esp.gif" alt="" class="v3-lang-flag">Spanish
+                            </button>
+                                                    <button type="submit" name="language" value="fr"
+                                    class="dropdown-item v3-lang-item ">
+                                <img src="https://dartsorakel.com/flags/france.gif" alt="" class="v3-lang-flag">French
+                            </button>
+                                                    <button type="submit" name="language" value="de"
+                                    class="dropdown-item v3-lang-item ">
+                                <img src="https://dartsorakel.com/flags/ger.gif" alt="" class="v3-lang-flag">German
+                            </button>
+                                                    <button type="submit" name="language" value="hi"
+                                    class="dropdown-item v3-lang-item ">
+                                <img src="https://dartsorakel.com/flags/india.gif" alt="" class="v3-lang-flag">Hindi
+                            </button>
+                                                    <button type="submit" name="language" value="hu"
+                                    class="dropdown-item v3-lang-item ">
+                                <img src="https://dartsorakel.com/flags/hungary.gif" alt="" class="v3-lang-flag">Hungarian
+                            </button>
+                                                    <button type="submit" name="language" value="it"
+                                    class="dropdown-item v3-lang-item ">
+                                <img src="https://dartsorakel.com/flags/italy.gif" alt="" class="v3-lang-flag">Italian
+                            </button>
+                                                    <button type="submit" name="language" value="nl"
+                                    class="dropdown-item v3-lang-item ">
+                                <img src="https://dartsorakel.com/flags/ned.gif" alt="" class="v3-lang-flag">Dutch
+                            </button>
+                                                    <button type="submit" name="language" value="po"
+                                    class="dropdown-item v3-lang-item ">
+                                <img src="https://dartsorakel.com/flags/pol.gif" alt="" class="v3-lang-flag">Polish
+                            </button>
+                                                    <button type="submit" name="language" value="pt"
+                                    class="dropdown-item v3-lang-item ">
+                                <img src="https://dartsorakel.com/flags/por.gif" alt="" class="v3-lang-flag">Portuguese
+                            </button>
+                                                    <button type="submit" name="language" value="sr"
+                                    class="dropdown-item v3-lang-item ">
+                                <img src="https://dartsorakel.com/flags/serbia.gif" alt="" class="v3-lang-flag">Serbian
+                            </button>
+                                                    <button type="submit" name="language" value="tr"
+                                    class="dropdown-item v3-lang-item ">
+                                <img src="https://dartsorakel.com/flags/turkey.gif" alt="" class="v3-lang-flag">Turkish
+                            </button>
+                                            </form>
+                </div>
+            </div>
+
+            
+            <button type="button" class="v3-topbar-link v3-theme-toggle" id="v3ThemeToggle" aria-label="Toggle colour theme">
+                <span class="v3-theme-toggle-to-light"><i class="bi bi-sun me-1"></i>Light</span>
+                <span class="v3-theme-toggle-to-dark"><i class="bi bi-moon me-1"></i>Dark</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+    <header class="v3-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <div class="container v3-container">
+            <a class="navbar-brand v3-brand d-flex align-items-center" href="https://dartsorakel.com">
+                <img src="https://dartsorakel.com/img/v3/logos/darts-orakel-logo.png" alt="Darts Orakel" class="v3-brand-logo v3-brand-logo-dark">
+                <img src="https://dartsorakel.com/img/v3/logos/darts-orakel-logo-light.png" alt="" aria-hidden="true" class="v3-brand-logo v3-brand-logo-light">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#v3MainNav"
+                    aria-controls="v3MainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="v3MainNav">
+                <ul class="navbar-nav mx-auto align-items-lg-center">
+    <li class="nav-item">
+        <a class="nav-link v3-nav-link "
+            href="https://dartsorakel.com/player/few">Players</a>
+    </li>
+
+    <li class="nav-item dropdown">
+        <a class="nav-link v3-nav-link dropdown-toggle " href="#"
+            id="v3StatsMenuToggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Stats
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="v3StatsMenuToggle">
+            <li><a class="dropdown-item d-flex align-items-center gap-2 menu-dropdown-item "
+                    href="https://dartsorakel.com/stats/player"><i
+                        class="bi bi-bar-chart-line"></i>Stats</a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-2 menu-dropdown-item "
+                    href="https://dartsorakel.com/events"><i class="bi bi-calendar3"></i>Events</a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-2 menu-dropdown-item "
+                    href="https://dartsorakel.com/predictor-tool"><i
+                        class="bi bi-arrow-left-right"></i>Head to Head</a></li>
+            <li><a class="dropdown-item d-flex align-items-center gap-2 menu-dropdown-item "
+                    href="https://dartsorakel.com/rankings"><i
+                        class="bi bi-currency-pound"></i>Prize Money</a></li>
+        </ul>
+    </li>
+
+    
+    <li class="nav-item">
+        <a class="nav-link v3-nav-link " href="https://dartsorakel.com/fdi">FDI</a>
+    </li>
+
+    
+    <li class="nav-item d-flex align-items-center px-2 py-2 py-lg-0">
+        <button type="button"
+        class="btn v3-btn-pink "
+        onclick="window.location='https://live.dartsorakel.com'">
+    <i class="bi bi-broadcast me-1"></i>Live
+</button>
+    </li>
+
+    <li class="nav-item d-flex align-items-center px-2 py-2 py-lg-0">
+        <button type="button"
+        class="btn v3-btn-primary "
+        onclick="window.location='https://dartsorakel.com/beat-the-odds'">
+    Beat the Odds
+</button>
+    </li>
+</ul>
+                <div class="d-flex py-2 py-lg-0">
+                                            <a href="https://dartsorakel.com/login"
+   class="btn btn-sm v3-btn-ghost "
+      ><i class="bi bi-person me-1"></i>Login</a>
+                                    </div>
+            </div>
+        </div>
+    </nav>
+</header>
+    
+             <div class="v3-news-ticker">
+        <div class="container v3-container d-flex align-items-center gap-3">
+            <span class="v3-news-ticker-label d-flex align-items-center gap-2 px-3 py-2">
+                <i class="bi bi-megaphone"></i>News
+            </span>
+
+            
+                            <div class="v3-news-ticker-viewport">
+                    
+                    <div class="v3-news-ticker-track v3-news-ticker-speed-2">
+                                                    <div class="v3-news-ticker-run d-flex align-items-center" >
+                                                                    <span class="v3-news-ticker-item d-flex align-items-center gap-2 px-4 py-2">
+                                        <i class="bi bi-square-fill v3-news-ticker-bullet"></i>
+                                                                                    <a href="https://dartsorakel.com/events/result/8720/2026-european-championship" target="_blank" rel="noopener">Ross Smith becomes only 5th player to win the European Championship more than once</a>
+                                                                            </span>
+                                                            </div>
+                                                    <div class="v3-news-ticker-run d-flex align-items-center"  aria-hidden="true" >
+                                                                    <span class="v3-news-ticker-item d-flex align-items-center gap-2 px-4 py-2">
+                                        <i class="bi bi-square-fill v3-news-ticker-bullet"></i>
+                                                                                    <a href="https://dartsorakel.com/events/result/8720/2026-european-championship" target="_blank" rel="noopener">Ross Smith becomes only 5th player to win the European Championship more than once</a>
+                                                                            </span>
+                                                            </div>
+                                            </div>
+                </div>
+                    </div>
+    </div>
+    
+    <main class="v3-main">
+        <div class="container v3-container">
+            
+            
+            
+    
+    <div class="row g-4 mb-4">
+        <div class="col-lg-6">
+                        <div class="v3-promo-card h-100">
+            <div class="v3-promo-card-img v3-promo-card-img-backdrop"  aria-hidden="true" >
+            <img src="https://dartsorakel.com/img/v3/covers/darts-treble-20.png" alt="" loading="lazy">
+                    </div>
+        <div class="v3-promo-card-body v3-promo-card-body-split">
+        <div class="v3-promo-card-main">
+                            <div class="v3-promo-card-kicker v3-text-white">
+                    <i class="bi bi-activity me-2"></i>Latest Release
+                </div>
+                        <h2 class="v3-promo-card-title">
+                Get Your <span class="v3-promo-card-accent"><br>European Championship</span>                 <span class="d-block ">Stats Guide</span>            </h2>
+                                        <div class="v3-promo-card-tags">
+                                            <span class="v3-badge v3-badge-gray">
+    All Player Stats
+    </span>
+
+                                            <span class="v3-badge v3-badge-gray">
+    Win Probabilities
+    </span>
+
+                                            <span class="v3-badge v3-badge-gray">
+    Tournament Records
+    </span>
+
+                                    </div>
+                    </div>
+                    <div class="v3-promo-card-side"><button type="button"
+        class="btn v3-btn-white btn-lg"
+        onclick="window.location='/subscription/programs'">
+    <i class="bi bi-download me-1"></i>Download PDF
+</button>
+</div>
+            </div>
+</div>
+        </div>
+        <div class="col-lg-6">
+                        <div class="v3-promo-card h-100">
+            <div class="v3-promo-card-img seer-img" >
+            <img src="https://dartsorakel.com/img/v3/covers/SEER_Unicorn.png?v1" alt="" loading="lazy">
+                            <a href="https://unicorn.playwiththebest.com/" class="position-absolute top-0 bottom-0 start-0 end-0 pe-auto"
+                   target="_blank" rel="noopener" aria-label="Unicorn SEER"></a>
+                    </div>
+        <div class="v3-promo-card-body ">
+        <div class="v3-promo-card-main">
+                            <div class="v3-promo-card-kicker v3-text-green">
+                    <i class="bi bi-phone me-2"></i>Gameplay Experience
+                </div>
+                        <h2 class="v3-promo-card-title">
+                JOIN THE <span class="v3-promo-card-accent">AUTOSCORING</span>                 <span class="d-block ">COMMUNITY</span>            </h2>
+                            <div class="v3-promo-card-actions"><div class="v3-promo-card-actions flex-column flex-nowrap mb-0"><a href="https://apps.apple.com/app/darts-orakel-play/id1638681977"
+   class="btn btn-sm v3-btn-ghost "
+       target="_blank" rel="noopener" >App Store</a>
+<a href="https://play.google.com/store/apps/details?id=com.dartsorakel.scorerapp"
+   class="btn btn-sm v3-btn-ghost "
+       target="_blank" rel="noopener" >Google Play</a>
+</div></div>
+                                </div>
+            </div>
+</div>
+        </div>
+    </div>
+
+    
+    <div class="row g-4 mb-4">
+        <div class="col-lg-8">
+            <div class="v3-panel border-0 ps-0 pe-0 pb-0" style="background-color: inherit;" >
+                <div class="v3-panel-body ps-0 pe-0 pb-0">
+                    <div class="v3-heading-tabs" data-v3-heading-tabs>
+            <button type="button"
+                class="v3-heading-tab active"
+                data-target="latest-matches-container">Latest results</button>
+            <button type="button"
+                class="v3-heading-tab "
+                data-target="upcoming-matches-container">Upcoming matches</button>
+        </div>
+
+    
+                    <div id="latest-matches-container">
+                        <div class="v3-table-wrap">
+                            <table class="v3-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="v3-w-20">Tournament</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col" class="v3-home-th-winner">Winner (Avg)</th>
+                                        <th scope="col" class="text-center v3-home-th-score">Score</th>
+                                        <th scope="col" class="v3-home-th-loser">Loser (Avg)</th>
+                                        <th scope="col">Round</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                                                                                                    <tr class="v3-row-link" data-href="https://dartsorakel.com/match/stats/629053">
+                                            <td class="v3-home-results-text">
+                                                
+                                                <a href="https://dartsorakel.com/match/stats/629053" class="v3-table-link-plain">PDC Start Regional Finals - Austria West</a>
+                                            </td>
+                                            <td class="v3-home-results-text text-nowrap loser-td-color">2026-10-25</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/55194/christian-goedl" class="v3-text-white">C. Goedl</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-green v3-no-border v3-home-results-chip" >84.20</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text text-center text-nowrap fw-bold">5 - 1</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/55186/nick-zwittnigg" class="v3-text-muted">N. Zwittnigg</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-pink v3-no-border v3-home-results-chip" >75.84</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text loser-td-color">Final</td>
+                                        </tr>
+                                                                                                                    <tr class="v3-row-link" data-href="https://dartsorakel.com/match/stats/628990">
+                                            <td class="v3-home-results-text">
+                                                
+                                                <a href="https://dartsorakel.com/match/stats/628990" class="v3-table-link-plain">Motor City Shootout Women</a>
+                                            </td>
+                                            <td class="v3-home-results-text text-nowrap loser-td-color">2026-10-25</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/44031/kayla-smith" class="v3-text-white">K. Smith</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-green v3-no-border v3-home-results-chip" >62.18</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text text-center text-nowrap fw-bold">4 - 2</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/15497/nathalie-marchand" class="v3-text-muted">N. Marchand</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-pink v3-no-border v3-home-results-chip" >51.40</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text loser-td-color">Final</td>
+                                        </tr>
+                                                                                                                    <tr class="v3-row-link" data-href="https://dartsorakel.com/match/stats/628899">
+                                            <td class="v3-home-results-text">
+                                                
+                                                <a href="https://dartsorakel.com/match/stats/628899" class="v3-table-link-plain">Motor City Shootout Men</a>
+                                            </td>
+                                            <td class="v3-home-results-text text-nowrap loser-td-color">2026-10-25</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/2264/john-part" class="v3-text-white">J. Part</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-green v3-no-border v3-home-results-chip" >68.01</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text text-center text-nowrap fw-bold">5 - 1</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/57075/james-taylor" class="v3-text-muted">J. Taylor</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-pink v3-no-border v3-home-results-chip" >64.80</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text loser-td-color">Final</td>
+                                        </tr>
+                                                                                                                    <tr class="v3-row-link" data-href="https://dartsorakel.com/match/stats/626960">
+                                            <td class="v3-home-results-text">
+                                                
+                                                <a href="https://dartsorakel.com/match/stats/626960" class="v3-table-link-plain">Junior Volts Series 1 Week 6</a>
+                                            </td>
+                                            <td class="v3-home-results-text text-nowrap loser-td-color">2026-10-25</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/52146/logan-smith" class="v3-text-white">L. Smith</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-green v3-no-border v3-home-results-chip" >73.92</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text text-center text-nowrap fw-bold">3 - 0</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/65844/josh-the-boss-lloyd" class="v3-text-muted">J. Lloyd</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-pink v3-no-border v3-home-results-chip" >64.25</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text loser-td-color">Final</td>
+                                        </tr>
+                                                                                                                    <tr class="v3-row-link" data-href="https://dartsorakel.com/match/stats/626896">
+                                            <td class="v3-home-results-text">
+                                                
+                                                <a href="https://dartsorakel.com/match/stats/626896" class="v3-table-link-plain">Junior Volts Series 1 Week 6</a>
+                                            </td>
+                                            <td class="v3-home-results-text text-nowrap loser-td-color">2026-10-25</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/57883/tyler-shuck" class="v3-text-white">T. Shuck</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-green v3-no-border v3-home-results-chip" >79.78</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text text-center text-nowrap fw-bold">3 - 2</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/49709/charlie-lowin" class="v3-text-muted">C. Lowin</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-pink v3-no-border v3-home-results-chip" >71.90</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text loser-td-color">Final</td>
+                                        </tr>
+                                                                                                                    <tr class="v3-row-link" data-href="https://dartsorakel.com/match/stats/626881">
+                                            <td class="v3-home-results-text">
+                                                
+                                                <a href="https://dartsorakel.com/match/stats/626881" class="v3-table-link-plain">Junior Volts Series 1 Week 6</a>
+                                            </td>
+                                            <td class="v3-home-results-text text-nowrap loser-td-color">2026-10-25</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/63185/ryan-denner" class="v3-text-white">R. Denner</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-green v3-no-border v3-home-results-chip" >54.33</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text text-center text-nowrap fw-bold">3 - 0</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/63160/ralph-bailey" class="v3-text-muted">R. Bailey</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-pink v3-no-border v3-home-results-chip" >52.54</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text loser-td-color">Final</td>
+                                        </tr>
+                                                                                                                    <tr class="v3-row-link" data-href="https://dartsorakel.com/match/stats/626874">
+                                            <td class="v3-home-results-text">
+                                                
+                                                <a href="https://dartsorakel.com/match/stats/626874" class="v3-table-link-plain">Junior Volts Series 1 Week 6</a>
+                                            </td>
+                                            <td class="v3-home-results-text text-nowrap loser-td-color">2026-10-25</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/25665/drake-porter" class="v3-text-white">D. Porter</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-green v3-no-border v3-home-results-chip" >81.98</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text text-center text-nowrap fw-bold">3 - 0</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/63302/james-arnold-lampe" class="v3-text-muted">J. Arnold-Lampe</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-pink v3-no-border v3-home-results-chip" >54.00</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text loser-td-color">Final</td>
+                                        </tr>
+                                                                                                                    <tr class="v3-row-link" data-href="https://dartsorakel.com/match/stats/626802">
+                                            <td class="v3-home-results-text">
+                                                
+                                                <a href="https://dartsorakel.com/match/stats/626802" class="v3-table-link-plain">Junior Volts Series 1 Week 6</a>
+                                            </td>
+                                            <td class="v3-home-results-text text-nowrap loser-td-color">2026-10-25</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/27976/jack-powell" class="v3-text-white">J. Powell</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-green v3-no-border v3-home-results-chip" >62.63</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text text-center text-nowrap fw-bold">2 - 0</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/63463/corey-bromley" class="v3-text-muted">C. Bromley</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-pink v3-no-border v3-home-results-chip" >57.00</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text loser-td-color">Final</td>
+                                        </tr>
+                                                                                                                    <tr class="v3-row-link" data-href="https://dartsorakel.com/match/stats/626789">
+                                            <td class="v3-home-results-text">
+                                                
+                                                <a href="https://dartsorakel.com/match/stats/626789" class="v3-table-link-plain">Junior Volts Series 1 Week 6</a>
+                                            </td>
+                                            <td class="v3-home-results-text text-nowrap loser-td-color">2026-10-25</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/51123/aaron-rea" class="v3-text-white">A. Rea</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-green v3-no-border v3-home-results-chip" >61.83</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text text-center text-nowrap fw-bold">3 - 2</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/57925/joseph-lauridsen" class="v3-text-muted">J. Lauridsen</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-pink v3-no-border v3-home-results-chip" >60.74</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text loser-td-color">Final</td>
+                                        </tr>
+                                                                                                                    <tr class="v3-row-link" data-href="https://dartsorakel.com/match/stats/626769">
+                                            <td class="v3-home-results-text">
+                                                
+                                                <a href="https://dartsorakel.com/match/stats/626769" class="v3-table-link-plain">Junior Volts Series 1 Week 6</a>
+                                            </td>
+                                            <td class="v3-home-results-text text-nowrap loser-td-color">2026-10-25</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/62868/brodie-brompton" class="v3-text-white">B. Brompton</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-green v3-no-border v3-home-results-chip" >44.98</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text text-center text-nowrap fw-bold">3 - 2</td>
+                                            <td class="v3-home-results-text">
+                                                <div class="d-flex align-items-center gap-2 text-nowrap">
+                                                    <a href="https://dartsorakel.com/player/details/64028/freddie-worley" class="v3-text-muted">F. Worley</a>
+                                                                                                            <span class="v3-value-chip v3-value-chip-pink v3-no-border v3-home-results-chip" >46.74</span>
+                                                                                                    </div>
+                                            </td>
+                                            <td class="v3-home-results-text loser-td-color">Final</td>
+                                        </tr>
+                                                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="upcoming-matches-container">
+                        <div class="v3-table-wrap">
+    <table id="upcomingMatchesTable" class="v3-table ">
+        <thead>
+            <tr>
+                                    <th scope="col" class=" "
+                        data-orderable="false"><span class="v3-th-label ">Tournament</span></th>
+                                    <th scope="col" class=" "
+                        data-orderable="false"><span class="v3-th-label ">Player 1</span></th>
+                                    <th scope="col" class=" "
+                        data-orderable="false"><span class="v3-th-label ">Player 2</span></th>
+                                    <th scope="col" class=" "
+                        data-orderable="false"><span class="v3-th-label ">Round</span></th>
+                                    <th scope="col" class=" "
+                        data-orderable="false"><span class="v3-th-label ">Date</span></th>
+                                    <th scope="col" class=" "
+                        data-orderable="false"><span class="v3-th-label "></span></th>
+                            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+                                            </div>
+                </div>
+            </div>
+
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <a href="https://dartsorakel.com/rankings?rankKey=7" class="v3-link-card h-100 ">
+        <div class="v3-link-card-main">
+        <div class="v3-link-card-title">
+            <i class="bi bi-graph-up-arrow me-2"></i>FDI Rankings
+        </div>
+                    <div class="v3-link-card-subtitle">Explore the definitive form index.</div>
+            </div>
+    <i class="bi bi-chevron-right v3-link-card-chevron"></i>
+</a>
+                </div>
+                <div class="col-md-6">
+                    <a href="https://dartsorakel.com/beat-the-odds" class="v3-link-card h-100 ">
+        <div class="v3-link-card-main">
+        <div class="v3-link-card-title">
+            <i class="bi bi-bar-chart-line me-2"></i>Beat the Odds
+        </div>
+                    <div class="v3-link-card-subtitle">Deep betting insights and models.</div>
+            </div>
+    <i class="bi bi-chevron-right v3-link-card-chevron"></i>
+</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="col-lg-4">
+                        <div class="v3-panel v3-leaderboard v3-border-green">
+    <div class="v3-leaderboard-header">
+        <i class="bi bi-trophy v3-leaderboard-icon"></i>        <div class="v3-leaderboard-title">
+            2026 Highest
+            <span class="v3-leaderboard-title-accent d-block">Averages</span>        </div>
+    </div>
+
+    <div class="v3-leaderboard-colhead">
+        <span class="v3-leaderboard-colhead-rank">Rank</span>
+        <span class="v3-leaderboard-colhead-player">Player</span>
+        <span class="v3-leaderboard-colhead-score">Score</span>
+    </div>
+
+    <div class="v3-leaderboard-rows">
+                    <div class="v3-leaderboard-row v3-leaderboard-row-leader-no">
+                <span class="v3-leaderboard-rank">1</span>
+                                    <a href="https://dartsorakel.com/player/details/5235/michele-turetta" class="v3-leaderboard-name">Michele Turetta</a>
+                                <span class="v3-value-chip v3-value-chip-gray v3-no-border" >130.7</span>
+            </div>
+                    <div class="v3-leaderboard-row ">
+                <span class="v3-leaderboard-rank">2</span>
+                                    <a href="https://dartsorakel.com/player/details/3/michael-van-gerwen" class="v3-leaderboard-name">Michael van Gerwen</a>
+                                <span class="v3-value-chip v3-value-chip-gray v3-no-border" >122.34</span>
+            </div>
+                    <div class="v3-leaderboard-row ">
+                <span class="v3-leaderboard-rank">3</span>
+                                    <a href="https://dartsorakel.com/player/details/41/jamie-hughes" class="v3-leaderboard-name">Jamie Hughes</a>
+                                <span class="v3-value-chip v3-value-chip-gray v3-no-border" >121.86</span>
+            </div>
+                    <div class="v3-leaderboard-row ">
+                <span class="v3-leaderboard-rank">4</span>
+                                    <a href="https://dartsorakel.com/player/details/82/martin-schindler" class="v3-leaderboard-name">Martin Schindler</a>
+                                <span class="v3-value-chip v3-value-chip-gray v3-no-border" >120.69</span>
+            </div>
+                    <div class="v3-leaderboard-row ">
+                <span class="v3-leaderboard-rank">5</span>
+                                    <a href="https://dartsorakel.com/player/details/2641/gian-van-veen" class="v3-leaderboard-name">Gian van Veen</a>
+                                <span class="v3-value-chip v3-value-chip-gray v3-no-border" >120.24</span>
+            </div>
+                    <div class="v3-leaderboard-row ">
+                <span class="v3-leaderboard-rank">6</span>
+                                    <a href="https://dartsorakel.com/player/details/8156/yuta-hayashi" class="v3-leaderboard-name">Yuta Hayashi</a>
+                                <span class="v3-value-chip v3-value-chip-gray v3-no-border" >120.24</span>
+            </div>
+                    <div class="v3-leaderboard-row ">
+                <span class="v3-leaderboard-rank">7</span>
+                                    <a href="https://dartsorakel.com/player/details/39640/lukas-nussbaum" class="v3-leaderboard-name">Lukas Nussbaum</a>
+                                <span class="v3-value-chip v3-value-chip-gray v3-no-border" >120.24</span>
+            </div>
+                    <div class="v3-leaderboard-row ">
+                <span class="v3-leaderboard-rank">8</span>
+                                    <a href="https://dartsorakel.com/player/details/55194/christian-goedl" class="v3-leaderboard-name">Christian Goedl</a>
+                                <span class="v3-value-chip v3-value-chip-gray v3-no-border" >120.24</span>
+            </div>
+                    <div class="v3-leaderboard-row ">
+                <span class="v3-leaderboard-rank">9</span>
+                                    <a href="https://dartsorakel.com/player/details/62397/dillon-gardiner-reid" class="v3-leaderboard-name">Dillon Gardiner-Reid</a>
+                                <span class="v3-value-chip v3-value-chip-gray v3-no-border" >120.24</span>
+            </div>
+                    <div class="v3-leaderboard-row ">
+                <span class="v3-leaderboard-rank">10</span>
+                                    <a href="https://dartsorakel.com/player/details/2088/andrew-gilding" class="v3-leaderboard-name">Andrew Gilding</a>
+                                <span class="v3-value-chip v3-value-chip-gray v3-no-border" >118.66</span>
+            </div>
+            </div>
+
+            <a href="https://dartsorakel.com/stats/player" class="v3-leaderboard-footer">View full leaderboards</a>
+    </div>
+            <div class="v3-ad-slot v3-ad-slot-lg ">
+            <ins class="adsbygoogle v3-ad-slot-unit"
+             data-ad-client="ca-pub-5645281893583678"
+             data-ad-slot="3504069615"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+        </div>
+    </div>
+
+    
+
+            <div class="v3-ad-slot  ">
+            <ins class="adsbygoogle v3-ad-slot-unit"
+             data-ad-client="ca-pub-5645281893583678"
+             data-ad-slot="2517099034"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+        </div>
+    </main>
+
+    <footer class="v3-footer">
+    <div class="container v3-container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+        <a class="v3-brand d-flex align-items-center" href="https://dartsorakel.com">
+            <img src="https://dartsorakel.com/img/v3/logos/darts-orakel-logo.png" alt="Darts Orakel" class="v3-brand-logo v3-brand-logo-dark">
+            <img src="https://dartsorakel.com/img/v3/logos/darts-orakel-logo-light.png" alt="" aria-hidden="true" class="v3-brand-logo v3-brand-logo-light">
+        </a>
+        <p class="v3-footer-copy mb-0">&copy; 2026 Darts Orakel. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="https://dartsorakel.com/demo1/plugins/global/plugins.bundle.js"></script>
+    <script src="https://dartsorakel.com/demo1/plugins/custom/datatables/datatables.bundle.js"></script>
+    <script>
+        
+        
+        
+        
+        
+        if (window.jQuery && $.fn.dataTable) {
+            $.extend(true, $.fn.dataTable.defaults, { autoWidth: false });
+        }
+    </script>
+
+    
+    
+            <script>
+            $(document).on('click', '[data-v3-heading-tabs] .v3-heading-tab', function () {
+                var $tabs = $(this).closest('[data-v3-heading-tabs]').find('.v3-heading-tab');
+                $tabs.removeClass('active').each(function () {
+                    $('#' + $(this).data('target')).hide();
+                });
+                $(this).addClass('active');
+                $('#' + $(this).data('target')).show();
+            });
+
+            $(function () {
+                $('[data-v3-heading-tabs]').each(function () {
+                    $(this).find('.v3-heading-tab:not(.active)').each(function () {
+                        $('#' + $(this).data('target')).hide();
+                    });
+                });
+            });
+        </script>
+        <script>
+        $(function () {
+            
+            $(document).on('click', '.v3-row-link', function (e) {
+                if ($(e.target).closest('a').length) return;
+                window.location = $(this).data('href');
+            });
+
+            
+            var isAdmin = false;
+            var upcomingTable = $('#upcomingMatchesTable').DataTable({
+                dom: 'rtip',
+                pageLength: 10,
+                processing: false,
+                serverSide: false,
+                autoWidth: false,
+                order: [],
+                language: {
+                    emptyTable: "No results found",
+                    zeroRecords: "No results found"                },
+                ajax: {
+                    url: 'https://dartsorakel.com/api/match/upcoming-matches-datatable'
+                },
+                columns: [
+                    { data: 'event_title', name: 'event_title' },
+                    {
+                        data: 'first_player_name', name: 'first_player_name',
+                        render: function (v, t, row) {
+                            return '<a href="/player/details/' + row.first_player_key + '">' + row.first_player_name + '</a>';
+                        }
+                    },
+                    {
+                        data: 'second_player_name', name: 'second_player_name',
+                        render: function (v, t, row) {
+                            return '<a href="/player/details/' + row.second_player_key + '">' + row.second_player_name + '</a>';
+                        }
+                    },
+                    { data: 'round_name', name: 'round_name' },
+                    {
+                        data: 'match_date', name: 'match_date',
+                        render: function (v) {
+                            
+                            return v ? moment.utc(v).local().format('YYYY-MM-DD HH:mm') : '';
+                        }
+                    },
+                    {
+                        data: null, name: 'see', className: 'text-nowrap',
+                        render: function (v, t, row) {
+                            var actions = '<a href="/predictor-tool?firstTo=6&legSet=L&playerKey1=' + row.first_player_key + '&playerKey2=' + row.second_player_key + '&upcoming=true"><i class="bi bi-eye"></i></a>';
+                            if (isAdmin) {
+                                actions += '<a href="#" role="button" class="delete-match-btn v3-text-pink ms-3" data-match-id="' + row.id + '" aria-label="Delete"><i class="bi bi-trash"></i></a>';
+                            }
+                            return actions;
+                        }
+                    }
+                ]
+            });
+
+            
+            $('#upcomingMatchesTable').on('click', '.delete-match-btn', function (e) {
+                e.preventDefault();
+                $('#deleteUpcomingMatchModal').data('delete-id', $(this).data('match-id')).modal('show');
+            });
+            $('#deleteUpcomingMatchModal-confirm').on('click', function () {
+                $.ajax({
+                    url: 'https://dartsorakel.com/match/delete-upcoming-match/' + $('#deleteUpcomingMatchModal').data('delete-id'),
+                    type: 'DELETE',
+                    headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },
+                    success: function () {
+                        $('#deleteUpcomingMatchModal').modal('hide');
+                        upcomingTable.ajax.reload(null, false);
+                    },
+                    error: function (xhr) {
+                        console.error('Error deleting upcoming match: ' + xhr.responseText);
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        (function () {
+            var btn = document.getElementById('v3ThemeToggle');
+            if (!btn) return;
+
+            btn.addEventListener('click', function () {
+                var root = document.documentElement;
+                var wasLight = root.getAttribute('data-theme') === 'light';
+
+                if (wasLight) {
+                    root.removeAttribute('data-theme');
+                } else {
+                    root.setAttribute('data-theme', 'light');
+                }
+
+                try {
+                    localStorage.setItem('v3Theme', wasLight ? 'dark' : 'light');
+                } catch (e) {}
+            });
+        })();
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5196365fe960ffa',t:'MTc5MzE4NDcxNw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
