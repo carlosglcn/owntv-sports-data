@@ -1,4 +1,2 @@
-GREP https://www.mastercaller.com/ href="[^"]*(?:matchcenter|tournaments/pdc|calendar)[^"]*"
-SAVE https://www.mastercaller.com/matchcenter mc_matchcenter.html
-SAVE https://dartsdatabase.co.uk/display-event.php?eid=25855&tna=European+Championship&eda=2026 sdb_event.html
-SAVE https://dartsdatabase.co.uk/events-pdc.php sdb_pdc.html
+SAVE https://www.snooker.org/res/index.asp?event=2771 sno_event_done.html
+SAVE https://www.snooker.org/res/index.asp?template=22 sno_results.html
