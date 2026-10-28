@@ -1,0 +1,61 @@
+rank atp 200 387380
+rank wta 200 384924
+img https://www.atptour.com/-/media/alias/player-headshot/A0E2 ERR HTTP Error 403: Forbidden
+img https://a.espncdn.com/i/headshots/tennis/players/full/3782.png 200 image/png 261622
+img https://commons.wikimedia.org/wiki/Special:FilePath/Carlos%20Alcaraz%202023.jpg?width=300 ERR HTTP Error 404: Not Found
+wd 200 {
+  "head" : {
+    "vars" : [ "p", "name", "img", "atp", "wta" ]
+  },
+  "results" : {
+    "bindings" : [ {
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Aryna Sabalenka"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q23448791"
+      },
+      "img" : {
+        "type" : "uri",
+        "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Aryna%20Sabalenka%20Trophy%20US%20Open%202024%20%28cropped%29.jpg"
+      },
+      "wta" : {
+        "type" : "literal",
+        "value" : "320760"
+      }
+    }, {
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Iga Świątek"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q26840238"
+      },
+      "img" : {
+        "type" : "uri",
+        "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Iga%20Swiatek%202023%20Cropped%20%2B%20Retouched.jpg"
+      },
+      "wta" : {
+        "type" : "literal",
+        "value" : "326408"
+      }
+    }, {
+      "name" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Jannik Sinner"
+      },
+      "p" : {
+        "type" : "uri",
+        "value" : "http://www.wikidata.org/entity/Q54812588"
+      },
+      "img" : {
+        "type" : "uri",
+        "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Jannik%20Sinner%20US%20Open%202025%20%28cropped%29.jpg"
+      },
+      "atp" : 
