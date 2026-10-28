@@ -3,10 +3,15 @@
 
 === PJ https://api-prod.premierpadel.com/api/tournament/getTournaments -> ERR HTTP Error 500: Internal Server Error
 
-=== PJ https://api-prod.premierpadel.com/api/tournament/getLiveTournament -> ERR HTTP Error 500: Internal Server Error
+=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches -> ERR HTTP Error 500: Internal Server Error
 
-=== SAVE https://api-prod.premierpadel.com/api/tournament/getTournamentStrip -> 200 application/json; charset=utf-8 2390
-  saved pp_strip.json
+=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches -> ERR HTTP Error 500: Internal Server Error
 
-=== SAVE https://api-prod.premierpadel.com/api/player/getPlayerRankings -> 200 application/json; charset=utf-8 8237
-  saved pp_rank.json
+=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches -> ERR HTTP Error 500: Internal Server Error
+
+=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentMatches -> ERR HTTP Error 500: Internal Server Error
+
+=== PJ https://api-prod.premierpadel.com/api/tournament/getTournamentInfo -> ERR HTTP Error 500: Internal Server Error
+
+=== SAVE https://api-prod.premierpadel.com/api/tournament/getTournamentDetails?slug=kuwait-p1-2 -> 200 application/json; charset=utf-8 2437
+  saved pp_d1.json
