@@ -69,7 +69,9 @@ def main():
         for r in json.loads(body)["rankings"][0]["ranks"]:
             a = r.get("athlete") or {}
             if a.get("id"):
-                players[a["id"]] = (a.get("displayName") or "", (a.get("headshot") or {}).get("href"))
+                shot = a.get("headshot")
+                shot = shot if isinstance(shot, str) else (shot or {}).get("href")
+                players[a["id"]] = (a.get("displayName") or "", shot or None)
     photos, missing = {}, []
     for pid, (name, shot) in players.items():
         if shot:
