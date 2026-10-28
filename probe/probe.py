@@ -46,4 +46,7 @@ for line in open("probe/urls.txt"):
                     if g not in seen: seen.add(g); print("  [%s] %s"%(full.rsplit('/',1)[-1][:30],g))
                     if len(seen)>=80: break
     except Exception as e:
-        print("\n=== %s %s -> ERR %s"%(mode,u,e))
+        body=""
+        try: body=e.read().decode("utf-8","replace")[:400]
+        except Exception: pass
+        print("\n=== %s %s -> ERR %s %s"%(mode,u,e,body))
