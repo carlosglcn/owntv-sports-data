@@ -1,13 +1,6 @@
 
-=== GREP https://www.mastercaller.com/ -> 200 text/html; charset=UTF-8 965643
-  ~ href="https://mastercaller.com/matchcenter"
-  ~ href="https://mastercaller.com/calendar"
-  ~ href="https://mastercaller.com/tournaments/pdc-world-championship-uk-ireland-qualifier/2026-south-africa"
+=== SAVE https://www.snooker.org/res/index.asp?event=2771 -> 200 text/html 144702
+  saved sno_event_done.html
 
-=== SAVE https://www.mastercaller.com/matchcenter -> 200 text/html; charset=UTF-8 337843
-  saved mc_matchcenter.html
-
-=== SAVE https://dartsdatabase.co.uk/display-event.php?eid=25855&tna=European+Championship&eda=2026 -> ERR HTTP Error 403: Forbidden <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="content-security-policy" content="default-src &#39;none&#39;; script-src &#39
-
-=== SAVE https://dartsdatabase.co.uk/events-pdc.php -> 200 text/html; charset=UTF-8 149635
-  saved sdb_pdc.html
+=== SAVE https://www.snooker.org/res/index.asp?template=22 -> 200 text/html 381272
+  saved sno_results.html
