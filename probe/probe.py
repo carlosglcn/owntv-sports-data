@@ -13,6 +13,8 @@ for line in open("probe/urls.txt"):
             body,_,rest=arg.partition(" ")
             st,ct,t=get(u,body.encode(),{"Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","X-Requested-With":"XMLHttpRequest"})
             mode="SAVE" if mode=="POSTSAVE" else "BODY"; arg=rest
+        elif mode=="MKSZ":
+            st,ct,t=get(u,None,{"Accept":"application/json","MKSZ-AUTH":open("probe/mksz.tok").read().strip()}); mode="SAVE"
         else:
             st,ct,t=get(u)
         print("\n=== %s %s -> %s %s %d"%(mode,u,st,ct,len(t)))

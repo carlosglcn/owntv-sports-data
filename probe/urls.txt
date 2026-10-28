@@ -1,9 +1,5 @@
-SAVE https://ehfcl.eurohandball.com/frontend.kw/dist/assets/js/plugin.min.js?v=DXe0FBfLFLhFFSCsbO3phjOEt5JUBgmtc-TxQaZOgKo ehf_plugin.js
-SAVE https://www.lnh.fr/scripts/apps.js?v=2.3.2 lnh_apps.js
-POSTSAVE https://www.lnh.fr/ajax controller=sportsCalendars&action=index_ajax&seasons_id=40&days_id=all&teams_id=all&univers=d1-26623&key=281861894&current_month=all&type=all&type_id=all lnh_ajax1.html
-POSTSAVE https://www.lnh.fr/ajax/sportsCalendars/index_ajax seasons_id=40&days_id=all&teams_id=all&univers=d1-26623&key=281861894&current_month=all&type=all&type_id=all lnh_ajax2.html
+SAVE https://ehfcl.eurohandball.com/frontend.kw/dist/assets/js/common.min.js?v=ObAbUrBcy68qWLW1nv5WLUh2i3fVyLFSeCA3gQbppfI ehf_common.js
+POSTSAVE https://www.lnh.fr/ajaxpost1 seasons_id=40&days_id=all&teams_id=all&univers=d1-26623&key=281861894&current_month=all&type=all&type_id=all&contents_controller=sportsCalendars&contents_action=index_ajax&cache=yes&cacheKeys=univers,seasons_id,days_id lnh_cal_ajax.html
 SAVE https://www.lnh.fr/daikin-starligue/classement lnh_table2.html
-SAVE https://www.handball.net/ligen/sportradar.dhbdata.15984/spielplan hn_spielplan.html
-SAVE https://www.handball.net/api/new/matches?date_from=2026-10-28&date_to=2026-11-02&per_page=50&page=1 hn_api_matches.json
-SAVE https://www.handball.net/a/sportdata/1/widgets/tournament/sportradar.dhbdata.15984/schedule hn_widget.json
-SAVE https://www.mksz.hu/versenyek mksz_versenyek.html
+MKSZ https://public.mksz.hu/public/api/v1/versenyek/foversenyek?evadEv.equals=2027&nem.in=F&sportagKod.equals=SPAG_1&korosztalyId.equals=1&page=0&paged=true&size=300 mksz_fo2027.json
+MKSZ https://public.mksz.hu/public/api/v1/versenyek/foversenyek?evadEv.equals=2026&nem.in=F&sportagKod.equals=SPAG_1&korosztalyId.equals=1&page=0&paged=true&size=300 mksz_fo2026.json
