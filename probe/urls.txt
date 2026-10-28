@@ -1,3 +1,3 @@
-SAVE https://www.padelfip.com/events/kuwait-major-2026/ fip_event.html
-SAVE https://www.padelfip.com/calendar-premier-padel/?events-year=2026 fip_cal26.html
-SAVE https://www.padelfip.com/ranking-male/ fip_rank.html
+SAVE https://www.padelfip.com/wp-content/themes/padelfiptheme-v2026-10-14/assets/js/iframe-widgets.js fip_iframe.js
+SAVE https://www.padelfip.com/wp-content/themes/padelfiptheme-v2026-10-14/assets/js/ajax_handle_draw.js fip_draw.js
+POSTSAVE https://www.padelfip.com/wp-admin/admin-ajax.php action=livescore_tab_load fip_ajax_ls.html
