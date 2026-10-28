@@ -1,140 +1,36 @@
 
-=== GREP https://www.eurohandball.com/umbraco/api/livescoreapi/GetTournaments/138648 -> 200 application/json; charset=utf-8 16170
-  ~ "name":"Men’s EHF EURO 2028","shortName":"EHF EURO 2028 - M"
-  ~ "name":"Women’s EHF EURO 2026","shortName":"EHF EURO 2026 - W"
-  ~ "name":"Men’s World Championship 2027","shortName":"WCh 2027 - M"
-  ~ "name":"EHF Champions League Women","shortName":"EHF CL - W"
-  ~ "name":"EHF Champions League Men","shortName":"EHF CL - M"
-  ~ "name":"EHF European Cup Men","shortName":"EHF EC - M"
-  ~ "name":"EHF European League Men","shortName":"EHF EL - M"
-  ~ "name":"EHF European League Women","shortName":"EHF EL - W"
-  ~ "name":"EHF European Cup Women","shortName":"EHF EC - W"
-  ~ "name":"Women’s World Championship 2027","shortName":"WCh 2027 - W"
-  ~ "name":"Men's EHF EURO Cup 2028","shortName":"EUROCup"
-  ~ "name":"W17 EHF EURO 2027","shortName":"EHF EURO - W17"
+=== SAVE https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetInitMatches -> 200 application/json; charset=utf-8 43878
+  saved cl_init.json
 
-=== GREP https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetInitMatches -> 200 application/json; charset=utf-8 43878
-  ~ "matchID":"202711020101067
-  ~ "isLive":false
-  ~ "matchID":"202711020101026
-  ~ "matchID":"202711020101036
-  ~ "matchID":"202711020101065
-  ~ "matchID":"202711020101004
-  ~ "matchID":"202711020101022
-  ~ "matchID":"202711020101016
+=== SAVE https://www.eurohandball.com/umbraco/api/livescoreapi/GetLiveScoreMatches/138648 -> 200 application/json; charset=utf-8 73577
+  saved live.json
 
-=== BODY https://ehfcl.eurohandball.com/umbraco/api/competitionmatchesapi/GetInitMatches -> 200 application/json; charset=utf-8 43878
-{"matches":[{"matchID":"202711020101067","pairId":"ovZKSCWb6WLDPDNzUhFf_Q","streamingUrl":null,"venue":{"place":{"countryAbbreviation":"POL","cityName":"Kielce","hallName":"Hala Legionow","courtNo":null,"spectatorsCount":null,"soldOut":false},"date":{"utc":"2026-10-28T19:45:00Z","local":"2026-10-28T20:45:00Z","cet":"2026-10-28T20:45:00","timeZoneName":"CET","formattedTime":"20:45","hasTime":true,"hasDate":true,"formattedDate":"28.10.2026","formattedDateFull":"Wed Oct 28, 2026","formattedTournamentDate":"28/10"},"schedule":{"from":"0001-01-01T00:00:00","until":"0001-01-01T00:00:00","hasDate":false},"formattedDateFull":"Wed Oct 28, 2026","formattedTimeFull":"20:45 (CET)","formattedTime":"20:45","formattedTimeZoneName":" (CET)"},"comp":{"id":"-Gd1tlJGDXtuVGsp4I0Chg","name":"EHF Champions League Men","shortName":"EHF CL - M","type":"European Cup / EHF Champions League","competitionMainType":"European Cup","competitionSubType":"EHF Champions League","gender":"M","season":"2027","seasonName":"2026/27","longSeasonName":"EHF Champions League 2026/27","division":0,"statsDepth":0,"typeTags":["indoor","adults","club"],"legName":6,"round":{"id":"Xg2Ubz1_S9dxy0p0unxCBg","name":"Group Phase","shortName":"GP","active":true,"sort":1,"roundReportUrl":"https://res.ehf.eu/doxtore/TLCEQLGQDD/uZmIpvhei6cdVrjznr1dSkzit8LlAqexyMbSLGb4tD_ZMX-LocRKv2PqR7Zha_V1BEBQkK0MUI4tcJs0zHcC_w","venue":{"beginDate":"2026-09-09T00:00:00Z","endDate":"2026-10-29T00:00:00Z"},"isFinalRound":false},"phase":{"id":"-lcTiWa1ScleGXHjDyLolA","name":"Group Phase","shortName":"GP","active":true,"sort":1,"type":1,"venue":{"cityName":null,"cityShortName":null,"beginDate":"2026-09-09T00:00:00Z","endDate":"2026-10-29T00:00:00Z"}},"group":{"id":null,"name":"F","venue":{"cityName":null,"cityShortName":null,"beginDate":"0001-01-01T00:00:00","endDate":"0001-01-01T00:00:00"}},"isNational":false,"isClub":true,"isEbt":false,"isBeach":false,"cssClass":"theme--ochre","websiteUrl":null,"linkTarget":null,"scheduleUrl":null,"cumulativeStatsPdf":null},"homeTeam":{"team":{"fullName":"Industria Kielce","logoBig":"https://res.ehf.eu/doxtore/TLCEQLGQDD/e1GDx4hAd4m3OP2MUjZsUblI3hAS2CVXmCLcWXth6jbGNA4CwRU6FCHQCW2qpwEcuj2Z7SFQrm5lJpUExCFAbA","photos":{"small":"https://res.ehf.eu/doxtore/TLCEQLGQDD/DQvUMm7H0OUJtAJngp2LFURf9zns23noZ9cKPB11SB3qFU98E1vuBRgy8jA4tFDdsJ0wPuowYqW7JB3H4LaHHA","big":"https://res.ehf.eu/doxtore/TLCEQLGQDD/DQvUMm7H0OUJtAJngp2LFURf9zns23noZ9cKPB11SB3qFU98E1vuBRgy8jA4tFDdkjQQJuHQVAHtzxqq19UG0A","w570":"https://res.ehf.eu/doxtore/TLCEQLGQDD/DQvUMm7H0OUJtAJngp2LFURf9zns23noZ9cKPB11SB3qFU98E1vuBRgy8jA4tFDdkEB5L5x1R5hoW2GG0Zpl6w","w990":"https://res.ehf.eu/doxtore/TLCEQLGQDD/DQvUMm7H0OUJtAJngp2LFURf9zns23noZ9cKPB11SB3qFU98E1vuBRgy8jA4tFDd-s17E18DDtE2MIBk1EtsMA","w1140":"https://res.ehf.eu/doxtore/TLCEQLGQDD/DQvUMm7H0OUJtAJngp2LFURf9zns23noZ9cKPB11SB3qFU98E1vuBRgy8jA4tFDdfNi33cng_GQJH08Kme5vQA","w1920":"https://res.ehf.eu/doxtore/TLCEQLGQDD/DQvUMm7H0OUJtAJngp2LFURf9zns23noZ9cKPB11SB3qFU98E1vuBRgy8jA4tFDdHwehWhyYtD9ghXskO2OkjQ","w1980":"https://res.ehf.eu/doxtore/TLCEQLGQDD/DQvUMm7H0OUJtAJngp2LFURf9zns23noZ9cKPB11SB3qFU98E1vuBRgy8jA4tFDd-_YZDmI2VoX1ytTzoMTU9Q","w2880":"https://res.ehf.eu/doxtore/TLCEQLGQDD/DQvUMm7H0OUJtAJngp2LFURf9zns23noZ9cKPB11SB3qFU98E1vuBRgy8jA4tFDdQ46cK9D3rPnKmbXFQCj2vw"},"countryFlag":null,"countryName":null,"formerNames":[],"lastParticipation":[],"ageClass":null,"address":null,"isClub":false,"isOthers":false,"communications":[],"socialChannels":[],"LastParticipation":null
+=== SAVE https://www.eurohandball.com/umbraco/api/livescoreapi/GetTournaments/138648 -> 200 application/json; charset=utf-8 16170
+  saved tournaments.json
 
-=== JS https://ehfcl.eurohandball.com/men/2026-27/matches/ -> 200 text/html; charset=utf-8 94588
+=== SAVE https://ehfcl.eurohandball.com/men/2026-27/matches/ -> 200 text/html; charset=utf-8 94588
+  saved cl_page.html
 
-=== BODY https://www.opel-hbl.de/api/synergy/seasons -> 204 None 0
+=== SAVE https://ehfcl.eurohandball.com/men/2026-27/standings/ -> 200 text/html; charset=utf-8 209049
+  saved cl_standings.html
 
+=== SAVE https://www.opel-hbl.de/de/hbl/spielplan -> 200 text/html;charset=utf-8 1130059
+  saved hbl_spielplan.html
 
-=== BODY https://www.liquimoly-hbl.de/api/synergy/seasons -> 204 None 0
+=== SAVE https://www.lnh.fr/liquimoly-starligue/calendrier -> 200 text/html; charset=UTF-8 69803
+  saved lnh_cal.html
 
+=== SAVE https://www.lnh.fr/liquimoly-starligue/classement -> 200 text/html; charset=UTF-8 64626
+  saved lnh_table.html
 
-=== GREP https://www.opel-hbl.de/de/hbl/spielplan -> 200 text/html;charset=utf-8 1130059
-  ~ href="/de/hbl/spielplan"
-  ~ href="/de/hbl/statistiken/feldspieler"
-  ~ href="/de/hbl/fans/tippspiel"
-  ~ href="/de/hbl/fans/dkb-spieler-des-monats"
-  ~ href="/de/2-hbl/spielplan"
-  ~ href="/de/dhb-pokal/spielplan"
+=== SAVE https://tophaandbold.dk/kampprogram/herreligaen -> 200 text/html; charset=UTF-8 770962
+  saved dk_prog.html
 
-=== GREP https://www.lnh.fr/liquimoly-starligue/calendrier -> 200 text/html; charset=UTF-8 69803
+=== SAVE https://tophaandbold.dk/stillinger/herreligaen -> 200 text/html; charset=UTF-8 216484
+  saved dk_table.html
 
-=== GREP https://www.lnh.fr/liquimoly-starligue/classement -> 200 text/html; charset=UTF-8 64626
+=== SAVE https://www.mksz.hu/static/js/app.b76bb16e.js -> 200 text/html 11708
+  saved mksz_app.js
 
-=== GREP https://tophaandbold.dk/kampprogram/herreligaen -> 200 text/html; charset=UTF-8 770962
-  ~  <div class="col-md-5"> <div class="row"> <div class="col-md-6"> <div class="form-group"><label for="team">Hold</label><select name="team" class="form-control" id="team" ><option value="">- Vælg -</option><option value="14">Aalborg Håndbold</option><option value="2">Bjerringbro-Silkeborg</option><op
-  ~ ="match-program__row__team"> <img src="/app/webroot/_resized/_resized/toplog.dk/uploads/teams/logoer/klublogoer/herreliga/gog-9bfe7764571869a6e2902012c711c1a3-8142ed59905824448501e6cddd023fc6.png" class="img-responsive match-program__row__team__logo" height="25" alt=""> GOG </div> </div> <div class=
-  ~ ="match-program__row__team"> <img src="/app/webroot/_resized/_resized/toplog.dk/uploads/teams/logoer/klublogoer/herreliga/aah-97129c65142495cbbbc55c8165bdcd74-2212231c58afbbcebfd244b79c8f8a95.png" class="img-responsive match-program__row__team__logo" height="25" alt=""> Aalborg Håndbold </div> </div
-
-=== GREP https://tophaandbold.dk/stillinger/herreligaen -> 200 text/html; charset=UTF-8 216484
-  ~ c="/app/webroot/_resized/toplog.dk/uploads/teams/logoer/klublogoer/herreliga/aah-f384cce5a998f7f4fd761a1916d08874.png" class="team-position__logo" alt=""> <span>Aalborg Håndbold</span> </td> <td class="text-center">11</td> <td class="text-center">8</td> <td class="text-center">1</td> 
-
-=== JS https://www.mksz.hu/ -> 200 text/html 11708
-  [chunk-vendors.732fb86a.js] "https://public.mksz.hu"
-  [chunk-vendors.732fb86a.js] "https://bo.mksz.hu"
-  [chunk-vendors.732fb86a.js] "https://cdn.mksz.hu"
-  [chunk-vendors.732fb86a.js] "https://bo.mksz.hu/jatekosugynok-eloregisztracio"
-  [chunk-vendors.732fb86a.js] "https://livescore.mksz.hu/"
-  [chunk-vendors.732fb86a.js] "https://livescore-socket.mksz.hu/eredmeny?api_key="
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/mksz_dummy.png"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/icons/calendar.svg"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/MKSZ_Logo_horizontal_white.png"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/icons/facebook_w.svg"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/icons/youtube_w.svg"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/icons/instagram_w.svg"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/BM_sfat_logo_horizontalis_fekete.png"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/sn.png"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/nsmi_logo_elsodleges_horiz_HU_kek-1.png"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/big/tippmix_300x58.jpg"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/MOL_logo_2014_ok-01.jpg"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/big/jysk_347x159.png"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/alfa.png"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/big/kh_liga_300x208.png"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/OBI-Logo-orange-RGB.png"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/mueller-logo-neben-bluete-69522-0.jpg"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/dl-telekom-logo-02.jpg"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/logo_170x80px_TOYOTA.jpg"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/Henkel.png"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/sponsors/big/nso_200x110.png"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/icons/star_w.svg"
-  [app.b76bb16e.js] "https://jegy.mksz.hu"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/icons/user_w.svg"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/MKSZ_logo_horizontal_color_rgb.jpg"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/mkszhu-public/img/icons/magnifying_glass_w.svg"
-  [app.b76bb16e.js] "https://livescore-socket.mksz.hu/eredmeny?api_key=JeShPJtTrJFc4CabbYRShx2MaHRdRWT7&merkozesid="
-  [app.b76bb16e.js] "https://bo.mksz.hu/external/api/v1/"
-  [app.b76bb16e.js] "https://bo.mksz.hu/webadmin/api/v1/"
-  [app.b76bb16e.js] "https://cdn.mksz.hu/"
-  [app.b76bb16e.js] "https://public.mksz.hu/digit-jk-mw/api/v1/"
-  [app.b76bb16e.js] `https://public.mksz.hu/public/api/v1/versenyek/${e}/nyomtatas/media-jegyzokonyv`
-  [app.b76bb16e.js] "https://public.mksz.hu/public/api/v1/"
-
-=== JS https://www.mksz.hu/ -> 200 text/html 11708
-  [chunk-vendors.732fb86a.js] baseURL,e.url)
-  [chunk-vendors.732fb86a.js] fetch",(function(){return ba})),n.d(t,"onUnmounted",(function(){return ua})),n.d(t,"onUpdated",(function(){return sa})),n.d(t,"provide",(function(){return jt})),n.d(
-  [chunk-vendors.732fb86a.js] fetch","renderTracked","renderTriggered"],U={optionMergeStrategies:Object.create(null),silent:!1,productionTip:!1,devtools:!1,performance:!1,errorHandler:null,warnHa
-  [chunk-vendors.732fb86a.js] fetch"),ha=aa("renderTracked"),Ma=aa("renderTriggered"),fa=aa("errorCaptured")
-  [chunk-vendors.732fb86a.js] baseURL:c,transformRequest:c,transformResponse:c,paramsSerializer:c,timeout:c,timeoutMessage:c,withCredentials:c,withXSRFToken:c,adapter:c,responseType:c,xsrfCookieNam
-  [chunk-vendors.732fb86a.js] fetch:Object(qn["c"])(he["g"],!1),prefetch:Object(qn["c"])(he["g"],null)},Wr=Object(qn["d"])(Object(Tn["m"])(gr(gr(gr({},Lr),qr),{},{active:Object(qn["c"])(he["g"],!
-  [chunk-vendors.732fb86a.js] fetch,n=this.routerTag
-  [chunk-vendors.732fb86a.js] fetch","routerTag"]),this)),e?{event:e}:{}),Object(qt["b"])(t)?{prefetch:t}:{}),n?{tag:n}:{}):{}},computedAttrs:function(){var e=this.bvAttrs,t=this.computedHref,n=t
-  [chunk-vendors.732fb86a.js] fetch(e).then((function(a){404===a.status?(t("error",new Error("Service worker not found at "+e)),l()):-1===a.headers.get("content-type").indexOf("javascript")?(t("e
-  [chunk-vendors.732fb86a.js] fetchAtBuffer_=!1,a.logger_=Yi("SegmentLoader["+a.loaderType_+"]"),Object.defineProperty(b()(a),"state",{get:function(){return this.state_},set:function(e){e!==this.
-  [chunk-vendors.732fb86a.js] fetchAtBuffer_=!1,this.resyncLoader()},n.resyncLoader=function(){this.transmuxer_&&as.reset(this.transmuxer_),this.mediaIndex=null,this.partIndex=null,this.syncPoint
-  [chunk-vendors.732fb86a.js] fetchAtBuffer_?t:this.currentTime_(),startingPartIndex:this.syncPoint_.partIndex,startingSegmentIndex:this.syncPoint_.segmentIndex,startTime:this.syncPoint_.time}),u
-  [chunk-vendors.732fb86a.js] fetchAtBuffer_?"bufferedEnd "+t:"currentTime "+this.currentTime_(),o.mediaIndex=u,o.startOfSegment=p,o.partIndex=d}var b=i[o.mediaIndex],h=b&&"number"===typeof o.par
-  [chunk-vendors.732fb86a.js] fetchAtBuffer_=!0,this.currentTimeline_!==e.timeline&&(this.timelineChangeController_.lastTimelineChange({type:this.loaderType_,from:this.currentTimeline_,to:e.timel
-  [app.b76bb16e.js] $http
-  [app.b76bb16e.js] $httpDigit),!this.queryParams)return this.loadFinished=!0,!1
-  [app.b76bb16e.js] $http.get("versenyek/tabella/"+this.alversenyId).then(e=>{this.tabellaData=e.data,this.$emit("updateTabella",this.tabellaData)}).finally(()=>{this.loadFinished=!0})}
-  [app.b76bb16e.js] $http.get("/csempe/mind"+e.query).then(t=>{e.csempek=t.data}).finally(()=>{e.loaded=!0})}},r=i,l=a("2877"),d=Object(l["a"])(r,s,o,!1,null,"0aa30a6e",null)
-  [app.b76bb16e.js] $http.get("banner/"+e.pozicio).then(t=>{e.slides=t.data})}},computed:{sliderId:function(){return Math.ceil(Math.ceil(1e3*Math.random())+Math.ceil(1e3*Math.random())/
-  [app.b76bb16e.js] $http.get(`korosztaly?evId.equals=${e}&size=300&page=0&paged=true&sort=sorrend,ASC`).then(t=>{const a=t.data.find(e=>"F"===e.nem&&"SPAG_1"===e.sportagKod&&e.nev.toLo
-  [app.b76bb16e.js] $http.get(`szemelyadatok/szemelyek?szemelyId.equals=${a}&page=0&paged=true&size=50`,{cancelToken:t.token}).then(t=>{const a={}
-  [app.b76bb16e.js] $http.get(`szemelyadatok/szemelyek?teljesNev.contains=${e.search}&page=0&paged=true&size=50`,{cancelToken:t.token}).then(t=>{const a={}
-  [app.b76bb16e.js] $http.get(`sportszervezet/sportszervezetek?nev.contains=${e.search}&page=0&paged=true&size=15`,{cancelToken:t.token}).then(t=>{e.csapatTalalat=t.data}).catch(()=>{})
-  [app.b76bb16e.js] $http.get("https://livescore-socket.mksz.hu/eredmeny?api_key=JeShPJtTrJFc4CabbYRShx2MaHRdRWT7&merkozesid="+e,{cache:!1}).then(e=>{this.eloEredmeny=e.data})},getActua
-  [app.b76bb16e.js] $http.get("versenyek/program"+a,{cache:!1}).then(e=>{this.programs=e.data
-  [app.b76bb16e.js] baseURL:"https://bo.mksz.hu/external/api/v1/",timeout:3e4,headers:{Accept:"application/json","Content-Type":"application/json","MKSZ-AUTH":"eyJhbGciOiJIUzUxMiJ9.eyJzdW
-  [app.b76bb16e.js] baseURL:"http://localhost:8088/public/api/v1/",timeout:3e4,headers:{Accept:"application/json","Content-Type":"application/json","MKSZ-AUTH":"eyJhbGciOiJIUzUxMiJ9.eyJzd
-  [app.b76bb16e.js] baseURL:"https://bo.mksz.hu/webadmin/api/v1/",timeout:3e4,headers:{Accept:"application/json","Content-Type":"application/json","MKSZ-AUTH":"eyJhbGciOiJIUzUxMiJ9.eyJzdW
-  [app.b76bb16e.js] baseURL:"https://cdn.mksz.hu/",timeout:3e4,headers:{Accept:"application/json","Content-Type":"application/json","MKSZ-AUTH":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiYXV0a
-  [app.b76bb16e.js] baseURL:"https://public.mksz.hu/digit-jk-mw/api/v1/",timeout:3e4,headers:{Accept:"application/json","Content-Type":"application/json","MKSZ-AUTH":"eyJhbGciOiJIUzUxMiJ9
-  [app.b76bb16e.js] $http=Ke["a"],s["default"].prototype.$httpExt=Ye,s["default"].prototype.$httpDev=Ge,s["default"].prototype.$cdnHttp=He,s["default"].prototype.$httpDigit=Be,s["defaul
-  [app.b76bb16e.js] $httpWebadmin=Je,s["default"].use(Xe["a"],{config:{id:"GTM-KCDWWFKF",params:{send_page_view:!0}}},De),s["default"].use(at["a"]),s["default"].use(Qe.a),lt["c"].add(dt
-  [app.b76bb16e.js] $httpDigit)
-  [app.b76bb16e.js] $http.get(t).then(t=>{e.news=t.data}).finally(()=>{e.loadFinish=!0})}),500)},getMindenHir(){const e=this
-  [app.b76bb16e.js] $http.get("mindenhir?"+s).then(t=>{e.responseData=t.data,e.news=e.responseData.content,e.$emit("totalPages",e.responseData.totalPages),e.news.length<1&&e.$emit("data
-  [app.b76bb16e.js] $http.get(e).then(e=>{this.slides=e.data,this.$emit("numberOfData",e.data.length)})}}}),i=n,r=a("2877"),l=Object(r["a"])(i,s,o,!1,null,"440fd5ac",null)
-  [app.b76bb16e.js] $http.get(`tvmusor?tol=${a}&ig=${s}`).then(e=>{this.tvmusor=e.data})},download:function(e,t){let a=new Date(e.merkozesDatum)
-  [app.b76bb16e.js] $http.get("versenyek/program"+e.queryParams).then(t=>{"VAL_KOROSZT_SER"===e.$route.params.type?e.programs=t.data.filter(e=>e.alversenyNev.toUpperCase().includes("SER
-  [app.b76bb16e.js] baseURL:"https://public.mksz.hu/public/api/v1/",timeout:3e4,headers:{Accept:"application/json","Content-Type":"application/json","MKSZ-AUTH":"eyJhbGciOiJIUzUxMiJ9.eyJz
-  [app.b76bb16e.js] $http.get(`korosztaly?evId.equals=${this.localFilters.selectedEv.ev}&size=300&page=0&paged=true&sort=sorrend,ASC`).then(a=>{const s=a.data.find(e=>"F"===e.nem&&"SPAG
-  [app.b76bb16e.js] $http.get(`versenyek/foversenyek?${r}&page=0&paged=true&size=300&sort=foversenySorrend,ASC&sort=rovidNev,ASC`).then(a=>{t=t.concat(a.data),n["nem.in"]="N",n["koroszt
-  [app.b76bb16e.js] $http.get(`versenyek/foversenyek?${r}&page=0&paged=true&size=300&sort=foversenySorrend,ASC&sort=rovidNev,ASC`).then(a=>{t=t.concat(a.data),n["nem.in"]="F",delete n["
-  [app.b76bb16e.js] $http.get(`versenyek/foversenyek?${r}&page=0&paged=true&size=300&sort=foversenySorrend,ASC&sort=rovidNev,ASC`).then(e=>{t=t.concat(e.data)}).finally(()=>{e.selectedE
+=== SAVE https://www.mksz.hu/js/app.b76bb16e.js -> 200 application/javascript 146517
+  saved mksz_app2.js
