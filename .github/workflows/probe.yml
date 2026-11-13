@@ -1,0 +1,20 @@
+name: probe
+on: push
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p probe; cd probe
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36"
+          curl -sL -A "$UA" "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/games" -o eurocup.json || true
+          curl -sL -A "$UA" "https://api-live.euroleague.net/v1/standings?seasonCode=U2026&gameNumber=99" -o eurocup_st.xml || true
+          curl -sL -A "$UA" "https://www.legabasket.it/api/championships/get-championships-calendar-by-id?id=602" -o lega.json || true
+          curl -sL -A "$UA" "https://baloncestoenvivo.feb.es/calendario/primerafeb/1/2026" -o feb.html || true
+          curl -sL -A "$UA" "https://baloncestoenvivo.feb.es/calendario/primerafeb/1/2026?jornada=2" -o feb2.html || true
+          ls -la
+          git config user.name probe; git config user.email actions@github.com
+          git add -f . ; git commit -qm probe; git push -q origin HEAD:probe
