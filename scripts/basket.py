@@ -51,12 +51,11 @@ def eurocup():
         root = ET.fromstring(get("https://api-live.euroleague.net/v1/standings?seasonCode=U2026&gameNumber=99"))
         groups = root.findall(".//group") or [root]
         for gi, grp in enumerate(groups):
-            name = grp.get("name") or grp.findtext("name") or ""
             for t in grp.iter("team"):
                 standings.append(dict(team=t.findtext("code"), pos=int(t.findtext("ranking")), p=int(t.findtext("totalgames")),
                                       w=int(t.findtext("wins")), l=int(t.findtext("losses")),
                                       pf=int(t.findtext("ptsfavour")), pa=int(t.findtext("ptsagainst")),
-                                      diff=int(t.findtext("difference")), group=name or chr(65 + gi), _g=gi))
+                                      diff=int(t.findtext("difference")), group=chr(65 + gi), _g=gi))
         standings.sort(key=lambda r: (r["_g"], r["pos"]))
         for r in standings:
             del r["_g"]
@@ -144,7 +143,13 @@ def small_logo(folder, key, url):
             big = path + ".src"
             with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=60) as r:
                 open(big, "wb").write(r.read())
-            subprocess.check_call(["convert", big, "-trim", "-resize", "160x160", "-strip", path])
+            from PIL import Image
+            im = Image.open(big).convert("RGBA")
+            box = im.getbbox()
+            if box:
+                im = im.crop(box)
+            im.thumbnail((160, 160), Image.LANCZOS)
+            im.save(path, optimize=True)
             os.remove(big)
         except Exception as e:
             print("logo", key, "failed:", e, file=sys.stderr)
@@ -173,10 +178,14 @@ def lega():
 
     take(first)
     for d in days:
-        try:
-            take(json.loads(get(LEGA + "&d=" + str(d["id"]))))
-        except Exception as e:
-            print("lega day", d.get("code"), "failed:", e, file=sys.stderr)
+        before = len(raw)
+        for key in ("id", "code", "event_serial"):
+            try:
+                take(json.loads(get(LEGA + "&d=" + str(d[key]))))
+            except Exception as e:
+                print("lega day", d.get("code"), key, "failed:", e, file=sys.stderr)
+            if len(raw) > before:
+                break
     teams, matches = {}, []
     for m in raw:
         for side, key in (("h", "home_logo_key"), ("v", "v_logo_key")):
