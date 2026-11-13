@@ -8,13 +8,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          mkdir -p probe; cd probe
-          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36"
-          curl -sL -A "$UA" "https://www.legabasket.it/lba/6/calendario/calendar" -o page.html
-          for c in $(grep -oE '/_next/static/immutable/chunks/[^"]+\.js' page.html | sort -u); do curl -sL -A "$UA" "https://www.legabasket.it$c"; echo; done > chunks.js
-          grep -oE ".{300}championships-calendar.{400}" chunks.js > hits.txt || true
-          grep -oE ".{200}standing.{200}" chunks.js | head -20 > hits_st.txt || true
-          rm chunks.js page.html
-          ls -la
+          mkdir -p probe
+          python3 scripts/basket.py > probe/out.txt 2>&1 || true
+          cp eurocup.json primerafeb.json lega.json probe/ 2>/dev/null || true
+          ls logos/lega | head -3 >> probe/out.txt || true
           git config user.name probe; git config user.email actions@github.com
-          git add -f . ; git commit -qm probe; git push -q origin HEAD:probe
+          git add -f probe; git commit -qm probe; git push -q origin HEAD:probe
