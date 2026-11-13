@@ -10,11 +10,11 @@ jobs:
       - run: |
           mkdir -p probe; cd probe
           UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 Safari/537.36"
-          curl -sL -A "$UA" "https://api-live.euroleague.net/v2/competitions/U/seasons/U2026/games" -o eurocup.json || true
-          curl -sL -A "$UA" "https://api-live.euroleague.net/v1/standings?seasonCode=U2026&gameNumber=99" -o eurocup_st.xml || true
-          curl -sL -A "$UA" "https://www.legabasket.it/api/championships/get-championships-calendar-by-id?id=602" -o lega.json || true
-          curl -sL -A "$UA" "https://baloncestoenvivo.feb.es/calendario/primerafeb/1/2026" -o feb.html || true
-          curl -sL -A "$UA" "https://baloncestoenvivo.feb.es/calendario/primerafeb/1/2026?jornada=2" -o feb2.html || true
+          B="https://www.legabasket.it/api/championships/get-championships-calendar-by-id?id=602"
+          for q in "day_id=4486" "championships_day_id=4486" "day=4486" "day=1" "event_serial=1"; do curl -sL -A "$UA" "$B&$q" -o "lega_$q.json" || true; done
+          curl -sL -A "$UA" "https://www.legabasket.it/lba/6/calendario/calendar" -o lega_page.html || true
+          curl -sL -A "$UA" -o lg1.bin -w "%{http_code} %{content_type}\n" "https://lba-media.s3.eu-south-1.amazonaws.com/tBq5sA33bdF9ScSJBJ3mCGRj" || true
+          curl -sL -A "$UA" -o lg2.bin -w "%{http_code} %{content_type}\n" "https://lba-media.s3.eu-south-1.amazonaws.com/public/tBq5sA33bdF9ScSJBJ3mCGRj" || true
           ls -la
           git config user.name probe; git config user.email actions@github.com
           git add -f . ; git commit -qm probe; git push -q origin HEAD:probe
