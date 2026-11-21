@@ -94,6 +94,10 @@ def wikidata(names):
     return out
 
 
+# Raised when what the file holds changes, so the next run rebuilds it without waiting for the day to pass.
+VERSION = 2
+
+
 def is_logo(url):
     """An article may be led by a photograph of the court instead: only a drawn mark is a logo."""
     name = urllib.parse.unquote(url.split("?")[0].rsplit("/", 1)[-1]).lower()
@@ -135,7 +139,7 @@ def main():
         old = json.load(open("tennis.json"))
     except Exception:
         old = {}
-    if (old.get("updated", 0) > time.time() * 1000 - 20 * 3600 * 1000 and "tournaments" in old
+    if (old.get("updated", 0) > time.time() * 1000 - 20 * 3600 * 1000 and old.get("v") == VERSION
             and "--force" not in sys.argv):
         print("tennis fresh")
         return
@@ -161,7 +165,7 @@ def main():
         img = found.get(fold(name))
         if img:
             photos[pid] = img
-    doc = dict(players=photos, tournaments=tournaments(old.get("tournaments")))
+    doc = dict(v=VERSION, players=photos, tournaments=tournaments(old.get("tournaments")))
     if {k: v for k, v in old.items() if k != "updated"} == doc:
         print("tennis unchanged")
         return
