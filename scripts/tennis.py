@@ -94,6 +94,12 @@ def wikidata(names):
     return out
 
 
+def is_logo(url):
+    """An article may be led by a photograph of the court instead: only a drawn mark is a logo."""
+    name = urllib.parse.unquote(url.split("?")[0].rsplit("/", 1)[-1]).lower()
+    return "logo" in name or ".svg" in name or name.startswith("bnpparibasopen")
+
+
 def tournaments(old):
     """The big tournaments' logos. One that Wikipedia does not answer for keeps the logo it had."""
     kept = {tuple(t.get("names", [])): t.get("logo") for t in old or []}
@@ -118,7 +124,7 @@ def tournaments(old):
             print("wikipedia chunk failed:", e, file=sys.stderr)
         for names, title in chunk:
             logo = found.get(title) or kept.get(tuple(names))
-            if logo:
+            if logo and is_logo(logo):
                 out.append(dict(names=names, logo=logo))
         time.sleep(1)
     return out
