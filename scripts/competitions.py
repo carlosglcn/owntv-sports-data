@@ -14,7 +14,7 @@ UA = {"User-Agent": "OwnTVFanartBot/1.0 (https://github.com/carlosglcn/owntv-spo
 WIKI = ("https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageimages"
         "&piprop=thumbnail&pithumbsize=320&pilicense=any&titles=")
 RAW = "https://raw.githubusercontent.com/carlosglcn/owntv-sports-data/main/logos/competitions/"
-VERSION = 3
+VERSION = 4
 
 # The app's league slug -> the competition's article.
 LEAGUES = {
@@ -51,7 +51,7 @@ def is_logo(url):
     return "logo" in name or ".svg" in name or "wordmark" in name
 
 
-def any_logo(title, lang="en", hints=()):
+def any_logo(title, lang="en", hints=(), avoid=()):
     """When the article is led by a photograph: the first file on the page named as a logo (an SVG first)."""
     url = ("https://%s.wikipedia.org/w/api.php?action=query&format=json&redirects=1&generator=images&gimlimit=50"
            "&prop=imageinfo&iiprop=url&iiurlwidth=320&titles=" % lang) + urllib.parse.quote(title)
@@ -66,7 +66,13 @@ def any_logo(title, lang="en", hints=()):
         name = p.get("title", "").lower()
         info = (p.get("imageinfo") or [{}])[0]
         src = info.get("thumburl") or info.get("url")
-        named = "logo" in name or any(h in name for h in hints)
+        hinted = any(h in name for h in hints)
+        named = "logo" in name or hinted
+        # A file found only by a word of its name may be anything (a photo of the club's offices): drawn marks only.
+        if hinted and "logo" not in name and not (name.endswith(".svg") or name.endswith(".png")):
+            continue
+        if any(a in name for a in avoid):
+            continue
         if src and named and "commons-logo" not in name and "wiki" not in name.split(":")[-1][:4]:
             found.append((0 if name.endswith(".svg") else 1, src))
     return sorted(found)[0][1] if found else None
@@ -81,6 +87,9 @@ HINTS = {
     "lnh": ("lnh", "starligue", "liqui moly"),
     "khl": ("k&h", "nb i", "férfi"),
 }
+
+# Files a page carries that are another competition's mark (the MotoGP article shows Moto2's and Moto3's too).
+AVOID = {"motogp": ("moto2", "moto3", "motoe", "moto 2", "moto 3")}
 
 # Where the English article has no logo at all, the Spanish (or the league's own country's) one may.
 SPANISH = {"asobal": ("es", "Liga ASOBAL"), "primerafeb": ("es", "Primera FEB"), "acb": ("es", "Liga ACB"),
@@ -110,7 +119,10 @@ def main():
             and "--force" not in sys.argv):
         print("competitions fresh")
         return
-    kept = old.get("leagues", {})
+    # What an older version of this script chose is not kept: it may be what this one learned to refuse.
+    kept = old.get("leagues", {}) if old.get("v") == VERSION else {}
+    for f in os.listdir("logos/competitions") if os.path.isdir("logos/competitions") and old.get("v") != VERSION else []:
+        os.remove(os.path.join("logos/competitions", f))
     items = list(LEAGUES.items())
     out = {}
     for i in range(0, len(items), 20):
@@ -132,7 +144,10 @@ def main():
             src = found.get(title)
             if not (src and is_logo(src)):
                 hints = HINTS.get(slug, ())
-                src = any_logo(title, hints=hints) or (any_logo(SPANISH[slug][1], SPANISH[slug][0], hints) if slug in SPANISH else None)
+                avoid = AVOID.get(slug, ())
+                src = any_logo(title, hints=hints, avoid=avoid) or (any_logo(SPANISH[slug][1], SPANISH[slug][0], hints, avoid) if slug in SPANISH else None)
+            if src and any(a in urllib.parse.unquote(src).lower() for a in AVOID.get(slug, ())):
+                src = None
             served = mirror(slug, src) if src else None
             logo = served or kept.get(slug)
             if logo:
