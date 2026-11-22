@@ -20,7 +20,7 @@ UA = {"User-Agent": "OwnTVFanartBot/1.0 (https://github.com/carlosglcn/owntv-spo
 API = "https://www.wikidata.org/w/api.php?format=json&"
 VERSION = 1
 RETRY_DAYS = 14
-RULE = 2                  # raised when the way of looking up changes: everything is asked again
+RULE = 3                  # raised when the way of looking up changes: everything is asked again
 MAX_LOOKUPS = 100         # per run: the first runs fill the file a part at a time
 BASKETBALL, HANDBALL = "Q5372", "Q8418"
 
@@ -92,13 +92,18 @@ def entities(ids, props="labels|claims"):
 
 
 def variants(name):
+    """The name as it is, then without the sponsor it may carry: less its first or last word, its first and last
+    word alone, and at last each long word by itself."""
     words = name.split()
     out = [name]
     if len(words) >= 3:
-        out += [" ".join(words[1:]), " ".join(words[:-1])]
-    elif len(words) == 2:
-        out += [w for w in words if len(w) >= 5]
-    return out
+        out += [" ".join(words[1:]), " ".join(words[:-1]), words[0] + " " + words[-1]]
+    out += [w for w in words if len(w) >= 7 or (len(words) == 2 and len(w) >= 5)]
+    seen = []
+    for v in out:
+        if v not in seen:
+            seen.append(v)
+    return seen[:7]
 
 
 def lookup(name, sport):
@@ -149,7 +154,7 @@ def main():
             if not tid or not name:
                 continue
             had = known.get(tid)
-            stale = (had is None or had.get("r") != RULE or had.get("name") != name and not had.get("venue")
+            stale = (had is None or not had.get("venue") and had.get("r") != RULE or had.get("name") != name and not had.get("venue")
                      or (not had.get("venue") and now - had.get("at", 0) > RETRY_DAYS * 86400))
             if stale and left > 0:
                 left -= 1
