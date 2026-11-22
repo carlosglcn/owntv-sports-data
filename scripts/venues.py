@@ -20,7 +20,8 @@ UA = {"User-Agent": "OwnTVFanartBot/1.0 (https://github.com/carlosglcn/owntv-spo
 API = "https://www.wikidata.org/w/api.php?format=json&"
 VERSION = 1
 RETRY_DAYS = 14
-MAX_LOOKUPS = 70          # per run: the first runs fill the file a part at a time
+RULE = 2                  # raised when the way of looking up changes: everything is asked again
+MAX_LOOKUPS = 100         # per run: the first runs fill the file a part at a time
 BASKETBALL, HANDBALL = "Q5372", "Q8418"
 
 LEAGUES = {
@@ -102,8 +103,10 @@ def variants(name):
 
 def lookup(name, sport):
     """The home venue of the [sport] club called [name], as "arena, city"; None when Wikidata has none."""
-    for text in variants(name):
+    for n, text in enumerate(variants(name)):
         hits = get(dict(action="query", list="search", srlimit=5, srsearch=f"{text} haswbstatement:P641={sport}")).get("query", {}).get("search", [])
+        # A shortened name may fit several clubs of one city: only its best match counts.
+        hits = hits if n == 0 else hits[:1]
         clubs = entities([h["title"] for h in hits])
         for h in hits:
             club = clubs.get(h["title"]) or {}
@@ -114,7 +117,8 @@ def lookup(name, sport):
             arena_name = label(arena)
             if not arena_name:
                 continue
-            places = claim_ids(arena, "P131")
+            # The club's own city first: an arena is often filed under its district ("18th arrondissement of Paris").
+            places = claim_ids(club, "P159") or claim_ids(arena, "P131")
             city = label(entities(places[:1], "labels").get(places[0]) or {}) if places else None
             found = arena_name if not city or city.lower() in arena_name.lower() else f"{arena_name}, {city}"
             return found, label(club)
@@ -145,12 +149,13 @@ def main():
             if not tid or not name:
                 continue
             had = known.get(tid)
-            stale = had is None or had.get("name") != name and not had.get("venue") or (not had.get("venue") and now - had.get("at", 0) > RETRY_DAYS * 86400)
+            stale = (had is None or had.get("r") != RULE or had.get("name") != name and not had.get("venue")
+                     or (not had.get("venue") and now - had.get("at", 0) > RETRY_DAYS * 86400))
             if stale and left > 0:
                 left -= 1
                 try:
                     venue, club = lookup(name, sport)
-                    had = dict(name=name, venue=venue, club=club, at=now)
+                    had = dict(name=name, venue=venue, club=club, at=now, r=RULE)
                     known[tid] = had
                     print(slug, "|", name, "->", venue, "(", club, ")")
                 except Exception as e:
