@@ -14,7 +14,7 @@ UA = {"User-Agent": "OwnTVFanartBot/1.0 (https://github.com/carlosglcn/owntv-spo
 WIKI = ("https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageimages"
         "&piprop=thumbnail&pithumbsize=320&pilicense=any&titles=")
 RAW = "https://raw.githubusercontent.com/carlosglcn/owntv-sports-data/main/logos/competitions/"
-VERSION = 2
+VERSION = 3
 
 # The app's league slug -> the competition's article.
 LEAGUES = {
@@ -51,7 +51,7 @@ def is_logo(url):
     return "logo" in name or ".svg" in name or "wordmark" in name
 
 
-def any_logo(title, lang="en"):
+def any_logo(title, lang="en", hints=()):
     """When the article is led by a photograph: the first file on the page named as a logo (an SVG first)."""
     url = ("https://%s.wikipedia.org/w/api.php?action=query&format=json&redirects=1&generator=images&gimlimit=50"
            "&prop=imageinfo&iiprop=url&iiurlwidth=320&titles=" % lang) + urllib.parse.quote(title)
@@ -66,13 +66,26 @@ def any_logo(title, lang="en"):
         name = p.get("title", "").lower()
         info = (p.get("imageinfo") or [{}])[0]
         src = info.get("thumburl") or info.get("url")
-        if src and "logo" in name and "commons-logo" not in name and "wiki" not in name.split(":")[-1][:4]:
+        named = "logo" in name or any(h in name for h in hints)
+        if src and named and "commons-logo" not in name and "wiki" not in name.split(":")[-1][:4]:
             found.append((0 if name.endswith(".svg") else 1, src))
     return sorted(found)[0][1] if found else None
 
 
-# Where the English article has no logo at all, the Spanish one may.
-SPANISH = {"asobal": "Liga ASOBAL", "primerafeb": "Primera FEB", "acb": "Liga ACB"}
+# Logos whose file is not called a logo ("F1.svg"): words their file names carry.
+HINTS = {
+    "f1": ("f1.svg", "f1 logo", "formula 1"),
+    "asobal": ("asobal",),
+    "primerafeb": ("primera feb", "feb.", "leb"),
+    "hbl": ("hbl", "handball-bundesliga", "handball bundesliga"),
+    "lnh": ("lnh", "starligue", "liqui moly"),
+    "khl": ("k&h", "nb i", "férfi"),
+}
+
+# Where the English article has no logo at all, the Spanish (or the league's own country's) one may.
+SPANISH = {"asobal": ("es", "Liga ASOBAL"), "primerafeb": ("es", "Primera FEB"), "acb": ("es", "Liga ACB"),
+           "f1": ("es", "Campeonato Mundial de Fórmula 1"), "hbl": ("de", "Handball-Bundesliga"),
+           "lnh": ("fr", "Championnat de France masculin de handball"), "khl": ("hu", "Nemzeti Bajnokság I (férfi kézilabda)")}
 
 
 def mirror(slug, url):
@@ -118,7 +131,8 @@ def main():
         for slug, title in chunk:
             src = found.get(title)
             if not (src and is_logo(src)):
-                src = any_logo(title) or (any_logo(SPANISH[slug], "es") if slug in SPANISH else None)
+                hints = HINTS.get(slug, ())
+                src = any_logo(title, hints=hints) or (any_logo(SPANISH[slug][1], SPANISH[slug][0], hints) if slug in SPANISH else None)
             served = mirror(slug, src) if src else None
             logo = served or kept.get(slug)
             if logo:
