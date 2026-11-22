@@ -43,10 +43,10 @@
    "venue": "Palacio de Deportes de Murcia"
   },
   "4469": {
-   "at": 1795351473,
+   "at": 1795351780,
    "club": null,
    "name": "Recoletas Salud San Pablo Burgos",
-   "r": 2,
+   "r": 3,
    "venue": null
   },
   "4470": {
@@ -127,9 +127,432 @@
    "venue": "Pazo dos Deportes de Riazor, A Coruña"
   }
  },
- "asobal": {},
- "ehfcl": {},
- "ehfel": {},
+ "asobal": {
+  "ADE": {
+   "at": 1795351780,
+   "club": "CB Ademar León",
+   "name": "ABANCA Ademar León",
+   "r": 3,
+   "venue": "Palacio de los Deportes de León"
+  },
+  "ATV": {
+   "at": 1795351780,
+   "club": "BM Valladolid",
+   "name": "Recoletas Salud At. Valladolid",
+   "r": 3,
+   "venue": "Polideportivo Huerta del Rey, Valladolid"
+  },
+  "BAR": {
+   "at": 1795351780,
+   "club": "FC Barcelona",
+   "name": "Barça",
+   "r": 3,
+   "venue": "Ciutat Esportiva Joan Gamper, Barcelona"
+  },
+  "BID": {
+   "at": 1795351780,
+   "club": null,
+   "name": "IRUDEK Bidasoa Irun",
+   "r": 3,
+   "venue": null
+  },
+  "CAS": {
+   "at": 1795351780,
+   "club": "BM Ciudad Real",
+   "name": "BM Caserío Ciudad Real",
+   "r": 3,
+   "venue": "Quijote Arena, Ciudad Real"
+  },
+  "CNG": {
+   "at": 1795351780,
+   "club": "CB Cangas",
+   "name": "Frigoríficos del Morrazo",
+   "r": 3,
+   "venue": "Pavillón do Gatañal, Cangas de Morrazo"
+  },
+  "CQN": {
+   "at": 1795351780,
+   "club": null,
+   "name": "REBI Balonmano Cuenca",
+   "r": 3,
+   "venue": null
+  }
+ },
+ "ehfcl": {
+  "-lPesCzWVfLvHL3s76fx8A": {
+   "at": 1795351780,
+   "club": "Aarhus United",
+   "name": "SAH - Aarhus",
+   "r": 3,
+   "venue": "NRGi Arena, Aarhus"
+  },
+  "-nlYVKPCt95_8Tk0s9pZ2g": {
+   "at": 1795351780,
+   "club": null,
+   "name": "P04-B",
+   "r": 3,
+   "venue": null
+  },
+  "2BYdlqRt-0tNzrYTOvR2RQ": {
+   "at": 1795351780,
+   "club": null,
+   "name": "L.M01",
+   "r": 3,
+   "venue": null
+  },
+  "4yoBfY-mSXo6b7kNW5JFEg": {
+   "at": 1795351780,
+   "club": null,
+   "name": "P02-A",
+   "r": 3,
+   "venue": null
+  },
+  "5Qgx9g9YCFcCN0ipSF3OPQ": {
+   "at": 1795351780,
+   "club": null,
+   "name": "P02-B",
+   "r": 3,
+   "venue": null
+  },
+  "9P7iYWBOH6tG-wjczpw8WQ": {
+   "at": 1795351780,
+   "club": null,
+   "name": "P04-A",
+   "r": 3,
+   "venue": null
+  },
+  "C5EvJSxoeurZXu04WtORYg": {
+   "at": 1795351780,
+   "club": null,
+   "name": "RK Partizan AdmiralBet",
+   "r": 3,
+   "venue": null
+  },
+  "Ho3NNL6A9g9hqo66bLkuTg": {
+   "at": 1795351780,
+   "club": "RK Vardar",
+   "name": "HC Vardar 1961",
+   "r": 3,
+   "venue": "Jane Sandanski Arena, Skopje"
+  },
+  "Indmd6S4_Ds4tmxWyT23DA": {
+   "at": 1795351780,
+   "club": null,
+   "name": "P03-A",
+   "r": 3,
+   "venue": null
+  },
+  "Iu6YXzV9GiRCnfLxHe7HuA": {
+   "at": 1795351780,
+   "club": "Montpellier Handball",
+   "name": "Montpellier Handball",
+   "r": 3,
+   "venue": "Sud de France Arena, Montpellier"
+  },
+  "LfHsb32bxgz_4MPSx52yKQ": {
+   "at": 1795351780,
+   "club": null,
+   "name": "HC Kriens-Luzern",
+   "r": 3,
+   "venue": null
+  },
+  "NTLCAc8x68tTNOrjZoWeQQ": {
+   "at": 1795351780,
+   "club": null,
+   "name": "P01-A",
+   "r": 3,
+   "venue": null
+  },
+  "Qg5-SUEq-U2qV3euQZ48RQ": {
+   "at": 1795351780,
+   "club": "Wisła Płock",
+   "name": "Orlen Wisla Plock",
+   "r": 3,
+   "venue": "Orlen Arena, Płock"
+  },
+  "UlvtLsTlg8pJWiC7dxqtTg": {
+   "at": 1795351780,
+   "club": "HBC Nantes",
+   "name": "HBC Nantes",
+   "r": 3,
+   "venue": "Palais des Sports de Beaulieu, Nantes"
+  },
+  "VTTuBLCToUYtDezwF6JMZw": {
+   "at": 1795351780,
+   "club": null,
+   "name": "P01-B",
+   "r": 3,
+   "venue": null
+  },
+  "YJjOMGyUAj-FP0A811TLXQ": {
+   "at": 1795351780,
+   "club": null,
+   "name": "P03-B",
+   "r": 3,
+   "venue": null
+  },
+  "_q2ySU3AKuzidiJ8KmSvhw": {
+   "at": 1795351780,
+   "club": "Sporting CP (Handball)",
+   "name": "Sporting Clube de Portugal",
+   "r": 3,
+   "venue": "Pavilhão João Rocha, Lisbon"
+  },
+  "bZA9PY01VAXM5Qaj_g-CbQ": {
+   "at": 1795351780,
+   "club": null,
+   "name": "P01-A",
+   "r": 3,
+   "venue": null
+  },
+  "bjht3FQi2I_TE68vZcAupA": {
+   "at": 1795351780,
+   "club": null,
+   "name": "L.M02",
+   "r": 3,
+   "venue": null
+  },
+  "djTz_stKMDorjkgRSoN_-A": {
+   "at": 1795351780,
+   "club": "Füchse Berlin",
+   "name": "Füchse Berlin",
+   "r": 3,
+   "venue": "Max-Schmeling-Halle, Berlin"
+  },
+  "dzpyHR4kw7L5oI3flWtPSQ": {
+   "at": 1795351780,
+   "club": "Odense Håndbold",
+   "name": "GOG",
+   "r": 3,
+   "venue": "Sydbank Arena Odense, Odense Municipality"
+  },
+  "fPt471s6HJshvKo2LhvMJQ": {
+   "at": 1795351780,
+   "club": "RK Zagreb",
+   "name": "HC Zagreb",
+   "r": 3,
+   "venue": "Arena Zagreb"
+  },
+  "hWNG74GOTjWjFziTpI7kcA": {
+   "at": 1795351780,
+   "club": null,
+   "name": "P03-A",
+   "r": 3,
+   "venue": null
+  },
+  "hputODilVqNbBbAttPlUww": {
+   "at": 1795351780,
+   "club": "Paris Saint-Germain Handball",
+   "name": "Paris Saint-Germain",
+   "r": 3,
+   "venue": "Stade Pierre de Coubertin, Paris"
+  },
+  "jV5CzKP5W_-TGMWEwA-jVQ": {
+   "at": 1795351780,
+   "club": "Veszprém KC",
+   "name": "One Veszprém HC",
+   "r": 3,
+   "venue": "Veszprém Aréna"
+  },
+  "kZVHhs7nxEhEqyCf6iK_Sw": {
+   "at": 1795351780,
+   "club": "Kolstad Håndball",
+   "name": "Kolstad Håndball",
+   "r": 3,
+   "venue": "Kolstad Arena"
+  },
+  "nO73B3TFVPyDkqFD-f74_g": {
+   "at": 1795351780,
+   "club": null,
+   "name": "W.M02",
+   "r": 3,
+   "venue": null
+  },
+  "o6ldhiKKGS3pSYfUOHfy-Q": {
+   "at": 1795351780,
+   "club": null,
+   "name": "OTP Bank - PICK Szeged",
+   "r": 3,
+   "venue": null
+  },
+  "pd_W3RSkqySQ5n1PvrU6aA": {
+   "at": 1795351780,
+   "club": null,
+   "name": "W.M01",
+   "r": 3,
+   "venue": null
+  },
+  "puFBDRyrok_Gc2X-z9Jq0w": {
+   "at": 1795351780,
+   "club": "PGE VIVE Kielce",
+   "name": "Industria Kielce",
+   "r": 3,
+   "venue": "Hall of the Legions, Kielce"
+  },
+  "u9lazDtoBl4JBHql7Hn3IQ": {
+   "at": 1795351780,
+   "club": "IFK Kristianstad",
+   "name": "IFK Kristianstad",
+   "r": 3,
+   "venue": "Kristianstad Arena"
+  },
+  "uKoszRGjxt-bSoiTc0_G5A": {
+   "at": 1795351780,
+   "club": "MT Melsungen",
+   "name": "MT Melsungen",
+   "r": 3,
+   "venue": "Rothenbach-Halle, Melsungen"
+  },
+  "uTYputEzhQwfzaP-rRzXPg": {
+   "at": 1795351780,
+   "club": "RK Celje",
+   "name": "RK Celje Pivovarna Laško",
+   "r": 3,
+   "venue": "Zlatorog Arena, Celje"
+  },
+  "uYb9EPpc0qKlB7v804qRWQ": {
+   "at": 1795351780,
+   "club": "FC Porto (handball)",
+   "name": "FC Porto",
+   "r": 3,
+   "venue": "Dragão Arena, Porto"
+  },
+  "w2uVmHN5u2IyWVoSzaR0Yw": {
+   "at": 1795351780,
+   "club": null,
+   "name": "P01-B",
+   "r": 3,
+   "venue": null
+  },
+  "xpKM67tq-5yYYwAZhSvYaw": {
+   "at": 1795351780,
+   "club": null,
+   "name": "P03-B",
+   "r": 3,
+   "venue": null
+  },
+  "zKttAiKCyYIIy_T_l4gBLQ": {
+   "at": 1795351780,
+   "club": "SC Magdeburg",
+   "name": "SC Magdeburg",
+   "r": 3,
+   "venue": "GETEC Arena, Magdeburg"
+  }
+ },
+ "ehfel": {
+  "2zXEaNBPEzJP81Ffhy6t9g": {
+   "at": 1795351780,
+   "club": null,
+   "name": "HC Izvidac",
+   "r": 3,
+   "venue": null
+  },
+  "7SHB3qsbkDFnO6PkbkYwYQ": {
+   "at": 1795351780,
+   "club": null,
+   "name": "ACS HC Buzau 2012",
+   "r": 3,
+   "venue": null
+  },
+  "7Uks3HWZqoRSpxeLdqeOHQ": {
+   "at": 1795351780,
+   "club": null,
+   "name": "IK Sävehof",
+   "r": 3,
+   "venue": null
+  },
+  "9AOyqB6NalZpkivglwHdJg": {
+   "at": 1795351780,
+   "club": null,
+   "name": "HC Eurofarm Pelister",
+   "r": 3,
+   "venue": null
+  },
+  "CerwuO76h8BzD-BJ4Y50Gg": {
+   "at": 1795351780,
+   "club": null,
+   "name": "Hammarby Handboll",
+   "r": 3,
+   "venue": null
+  },
+  "Gz1Ov6G8CdshyVedB8kzxw": {
+   "at": 1795351780,
+   "club": "BM Granollers",
+   "name": "Fraikin BM. Granollers",
+   "r": 3,
+   "venue": "Sport Pavillion Granollers"
+  },
+  "Hk-Y-yssuT8mgCGpvpuUhA": {
+   "at": 1795351780,
+   "club": null,
+   "name": "Bathco Bm. Torrelavega",
+   "r": 3,
+   "venue": null
+  },
+  "XkIJQSTEgFhNudp3WDryTA": {
+   "at": 1795351780,
+   "club": null,
+   "name": "CSM Bucuresti",
+   "r": 3,
+   "venue": null
+  },
+  "YQKddQ9mJGWgSIhbJXZIkA": {
+   "at": 1795351780,
+   "club": "Elverum Håndball",
+   "name": "Elverum Håndball",
+   "r": 3,
+   "venue": "Elverumshallen"
+  },
+  "YWdsdl7TYcdQAsWIGPDMjw": {
+   "at": 1795351780,
+   "club": null,
+   "name": "HCB Karvina",
+   "r": 3,
+   "venue": null
+  },
+  "ZpDUiy2QlMWKVt-AXrdvqw": {
+   "at": 1795351780,
+   "club": null,
+   "name": "FH Hafnarfjordur",
+   "r": 3,
+   "venue": null
+  },
+  "aRmLNpBooMmuxOLJrhmxOQ": {
+   "at": 1795351780,
+   "club": null,
+   "name": "Dicorpebal Logroño La Rioja",
+   "r": 3,
+   "venue": null
+  },
+  "mNQ_j7b-iVglPr1QrhX5ZA": {
+   "at": 1795351780,
+   "club": null,
+   "name": "IRUDEK Bidasoa Irun",
+   "r": 3,
+   "venue": null
+  },
+  "uyEpUicNjwv8hCX9B7A3sg": {
+   "at": 1795351780,
+   "club": "Kadetten Schaffhausen",
+   "name": "Kadetten Schaffhausen",
+   "r": 3,
+   "venue": "BBC Arena, Schaffhausen"
+  },
+  "wloWP3yEZS8zBW4j4o9HRQ": {
+   "at": 1795351780,
+   "club": "Bergischer HC",
+   "name": "Bergischer HC",
+   "r": 3,
+   "venue": "Klingenhalle, Solingen"
+  },
+  "zh6zSrhwVj2qcyJfotLxjw": {
+   "at": 1795351780,
+   "club": "Chambéry Savoie Mont Blanc Handball",
+   "name": "Chambery Savoie Mont Blanc Handball",
+   "r": 3,
+   "venue": "Le Phare, Chambéry"
+  }
+ },
  "eurocup": {
   "ARI": {
    "at": 1795351473,
@@ -153,10 +576,10 @@
    "venue": "Palazzo dello Sport, Rome"
   },
   "BGS": {
-   "at": 1795351473,
+   "at": 1795351780,
    "club": null,
    "name": "Recoletas Salud San Pablo Burgos",
-   "r": 2,
+   "r": 3,
    "venue": null
   },
   "BLK": {
@@ -209,11 +632,11 @@
    "venue": "Süwag Energie Arena, Frankfurt"
   },
   "JER": {
-   "at": 1795351473,
-   "club": null,
+   "at": 1795351780,
+   "club": "Hapoel Jerusalem B.C.",
    "name": "Hapoel Midtown Jerusalem",
-   "r": 2,
-   "venue": null
+   "r": 3,
+   "venue": "Pais Arena, Jerusalem"
   },
   "KLA": {
    "at": 1795351473,
@@ -286,10 +709,10 @@
    "venue": "P.A.O.K. Sports Arena, Thessaloniki"
   },
   "RIG": {
-   "at": 1795351473,
+   "at": 1795351780,
    "club": null,
    "name": "Riga Zelli",
-   "r": 2,
+   "r": 3,
    "venue": null
   },
   "RTK": {
@@ -321,10 +744,10 @@
    "venue": "PalaTrento"
   },
   "TRT": {
-   "at": 1795351473,
+   "at": 1795351780,
    "club": null,
    "name": "Baglietto Derthona Tortona",
-   "r": 2,
+   "r": 3,
    "venue": null
   },
   "TTK": {
@@ -342,10 +765,10 @@
    "venue": "ratiopharm arena, Ulm"
   },
   "VNC": {
-   "at": 1795351473,
+   "at": 1795351780,
    "club": null,
    "name": "Umana Reyer Venice",
-   "r": 2,
+   "r": 3,
    "venue": null
   },
   "WRO": {
@@ -372,18 +795,18 @@
    "venue": "Palau Blaugrana, Barcelona"
   },
   "BAS": {
-   "at": 1795351473,
-   "club": null,
+   "at": 1795351780,
+   "club": "Saski Baskonia",
    "name": "Kosner Baskonia Vitoria-Gasteiz",
-   "r": 2,
-   "venue": null
+   "r": 3,
+   "venue": "Fernando Buesa Arena, Vitoria-Gasteiz"
   },
   "BES": {
-   "at": 1795351473,
-   "club": null,
+   "at": 1795351780,
+   "club": "Beşiktaş men's basketball team",
    "name": "Besiktas Fuzul Istanbul",
-   "r": 2,
-   "venue": null
+   "r": 3,
+   "venue": "BJK Akatlar Arena, Istanbul"
   },
   "DUB": {
    "at": 1795351473,
@@ -393,11 +816,11 @@
    "venue": "Coca-Cola Arena, Dubai"
   },
   "HTA": {
-   "at": 1795351473,
-   "club": null,
+   "at": 1795351780,
+   "club": "Hapoel Tel Aviv B.C.",
    "name": "Hapoel IBI Tel Aviv",
-   "r": 2,
-   "venue": null
+   "r": 3,
+   "venue": "Menora Mivtachim Arena, Tel Aviv"
   },
   "IST": {
    "at": 1795351473,
@@ -442,18 +865,18 @@
    "venue": "Roig Arena, Valencia"
   },
   "PAN": {
-   "at": 1795351473,
-   "club": null,
+   "at": 1795351780,
+   "club": "Panathinaikos B.C.",
    "name": "Panathinaikos AKTOR Athens",
-   "r": 2,
-   "venue": null
+   "r": 3,
+   "venue": "Telekom Center Athens"
   },
   "PAR": {
-   "at": 1795351473,
-   "club": null,
+   "at": 1795351780,
+   "club": "KK Partizan",
    "name": "Partizan Mozzart Bet Belgrade",
-   "r": 2,
-   "venue": null
+   "r": 3,
+   "venue": "Belgrade Arena"
   },
   "PRS": {
    "at": 1795351473,
@@ -463,18 +886,18 @@
    "venue": "Adidas Arena, Paris"
   },
   "RED": {
-   "at": 1795351473,
-   "club": null,
+   "at": 1795351780,
+   "club": "KK Crvena zvezda",
    "name": "Crvena Zvezda Meridianbet Belgrade",
-   "r": 2,
-   "venue": null
+   "r": 3,
+   "venue": "Belgrade Arena"
   },
   "TEL": {
-   "at": 1795351473,
-   "club": null,
+   "at": 1795351780,
+   "club": "Maccabi Tel Aviv B.C.",
    "name": "Maccabi Rapyd Tel Aviv",
-   "r": 2,
-   "venue": null
+   "r": 3,
+   "venue": "Menora Mivtachim Arena, Tel Aviv"
   },
   "ULK": {
    "at": 1795351473,
@@ -503,11 +926,11 @@
  "khl": {},
  "lega": {
   "1750": {
-   "at": 1795351473,
-   "club": null,
+   "at": 1795351780,
+   "club": "Virtus Pallacanestro Bologna",
    "name": "Virtus Costa Bologna",
-   "r": 2,
-   "venue": null
+   "r": 3,
+   "venue": "Virtus Arena, Bologna"
   },
   "1751": {
    "at": 1795351473,
@@ -517,11 +940,18 @@
    "venue": "Forum di Milano"
   },
   "1752": {
-   "at": 1795351473,
+   "at": 1795351780,
    "club": null,
    "name": "Bertram Derthona Tortona",
-   "r": 2,
+   "r": 3,
    "venue": null
+  },
+  "1753": {
+   "at": 1795351780,
+   "club": "Reyer Venezia Mestre",
+   "name": "Umana Reyer Venezia",
+   "r": 3,
+   "venue": "Palasport Taliercio, Venice"
   },
   "1760": {
    "at": 1795351473,
@@ -559,11 +989,18 @@
    "venue": "Palaverde, Treviso"
   },
   "1765": {
-   "at": 1795351473,
+   "at": 1795351780,
    "club": null,
    "name": "Acqua S.Bernardo Cantù",
-   "r": 2,
+   "r": 3,
    "venue": null
+  },
+  "1766": {
+   "at": 1795351780,
+   "club": "Pallacanestro Varese",
+   "name": "Openjobmetis Varese",
+   "r": 3,
+   "venue": "PalaWhirlpool, Varese"
   },
   "1767": {
    "at": 1795351473,
@@ -579,6 +1016,20 @@
    "r": 2,
    "venue": "PalaMangano, Scafati"
   },
+  "1769": {
+   "at": 1795351780,
+   "club": "Scaligera Basket Verona",
+   "name": "Tezenis Verona",
+   "r": 3,
+   "venue": "PalaOlimpia, Verona"
+  },
+  "1771": {
+   "at": 1795351780,
+   "club": null,
+   "name": "APU Old Wild West Udine",
+   "r": 3,
+   "venue": null
+  },
   "1772": {
    "at": 1795351473,
    "club": "Napoli Basket",
@@ -590,18 +1041,18 @@
  "lnh": {},
  "primerafeb": {
   "1008378": {
-   "at": 1795351473,
-   "club": null,
+   "at": 1795351780,
+   "club": "Askatuak SBT",
    "name": "Inveready Askatuak Gipuzkoa",
-   "r": 2,
-   "venue": null
+   "r": 3,
+   "venue": "Polideportivo Municipal Jose Antonio Gasca, San Sebastián"
   },
   "1008400": {
-   "at": 1795351473,
-   "club": null,
+   "at": 1795351780,
+   "club": "Basket Burgos 2002",
    "name": "Grupo Ureta Tizona Burgos",
-   "r": 2,
-   "venue": null
+   "r": 3,
+   "venue": "Polideportivo El Plantío, Burgos"
   },
   "1008687": {
    "at": 1795351473,
@@ -618,10 +1069,10 @@
    "venue": "Gran Canaria Arena, Las Palmas de Gran Canaria"
   },
   "1008900": {
-   "at": 1795351473,
+   "at": 1795351780,
    "club": null,
    "name": "Caja Rural CB Zamora",
-   "r": 2,
+   "r": 3,
    "venue": null
   },
   "1009072": {
@@ -646,32 +1097,32 @@
    "venue": "Palacio de Deportes de Granada"
   },
   "1009110": {
-   "at": 1795351473,
-   "club": null,
+   "at": 1795351780,
+   "club": "Central Córdoba de Rosario",
    "name": "Cajasol Coto Córdoba",
-   "r": 2,
-   "venue": null
+   "r": 3,
+   "venue": "Gabino Sosa Stadium, Rosario"
   },
   "1009584": {
-   "at": 1795351473,
-   "club": null,
+   "at": 1795351780,
+   "club": "Cantabria Baloncesto",
    "name": "Grupo Alega Cantabria",
-   "r": 2,
-   "venue": null
+   "r": 3,
+   "venue": "Palacio de Deportes de Santander"
   },
   "1009713": {
-   "at": 1795351473,
+   "at": 1795351780,
    "club": null,
    "name": "Palmer Basket Mallorca Palma",
-   "r": 2,
+   "r": 3,
    "venue": null
   },
   "1009716": {
-   "at": 1795351473,
-   "club": null,
+   "at": 1795351780,
+   "club": "Albacete Basket",
    "name": "Bueno Arenas Albacete Basket",
-   "r": 2,
-   "venue": null
+   "r": 3,
+   "venue": "Pabellón del Parque, Albacete"
   },
   "1009837": {
    "at": 1795351473,
@@ -695,10 +1146,10 @@
    "venue": "Pabellón Municipal de Palencia"
   },
   "1010324": {
-   "at": 1795351473,
+   "at": 1795351780,
    "club": null,
    "name": "Insolac Caja 87",
-   "r": 2,
+   "r": 3,
    "venue": null
   },
   "1010493": {
