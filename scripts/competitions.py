@@ -14,7 +14,7 @@ UA = {"User-Agent": "OwnTVFanartBot/1.0 (https://github.com/carlosglcn/owntv-spo
 WIKI = ("https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageimages"
         "&piprop=thumbnail&pithumbsize=320&pilicense=any&titles=")
 RAW = "https://raw.githubusercontent.com/carlosglcn/owntv-sports-data/main/logos/competitions/"
-VERSION = 1
+VERSION = 2
 
 # The app's league slug -> the competition's article.
 LEAGUES = {
@@ -49,6 +49,30 @@ def get(url):
 def is_logo(url):
     name = urllib.parse.unquote(url.split("?")[0].rsplit("/", 1)[-1]).lower()
     return "logo" in name or ".svg" in name or "wordmark" in name
+
+
+def any_logo(title, lang="en"):
+    """When the article is led by a photograph: the first file on the page named as a logo (an SVG first)."""
+    url = ("https://%s.wikipedia.org/w/api.php?action=query&format=json&redirects=1&generator=images&gimlimit=50"
+           "&prop=imageinfo&iiprop=url&iiurlwidth=320&titles=" % lang) + urllib.parse.quote(title)
+    try:
+        st, body = get(url)
+        pages = json.loads(body).get("query", {}).get("pages", {}).values()
+    except Exception as e:
+        print("images failed:", title, e, file=sys.stderr)
+        return None
+    found = []
+    for p in pages:
+        name = p.get("title", "").lower()
+        info = (p.get("imageinfo") or [{}])[0]
+        src = info.get("thumburl") or info.get("url")
+        if src and "logo" in name and "commons-logo" not in name and "wiki" not in name.split(":")[-1][:4]:
+            found.append((0 if name.endswith(".svg") else 1, src))
+    return sorted(found)[0][1] if found else None
+
+
+# Where the English article has no logo at all, the Spanish one may.
+SPANISH = {"asobal": "Liga ASOBAL", "primerafeb": "Primera FEB", "acb": "Liga ACB"}
 
 
 def mirror(slug, url):
@@ -93,7 +117,9 @@ def main():
             print("wikipedia chunk failed:", e, file=sys.stderr)
         for slug, title in chunk:
             src = found.get(title)
-            served = mirror(slug, src) if src and is_logo(src) else None
+            if not (src and is_logo(src)):
+                src = any_logo(title) or (any_logo(SPANISH[slug], "es") if slug in SPANISH else None)
+            served = mirror(slug, src) if src else None
             logo = served or kept.get(slug)
             if logo:
                 out[slug] = logo
