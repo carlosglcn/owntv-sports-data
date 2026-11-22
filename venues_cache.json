@@ -1,0 +1,437 @@
+{
+ "acb": {
+  "4463": {
+   "at": 1795351176,
+   "club": "Saski Baskonia",
+   "name": "Kosner Baskonia",
+   "venue": "Fernando Buesa Arena, Vitoria-Gasteiz"
+  },
+  "4464": {
+   "at": 1795351176,
+   "club": "Club Baloncesto Breogán",
+   "name": "Río Breogán",
+   "venue": "Pazo dos Deportes, Lugo"
+  },
+  "4465": {
+   "at": 1795351176,
+   "club": "Força Lleida CE",
+   "name": "iLERNA Lleida",
+   "venue": "Pavelló Barris Nord, Lleida"
+  },
+  "4466": {
+   "at": 1795351176,
+   "club": "BC Andorra",
+   "name": "MoraBanc Andorra",
+   "venue": "Poliesportiu d'Andorra, Andorra la Vella"
+  },
+  "4467": {
+   "at": 1795351176,
+   "club": "FC Barcelona Bàsquet",
+   "name": "Barça",
+   "venue": "Palau Blaugrana, La Maternitat i Sant Ramon"
+  },
+  "4468": {
+   "at": 1795351176,
+   "club": "UCAM Murcia",
+   "name": "UCAM Murcia",
+   "venue": "Palacio de Deportes de Murcia"
+  },
+  "4469": {
+   "at": 1795351176,
+   "club": null,
+   "name": "Recoletas Salud San Pablo Burgos",
+   "venue": null
+  },
+  "4470": {
+   "at": 1795351176,
+   "club": "Bàsquet Girona",
+   "name": "FIATC Girona",
+   "venue": "Palau Girona-Fontajau"
+  },
+  "4471": {
+   "at": 1795351176,
+   "club": "Bàsquet Manresa",
+   "name": "Kids&Us Manresa",
+   "venue": "Pavelló Nou Congost, Manresa"
+  },
+  "4472": {
+   "at": 1795351176,
+   "club": "Valencia BC",
+   "name": "Valencia Basket",
+   "venue": "Roig Arena, Valencia"
+  },
+  "4473": {
+   "at": 1795351176,
+   "club": "Club Joventut Badalona",
+   "name": "Asisa Joventut",
+   "venue": "Palau Municipal d'Esports de Badalona"
+  },
+  "4474": {
+   "at": 1795351176,
+   "club": "Basket Zaragoza 2002",
+   "name": "Casademont Zaragoza",
+   "venue": "Príncipe Felipe Arena, Zaragoza"
+  },
+  "4475": {
+   "at": 1795351176,
+   "club": "Bilbao Basket",
+   "name": "Surne Bilbao",
+   "venue": "Bilbao Arena"
+  },
+  "4476": {
+   "at": 1795351176,
+   "club": "Real Madrid Baloncesto",
+   "name": "Real Madrid",
+   "venue": "Community of Madrid Sports Centre, Salamanca"
+  },
+  "4477": {
+   "at": 1795351176,
+   "club": "Baloncesto Málaga, SAD",
+   "name": "Unicaja",
+   "venue": "Palacio Deportes José María Martín Carpena, Carretera de Cádiz (District 7)"
+  },
+  "4478": {
+   "at": 1795351176,
+   "club": "CB 1939 Canarias",
+   "name": "La Laguna Tenerife",
+   "venue": "Pabellón Insular Santiago Martín, San Cristóbal de La Laguna"
+  },
+  "4479": {
+   "at": 1795351176,
+   "club": "Obradoiro Club de Amigos do Baloncesto",
+   "name": "Monbus Obradoiro",
+   "venue": "Multiusos Fontes do Sar, Santiago de Compostela"
+  },
+  "4480": {
+   "at": 1795351176,
+   "club": "CB Coruña",
+   "name": "Leyma Coruña",
+   "venue": "Pazo dos Deportes de Riazor, A Coruña"
+  }
+ },
+ "asobal": {},
+ "ehfcl": {},
+ "ehfel": {},
+ "eurocup": {
+  "ARI": {
+   "at": 1795351176,
+   "club": "Aris Thessaloniki B.C.",
+   "name": "Aris Thessaloniki",
+   "venue": "Alexandreio Melathron, Thessaloniki Municipality"
+  },
+  "BAH": {
+   "at": 1795351176,
+   "club": "Bahçeşehir Koleji S.K.",
+   "name": "Bahcesehir College Istanbul",
+   "venue": "Sinan Erdem Dome, Bakırköy"
+  },
+  "BCR": {
+   "at": 1795351176,
+   "club": "Maxima Roma",
+   "name": "Roma Basketball",
+   "venue": "Palazzo dello Sport, Rome"
+  },
+  "BGS": {
+   "at": 1795351176,
+   "club": null,
+   "name": "Recoletas Salud San Pablo Burgos",
+   "venue": null
+  },
+  "BLK": {
+   "at": 1795351176,
+   "club": "BC Balkan Botevgrad",
+   "name": "Balkan Botevgrad",
+   "venue": "Arena Botevgrad"
+  },
+  "BOS": {
+   "at": 1795351176,
+   "club": "KK Bosna",
+   "name": "BOSNA BH Telecom Sarajevo",
+   "venue": "Mirza Delibašić Hall, Sarajevo"
+  },
+  "BOU": {
+   "at": 1795351176,
+   "club": "JL Bourg-en-Bresse",
+   "name": "Cosea JL Bourg-en-Bresse",
+   "venue": "Ekinox, Bourg-en-Bresse"
+  },
+  "BUD": {
+   "at": 1795351176,
+   "club": "KK Budućnost Podgorica",
+   "name": "Buducnost VOLI Podgorica",
+   "venue": "Morača Sports Center, Podgorica"
+  },
+  "BUR": {
+   "at": 1795351176,
+   "club": "Tofaş S.K.",
+   "name": "Tofas Bursa",
+   "venue": "Tofaş Nilüfer Spor Salonu"
+  },
+  "CLU": {
+   "at": 1795351176,
+   "club": "U-BT Cluj-Napoca",
+   "name": "U-BT Cluj-Napoca",
+   "venue": "Horia Demian Sports Hall, Cluj-Napoca"
+  },
+  "FRA": {
+   "at": 1795351176,
+   "club": "Skyliners",
+   "name": "Skyliners Frankfurt",
+   "venue": "Süwag Energie Arena, Frankfurt"
+  },
+  "JER": {
+   "at": 1795351176,
+   "club": null,
+   "name": "Hapoel Midtown Jerusalem",
+   "venue": null
+  },
+  "KLA": {
+   "at": 1795351176,
+   "club": "BC Neptūnas",
+   "name": "Neptunas Klaipeda",
+   "venue": "Švyturys Arena, Klaipėda"
+  },
+  "LEM": {
+   "at": 1795351176,
+   "club": "Le Mans Sarthe Basket",
+   "name": "Le Mans Sarthe Basket",
+   "venue": "Antarès, Le Mans"
+  },
+  "LJU": {
+   "at": 1795351176,
+   "club": "KK Union Olimpija",
+   "name": "Cedevita Olimpija Ljubljana",
+   "venue": "Arena Stožice, Ljubljana City Municipality"
+  },
+  "LKB": {
+   "at": 1795351176,
+   "club": "BC Lietkabelis",
+   "name": "Lietkabelis Panevezys",
+   "venue": "Kalnapilio Arena, Panevėžys"
+  },
+  "LLI": {
+   "at": 1795351176,
+   "club": "London Lightning",
+   "name": "London Lions",
+   "venue": "Canada Life Place, London"
+  },
+  "MAN": {
+   "at": 1795351176,
+   "club": "Bàsquet Manresa",
+   "name": "Kids&Us Manresa",
+   "venue": "Pavelló Nou Congost, Manresa"
+  },
+  "MRO": {
+   "at": 1795351176,
+   "club": "Maxima Roma",
+   "name": "Maxima Roma",
+   "venue": "Palazzo dello Sport, Rome"
+  },
+  "NAP": {
+   "at": 1795351176,
+   "club": "Napoli Basket",
+   "name": "Napoli Basketball",
+   "venue": "PalaBarbuto, Naples"
+  },
+  "NIN": {
+   "at": 1795351176,
+   "club": "Niners Chemnitz",
+   "name": "NINERS Chemnitz",
+   "venue": "Chemnitz Arena, Kappel"
+  },
+  "PAO": {
+   "at": 1795351176,
+   "club": "P.A.O.K. B.C. (women's basketball)",
+   "name": "PAOK Thessaloniki",
+   "venue": "P.A.O.K. Sports Arena, Pylaia-Chortiatis Municipality"
+  },
+  "RIG": {
+   "at": 1795351176,
+   "club": null,
+   "name": "Riga Zelli",
+   "venue": null
+  },
+  "RTK": {
+   "at": 1795351176,
+   "club": "Rostock Seawolves",
+   "name": "Rostock Seawolves",
+   "venue": "Stadthalle Rostock, Südstadt"
+  },
+  "SIA": {
+   "at": 1795351176,
+   "club": "BC Šiauliai",
+   "name": "Siauliai Basketball",
+   "venue": "Šiauliai Arena"
+  },
+  "TNF": {
+   "at": 1795351176,
+   "club": "CB 1939 Canarias",
+   "name": "La Laguna Tenerife",
+   "venue": "Pabellón Insular Santiago Martín, San Cristóbal de La Laguna"
+  },
+  "TRN": {
+   "at": 1795351176,
+   "club": "Aquila Basket Trento",
+   "name": "Dolomiti Energia Trento",
+   "venue": "PalaTrento"
+  },
+  "TRT": {
+   "at": 1795351176,
+   "club": null,
+   "name": "Baglietto Derthona Tortona",
+   "venue": null
+  },
+  "TTK": {
+   "at": 1795351176,
+   "club": "Türk Telekom B.K.",
+   "name": "Turk Telekom Ankara",
+   "venue": "Ankara Arena"
+  },
+  "ULM": {
+   "at": 1795351176,
+   "club": "Ratiopharm Ulm",
+   "name": "ratiopharm ulm",
+   "venue": "ratiopharm arena, Neu-Ulm"
+  },
+  "VNC": {
+   "at": 1795351176,
+   "club": null,
+   "name": "Umana Reyer Venice",
+   "venue": null
+  },
+  "WRO": {
+   "at": 1795351176,
+   "club": "Śląsk Wrocław",
+   "name": "Slask Wroclaw",
+   "venue": "Centennial Hall, Wrocław"
+  }
+ },
+ "euroleague": {
+  "ASV": {
+   "at": 1795351176,
+   "club": "ASVEL Lyon-Villeurbanne",
+   "name": "LDLC ASVEL Villeurbanne",
+   "venue": "Astroballe, Villeurbanne"
+  },
+  "BAR": {
+   "at": 1795351176,
+   "club": "FC Barcelona Bàsquet",
+   "name": "FC Barcelona",
+   "venue": "Palau Blaugrana, La Maternitat i Sant Ramon"
+  },
+  "BAS": {
+   "at": 1795351176,
+   "club": "Saski Baskonia",
+   "name": "Kosner Baskonia Vitoria-Gasteiz",
+   "venue": "Fernando Buesa Arena, Vitoria-Gasteiz"
+  },
+  "BES": {
+   "at": 1795351176,
+   "club": null,
+   "name": "Besiktas Fuzul Istanbul",
+   "venue": null
+  },
+  "DUB": {
+   "at": 1795351176,
+   "club": "Dubai Basketball",
+   "name": "Dubai Basketball",
+   "venue": "Coca-Cola Arena, Dubai"
+  },
+  "HTA": {
+   "at": 1795351176,
+   "club": null,
+   "name": "Hapoel IBI Tel Aviv",
+   "venue": null
+  },
+  "IST": {
+   "at": 1795351176,
+   "club": "Anadolu Efes S.K.",
+   "name": "Anadolu Efes Istanbul",
+   "venue": "Basketball Development Center, Zeytinburnu"
+  },
+  "MAD": {
+   "at": 1795351176,
+   "club": "Real Madrid Baloncesto",
+   "name": "Real Madrid",
+   "venue": "Community of Madrid Sports Centre, Salamanca"
+  },
+  "MIL": {
+   "at": 1795351176,
+   "club": "Olimpia Milano",
+   "name": "Armani Olimpia Milan",
+   "venue": "Forum di Milano, Assago"
+  },
+  "MUN": {
+   "at": 1795351176,
+   "club": "FC Bayern Munich",
+   "name": "FC Bayern Munich",
+   "venue": "BMW Park, Munich"
+  },
+  "OLY": {
+   "at": 1795351176,
+   "club": "Olympiacos B.C.",
+   "name": "Olympiacos Piraeus",
+   "venue": "Peace and Friendship Stadium, Piraeus Municipality"
+  },
+  "PAM": {
+   "at": 1795351176,
+   "club": "Valencia BC",
+   "name": "Valencia Basket",
+   "venue": "Roig Arena, Valencia"
+  },
+  "PAN": {
+   "at": 1795351176,
+   "club": null,
+   "name": "Panathinaikos AKTOR Athens",
+   "venue": null
+  },
+  "PAR": {
+   "at": 1795351176,
+   "club": null,
+   "name": "Partizan Mozzart Bet Belgrade",
+   "venue": null
+  },
+  "PRS": {
+   "at": 1795351176,
+   "club": "Paris Basketball",
+   "name": "Paris Basketball",
+   "venue": "Adidas Arena, 18th arrondissement of Paris"
+  },
+  "RED": {
+   "at": 1795351176,
+   "club": null,
+   "name": "Crvena Zvezda Meridianbet Belgrade",
+   "venue": null
+  },
+  "TEL": {
+   "at": 1795351176,
+   "club": null,
+   "name": "Maccabi Rapyd Tel Aviv",
+   "venue": null
+  },
+  "ULK": {
+   "at": 1795351176,
+   "club": "Fenerbahçe Men's Basketball",
+   "name": "Fenerbahce Tarfin Istanbul",
+   "venue": "Ülker Sports and Event Hall, Ataşehir"
+  },
+  "VIR": {
+   "at": 1795351176,
+   "club": "Virtus Pallacanestro Bologna",
+   "name": "Virtus Bologna",
+   "venue": "Virtus Arena"
+  },
+  "ZAL": {
+   "at": 1795351176,
+   "club": "BC Žalgiris",
+   "name": "Zalgiris Kaunas",
+   "venue": "Žalgiris Arena, Kaunas"
+  }
+ },
+ "hbl": {},
+ "hhl": {},
+ "khl": {},
+ "lega": {},
+ "lnh": {},
+ "primerafeb": {}
+}
