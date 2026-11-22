@@ -14,7 +14,7 @@ UA = {"User-Agent": "OwnTVFanartBot/1.0 (https://github.com/carlosglcn/owntv-spo
 WIKI = ("https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageimages"
         "&piprop=thumbnail&pithumbsize=320&pilicense=any&titles=")
 RAW = "https://raw.githubusercontent.com/carlosglcn/owntv-sports-data/main/logos/competitions/"
-VERSION = 4
+VERSION = 5
 
 # The app's league slug -> the competition's article.
 LEAGUES = {
@@ -26,7 +26,7 @@ LEAGUES = {
     "asobal": "Liga ASOBAL",
     "ehfcl": "EHF Champions League",
     "ehfel": "EHF European League",
-    "hbl": "Handball-Bundesliga",
+    # "hbl": left out — its articles show the clubs' crests, never the league's own mark.
     "lnh": "LNH Division 1",
     "hhl": "Herrehåndboldligaen",
     "khl": "Nemzeti Bajnokság I (men's handball)",
@@ -93,7 +93,7 @@ AVOID = {"motogp": ("moto2", "moto3", "motoe", "moto 2", "moto 3")}
 
 # Where the English article has no logo at all, the Spanish (or the league's own country's) one may.
 SPANISH = {"asobal": ("es", "Liga ASOBAL"), "primerafeb": ("es", "Primera FEB"), "acb": ("es", "Liga ACB"),
-           "f1": ("es", "Campeonato Mundial de Fórmula 1"), "hbl": ("de", "Handball-Bundesliga"),
+           "f1": ("es", "Campeonato Mundial de Fórmula 1"),
            "lnh": ("fr", "Championnat de France masculin de handball"), "khl": ("hu", "Nemzeti Bajnokság I (férfi kézilabda)")}
 
 
