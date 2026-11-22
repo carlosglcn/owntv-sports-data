@@ -1,5 +1,16 @@
 {
- "acb": {"4476": "Movistar Arena, Madrid", "4469": "Coliseum Burgos, Burgos"},
- "euroleague": {"MAD": "Movistar Arena, Madrid"},
- "eurocup": {"BGS": "Coliseum Burgos, Burgos", "LLI": "Copper Box Arena, London"}
+ "acb": {
+  "4476": "Movistar Arena, Madrid",
+  "4469": "Coliseum Burgos, Burgos"
+ },
+ "euroleague": {
+  "MAD": "Movistar Arena, Madrid"
+ },
+ "eurocup": {
+  "BGS": "Coliseum Burgos, Burgos",
+  "LLI": "Copper Box Arena, London"
+ },
+ "asobal": {
+  "BAR": "Palau Blaugrana, Barcelona"
+ }
 }
