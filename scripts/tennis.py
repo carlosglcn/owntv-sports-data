@@ -95,7 +95,26 @@ def wikidata(names):
 
 
 # Raised when what the file holds changes, so the next run rebuilds it without waiting for the day to pass.
-VERSION = 2
+VERSION = 3
+# The logos are kept in this repository (logos/tennis/) and served from it: Wikimedia's own servers refuse
+# requests that do not name themselves, which is how an app's image loader asks.
+RAW = "https://raw.githubusercontent.com/carlosglcn/owntv-sports-data/main/logos/tennis/"
+
+
+def mirror(names, url):
+    """The logo copied into logos/tennis/, and the address it is served at from here; None when it cannot be."""
+    import os, re
+    slug = re.sub(r"[^a-z0-9]+", "-", names[0]).strip("-")
+    ext = ".png" if ".png" in url.lower() else ".jpg"
+    path = "logos/tennis/" + slug + ext
+    try:
+        st, body = get(url)
+        if st == 200 and len(body) > 200:
+            os.makedirs("logos/tennis", exist_ok=True)
+            open(path, "wb").write(body)
+    except Exception as e:
+        print("logo not copied:", names[0], e, file=sys.stderr)
+    return RAW + slug + ext if os.path.exists(path) else None
 
 
 def is_logo(url):
@@ -128,8 +147,12 @@ def tournaments(old):
             print("wikipedia chunk failed:", e, file=sys.stderr)
         for names, title in chunk:
             logo = found.get(title) or kept.get(tuple(names))
-            if logo and is_logo(logo):
+            if logo and logo.startswith(RAW):
                 out.append(dict(names=names, logo=logo))
+            elif logo and is_logo(logo):
+                served = mirror(names, logo)
+                if served:
+                    out.append(dict(names=names, logo=served))
         time.sleep(1)
     return out
 
