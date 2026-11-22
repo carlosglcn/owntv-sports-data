@@ -14,13 +14,13 @@ text there removes a wrong one.
 
 The tennis venues are written here by hand: the feed names the tournament, never its ground, and they do not move.
 """
-import json, os, sys, time, urllib.parse, urllib.request
+import json, os, sys, time, unicodedata, urllib.parse, urllib.request
 
 UA = {"User-Agent": "OwnTVFanartBot/1.0 (https://github.com/carlosglcn/owntv-sports-data)"}
 API = "https://www.wikidata.org/w/api.php?format=json&"
 VERSION = 1
 RETRY_DAYS = 14
-RULE = 3                  # raised when the way of looking up changes: everything is asked again
+RULE = 4                  # raised when the way of looking up changes: everything is asked again
 MAX_LOOKUPS = 100         # per run: the first runs fill the file a part at a time
 BASKETBALL, HANDBALL = "Q5372", "Q8418"
 
@@ -91,6 +91,10 @@ def entities(ids, props="labels|claims"):
     return get(dict(action="wbgetentities", ids="|".join(ids), props=props, languages="en|es|fr|de|it")).get("entities", {})
 
 
+def plain(text):
+    return "".join(c for c in unicodedata.normalize("NFD", text) if unicodedata.category(c) != "Mn").lower()
+
+
 def variants(name):
     """The name as it is, then without the sponsor it may carry: less its first or last word, its first and last
     word alone, and at last each long word by itself."""
@@ -115,6 +119,9 @@ def lookup(name, sport):
         clubs = entities([h["title"] for h in hits])
         for h in hits:
             club = clubs.get(h["title"]) or {}
+            # One word alone (often the city) must be in the club's own name: "Belgrade" finds some club of Belgrade.
+            if " " not in text and text != name and plain(text) not in plain(label(club) or ""):
+                continue
             homes = claim_ids(club, "P115")
             if not homes:
                 continue
@@ -154,7 +161,7 @@ def main():
             if not tid or not name:
                 continue
             had = known.get(tid)
-            stale = (had is None or not had.get("venue") and had.get("r") != RULE or had.get("name") != name and not had.get("venue")
+            stale = (had is None or had.get("r") != RULE or had.get("name") != name and not had.get("venue")
                      or (not had.get("venue") and now - had.get("at", 0) > RETRY_DAYS * 86400))
             if stale and left > 0:
                 left -= 1
