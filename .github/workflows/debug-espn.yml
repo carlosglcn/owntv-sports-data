@@ -1,0 +1,35 @@
+name: debug-espn
+on:
+  push:
+    branches: [debug-espn]
+jobs:
+  look:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          python3 - <<'PY'
+          import json, urllib.request, datetime
+          B = "https://api.motogp.pulselive.com/motogp/v1"
+          def get(u):
+              return json.load(urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"}), timeout=40))
+          def show(tag, v, n=900):
+              print("##", tag, json.dumps(v, ensure_ascii=False)[:n])
+          sid = "e88b4e43-2209-47aa-8e83-0e0b1cedde6e"; cid = "e8c110ad-64aa-4e8e-8a86-f2f152f6a942"
+          evs = [e for e in get(B + "/results/events?seasonUuid=" + sid) if not e.get("test")]
+          evs.sort(key=lambda e: e["date_start"])
+          show("last 3 events", [{k: e.get(k) for k in ("id","short_name","date_start","date_end","status")} for e in evs[-3:]])
+          for ev in evs[-2:]:
+              ss = get(B + "/results/sessions?eventUuid=%s&categoryUuid=%s" % (ev["id"], cid))
+              show("sessions " + ev["short_name"], [{k: s.get(k) for k in ("id","type","number","date","status")} for s in ss], 2500)
+              for s in ss:
+                  if s.get("status") != "FINISHED" or s.get("type") not in ("RAC", "SPR", "Q", "FP"): continue
+                  for suffix in ("?test=false", ""):
+                      try:
+                          cl = get(B + "/results/session/%s/classification%s" % (s["id"], suffix))
+                          show("classification %s%s %s keys" % (s["type"], s.get("number"), suffix), sorted(cl.keys()))
+                          show("  rows[0:2]", cl.get("classification", [])[:2], 1500)
+                          break
+                      except Exception as e:
+                          print("## FAILED", s["type"], suffix, repr(e))
+              
+          PY
