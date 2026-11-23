@@ -14,7 +14,7 @@ UA = {"User-Agent": "OwnTVFanartBot/1.0 (https://github.com/carlosglcn/owntv-spo
 WIKI = ("https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageimages"
         "&piprop=thumbnail&pithumbsize=320&pilicense=any&titles=")
 RAW = "https://raw.githubusercontent.com/carlosglcn/owntv-sports-data/main/logos/competitions/"
-VERSION = 5
+VERSION = 6
 
 # The app's league slug -> the competition's article.
 LEAGUES = {
@@ -26,7 +26,7 @@ LEAGUES = {
     "asobal": "Liga ASOBAL",
     "ehfcl": "EHF Champions League",
     "ehfel": "EHF European League",
-    # "hbl": left out — its articles show the clubs' crests, never the league's own mark.
+    "hbl": "Handball-Bundesliga",
     "lnh": "LNH Division 1",
     "hhl": "Herrehåndboldligaen",
     "khl": "Nemzeti Bajnokság I (men's handball)",
@@ -97,6 +97,25 @@ SPANISH = {"asobal": ("es", "Liga ASOBAL"), "primerafeb": ("es", "Primera FEB"),
            "lnh": ("fr", "Championnat de France masculin de handball"), "khl": ("hu", "Nemzeti Bajnokság I (férfi kézilabda)")}
 
 
+# Where Wikipedia has no mark of the league's own (the HBL's articles show the clubs' crests; the Hungarian league's
+# none at all): TheSportsDB's league badge, by its league id, through its free public key.
+SPORTSDB = {"hbl": 4533, "khl": 4535}
+
+
+def sportsdb_badge(slug):
+    try:
+        st, body = get("https://www.thesportsdb.com/api/v1/json/3/lookupleague.php?id=%d" % SPORTSDB[slug])
+        league = (json.loads(body).get("leagues") or [{}])[0]
+    except Exception as e:
+        print("thesportsdb failed:", slug, e, file=sys.stderr)
+        return None
+    for key in ("strBadge", "strLogo"):
+        src = league.get(key)
+        if src and src.startswith("http") and "no_logo" not in src:
+            return src
+    return None
+
+
 def mirror(slug, url):
     ext = ".png" if ".png" in url.lower() else ".jpg"
     path = "logos/competitions/" + slug + ext
@@ -148,6 +167,9 @@ def main():
                 src = any_logo(title, hints=hints, avoid=avoid) or (any_logo(SPANISH[slug][1], SPANISH[slug][0], hints, avoid) if slug in SPANISH else None)
             if src and any(a in urllib.parse.unquote(src).lower() for a in AVOID.get(slug, ())):
                 src = None
+            # The HBL's article only ever shows clubs' crests: its own badge comes from TheSportsDB first.
+            if slug == "hbl" or (not src and slug in SPORTSDB):
+                src = sportsdb_badge(slug) or (None if slug == "hbl" else src)
             served = mirror(slug, src) if src else None
             logo = served or kept.get(slug)
             if logo:
