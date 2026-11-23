@@ -11,10 +11,11 @@ Rebuilt at most once a day.
 import json, os, re, sys, time, urllib.parse, urllib.request
 
 UA = {"User-Agent": "OwnTVFanartBot/1.0 (https://github.com/carlosglcn/owntv-sports-data)"}
+BROWSER = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"}
 WIKI = ("https://en.wikipedia.org/w/api.php?action=query&format=json&redirects=1&prop=pageimages"
         "&piprop=thumbnail&pithumbsize=320&pilicense=any&titles=")
 RAW = "https://raw.githubusercontent.com/carlosglcn/owntv-sports-data/main/logos/competitions/"
-VERSION = 6
+VERSION = 7
 
 # The app's league slug -> the competition's article.
 LEAGUES = {
@@ -42,7 +43,9 @@ LEAGUES = {
 
 
 def get(url):
-    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
+    # TheSportsDB's image host turns away clients that do not look like a browser.
+    headers = BROWSER if "thesportsdb.com" in url else UA
+    with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=60) as r:
         return r.status, r.read()
 
 
@@ -98,22 +101,16 @@ SPANISH = {"asobal": ("es", "Liga ASOBAL"), "primerafeb": ("es", "Primera FEB"),
 
 
 # Where Wikipedia has no mark of the league's own (the HBL's articles show the clubs' crests; the Hungarian league's
-# none at all): TheSportsDB's league badge, by its league id, through its free public key.
-SPORTSDB = {"hbl": 4533, "khl": 4535}
+# none at all): TheSportsDB's league badge. Its API answers 403 to a client like this one, so the badges' own
+# addresses are named here (from thesportsdb.com/league/4533 and /4535).
+SPORTSDB = {
+    "hbl": "https://r2.thesportsdb.com/images/media/league/badge/yt21x11783630443.png",
+    "khl": "https://r2.thesportsdb.com/images/media/league/badge/wl72r61560678493.png",
+}
 
 
 def sportsdb_badge(slug):
-    try:
-        st, body = get("https://www.thesportsdb.com/api/v1/json/3/lookupleague.php?id=%d" % SPORTSDB[slug])
-        league = (json.loads(body).get("leagues") or [{}])[0]
-    except Exception as e:
-        print("thesportsdb failed:", slug, e, file=sys.stderr)
-        return None
-    for key in ("strBadge", "strLogo"):
-        src = league.get(key)
-        if src and src.startswith("http") and "no_logo" not in src:
-            return src
-    return None
+    return SPORTSDB.get(slug)
 
 
 def mirror(slug, url):
