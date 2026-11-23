@@ -1629,6 +1629,13 @@
    "r": 4,
    "venue": null
   },
+  "3574": {
+   "at": 1795398397,
+   "club": null,
+   "name": "ThSV Eisenach",
+   "r": 4,
+   "venue": null
+  },
   "3576": {
    "at": 1795382099,
    "club": "THW Kiel",
@@ -1642,10 +1649,222 @@
    "name": "TSV Hannover-Burgdorf",
    "r": 4,
    "venue": "Swiss Life Hall, Hanover"
+  },
+  "3598": {
+   "at": 1795398397,
+   "club": "TVB Stuttgart",
+   "name": "TVB 1898 Stuttgart",
+   "r": 4,
+   "venue": "Scharrena Stuttgart, Waiblingen"
+  },
+  "3622": {
+   "at": 1795398397,
+   "club": "VfL Gummersbach",
+   "name": "VfL Gummersbach",
+   "r": 4,
+   "venue": "Schwalbe-Arena, Gummersbach"
   }
  },
- "hhl": {},
- "khl": {},
+ "hhl": {
+  "aalborg-handbold": {
+   "at": 1795398397,
+   "club": "Aalborg Håndbold",
+   "name": "Aalborg Håndbold",
+   "r": 4,
+   "venue": "Gigantium, Aalborg Municipality"
+  },
+  "bjerringbro-silkeborg": {
+   "at": 1795398397,
+   "club": "Bjerringbro-Silkeborg",
+   "name": "Bjerringbro-Silkeborg",
+   "r": 4,
+   "venue": "Silkeborg-Hallerne"
+  },
+  "fredericia-handboldklub": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Fredericia Håndboldklub",
+   "r": 4,
+   "venue": null
+  },
+  "gog": {
+   "at": 1795398397,
+   "club": "Odense Håndbold",
+   "name": "GOG",
+   "r": 4,
+   "venue": "Sydbank Arena Odense, Odense Municipality"
+  },
+  "kif-kolding": {
+   "at": 1795398397,
+   "club": "KIF Kolding Copenhagen",
+   "name": "KIF Kolding",
+   "r": 4,
+   "venue": "Sydbank Arena, Kolding Municipality"
+  },
+  "mors-thy-handbold": {
+   "at": 1795398397,
+   "club": "Ikast Håndbold",
+   "name": "Mors-Thy Håndbold",
+   "r": 4,
+   "venue": "Sportscenter Herning, Herning Municipality"
+  },
+  "nordsjaelland-handbold": {
+   "at": 1795398397,
+   "club": "Ikast Håndbold",
+   "name": "Nordsjælland Håndbold",
+   "r": 4,
+   "venue": "Sportscenter Herning, Herning Municipality"
+  },
+  "ribe-esbjerg-hh": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Ribe-Esbjerg HH",
+   "r": 4,
+   "venue": null
+  },
+  "sah": {
+   "at": 1795398397,
+   "club": null,
+   "name": "SAH",
+   "r": 4,
+   "venue": null
+  },
+  "skive-fh": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Skive fH",
+   "r": 4,
+   "venue": null
+  },
+  "skjern-handbold": {
+   "at": 1795398397,
+   "club": "Ikast Håndbold",
+   "name": "Skjern Håndbold",
+   "r": 4,
+   "venue": "Sportscenter Herning, Herning Municipality"
+  },
+  "sonderjyske-herrehandbold": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Sønderjyske Herrehåndbold",
+   "r": 4,
+   "venue": null
+  },
+  "tms-ringsted-herrer": {
+   "at": 1795398397,
+   "club": null,
+   "name": "TMS Ringsted Herrer",
+   "r": 4,
+   "venue": null
+  },
+  "tth-holstebro": {
+   "at": 1795398397,
+   "club": "TTH Holstebro",
+   "name": "TTH Holstebro",
+   "r": 4,
+   "venue": "Gråkjær Arena, Holstebro Municipality"
+  }
+ },
+ "khl": {
+  "3810383772": {
+   "at": 1795398397,
+   "club": "Veszprém KC",
+   "name": "One Veszprém HC",
+   "r": 4,
+   "venue": "Veszprém Aréna"
+  },
+  "3810384157": {
+   "at": 1795398397,
+   "club": null,
+   "name": "MOL Tatabánya KC",
+   "r": 4,
+   "venue": null
+  },
+  "3810384177": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Balatonfüredi KSE",
+   "r": 4,
+   "venue": null
+  },
+  "3810384218": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Csurgói KK",
+   "r": 4,
+   "venue": null
+  },
+  "3810384248": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Budai Farkasok-Rév",
+   "r": 4,
+   "venue": null
+  },
+  "3810384439": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Szigetszentmiklósi KSK",
+   "r": 4,
+   "venue": null
+  },
+  "3810384718": {
+   "at": 1795398397,
+   "club": null,
+   "name": "PLER-Budapest",
+   "r": 4,
+   "venue": null
+  },
+  "3810384883": {
+   "at": 1795398397,
+   "club": null,
+   "name": "HE-DO B. Braun Gyöngyös",
+   "r": 4,
+   "venue": null
+  },
+  "3810385105": {
+   "at": 1795398397,
+   "club": null,
+   "name": "OTP Bank-PICK Szeged",
+   "r": 4,
+   "venue": null
+  },
+  "3810385124": {
+   "at": 1795398397,
+   "club": "Ferencvárosi TC",
+   "name": "Ferencvárosi TC",
+   "r": 4,
+   "venue": "Elek Gyula Aréna, Budapest"
+  },
+  "3810385367": {
+   "at": 1795398397,
+   "club": null,
+   "name": "LIQUI MOLY NEKA",
+   "r": 4,
+   "venue": null
+  },
+  "3810385424": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Eger",
+   "r": 4,
+   "venue": null
+  },
+  "3810385555": {
+   "at": 1795398397,
+   "club": null,
+   "name": "ETO University HT",
+   "r": 4,
+   "venue": null
+  },
+  "3810385580": {
+   "at": 1795398397,
+   "club": null,
+   "name": "BEPELOG Dabas KC KFT",
+   "r": 4,
+   "venue": null
+  }
+ },
  "lega": {
   "1750": {
    "at": 1795352720,
@@ -1760,7 +1979,120 @@
    "venue": "PalaBarbuto, Naples"
   }
  },
- "lnh": {},
+ "lnh": {
+  "c-chartres-metropole-handball": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Chartres",
+   "r": 4,
+   "venue": null
+  },
+  "caen-handball": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Caen",
+   "r": 4,
+   "venue": null
+  },
+  "cesson-rennes-metropole-hb": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Cesson-Rennes",
+   "r": 4,
+   "venue": null
+  },
+  "chambery-savoie-mont-blanc-handball": {
+   "at": 1795398397,
+   "club": "Chambéry Savoie Mont Blanc Handball",
+   "name": "Chambéry",
+   "r": 4,
+   "venue": "Le Phare, Chambéry"
+  },
+  "dunkerque-handball-grand-littoral": {
+   "at": 1795398397,
+   "club": "Dunkerque HBGL",
+   "name": "Dunkerque",
+   "r": 4,
+   "venue": "Stade des Flandres, Dunkirk"
+  },
+  "fenix-toulouse-handball": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Toulouse",
+   "r": 4,
+   "venue": null
+  },
+  "hbc-nantes": {
+   "at": 1795398397,
+   "club": "HBC Nantes",
+   "name": "Nantes",
+   "r": 4,
+   "venue": "Palais des Sports de Beaulieu, Nantes"
+  },
+  "limoges-handball": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Limoges",
+   "r": 4,
+   "venue": null
+  },
+  "montpellier-handball": {
+   "at": 1795398397,
+   "club": "Montpellier Handball",
+   "name": "Montpellier",
+   "r": 4,
+   "venue": "Sud de France Arena, Montpellier"
+  },
+  "paris-saint-germain-handball": {
+   "at": 1795398397,
+   "club": "Paris Saint-Germain Handball",
+   "name": "Paris",
+   "r": 4,
+   "venue": "Stade Pierre de Coubertin, Paris"
+  },
+  "provence-aix-universite-club": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Aix",
+   "r": 4,
+   "venue": null
+  },
+  "saint-raphael-var-handball": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Saint-Raphaël",
+   "r": 4,
+   "venue": null
+  },
+  "saran-loiret-handball": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Saran",
+   "r": 4,
+   "venue": null
+  },
+  "selestat-alsace-handball": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Sélestat",
+   "r": 4,
+   "venue": null
+  },
+  "tremblay-handball": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Tremblay",
+   "r": 4,
+   "venue": null
+  },
+  "usam-nimes-gard": {
+   "at": 1795398397,
+   "club": null,
+   "name": "Nîmes",
+   "r": 4,
+   "venue": null
+  }
+ },
  "primerafeb": {
   "1008378": {
    "at": 1795361920,
