@@ -16,6 +16,7 @@ jobs:
           grep -aoE '(src|href)=[^ >]*\.js' index.html | head -20 || true
           touch all.js
           for f in $(grep -aoE '/?js/[0-9a-z.]+\.js' index.html | sed 's#^js#/js#' | sort -u); do $C "$UA" "$B$f" >> all.js; done; wc -c all.js
-          echo "--- quality"; grep -aoE '.{0,260}(selectedCatStageQualities|getRankingBind|rankingBind|fetchRanking|currentQuality).{0,260}' all.js | head -12
-          echo "--- ce/cg"; grep -aoE '.{0,160}"(ce|cg|cs)".{0,160}' all.js | head -10
-          echo "--- bind builders"; grep -aoE '.{0,120}\.reference\}?[-:`+].{0,160}' all.js | head -20
+          echo "--- lastScore"; grep -aoE '.{0,40}lastScore[:=]["`].{0,200}|.{0,200}(binds|bind)\s*[:=]\s*\{[^}]{0,400}' all.js | head -12
+          echo "--- bindDatas keys"; grep -aoE 'bindDatas\.[a-zA-Z_]+' all.js | sort | uniq -c | sort -rn | head -30
+          echo "--- keyed templates"; grep -aoE '[a-zA-Z_]+:`[a-zA-Z_]+-\$\{[^`]{1,160}`' all.js | sort -u | head -40
+          echo "--- keyed strings"; grep -aoE '(lastScore|allClazz|withdrawal|waypoint|stage|category)[a-zA-Z]*:"[^"]{1,80}"' all.js | sort -u | head -30
