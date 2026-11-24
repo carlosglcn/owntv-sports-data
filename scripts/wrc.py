@@ -19,6 +19,7 @@ MONTHS = {m: i for i, m in enumerate(["January", "February", "March", "April", "
 # A rally day's first stage is in the morning; Thursday's shakedown / opening stage counts as its start.
 START_HOUR_UTC = 8
 GC_ROWS = 15
+SURFACE_ES = {"gravel": "Tierra", "tarmac": "Asfalto", "snow": "Nieve", "mixed": "Mixto"}
 
 
 def raw(title):
@@ -107,7 +108,8 @@ def main():
             "id": rid, "name": name, "round": rnd, "oneday": True, "start": start, "end": end,
             "surface": clean(cells[5]), "hq": hq,
             "stages": [{
-                "id": rid, "n": rnd, "label": "Round %d" % rnd, "start": start, "end": end,
+                "id": rid, "n": rnd, "label": "Round %d" % rnd, "label_es": "Ronda %d" % rnd, "start": start, "end": end,
+                "surface": clean(cells[5]), "surface_es": SURFACE_ES.get(clean(cells[5]).lower(), clean(cells[5])),
                 "date": datetime.fromtimestamp(start / 1000, timezone.utc).strftime("%Y-%m-%d") if start else "",
                 "frm": hq, "to": None, "km": float(km.group(1)) if km else None, "ss": clean(cells[6]),
                 "status": status, "top": [{"name": w["name"], "team": w["team"]}] if w and w["name"] else [],

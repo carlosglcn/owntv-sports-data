@@ -108,6 +108,7 @@ def main():
             route = (langs.get("en") or "").split(">")
             stage = {
                 "id": "%s-%d" % (rid, n), "n": n, "label": "Prologue" if n == 0 else "Stage %d" % n,
+                "label_es": "Prólogo" if n == 0 else "Etapa %d" % n,
                 "start": start, "date": (s.get("date") or "")[:10],
                 "frm": route[0].strip().title() if route and route[0].strip() else None,
                 "to": route[-1].strip().title() if len(route) > 1 else None,
