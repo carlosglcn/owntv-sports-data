@@ -16,7 +16,4 @@ jobs:
           grep -aoE '(src|href)=[^ >]*\.js' index.html | head -20 || true
           touch all.js
           for f in $(grep -aoE '/?js/[0-9a-z.]+\.js' index.html | sed 's#^js#/js#' | sort -u); do $C "$UA" "$B$f" >> all.js; done; wc -c all.js
-          echo "--- fetch calls"; grep -aoE '(fetch|bind|binds|getBind|liveFetch)\(\[?[`"][^`"]{2,80}[`"]' all.js | sort | uniq -c | sort -rn | head -60
-          echo "--- template binds"; grep -aoE '`[a-z]+(-\$\{[^}]+\}|-[a-z]+)+(:\$\{[^}]+\})?`' all.js | sort | uniq -c | sort -rn | head -60
-          echo "=== tries"
-          for e in "race-dak2026" "stage-dak2026" "category-dak2026" "race" ; do printf "%-22s" $e; curl -s -L --compressed --max-time 15 -A "$UA" -w " [HTTP %{http_code} %{size_download}B]" "$B/api/$e" | head -c 300; echo; done
+          for e in category-2027 category-2026 stage-2026-car stage-2026-auto stage-2026-moto stage-2026-M stage-2026-A wrr_riderRankings-2026 wrr_riderRankings-2027; do printf "%-26s" $e; curl -s -L --compressed --max-time 20 -A "$UA" -w " [HTTP %{http_code} %{size_download}B]" "$B/api/$e" | head -c 700; echo; done
