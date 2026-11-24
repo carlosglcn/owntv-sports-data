@@ -16,8 +16,6 @@ jobs:
           grep -aoE '(src|href)=[^ >]*\.js' index.html | head -20 || true
           touch all.js
           for f in $(grep -aoE '/?js/[0-9a-z.]+\.js' index.html | sed 's#^js#/js#' | sort -u); do $C "$UA" "$B$f" >> all.js; done; wc -c all.js
-          echo "--- hosts"; grep -aoE 'https?://[a-zA-Z0-9.-]+' all.js | sort | uniq -c | sort -rn | head -40
-          echo "--- api paths"; grep -aoE '"/?(api|v[0-9])/[a-zA-Z0-9/._{}$-]*"' all.js | sort -u | head -60
-          echo "--- baseURL"; grep -aoE '(baseURL|apiUrl|API_URL|apiBase)[^;]{0,160}' all.js | head -10
-          echo "=== ewrc"
-          $C "$UA" --max-time 25 -w "\n[HTTP %{http_code} %{url_effective}]\n" "https://www.ewrc-results.com/season/2026/1-wrc/" | grep -aoE '<title>[^<]*|\[HTTP [^]]*\]|/final/[0-9]+-[a-z0-9-]+/' | sort -u | head -20
+          for k in 'varnish' 'fst-' 'https://dkc' 'lequipe' '/api/' 'endpoint'; do echo "--- $k"; grep -aoE ".{0,200}$k.{0,260}" all.js | head -6; done
+          echo "=== try prod hosts"
+          for h in gcp-varnish-prod-motorsports-wrr-aso.lequipe.fr gcp-varnish-motorsports-wrr-aso.lequipe.fr; do curl -s --max-time 15 -A "$UA" -w " [HTTP %{http_code}]" "https://$h/" | head -c 300; echo " <- $h"; done
