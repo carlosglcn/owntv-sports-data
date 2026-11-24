@@ -1,0 +1,1261 @@
+{
+ "updated": 1795553061196,
+ "season": 2026,
+ "races": [
+  {
+   "id": "dakar-2026-M",
+   "name": "Dakar 2026 · Bikes",
+   "names": {
+    "es": "Dakar 2026 · Motos"
+   },
+   "cat": "M",
+   "oneday": false,
+   "start": 1767415500000,
+   "end": 1768626000000,
+   "stages": [
+    {
+     "id": "dakar-2026-M-0",
+     "n": 0,
+     "label": "Prologue",
+     "start": 1767415500000,
+     "date": "2026-01-03",
+     "frm": "Yanbu",
+     "to": null,
+     "km": 22,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Edgar Canet",
+       "team": "KTM"
+      },
+      {
+       "name": "Daniel Sanders",
+       "team": "KTM"
+      },
+      {
+       "name": "Ricky Brabec",
+       "team": "Honda"
+      }
+     ],
+     "leader": {
+      "name": "Edgar Canet",
+      "team": "KTM"
+     }
+    },
+    {
+     "id": "dakar-2026-M-1",
+     "n": 1,
+     "label": "Stage 1",
+     "start": 1767499200000,
+     "date": "2026-01-04",
+     "frm": "Yanbu",
+     "to": "Yanbu",
+     "km": 305,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Edgar Canet",
+       "team": "KTM"
+      },
+      {
+       "name": "Daniel Sanders",
+       "team": "KTM"
+      },
+      {
+       "name": "Ricky Brabec",
+       "team": "Honda"
+      }
+     ],
+     "leader": {
+      "name": "Edgar Canet",
+      "team": "KTM"
+     }
+    },
+    {
+     "id": "dakar-2026-M-2",
+     "n": 2,
+     "label": "Stage 2",
+     "start": 1767586200000,
+     "date": "2026-01-05",
+     "frm": "Yanbu",
+     "to": "Alula",
+     "km": 400,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Daniel Sanders",
+       "team": "KTM"
+      },
+      {
+       "name": "Edgar Canet",
+       "team": "KTM"
+      },
+      {
+       "name": "Ricky Brabec",
+       "team": "Honda"
+      }
+     ],
+     "leader": {
+      "name": "Daniel Sanders",
+      "team": "KTM"
+     }
+    },
+    {
+     "id": "dakar-2026-M-3",
+     "n": 3,
+     "label": "Stage 3",
+     "start": 1767673200000,
+     "date": "2026-01-06",
+     "frm": "Alula",
+     "to": "Alula",
+     "km": 421,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Tosha Schareina",
+       "team": "Honda"
+      },
+      {
+       "name": "Ricky Brabec",
+       "team": "Honda"
+      },
+      {
+       "name": "Daniel Sanders",
+       "team": "KTM"
+      }
+     ],
+     "leader": {
+      "name": "Daniel Sanders",
+      "team": "KTM"
+     }
+    },
+    {
+     "id": "dakar-2026-M-4",
+     "n": 4,
+     "label": "Stage 4",
+     "start": 1767759600000,
+     "date": "2026-01-07",
+     "frm": "Alula",
+     "to": "Bivouac Refuge",
+     "km": 417,
+     "marathon": true,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Tosha Schareina",
+       "team": "Honda"
+      },
+      {
+       "name": "Ricky Brabec",
+       "team": "Honda"
+      },
+      {
+       "name": "Skyler Howes",
+       "team": "Honda"
+      }
+     ],
+     "leader": {
+      "name": "Tosha Schareina",
+      "team": "Honda"
+     }
+    },
+    {
+     "id": "dakar-2026-M-5",
+     "n": 5,
+     "label": "Stage 5",
+     "start": 1767846600000,
+     "date": "2026-01-08",
+     "frm": "Bivouac Refuge",
+     "to": "Hail",
+     "km": 356,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Luciano Benavides",
+       "team": "KTM"
+      },
+      {
+       "name": "Ignacio \"Nacho\" Cornejo",
+       "team": "HERO"
+      },
+      {
+       "name": "Daniel Sanders",
+       "team": "KTM"
+      }
+     ],
+     "leader": {
+      "name": "Daniel Sanders",
+      "team": "KTM"
+     }
+    },
+    {
+     "id": "dakar-2026-M-6",
+     "n": 6,
+     "label": "Stage 6",
+     "start": 1767932400000,
+     "date": "2026-01-09",
+     "frm": "Hail",
+     "to": "Riyadh",
+     "km": 326,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Ricky Brabec",
+       "team": "Honda"
+      },
+      {
+       "name": "Tosha Schareina",
+       "team": "Honda"
+      },
+      {
+       "name": "Daniel Sanders",
+       "team": "KTM"
+      }
+     ],
+     "leader": {
+      "name": "Daniel Sanders",
+      "team": "KTM"
+     }
+    },
+    {
+     "id": "dakar-2026-M-7",
+     "n": 7,
+     "label": "Stage 7",
+     "start": 1768104300000,
+     "date": "2026-01-11",
+     "frm": "Riyadh",
+     "to": "Wadi Ad Dawasir",
+     "km": 459,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Luciano Benavides",
+       "team": "KTM"
+      },
+      {
+       "name": "Edgar Canet",
+       "team": "KTM"
+      },
+      {
+       "name": "Adrien Van Beveren",
+       "team": "Honda"
+      }
+     ],
+     "leader": {
+      "name": "Daniel Sanders",
+      "team": "KTM"
+     }
+    },
+    {
+     "id": "dakar-2026-M-8",
+     "n": 8,
+     "label": "Stage 8",
+     "start": 1768190700000,
+     "date": "2026-01-12",
+     "frm": "Wadi Ad Dawasir",
+     "to": "Wadi Ad Dawasir",
+     "km": 483,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Luciano Benavides",
+       "team": "KTM"
+      },
+      {
+       "name": "Daniel Sanders",
+       "team": "KTM"
+      },
+      {
+       "name": "Ricky Brabec",
+       "team": "Honda"
+      }
+     ],
+     "leader": {
+      "name": "Luciano Benavides",
+      "team": "KTM"
+     }
+    },
+    {
+     "id": "dakar-2026-M-9",
+     "n": 9,
+     "label": "Stage 9",
+     "start": 1768276800000,
+     "date": "2026-01-13",
+     "frm": "Wadi Ad Dawasir",
+     "to": "Bivouac Refuge",
+     "km": 418,
+     "marathon": true,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Tosha Schareina",
+       "team": "Honda"
+      },
+      {
+       "name": "Daniel Sanders",
+       "team": "KTM"
+      },
+      {
+       "name": "Michael Docherty",
+       "team": "KTM"
+      }
+     ],
+     "leader": {
+      "name": "Daniel Sanders",
+      "team": "KTM"
+     }
+    },
+    {
+     "id": "dakar-2026-M-10",
+     "n": 10,
+     "label": "Stage 10",
+     "start": 1768376400000,
+     "date": "2026-01-14",
+     "frm": "Bivouac Refuge",
+     "to": "Bisha",
+     "km": 368,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Adrien Van Beveren",
+       "team": "Honda"
+      },
+      {
+       "name": "Ricky Brabec",
+       "team": "Honda"
+      },
+      {
+       "name": "Luciano Benavides",
+       "team": "KTM"
+      }
+     ],
+     "leader": {
+      "name": "Ricky Brabec",
+      "team": "Honda"
+     }
+    },
+    {
+     "id": "dakar-2026-M-11",
+     "n": 11,
+     "label": "Stage 11",
+     "start": 1768449600000,
+     "date": "2026-01-15",
+     "frm": "Bisha",
+     "to": "Al Henakiyah",
+     "km": 346,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Skyler Howes",
+       "team": "Honda"
+      },
+      {
+       "name": "Adrien Van Beveren",
+       "team": "Honda"
+      },
+      {
+       "name": "Edgar Canet",
+       "team": "KTM"
+      }
+     ],
+     "leader": {
+      "name": "Luciano Benavides",
+      "team": "KTM"
+     }
+    },
+    {
+     "id": "dakar-2026-M-12",
+     "n": 12,
+     "label": "Stage 12",
+     "start": 1768539600000,
+     "date": "2026-01-16",
+     "frm": "Al Henakiyah",
+     "to": "Yanbu",
+     "km": 311,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Ricky Brabec",
+       "team": "Honda"
+      },
+      {
+       "name": "Luciano Benavides",
+       "team": "KTM"
+      },
+      {
+       "name": "Tosha Schareina",
+       "team": "Honda"
+      }
+     ],
+     "leader": {
+      "name": "Ricky Brabec",
+      "team": "Honda"
+     }
+    },
+    {
+     "id": "dakar-2026-M-13",
+     "n": 13,
+     "label": "Stage 13",
+     "start": 1768626000000,
+     "date": "2026-01-17",
+     "frm": "Yanbu",
+     "to": "Yanbu",
+     "km": 105,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Edgar Canet",
+       "team": "KTM"
+      },
+      {
+       "name": "Luciano Benavides",
+       "team": "KTM"
+      },
+      {
+       "name": "Tosha Schareina",
+       "team": "Honda"
+      }
+     ],
+     "leader": {
+      "name": "Luciano Benavides",
+      "team": "KTM"
+     }
+    }
+   ],
+   "gc": [
+    {
+     "pos": 1,
+     "name": "Luciano Benavides",
+     "team": "KTM",
+     "gap": ""
+    },
+    {
+     "pos": 2,
+     "name": "Ricky Brabec",
+     "team": "Honda",
+     "gap": "+0:02"
+    },
+    {
+     "pos": 3,
+     "name": "Tosha Schareina",
+     "team": "Honda",
+     "gap": "+25:12"
+    },
+    {
+     "pos": 4,
+     "name": "Skyler Howes",
+     "team": "Honda",
+     "gap": "+56:41"
+    },
+    {
+     "pos": 5,
+     "name": "Daniel Sanders",
+     "team": "KTM",
+     "gap": "+1:03:15"
+    },
+    {
+     "pos": 6,
+     "name": "Adrien Van Beveren",
+     "team": "Honda",
+     "gap": "+1:04:46"
+    },
+    {
+     "pos": 7,
+     "name": "Ignacio \"Nacho\" Cornejo",
+     "team": "HERO",
+     "gap": "+1:39:50"
+    },
+    {
+     "pos": 8,
+     "name": "Ross Branch",
+     "team": "HERO",
+     "gap": "+2:49:15"
+    },
+    {
+     "pos": 9,
+     "name": "Toni Mulec",
+     "team": "KTM",
+     "gap": "+2:57:18"
+    },
+    {
+     "pos": 10,
+     "name": "Preston Campbell",
+     "team": "Honda",
+     "gap": "+3:01:55"
+    },
+    {
+     "pos": 11,
+     "name": "Martim Ventura",
+     "team": "Honda",
+     "gap": "+4:34:33"
+    },
+    {
+     "pos": 12,
+     "name": "Bradley Cox",
+     "team": "Sherco",
+     "gap": "+4:41:33"
+    },
+    {
+     "pos": 13,
+     "name": "Konrad Dabrowski",
+     "team": "KTM",
+     "gap": "+5:19:58"
+    },
+    {
+     "pos": 14,
+     "name": "Mason Klein",
+     "team": "HOTO",
+     "gap": "+5:22:20"
+    },
+    {
+     "pos": 15,
+     "name": "Nerimantas Jucius",
+     "team": "Honda",
+     "gap": "+5:35:21"
+    },
+    {
+     "pos": 16,
+     "name": "Khaliunbold Erdenebileg",
+     "team": "KTM",
+     "gap": "+5:43:01"
+    },
+    {
+     "pos": 17,
+     "name": "Bruno Santos",
+     "team": "Husqvarna",
+     "gap": "+6:22:34"
+    },
+    {
+     "pos": 18,
+     "name": "Benjamin Melot",
+     "team": "KTM",
+     "gap": "+6:48:11"
+    },
+    {
+     "pos": 19,
+     "name": "Josep Pedró",
+     "team": "Husqvarna",
+     "gap": "+7:02:43"
+    },
+    {
+     "pos": 20,
+     "name": "Milan Engel",
+     "team": "KOVE",
+     "gap": "+7:03:41"
+    },
+    {
+     "pos": 21,
+     "name": "Tommaso Montanari",
+     "team": "Husqvarna",
+     "gap": "+7:17:15"
+    },
+    {
+     "pos": 22,
+     "name": "Jérôme Martiny",
+     "team": "Honda",
+     "gap": "+8:12:54"
+    },
+    {
+     "pos": 23,
+     "name": "Dovydas Karka",
+     "team": "Honda",
+     "gap": "+8:35:37"
+    },
+    {
+     "pos": 24,
+     "name": "Jérôme Bas",
+     "team": "KTM",
+     "gap": "+9:43:24"
+    },
+    {
+     "pos": 25,
+     "name": "Emanuel Gyenes",
+     "team": "KTM",
+     "gap": "+10:20:06"
+    },
+    {
+     "pos": 26,
+     "name": "Tomás De Gavardo",
+     "team": "KTM",
+     "gap": "+10:49:20"
+    },
+    {
+     "pos": 27,
+     "name": "Alexandre \"Alex\" Vaudan",
+     "team": "KTM",
+     "gap": "+11:06:52"
+    },
+    {
+     "pos": 28,
+     "name": "Javi Vega",
+     "team": "KOVE",
+     "gap": "+11:15:32"
+    },
+    {
+     "pos": 29,
+     "name": "Murun Purevdorj",
+     "team": "KTM",
+     "gap": "+11:41:30"
+    },
+    {
+     "pos": 30,
+     "name": "Charlie Herbst",
+     "team": "Gasgas",
+     "gap": "+11:48:07"
+    }
+   ]
+  },
+  {
+   "id": "dakar-2026-A",
+   "name": "Dakar 2026 · Cars",
+   "names": {
+    "es": "Dakar 2026 · Coches"
+   },
+   "cat": "A",
+   "oneday": false,
+   "start": 1767425700000,
+   "end": 1768632900000,
+   "stages": [
+    {
+     "id": "dakar-2026-A-0",
+     "n": 0,
+     "label": "Prologue",
+     "start": 1767425700000,
+     "date": "2026-01-03",
+     "frm": "Yanbu",
+     "to": null,
+     "km": 22,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Mattias Ekström",
+       "team": "FORD"
+      },
+      {
+       "name": "Mitch Guthrie",
+       "team": "FORD"
+      },
+      {
+       "name": "Guillaume De Mévius",
+       "team": "MINI"
+      }
+     ],
+     "leader": null
+    },
+    {
+     "id": "dakar-2026-A-1",
+     "n": 1,
+     "label": "Stage 1",
+     "start": 1767507900000,
+     "date": "2026-01-04",
+     "frm": "Yanbu",
+     "to": "Yanbu",
+     "km": 305,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Guillaume De Mévius",
+       "team": "MINI"
+      },
+      {
+       "name": "Nasser Al-Attiyah",
+       "team": "Dacia"
+      },
+      {
+       "name": "Martin Prokop",
+       "team": "FORD"
+      }
+     ],
+     "leader": {
+      "name": "Guillaume De Mévius",
+      "team": "MINI"
+     }
+    },
+    {
+     "id": "dakar-2026-A-2",
+     "n": 2,
+     "label": "Stage 2",
+     "start": 1767588000000,
+     "date": "2026-01-05",
+     "frm": "Yanbu",
+     "to": "Alula",
+     "km": 400,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Seth Quintero",
+       "team": "Toyota"
+      },
+      {
+       "name": "Henk Lategan",
+       "team": "Toyota"
+      },
+      {
+       "name": "Yazeed Al Rajhi",
+       "team": "Toyota"
+      }
+     ],
+     "leader": {
+      "name": "Nasser Al-Attiyah",
+      "team": "Dacia"
+     }
+    },
+    {
+     "id": "dakar-2026-A-3",
+     "n": 3,
+     "label": "Stage 3",
+     "start": 1767681900000,
+     "date": "2026-01-06",
+     "frm": "Alula",
+     "to": "Alula",
+     "km": 421,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Mitch Guthrie",
+       "team": "FORD"
+      },
+      {
+       "name": "Martin Prokop",
+       "team": "FORD"
+      },
+      {
+       "name": "Guy Botterill",
+       "team": "Toyota"
+      }
+     ],
+     "leader": {
+      "name": "Mitch Guthrie",
+      "team": "FORD"
+     }
+    },
+    {
+     "id": "dakar-2026-A-4",
+     "n": 4,
+     "label": "Stage 4",
+     "start": 1767768300000,
+     "date": "2026-01-07",
+     "frm": "Alula",
+     "to": "Bivouac Refuge",
+     "km": 452,
+     "marathon": true,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Henk Lategan",
+       "team": "Toyota"
+      },
+      {
+       "name": "Nasser Al-Attiyah",
+       "team": "Dacia"
+      },
+      {
+       "name": "Marek Goczal",
+       "team": "Toyota"
+      }
+     ],
+     "leader": {
+      "name": "Henk Lategan",
+      "team": "Toyota"
+     }
+    },
+    {
+     "id": "dakar-2026-A-5",
+     "n": 5,
+     "label": "Stage 5",
+     "start": 1767855000000,
+     "date": "2026-01-08",
+     "frm": "Bivouac Refuge",
+     "to": "Hail",
+     "km": 371,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Nani Roma",
+       "team": "FORD"
+      },
+      {
+       "name": "Mitch Guthrie",
+       "team": "FORD"
+      },
+      {
+       "name": "Martin Prokop",
+       "team": "FORD"
+      }
+     ],
+     "leader": {
+      "name": "Henk Lategan",
+      "team": "Toyota"
+     }
+    },
+    {
+     "id": "dakar-2026-A-6",
+     "n": 6,
+     "label": "Stage 6",
+     "start": 1767940740000,
+     "date": "2026-01-09",
+     "frm": "Hail",
+     "to": "Riyadh",
+     "km": 326,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Nasser Al-Attiyah",
+       "team": "Dacia"
+      },
+      {
+       "name": "Sébastien Loeb",
+       "team": "Dacia"
+      },
+      {
+       "name": "Seth Quintero",
+       "team": "Toyota"
+      }
+     ],
+     "leader": {
+      "name": "Nasser Al-Attiyah",
+      "team": "Dacia"
+     }
+    },
+    {
+     "id": "dakar-2026-A-7",
+     "n": 7,
+     "label": "Stage 7",
+     "start": 1768106100000,
+     "date": "2026-01-11",
+     "frm": "Riyadh",
+     "to": "Wadi Ad Dawasir",
+     "km": 459,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Mattias Ekström",
+       "team": "FORD"
+      },
+      {
+       "name": "Joao Ferreira",
+       "team": "Toyota"
+      },
+      {
+       "name": "Mitch Guthrie",
+       "team": "FORD"
+      }
+     ],
+     "leader": {
+      "name": "Nasser Al-Attiyah",
+      "team": "Dacia"
+     }
+    },
+    {
+     "id": "dakar-2026-A-8",
+     "n": 8,
+     "label": "Stage 8",
+     "start": 1768192500000,
+     "date": "2026-01-12",
+     "frm": "Wadi Ad Dawasir",
+     "to": "Wadi Ad Dawasir",
+     "km": 483,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Saood Variawa",
+       "team": "Toyota"
+      },
+      {
+       "name": "Henk Lategan",
+       "team": "Toyota"
+      },
+      {
+       "name": "Mattias Ekström",
+       "team": "FORD"
+      }
+     ],
+     "leader": {
+      "name": "Nasser Al-Attiyah",
+      "team": "Dacia"
+     }
+    },
+    {
+     "id": "dakar-2026-A-9",
+     "n": 9,
+     "label": "Stage 9",
+     "start": 1768285200000,
+     "date": "2026-01-13",
+     "frm": "Wadi Ad Dawasir",
+     "to": "Bivouac Refuge",
+     "km": 410,
+     "marathon": true,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Eryk Goczal",
+       "team": "Toyota"
+      },
+      {
+       "name": "Michal Goczal",
+       "team": "Toyota"
+      },
+      {
+       "name": "Toby Price",
+       "team": "Toyota"
+      }
+     ],
+     "leader": {
+      "name": "Nani Roma",
+      "team": "FORD"
+     }
+    },
+    {
+     "id": "dakar-2026-A-10",
+     "n": 10,
+     "label": "Stage 10",
+     "start": 1768377600000,
+     "date": "2026-01-14",
+     "frm": "Bivouac Refuge",
+     "to": "Bisha",
+     "km": 420,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Mathieu Serradori",
+       "team": "Century"
+      },
+      {
+       "name": "Nasser Al-Attiyah",
+       "team": "Dacia"
+      },
+      {
+       "name": "Sébastien Loeb",
+       "team": "Dacia"
+      }
+     ],
+     "leader": {
+      "name": "Nasser Al-Attiyah",
+      "team": "Dacia"
+     }
+    },
+    {
+     "id": "dakar-2026-A-11",
+     "n": 11,
+     "label": "Stage 11",
+     "start": 1768451400000,
+     "date": "2026-01-15",
+     "frm": "Bisha",
+     "to": "Al Henakiyah",
+     "km": 346,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Mattias Ekström",
+       "team": "FORD"
+      },
+      {
+       "name": "Romain Dumas",
+       "team": "FORD"
+      },
+      {
+       "name": "Carlos Sainz",
+       "team": "FORD"
+      }
+     ],
+     "leader": {
+      "name": "Nasser Al-Attiyah",
+      "team": "Dacia"
+     }
+    },
+    {
+     "id": "dakar-2026-A-12",
+     "n": 12,
+     "label": "Stage 12",
+     "start": 1768546500000,
+     "date": "2026-01-16",
+     "frm": "Al Henakiyah",
+     "to": "Yanbu",
+     "km": 311,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Nasser Al-Attiyah",
+       "team": "Dacia"
+      },
+      {
+       "name": "Mitch Guthrie",
+       "team": "FORD"
+      },
+      {
+       "name": "Toby Price",
+       "team": "Toyota"
+      }
+     ],
+     "leader": {
+      "name": "Nasser Al-Attiyah",
+      "team": "Dacia"
+     }
+    },
+    {
+     "id": "dakar-2026-A-13",
+     "n": 13,
+     "label": "Stage 13",
+     "start": 1768632900000,
+     "date": "2026-01-17",
+     "frm": "Yanbu",
+     "to": "Yanbu",
+     "km": 105,
+     "marathon": false,
+     "cancelled": false,
+     "status": "final",
+     "top": [
+      {
+       "name": "Mattias Ekström",
+       "team": "FORD"
+      },
+      {
+       "name": "Sébastien Loeb",
+       "team": "Dacia"
+      },
+      {
+       "name": "Henk Lategan",
+       "team": "Toyota"
+      }
+     ],
+     "leader": {
+      "name": "Nasser Al-Attiyah",
+      "team": "Dacia"
+     }
+    }
+   ],
+   "gc": [
+    {
+     "pos": 1,
+     "name": "Nasser Al-Attiyah",
+     "team": "Dacia",
+     "gap": ""
+    },
+    {
+     "pos": 2,
+     "name": "Nani Roma",
+     "team": "FORD",
+     "gap": "+9:42"
+    },
+    {
+     "pos": 3,
+     "name": "Mattias Ekström",
+     "team": "FORD",
+     "gap": "+14:33"
+    },
+    {
+     "pos": 4,
+     "name": "Sébastien Loeb",
+     "team": "Dacia",
+     "gap": "+15:10"
+    },
+    {
+     "pos": 5,
+     "name": "Carlos Sainz",
+     "team": "FORD",
+     "gap": "+28:30"
+    },
+    {
+     "pos": 6,
+     "name": "Mathieu Serradori",
+     "team": "Century",
+     "gap": "+45:02"
+    },
+    {
+     "pos": 7,
+     "name": "Lucas Moraes",
+     "team": "Dacia",
+     "gap": "+47:50"
+    },
+    {
+     "pos": 8,
+     "name": "Toby Price",
+     "team": "Toyota",
+     "gap": "+52:07"
+    },
+    {
+     "pos": 9,
+     "name": "Seth Quintero",
+     "team": "Toyota",
+     "gap": "+1:15:02"
+    },
+    {
+     "pos": 10,
+     "name": "Saood Variawa",
+     "team": "Toyota",
+     "gap": "+1:23:36"
+    },
+    {
+     "pos": 11,
+     "name": "Cristina Gutierrez",
+     "team": "Dacia",
+     "gap": "+1:29:49"
+    },
+    {
+     "pos": 12,
+     "name": "Mitch Guthrie",
+     "team": "FORD",
+     "gap": "+1:37:25"
+    },
+    {
+     "pos": 13,
+     "name": "Marek Goczal",
+     "team": "Toyota",
+     "gap": "+1:37:27"
+    },
+    {
+     "pos": 14,
+     "name": "Guy Botterill",
+     "team": "Toyota",
+     "gap": "+1:43:37"
+    },
+    {
+     "pos": 15,
+     "name": "Simon Vitse",
+     "team": "Optimus Md",
+     "gap": "+1:47:23"
+    },
+    {
+     "pos": 16,
+     "name": "Brian Baragwanath",
+     "team": "Century",
+     "gap": "+1:57:50"
+    },
+    {
+     "pos": 17,
+     "name": "Eryk Goczal",
+     "team": "Toyota",
+     "gap": "+2:28:10"
+    },
+    {
+     "pos": 18,
+     "name": "Joao Ferreira",
+     "team": "Toyota",
+     "gap": "+3:17:48"
+    },
+    {
+     "pos": 19,
+     "name": "Michal Goczal",
+     "team": "Toyota",
+     "gap": "+3:21:29"
+    },
+    {
+     "pos": 20,
+     "name": "Laia Sanz",
+     "team": "EBRO",
+     "gap": "+3:31:09"
+    },
+    {
+     "pos": 21,
+     "name": "Henk Lategan",
+     "team": "Toyota",
+     "gap": "+3:57:45"
+    },
+    {
+     "pos": 22,
+     "name": "Christian Lavieille",
+     "team": "Optimus Md",
+     "gap": "+4:10:56"
+    },
+    {
+     "pos": 23,
+     "name": "Martin Prokop",
+     "team": "FORD",
+     "gap": "+4:23:34"
+    },
+    {
+     "pos": 24,
+     "name": "Sh. Khalid Al Qasimi",
+     "team": "Toyota",
+     "gap": "+4:28:14"
+    },
+    {
+     "pos": 25,
+     "name": "Ronan Chabot",
+     "team": "Toyota",
+     "gap": "+4:59:04"
+    },
+    {
+     "pos": 26,
+     "name": "Wei Han",
+     "team": "Han Wei Motorsport",
+     "gap": "+5:01:31"
+    },
+    {
+     "pos": 27,
+     "name": "Binglong Lu",
+     "team": "Jjsport",
+     "gap": "+5:43:53"
+    },
+    {
+     "pos": 28,
+     "name": "Pau Navarro",
+     "team": "Taurus",
+     "gap": "+5:49:28"
+    },
+    {
+     "pos": 29,
+     "name": "Hernán Garcés",
+     "team": "Toyota",
+     "gap": "+5:50:30"
+    },
+    {
+     "pos": 30,
+     "name": "Yasir Seaidan",
+     "team": "Taurus",
+     "gap": "+6:12:50"
+    }
+   ]
+  }
+ ]
+}
