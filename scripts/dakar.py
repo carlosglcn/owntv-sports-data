@@ -51,7 +51,8 @@ def person(team):
     first = (p.get("firstName") or "").title()
     last = (p.get("lastName") or "").title()
     name = (first + " " + last).strip() or p.get("name") or "#%s" % team.get("bib")
-    brand = (team.get("brand") or "").title()
+    raw = (team.get("brand") or "").strip()
+    brand = raw if len(raw) <= 4 else raw.title()   # KTM, BMW stay as they are; TOYOTA → Toyota
     return name, brand or (team.get("vehicle") or "").title()
 
 
@@ -95,8 +96,12 @@ def main():
         kept = {s["n"]: s for s in old.get(rid, {}).get("stages", [])}
         stages_raw = sorted(get("stage-%d-%s" % (year, label)) or [], key=lambda s: s.get("stage", 0))
         stages, gc = [], old.get(rid, {}).get("gc", [])
+        seen = set()
         for s in stages_raw:
             n = s.get("stage", 0)
+            if n in seen or not (s.get("date") or s.get("sectors")):
+                continue
+            seen.add(n)
             special = sorted([x for x in s.get("sectors", []) if x.get("type") == "SPE"], key=lambda x: x.get("code", ""))
             start = ms(special[0]["startTime"]) if special else ms(s.get("date", ""))
             langs = {l.get("locale"): l.get("text") for l in s.get("stageLangs", [])}
