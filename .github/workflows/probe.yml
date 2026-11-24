@@ -1,0 +1,20 @@
+name: probe-rally
+on:
+  push:
+    branches: [debug-rally]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe WRC and Dakar endpoints
+        run: |
+          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36"
+          p(){ echo "=== $1"; curl -s -L -A "$UA" --max-time 25 -w "\n[HTTP %{http_code} %{size_download}B %{content_type}]\n" "$1" | head -c ${2:-1500}; echo; }
+          p "https://api.wrc.com/contel-page/83388/calendar/active-season/" 3000
+          p "https://api.wrc.com/results-api/season/active" 
+          p "https://api.wrc.com/content/filters/calendar?championship=wrc&origin=vcms&year=2026" 3000
+          p "https://www.wrc.com/en/calendar"  800
+          p "https://www.dakar.live.worldrallyraidchampionship.com/" 3000
+          p "https://www.dakar.com/en/rankings" 1500
+          p "https://www.dakar.com/en/rankings/stage-1/car/s" 1500
+          p "https://gaps.dakar.com/" 800
