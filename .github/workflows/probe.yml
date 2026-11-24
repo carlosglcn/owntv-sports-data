@@ -6,15 +6,18 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Probe WRC and Dakar endpoints
+      - name: Find the APIs behind the Dakar race centre and wrc.com
         run: |
           UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36"
-          p(){ echo "=== $1"; curl -s -L -A "$UA" --max-time 25 -w "\n[HTTP %{http_code} %{size_download}B %{content_type}]\n" "$1" | head -c ${2:-1500}; echo; }
-          p "https://api.wrc.com/contel-page/83388/calendar/active-season/" 3000
-          p "https://api.wrc.com/results-api/season/active" 
-          p "https://api.wrc.com/content/filters/calendar?championship=wrc&origin=vcms&year=2026" 3000
-          p "https://www.wrc.com/en/calendar"  800
-          p "https://www.dakar.live.worldrallyraidchampionship.com/" 3000
-          p "https://www.dakar.com/en/rankings" 1500
-          p "https://www.dakar.com/en/rankings/stage-1/car/s" 1500
-          p "https://gaps.dakar.com/" 800
+          B=https://www.dakar.live.worldrallyraidchampionship.com
+          js=$(curl -s -A "$UA" $B/ | grep -o '/js/app\.[a-z0-9]*\.js' | head -1); echo "app: $js"
+          curl -s -A "$UA" "$B$js" -o app.js; wc -c app.js
+          echo "--- hosts in app.js"; grep -oE 'https?://[a-zA-Z0-9.-]+[a-zA-Z0-9/._-]*' app.js | sort -u | head -60
+          echo "--- api-ish strings"; grep -oE '"/?api[a-zA-Z0-9/._-]*"|baseURL:[^,]{0,120}|apiUrl[^,]{0,120}' app.js | sort -u | head -40
+          for f in $(curl -s -A "$UA" $B/ | grep -oE '/js/[0-9a-z.]+\.js' | sort -u | head -40); do curl -s -A "$UA" "$B$f" | grep -oE 'https?://[a-zA-Z0-9.-]*(api|data|live|race|gaps)[a-zA-Z0-9.-]*[a-zA-Z0-9/._-]*' ; done | sort -u | head -40
+          echo "=== wrc.com with a full browser header set"
+          curl -s -L --max-time 25 -A "$UA" -H "Accept: text/html,application/xhtml+xml" -H "Accept-Language: en-US,en;q=0.9" -w "\n[HTTP %{http_code}]\n" https://www.wrc.com/en/championship/calendar/wrc/ | head -c 600; echo
+          echo "=== wrc results via the Red Bull TV/rally.tv content"
+          for u in https://api.rally.tv https://www.rally.tv/api https://wrc-api.wrc.com https://api-wrc.wrc.com https://results.wrc.com; do echo "--- $u"; curl -s -A "$UA" --max-time 15 -w "[HTTP %{http_code}]" "$u" | head -c 200; echo; done
+          echo "=== ewrc-results"
+          curl -s -A "$UA" --max-time 25 -w "\n[HTTP %{http_code}]\n" "https://www.ewrc-results.com/season/2026/1-wrc/" | grep -oE '<title>[^<]*|\[HTTP [0-9]+\]' | head
