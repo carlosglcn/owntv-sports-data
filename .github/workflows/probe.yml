@@ -6,18 +6,15 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Find the APIs behind the Dakar race centre and wrc.com
+      - name: Find the API behind the Dakar race centre; WRC from ewrc
         run: |
           UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36"
           B=https://www.dakar.live.worldrallyraidchampionship.com
-          js=$(curl -s -A "$UA" $B/ | grep -o '/js/app\.[a-z0-9]*\.js' | head -1); echo "app: $js"
-          curl -s -A "$UA" "$B$js" -o app.js; wc -c app.js
-          echo "--- hosts in app.js"; grep -oE 'https?://[a-zA-Z0-9.-]+[a-zA-Z0-9/._-]*' app.js | sort -u | head -60
-          echo "--- api-ish strings"; grep -oE '"/?api[a-zA-Z0-9/._-]*"|baseURL:[^,]{0,120}|apiUrl[^,]{0,120}' app.js | sort -u | head -40
-          for f in $(curl -s -A "$UA" $B/ | grep -oE '/js/[0-9a-z.]+\.js' | sort -u | head -40); do curl -s -A "$UA" "$B$f" | grep -oE 'https?://[a-zA-Z0-9.-]*(api|data|live|race|gaps)[a-zA-Z0-9.-]*[a-zA-Z0-9/._-]*' ; done | sort -u | head -40
-          echo "=== wrc.com with a full browser header set"
-          curl -s -L --max-time 25 -A "$UA" -H "Accept: text/html,application/xhtml+xml" -H "Accept-Language: en-US,en;q=0.9" -w "\n[HTTP %{http_code}]\n" https://www.wrc.com/en/championship/calendar/wrc/ | head -c 600; echo
-          echo "=== wrc results via the Red Bull TV/rally.tv content"
-          for u in https://api.rally.tv https://www.rally.tv/api https://wrc-api.wrc.com https://api-wrc.wrc.com https://results.wrc.com; do echo "--- $u"; curl -s -A "$UA" --max-time 15 -w "[HTTP %{http_code}]" "$u" | head -c 200; echo; done
-          echo "=== ewrc-results"
-          curl -s -A "$UA" --max-time 25 -w "\n[HTTP %{http_code}]\n" "https://www.ewrc-results.com/season/2026/1-wrc/" | grep -oE '<title>[^<]*|\[HTTP [0-9]+\]' | head
+          C="curl -s -L --compressed -A"
+          $C "$UA" $B/ -o index.html; wc -c index.html
+          for f in $(grep -aoE '/js/[0-9a-z.]+\.js' index.html | sort -u); do $C "$UA" "$B$f" >> all.js; done; wc -c all.js
+          echo "--- hosts"; grep -aoE 'https?://[a-zA-Z0-9.-]+' all.js | sort | uniq -c | sort -rn | head -40
+          echo "--- api paths"; grep -aoE '"/?(api|v[0-9])/[a-zA-Z0-9/._{}$-]*"' all.js | sort -u | head -60
+          echo "--- baseURL"; grep -aoE '(baseURL|apiUrl|API_URL|apiBase)[^;]{0,160}' all.js | head -10
+          echo "=== ewrc"
+          $C "$UA" --max-time 25 -w "\n[HTTP %{http_code} %{url_effective}]\n" "https://www.ewrc-results.com/season/2026/1-wrc/" | grep -aoE '<title>[^<]*|\[HTTP [^]]*\]|/final/[0-9]+-[a-z0-9-]+/' | sort -u | head -20
