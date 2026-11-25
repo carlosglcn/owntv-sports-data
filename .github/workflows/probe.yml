@@ -7,5 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 scripts/dakar.py && python3 -c "import json;d=json.load(open('dakar.json'));r=d['races'][0];print(json.dumps({k:r[k] for k in ('id','name','start','end')},ensure_ascii=False));[print(json.dumps(s,ensure_ascii=False)) for s in r['stages'][:3]+r['stages'][-1:]];print(r['gc'][:4])"
-      - run: python3 scripts/wrc.py && python3 -c "import json;d=json.load(open('wrc.json'));[print(json.dumps(r,ensure_ascii=False)[:420]) for r in d['races'][:3]+d['races'][-2:]];print(d['gc'][:6])"
+      - run: python3 probe/davis.py
