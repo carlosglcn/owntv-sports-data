@@ -1,11 +1,14 @@
 import re, urllib.request
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36", "Accept": "*/*"}
-def get(u, h=None):
-    with urllib.request.urlopen(urllib.request.Request(u, headers=h or UA), timeout=40) as r:
+def get(u):
+    with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=40) as r:
         return r.read().decode("utf-8", "replace")
-js = get("https://www.daviscup.com/_next/static/chunks/6610-2a3d81ef2789c43f.js")
-print("len", len(js))
-for m in re.finditer(r'api\.itf-production\.sports-data\.stadion\.io', js):
-    print("--", js[max(0, m.start()-600):m.start()+1200])
-for m in sorted(set(re.findall(r'`[^`]{0,40}/(?:v\d|public|tennis|draws|ties|events|matches)[^`]{0,160}`', js)))[:60]: print("  tpl", m)
-for m in sorted(set(re.findall(r'"/[a-zA-Z]+/[a-zA-Z/{}$.]{3,100}"', js)))[:80]: print("  path", m)
+b = get("https://www.daviscup.com/en/draws-results/2026/finals")
+srcs = sorted(set(re.findall(r'(/_next/static/chunks/[^"\']+\.js)', b)))
+seen = set()
+for s in srcs:
+    js = get("https://www.daviscup.com" + s)
+    for m in re.findall(r'`\$\{[^}]{1,30}\}/[^`]{2,200}`', js):
+        if m not in seen: seen.add(m); print("tpl", s.split("/")[-1][:24], m)
+    for m in re.findall(r'"/(?:[a-z0-9-]+/){1,6}[a-z0-9-]*"', js):
+        if m not in seen and any(k in m for k in ("tie", "draw", "event", "match", "result", "live", "score", "nation", "player")): seen.add(m); print("path", s.split("/")[-1][:24], m)
