@@ -1,0 +1,244 @@
+{
+ "updated": 1795641287896,
+ "season": 2026,
+ "teams": [
+  {
+   "id": "ITA",
+   "name": "Italy",
+   "short": "Italy",
+   "abbr": "ITA",
+   "logo": "https://flagcdn.com/w320/it.png",
+   "country": "IT",
+   "nation": "IT"
+  },
+  {
+   "id": "KOR",
+   "name": "South Korea",
+   "short": "South Korea",
+   "abbr": "KOR",
+   "logo": "https://flagcdn.com/w320/kr.png",
+   "country": "KR",
+   "nation": "KR"
+  },
+  {
+   "id": "CZE",
+   "name": "Czechia",
+   "short": "Czechia",
+   "abbr": "CZE",
+   "logo": "https://flagcdn.com/w320/cz.png",
+   "country": "CZ",
+   "nation": "CZ"
+  },
+  {
+   "id": "CAN",
+   "name": "Canada",
+   "short": "Canada",
+   "abbr": "CAN",
+   "logo": "https://flagcdn.com/w320/ca.png",
+   "country": "CA",
+   "nation": "CA"
+  },
+  {
+   "id": "GBR",
+   "name": "Great Britain",
+   "short": "Great Britain",
+   "abbr": "GBR",
+   "logo": "https://flagcdn.com/w320/gb.png",
+   "country": "GB",
+   "nation": "GB"
+  },
+  {
+   "id": "GER",
+   "name": "Germany",
+   "short": "Germany",
+   "abbr": "GER",
+   "logo": "https://flagcdn.com/w320/de.png",
+   "country": "DE",
+   "nation": "DE"
+  },
+  {
+   "id": "AUT",
+   "name": "Austria",
+   "short": "Austria",
+   "abbr": "AUT",
+   "logo": "https://flagcdn.com/w320/at.png",
+   "country": "AT",
+   "nation": "AT"
+  },
+  {
+   "id": "ESP",
+   "name": "Spain",
+   "short": "Spain",
+   "abbr": "ESP",
+   "logo": "https://flagcdn.com/w320/es.png",
+   "country": "ES",
+   "nation": "ES"
+  }
+ ],
+ "matches": [
+  {
+   "id": "davis-2026-ITA-KOR",
+   "home": "ITA",
+   "away": "KOR",
+   "start": 1795618800000,
+   "hs": 1,
+   "as": 1,
+   "status": "live",
+   "stage": "Quarterfinal",
+   "stage_es": "Cuartos de final",
+   "venue": "SuperTennis Arena, Bologna",
+   "rubbers": [
+    {
+     "label": "Singles 1",
+     "label_es": "Individual 1",
+     "p1": [
+      "Lorenzo Musetti"
+     ],
+     "p2": [
+      "Hong Seong-chan"
+     ],
+     "s1": [
+      6,
+      7
+     ],
+     "s2": [
+      0,
+      6
+     ],
+     "winner": 1
+    },
+    {
+     "label": "Singles 2",
+     "label_es": "Individual 2",
+     "p1": [
+      "Flavio Cobolli"
+     ],
+     "p2": [
+      "Kwon Soon-woo"
+     ],
+     "s1": [
+      6,
+      6,
+      6
+     ],
+     "s2": [
+      3,
+      7,
+      7
+     ],
+     "winner": 2
+    },
+    {
+     "label": "Doubles",
+     "label_es": "Dobles",
+     "p1": [
+      "Matteo Berrettini",
+      "Andrea Vavassori"
+     ],
+     "p2": [
+      "Chung Hyeon",
+      "Kwon Soon-woo"
+     ],
+     "s1": [],
+     "s2": [],
+     "winner": null
+    }
+   ]
+  },
+  {
+   "id": "davis-2026-CZE-CAN",
+   "home": "CZE",
+   "away": "CAN",
+   "start": 1795532400000,
+   "hs": 2,
+   "as": 0,
+   "status": "final",
+   "stage": "Quarterfinal",
+   "stage_es": "Cuartos de final",
+   "venue": "SuperTennis Arena, Bologna",
+   "rubbers": [
+    {
+     "label": "Singles 1",
+     "label_es": "Individual 1",
+     "p1": [
+      "Tomáš Macháč"
+     ],
+     "p2": [
+      "Liam Draxl"
+     ],
+     "s1": [
+      6,
+      3,
+      6
+     ],
+     "s2": [
+      2,
+      6,
+      2
+     ],
+     "winner": 1
+    },
+    {
+     "label": "Singles 2",
+     "label_es": "Individual 2",
+     "p1": [
+      "Jiří Lehečka"
+     ],
+     "p2": [
+      "Félix Auger-Aliassime"
+     ],
+     "s1": [
+      7,
+      6
+     ],
+     "s2": [
+      6,
+      2
+     ],
+     "winner": 1
+    },
+    {
+     "label": "Doubles",
+     "label_es": "Dobles",
+     "p1": [
+      "Adam Pavlásek",
+      "Patrik Rikl"
+     ],
+     "p2": [
+      "Félix Auger-Aliassime",
+      "Duncan Chan"
+     ],
+     "s1": [],
+     "s2": [],
+     "winner": null
+    }
+   ]
+  },
+  {
+   "id": "davis-2026-GBR-GER",
+   "home": "GBR",
+   "away": "GER",
+   "start": 1795683600000,
+   "hs": null,
+   "as": null,
+   "status": "scheduled",
+   "stage": "Quarterfinal",
+   "stage_es": "Cuartos de final",
+   "venue": "SuperTennis Arena, Bologna",
+   "rubbers": []
+  },
+  {
+   "id": "davis-2026-AUT-ESP",
+   "home": "AUT",
+   "away": "ESP",
+   "start": 1795708800000,
+   "hs": null,
+   "as": null,
+   "status": "scheduled",
+   "stage": "Quarterfinal",
+   "stage_es": "Cuartos de final",
+   "venue": "SuperTennis Arena, Bologna",
+   "rubbers": []
+  }
+ ]
+}
