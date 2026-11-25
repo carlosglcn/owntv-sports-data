@@ -32,6 +32,7 @@ LEAGUES = {
     "hhl": "Herrehåndboldligaen",
     "khl": "Nemzeti Bajnokság I (men's handball)",
     "snooker": "World Snooker Tour",
+    "davis": "Davis Cup",
     "motogp": "MotoGP",
     "f1": "Formula One",
     "uwt": "UCI World Tour",
@@ -89,6 +90,7 @@ HINTS = {
     "hbl": ("hbl", "handball-bundesliga", "handball bundesliga"),
     "lnh": ("lnh", "starligue", "liqui moly"),
     "khl": ("k&h", "nb i", "férfi"),
+    "davis": ("davis",),
 }
 
 # Files a page carries that are another competition's mark (the MotoGP article shows Moto2's and Moto3's too).
