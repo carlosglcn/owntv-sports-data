@@ -40,9 +40,12 @@ jobs:
       - run: python3 scripts/wrc.py
         continue-on-error: true
         timeout-minutes: 3
+      - run: python3 scripts/davis.py
+        continue-on-error: true
+        timeout-minutes: 3
       - name: Commit when the data changed
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add acb.json euroleague.json eurocup.json primerafeb.json lega.json asobal.json ehfcl.json ehfel.json lnh.json hhl.json khl.json hbl.json tennis.json competitions.json venues.json venues_cache.json venues_manual.json cycling.json snooker.json dakar.json wrc.json logos
+          git add acb.json euroleague.json eurocup.json primerafeb.json lega.json asobal.json ehfcl.json ehfel.json lnh.json hhl.json khl.json hbl.json tennis.json competitions.json venues.json venues_cache.json venues_manual.json cycling.json snooker.json dakar.json wrc.json davis.json logos
           git diff --cached --quiet || { git commit -qm "Update data"; git pull -q --rebase; git push; }
