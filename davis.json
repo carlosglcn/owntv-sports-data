@@ -1,5 +1,5 @@
 {
- "updated": 1795676119646,
+ "updated": 1795690595009,
  "season": 2026,
  "teams": [
   {
@@ -449,13 +449,55 @@
    "home": "GBR",
    "away": "GER",
    "start": 1795683600000,
-   "hs": null,
-   "as": null,
-   "status": "scheduled",
+   "hs": 0,
+   "as": 0,
+   "status": "live",
    "stage": "Quarterfinal",
    "stage_es": "Cuartos de final",
    "venue": "SuperTennis Arena, Bologna",
-   "rubbers": []
+   "rubbers": [
+    {
+     "label": "Singles 1",
+     "label_es": "Individual 1",
+     "p1": [
+      "Cameron Norrie"
+     ],
+     "p2": [
+      "Jan-Lennard Struff"
+     ],
+     "s1": [],
+     "s2": [],
+     "winner": null
+    },
+    {
+     "label": "Singles 2",
+     "label_es": "Individual 2",
+     "p1": [
+      "Arthur Fery"
+     ],
+     "p2": [
+      "Alexander Zverev"
+     ],
+     "s1": [],
+     "s2": [],
+     "winner": null
+    },
+    {
+     "label": "Doubles",
+     "label_es": "Dobles",
+     "p1": [
+      "Henry Patten",
+      "Neal Skupski"
+     ],
+     "p2": [
+      "Kevin Krawietz",
+      "Tim Pütz"
+     ],
+     "s1": [],
+     "s2": [],
+     "winner": null
+    }
+   ]
   },
   {
    "id": "davis-2026-AUT-ESP",
