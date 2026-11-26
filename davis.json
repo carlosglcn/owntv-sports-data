@@ -1,5 +1,5 @@
 {
- "updated": 1795715772663,
+ "updated": 1795716074551,
  "season": 2026,
  "teams": [
   {
@@ -525,7 +525,7 @@
    "away": "ESP",
    "start": 1795708800000,
    "hs": 0,
-   "as": 0,
+   "as": 1,
    "status": "live",
    "stage": "Quarterfinal",
    "stage_es": "Cuartos de final",
@@ -540,9 +540,15 @@
      "p2": [
       "Daniel Mérida"
      ],
-     "s1": [],
-     "s2": [],
-     "winner": null
+     "s1": [
+      4,
+      4
+     ],
+     "s2": [
+      6,
+      6
+     ],
+     "winner": 2
     },
     {
      "label": "Singles 2",
