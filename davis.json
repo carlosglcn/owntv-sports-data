@@ -1,5 +1,5 @@
 {
- "updated": 1795690595009,
+ "updated": 1795710926295,
  "season": 2026,
  "teams": [
   {
@@ -449,9 +449,9 @@
    "home": "GBR",
    "away": "GER",
    "start": 1795683600000,
-   "hs": 0,
-   "as": 0,
-   "status": "live",
+   "hs": 2,
+   "as": 1,
+   "status": "final",
    "stage": "Quarterfinal",
    "stage_es": "Cuartos de final",
    "venue": "SuperTennis Arena, Bologna",
@@ -465,9 +465,17 @@
      "p2": [
       "Jan-Lennard Struff"
      ],
-     "s1": [],
-     "s2": [],
-     "winner": null
+     "s1": [
+      6,
+      3,
+      6
+     ],
+     "s2": [
+      3,
+      6,
+      2
+     ],
+     "winner": 1
     },
     {
      "label": "Singles 2",
@@ -478,9 +486,15 @@
      "p2": [
       "Alexander Zverev"
      ],
-     "s1": [],
-     "s2": [],
-     "winner": null
+     "s1": [
+      3,
+      2
+     ],
+     "s2": [
+      6,
+      6
+     ],
+     "winner": 2
     },
     {
      "label": "Doubles",
@@ -493,9 +507,15 @@
       "Kevin Krawietz",
       "Tim Pütz"
      ],
-     "s1": [],
-     "s2": [],
-     "winner": null
+     "s1": [
+      6,
+      7
+     ],
+     "s2": [
+      2,
+      6
+     ],
+     "winner": 1
     }
    ]
   },
@@ -504,13 +524,55 @@
    "home": "AUT",
    "away": "ESP",
    "start": 1795708800000,
-   "hs": null,
-   "as": null,
-   "status": "scheduled",
+   "hs": 0,
+   "as": 0,
+   "status": "live",
    "stage": "Quarterfinal",
    "stage_es": "Cuartos de final",
    "venue": "SuperTennis Arena, Bologna",
-   "rubbers": []
+   "rubbers": [
+    {
+     "label": "Singles 1",
+     "label_es": "Individual 1",
+     "p1": [
+      "Joel Schwärzler"
+     ],
+     "p2": [
+      "Daniel Mérida"
+     ],
+     "s1": [],
+     "s2": [],
+     "winner": null
+    },
+    {
+     "label": "Singles 2",
+     "label_es": "Individual 2",
+     "p1": [
+      "Jurij Rodionov"
+     ],
+     "p2": [
+      "Rafael Jódar"
+     ],
+     "s1": [],
+     "s2": [],
+     "winner": null
+    },
+    {
+     "label": "Doubles",
+     "label_es": "Dobles",
+     "p1": [
+      "Lucas Miedler",
+      "Neil Oberleitner"
+     ],
+     "p2": [
+      "Carlos Alcaraz",
+      "Marcel Granollers"
+     ],
+     "s1": [],
+     "s2": [],
+     "winner": null
+    }
+   ]
   },
   {
    "id": "davis-2026-ITA-CZE",
