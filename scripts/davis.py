@@ -2,7 +2,7 @@
 """davis.json: the Davis Cup Finals (Final 8), in the shape of the team-league files (acb.json…) read by the app's
 BasketDataSource — each tie one match between two nations, its score the rubbers won, with the rubbers themselves.
 
-  {"updated", "season", "teams":[{id,name,short,abbr,logo,country,nation}],
+  {"updated", "season", "teams":[{id,name,short,abbr,logo,country,nation,squad:[{name,sr,dr}],captain}],
    "matches":[{id,home,away,start,hs,as,status,stage,stage_es,venue,
                rubbers:[{label,label_es,p1:[..],p2:[..],s1:[..],s2:[..],winner}]}]}
 
@@ -114,6 +114,41 @@ def rubber(text, n):
             "s1": sides[1]["s"], "s2": sides[2]["s"], "winner": winner}
 
 
+def squads(text):
+    """The "Team nominations" tables: each nation's players with singles and doubles ranking, and its captain."""
+    out = {}
+    i = text.find("==Team nominations==")
+    if i < 0:
+        return out
+    end = text.find("\n==", i + 25)
+    section = text[i:end if end > 0 else len(text)]
+
+    def rank(cell):
+        v = re.sub(r"align=center\|", "", cell)
+        v = re.sub(r"\{\{sort\|[^|}]*\|([^}]*)\}\}", r"\1", v).strip()
+        return int(v) if v.isdigit() else None
+
+    for block in re.split(r"\{\{davis\|", section)[1:]:
+        code = block[:3].upper()
+        table = block[:block.find("\n|}")] if "\n|}" in block else block
+        players = []
+        for row in re.findall(r"^\|\s*(\{\{sort(?:name)?\|[^\n]*)$", table, re.M):
+            cells = [c.strip() for c in row.split("||")]
+            m = re.match(r"\{\{sortname\|([^|}]*)\|([^|}]*)", cells[0])
+            if m:
+                name = (m.group(1) + " " + m.group(2)).strip()
+            else:
+                m = re.match(r"\{\{sort\|[^|}]*\|([^|}]*)", cells[0])
+                name = m.group(1).strip() if m else ""
+            if name:
+                players.append({"name": name, "sr": rank(cells[1]) if len(cells) > 1 else None,
+                                "dr": rank(cells[2]) if len(cells) > 2 else None})
+        cap = re.search(r"Captain:'+\s*([^\n|]+(?:\|[^\n\]]*\]\])?)", table)
+        if players:
+            out[code] = {"squad": players, "captain": unlink(cap.group(1)) if cap else None}
+    return out
+
+
 def start_ms(date_text, order):
     m = re.search(r"(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})", date_text)
     if not m:
@@ -134,6 +169,7 @@ def main():
         print("davis: article failed: %s" % e, file=sys.stderr)
         sys.exit(0)
     teams, matches, per_day = {}, [], {}
+    nominated = squads(text)
     stage = ("Tie", "Eliminatoria")
     for m in re.finditer(r"^===\s*([^=\n]+?)\s*===\s*$|\{\{Davis Cup Finals box(.*?)\n\}\}", text, re.M | re.S):
         if m.group(1):
@@ -153,7 +189,8 @@ def main():
         start, _ = got
         for code in (t1, t2):
             teams[code] = {"id": code, "name": NAMES.get(code, code), "short": NAMES.get(code, code), "abbr": code,
-                           "logo": FLAG % ISO2[code], "country": ISO2[code].upper(), "nation": ISO2[code].upper()}
+                           "logo": FLAG % ISO2[code], "country": ISO2[code].upper(), "nation": ISO2[code].upper(),
+                           "squad": nominated.get(code, {}).get("squad", []), "captain": nominated.get(code, {}).get("captain")}
         rubbers = [r for r in (rubber(f[k], i) for i, k in enumerate(sorted(k for k in f if re.fullmatch(r"R\d", k)))) if r]
         s1 = sum(1 for r in rubbers if r["winner"] == 1)
         s2 = sum(1 for r in rubbers if r["winner"] == 2)
@@ -175,7 +212,8 @@ def main():
     if not matches:
         print("davis: no ties read", file=sys.stderr)
         sys.exit(0)
-    json.dump({"updated": int(time.time() * 1000), "season": year, "teams": list(teams.values()), "matches": matches},
+    json.dump({"updated": int(time.time() * 1000), "season": year, "teams": list(teams.values()), "matches": matches,
+               "captain_label": {"en": "Captain", "es": "Capitán"}},
               open(OUT, "w"), ensure_ascii=False, indent=1)
     print("davis: %d, %d ties: %s" % (year, len(matches), [(x["home"], x["away"], x["hs"], x["as"], x["status"]) for x in matches]))
 
