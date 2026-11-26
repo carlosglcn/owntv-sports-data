@@ -1,5 +1,5 @@
 {
- "updated": 1795659377989,
+ "updated": 1795676119646,
  "season": 2026,
  "teams": [
   {
@@ -9,7 +9,35 @@
    "abbr": "ITA",
    "logo": "https://flagcdn.com/w320/it.png",
    "country": "IT",
-   "nation": "IT"
+   "nation": "IT",
+   "squad": [
+    {
+     "name": "Flavio Cobolli",
+     "sr": 7,
+     "dr": 362
+    },
+    {
+     "name": "Luciano Darderi",
+     "sr": 21,
+     "dr": 192
+    },
+    {
+     "name": "Lorenzo Musetti",
+     "sr": 27,
+     "dr": 214
+    },
+    {
+     "name": "Matteo Berrettini",
+     "sr": 43,
+     "dr": 578
+    },
+    {
+     "name": "Andrea Vavassori",
+     "sr": 594,
+     "dr": 10
+    }
+   ],
+   "captain": "Filippo Volandri"
   },
   {
    "id": "KOR",
@@ -18,7 +46,35 @@
    "abbr": "KOR",
    "logo": "https://flagcdn.com/w320/kr.png",
    "country": "KR",
-   "nation": "KR"
+   "nation": "KR",
+   "squad": [
+    {
+     "name": "Kwon Soon-woo",
+     "sr": null,
+     "dr": 139
+    },
+    {
+     "name": "Chung Hyeon",
+     "sr": null,
+     "dr": 598
+    },
+    {
+     "name": "Hong Seong-chan",
+     "sr": null,
+     "dr": 787
+    },
+    {
+     "name": "Park Ui-sung",
+     "sr": null,
+     "dr": 801
+    },
+    {
+     "name": "Nam Ji-sung",
+     "sr": null,
+     "dr": 964
+    }
+   ],
+   "captain": "Chung Jong-sam"
   },
   {
    "id": "CZE",
@@ -27,7 +83,35 @@
    "abbr": "CZE",
    "logo": "https://flagcdn.com/w320/cz.png",
    "country": "CZ",
-   "nation": "CZ"
+   "nation": "CZ",
+   "squad": [
+    {
+     "name": "Jiří Lehečka",
+     "sr": 14,
+     "dr": 360
+    },
+    {
+     "name": "Jakub Menšík",
+     "sr": 15,
+     "dr": 584
+    },
+    {
+     "name": "Tomáš Macháč",
+     "sr": 59,
+     "dr": 242
+    },
+    {
+     "name": "Patrik Rikl",
+     "sr": null,
+     "dr": 36
+    },
+    {
+     "name": "Adam Pavlásek",
+     "sr": null,
+     "dr": 41
+    }
+   ],
+   "captain": "Tomáš Berdych"
   },
   {
    "id": "CAN",
@@ -36,7 +120,35 @@
    "abbr": "CAN",
    "logo": "https://flagcdn.com/w320/ca.png",
    "country": "CA",
-   "nation": "CA"
+   "nation": "CA",
+   "squad": [
+    {
+     "name": "Félix Auger-Aliassime",
+     "sr": 17,
+     "dr": 579
+    },
+    {
+     "name": "Liam Draxl",
+     "sr": 154,
+     "dr": 415
+    },
+    {
+     "name": "Alexis Galarneau",
+     "sr": 192,
+     "dr": 295
+    },
+    {
+     "name": "Duncan Chan",
+     "sr": 593,
+     "dr": 246
+    },
+    {
+     "name": "Keegan Rice",
+     "sr": 608,
+     "dr": 1582
+    }
+   ],
+   "captain": "Frank Dancevic"
   },
   {
    "id": "GBR",
@@ -45,7 +157,35 @@
    "abbr": "GBR",
    "logo": "https://flagcdn.com/w320/gb.png",
    "country": "GB",
-   "nation": "GB"
+   "nation": "GB",
+   "squad": [
+    {
+     "name": "Arthur Fery",
+     "sr": 32,
+     "dr": null
+    },
+    {
+     "name": "Cameron Norrie",
+     "sr": 52,
+     "dr": null
+    },
+    {
+     "name": "Toby Samuel",
+     "sr": 82,
+     "dr": null
+    },
+    {
+     "name": "Henry Patten",
+     "sr": null,
+     "dr": 1
+    },
+    {
+     "name": "Neal Skupski",
+     "sr": null,
+     "dr": 3
+    }
+   ],
+   "captain": "Leon Smith"
   },
   {
    "id": "GER",
@@ -54,7 +194,35 @@
    "abbr": "GER",
    "logo": "https://flagcdn.com/w320/de.png",
    "country": "DE",
-   "nation": "DE"
+   "nation": "DE",
+   "squad": [
+    {
+     "name": "Alexander Zverev",
+     "sr": 1,
+     "dr": 109
+    },
+    {
+     "name": "Jan-Lennard Struff",
+     "sr": 39,
+     "dr": 215
+    },
+    {
+     "name": "Yannick Hanfmann",
+     "sr": 67,
+     "dr": 277
+    },
+    {
+     "name": "Kevin Krawietz",
+     "sr": null,
+     "dr": 9
+    },
+    {
+     "name": "Tim Pütz",
+     "sr": null,
+     "dr": 11
+    }
+   ],
+   "captain": "Michael Kohlmann"
   },
   {
    "id": "AUT",
@@ -63,7 +231,35 @@
    "abbr": "AUT",
    "logo": "https://flagcdn.com/w320/at.png",
    "country": "AT",
-   "nation": "AT"
+   "nation": "AT",
+   "squad": [
+    {
+     "name": "Jurij Rodionov",
+     "sr": 119,
+     "dr": null
+    },
+    {
+     "name": "Lukas Neumayer",
+     "sr": 157,
+     "dr": 674
+    },
+    {
+     "name": "Joel Schwärzler",
+     "sr": 170,
+     "dr": 476
+    },
+    {
+     "name": "Neil Oberleitner",
+     "sr": 1255,
+     "dr": 15
+    },
+    {
+     "name": "Lucas Miedler",
+     "sr": null,
+     "dr": 16
+    }
+   ],
+   "captain": "Jürgen Melzer"
   },
   {
    "id": "ESP",
@@ -72,7 +268,35 @@
    "abbr": "ESP",
    "logo": "https://flagcdn.com/w320/es.png",
    "country": "ES",
-   "nation": "ES"
+   "nation": "ES",
+   "squad": [
+    {
+     "name": "Carlos Alcaraz",
+     "sr": 3,
+     "dr": null
+    },
+    {
+     "name": "Rafael Jódar",
+     "sr": 10,
+     "dr": 356
+    },
+    {
+     "name": "Daniel Mérida",
+     "sr": 42,
+     "dr": null
+    },
+    {
+     "name": "Pedro Martínez",
+     "sr": 120,
+     "dr": 232
+    },
+    {
+     "name": "Marcel Granollers",
+     "sr": null,
+     "dr": 8
+    }
+   ],
+   "captain": "David Ferrer"
   }
  ],
  "matches": [
@@ -259,5 +483,9 @@
    "venue": "SuperTennis Arena, Bologna",
    "rubbers": []
   }
- ]
+ ],
+ "captain_label": {
+  "en": "Captain",
+  "es": "Capitán"
+ }
 }
