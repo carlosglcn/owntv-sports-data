@@ -1,5 +1,5 @@
 {
- "updated": 1795641287896,
+ "updated": 1795659377989,
  "season": 2026,
  "teams": [
   {
@@ -81,9 +81,9 @@
    "home": "ITA",
    "away": "KOR",
    "start": 1795618800000,
-   "hs": 1,
+   "hs": 2,
    "as": 1,
-   "status": "live",
+   "status": "final",
    "stage": "Quarterfinal",
    "stage_es": "Cuartos de final",
    "venue": "SuperTennis Arena, Bologna",
@@ -139,9 +139,15 @@
       "Chung Hyeon",
       "Kwon Soon-woo"
      ],
-     "s1": [],
-     "s2": [],
-     "winner": null
+     "s1": [
+      7,
+      7
+     ],
+     "s2": [
+      6,
+      6
+     ],
+     "winner": 1
     }
    ]
   },
@@ -237,6 +243,19 @@
    "status": "scheduled",
    "stage": "Quarterfinal",
    "stage_es": "Cuartos de final",
+   "venue": "SuperTennis Arena, Bologna",
+   "rubbers": []
+  },
+  {
+   "id": "davis-2026-ITA-CZE",
+   "home": "ITA",
+   "away": "CZE",
+   "start": 1795791600000,
+   "hs": null,
+   "as": null,
+   "status": "scheduled",
+   "stage": "Semifinal",
+   "stage_es": "Semifinal",
    "venue": "SuperTennis Arena, Bologna",
    "rubbers": []
   }
