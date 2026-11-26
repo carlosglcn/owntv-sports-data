@@ -1,0 +1,55 @@
+name: live-davis
+# The Davis Cup while a tie is on: davis.json every five minutes. GitHub runs the */10 schedule of build-data only
+# every few hours, so this one loops for most of an hour and then starts itself again while there is still a tie
+# today. The schedule below is only a fallback to start it.
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: live-davis
+  cancel-in-progress: false
+jobs:
+  loop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Refresh davis.json every five minutes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          busy() {
+            python3 - <<'EOF'
+          import json, sys, time
+          try:
+              d = json.load(open("davis.json"))
+          except Exception:
+              sys.exit(1)
+          now = time.time() * 1000
+          # A tie under way, or one starting within the next two hours.
+          on = any(m["status"] == "live" or (m["status"] == "scheduled" and m["start"] - 2 * 3600 * 1000 <= now)
+                   for m in d.get("matches", []))
+          sys.exit(0 if on else 1)
+          EOF
+          }
+          end=$(( $(date +%s) + 52 * 60 ))
+          while [ "$(date +%s)" -lt "$end" ]; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 scripts/davis.py || true
+            if ! git diff --quiet -- davis.json; then
+              git add davis.json
+              git commit -q -m "Update davis.json (live)"
+              git push -q origin HEAD:main || echo "push lost to another update; next round"
+            fi
+            busy || { echo "no tie on now"; exit 0; }
+            sleep 300
+          done
+          if busy; then gh workflow run live.yml --ref main; fi
