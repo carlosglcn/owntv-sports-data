@@ -1,5 +1,5 @@
 {
- "updated": 1795722130706,
+ "updated": 1795722432271,
  "season": 2026,
  "teams": [
   {
@@ -525,8 +525,8 @@
    "away": "ESP",
    "start": 1795708800000,
    "hs": 0,
-   "as": 1,
-   "status": "live",
+   "as": 2,
+   "status": "final",
    "stage": "Quarterfinal",
    "stage_es": "Cuartos de final",
    "venue": "SuperTennis Arena, Bologna",
@@ -561,13 +561,15 @@
      ],
      "s1": [
       6,
-      0
+      0,
+      1
      ],
      "s2": [
       2,
+      6,
       6
      ],
-     "winner": null
+     "winner": 2
     },
     {
      "label": "Doubles",
