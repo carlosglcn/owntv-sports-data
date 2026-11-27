@@ -1,5 +1,5 @@
 {
- "updated": 1795778207614,
+ "updated": 1795806400121,
  "season": 2026,
  "teams": [
   {
@@ -593,13 +593,69 @@
    "home": "ITA",
    "away": "CZE",
    "start": 1795791600000,
-   "hs": null,
-   "as": null,
-   "status": "scheduled",
+   "hs": 1,
+   "as": 1,
+   "status": "live",
    "stage": "Semifinal",
    "stage_es": "Semifinal",
    "venue": "SuperTennis Arena, Bologna",
-   "rubbers": []
+   "rubbers": [
+    {
+     "label": "Singles 1",
+     "label_es": "Individual 1",
+     "p1": [
+      "Lorenzo Musetti"
+     ],
+     "p2": [
+      "Jakub Menšík"
+     ],
+     "s1": [
+      6,
+      6
+     ],
+     "s2": [
+      3,
+      4
+     ],
+     "winner": 1
+    },
+    {
+     "label": "Singles 2",
+     "label_es": "Individual 2",
+     "p1": [
+      "Flavio Cobolli"
+     ],
+     "p2": [
+      "Jiří Lehečka"
+     ],
+     "s1": [
+      2,
+      6,
+      3
+     ],
+     "s2": [
+      6,
+      1,
+      6
+     ],
+     "winner": 2
+    },
+    {
+     "label": "Doubles",
+     "label_es": "Dobles",
+     "p1": [
+      "Matteo Berrettini",
+      "Andrea Vavassori"
+     ],
+     "p2": [
+      "Adam Pavlásek",
+      "Patrik Rikl"
+     ],
+     "s1": [],
+     "s2": [],
+     "winner": null
+    }
+   ]
   },
   {
    "id": "davis-2026-GBR-ESP",
