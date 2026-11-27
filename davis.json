@@ -1,5 +1,5 @@
 {
- "updated": 1795815770499,
+ "updated": 1795816071849,
  "season": 2026,
  "teams": [
   {
@@ -593,9 +593,9 @@
    "home": "ITA",
    "away": "CZE",
    "start": 1795791600000,
-   "hs": 1,
+   "hs": 2,
    "as": 1,
-   "status": "live",
+   "status": "final",
    "stage": "Semifinal",
    "stage_es": "Semifinal",
    "venue": "SuperTennis Arena, Bologna",
@@ -653,13 +653,15 @@
      ],
      "s1": [
       3,
-      6
+      6,
+      7
      ],
      "s2": [
       6,
-      1
+      1,
+      6
      ],
-     "winner": null
+     "winner": 1
     }
    ]
   },
