@@ -1,5 +1,5 @@
 {
- "updated": 1795723049971,
+ "updated": 1795740881279,
  "season": 2026,
  "teams": [
   {
@@ -593,6 +593,19 @@
    "home": "ITA",
    "away": "CZE",
    "start": 1795791600000,
+   "hs": null,
+   "as": null,
+   "status": "scheduled",
+   "stage": "Semifinal",
+   "stage_es": "Semifinal",
+   "venue": "SuperTennis Arena, Bologna",
+   "rubbers": []
+  },
+  {
+   "id": "davis-2026-GBR-ESP",
+   "home": "GBR",
+   "away": "ESP",
+   "start": 1795863600000,
    "hs": null,
    "as": null,
    "status": "scheduled",
