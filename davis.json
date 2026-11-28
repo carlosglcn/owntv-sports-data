@@ -1,5 +1,5 @@
 {
- "updated": 1795876116342,
+ "updated": 1795876417950,
  "season": 2026,
  "teams": [
   {
@@ -671,8 +671,8 @@
    "away": "ESP",
    "start": 1795863600000,
    "hs": 0,
-   "as": 1,
-   "status": "live",
+   "as": 2,
+   "status": "final",
    "stage": "Semifinal",
    "stage_es": "Semifinal",
    "venue": "SuperTennis Arena, Bologna",
@@ -706,12 +706,14 @@
       "Carlos Alcaraz"
      ],
      "s1": [
-      2
+      2,
+      1
      ],
      "s2": [
+      6,
       6
      ],
-     "winner": null
+     "winner": 2
     },
     {
      "label": "Doubles",
@@ -729,6 +731,19 @@
      "winner": null
     }
    ]
+  },
+  {
+   "id": "davis-2026-ITA-ESP",
+   "home": "ITA",
+   "away": "ESP",
+   "start": 1795960800000,
+   "hs": null,
+   "as": null,
+   "status": "scheduled",
+   "stage": "Final",
+   "stage_es": "Final",
+   "venue": "SuperTennis Arena, Bologna",
+   "rubbers": []
   }
  ],
  "captain_label": {
