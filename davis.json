@@ -1,5 +1,5 @@
 {
- "updated": 1795870674540,
+ "updated": 1795870975952,
  "season": 2026,
  "teams": [
   {
@@ -671,7 +671,7 @@
    "away": "ESP",
    "start": 1795863600000,
    "hs": 0,
-   "as": 0,
+   "as": 1,
    "status": "live",
    "stage": "Semifinal",
    "stage_es": "Semifinal",
@@ -687,12 +687,14 @@
       "Rafael Jódar"
      ],
      "s1": [
-      2
+      2,
+      5
      ],
      "s2": [
-      6
+      6,
+      7
      ],
-     "winner": null
+     "winner": 2
     },
     {
      "label": "Singles 2",
