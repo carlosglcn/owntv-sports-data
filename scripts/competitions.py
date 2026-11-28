@@ -108,6 +108,8 @@ SPANISH = {"asobal": ("es", "Liga ASOBAL"), "primerafeb": ("es", "Primera FEB"),
 SPORTSDB = {
     "hbl": "https://r2.thesportsdb.com/images/media/league/badge/yt21x11783630443.png",
     "khl": "https://r2.thesportsdb.com/images/media/league/badge/wl72r61560678493.png",
+    # The Davis Cup's mark is not a free file, so its Wikipedia article offers none (from thesportsdb.com/league/5347).
+    "davis": "https://r2.thesportsdb.com/images/media/league/badge/i0qscy1672325773.png",
 }
 
 
