@@ -1,5 +1,5 @@
 {
- "updated": 1795867044888,
+ "updated": 1795867346714,
  "season": 2026,
  "teams": [
   {
@@ -676,7 +676,53 @@
    "stage": "Semifinal",
    "stage_es": "Semifinal",
    "venue": "SuperTennis Arena, Bologna",
-   "rubbers": []
+   "rubbers": [
+    {
+     "label": "Singles 1",
+     "label_es": "Individual 1",
+     "p1": [
+      "Cameron Norrie"
+     ],
+     "p2": [
+      "Rafael Jódar"
+     ],
+     "s1": [
+      2
+     ],
+     "s2": [
+      6
+     ],
+     "winner": null
+    },
+    {
+     "label": "Singles 2",
+     "label_es": "Individual 2",
+     "p1": [
+      "Arthur Fery"
+     ],
+     "p2": [
+      "Carlos Alcaraz"
+     ],
+     "s1": [],
+     "s2": [],
+     "winner": null
+    },
+    {
+     "label": "Doubles",
+     "label_es": "Dobles",
+     "p1": [
+      "Henry Patten",
+      "Neal Skupski"
+     ],
+     "p2": [
+      "Marcel Granollers",
+      "Pedro Martínez"
+     ],
+     "s1": [],
+     "s2": [],
+     "winner": null
+    }
+   ]
   }
  ],
  "captain_label": {
