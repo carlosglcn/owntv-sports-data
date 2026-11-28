@@ -1,5 +1,5 @@
 {
- "updated": 1795863414128,
+ "updated": 1795863715835,
  "season": 2026,
  "teams": [
   {
@@ -670,9 +670,9 @@
    "home": "GBR",
    "away": "ESP",
    "start": 1795863600000,
-   "hs": null,
-   "as": null,
-   "status": "scheduled",
+   "hs": 0,
+   "as": 0,
+   "status": "live",
    "stage": "Semifinal",
    "stage_es": "Semifinal",
    "venue": "SuperTennis Arena, Bologna",
